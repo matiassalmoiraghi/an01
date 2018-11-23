@@ -1,0 +1,6 @@
+1.- Copiar cnk en la carpeta de GP
+2.- Ejecutar GP con usuario sa
+3.- Crear en inicio ventana Actualización Tablas COA ubicada en:
+	Dicionario:	COA
+	Ruta:		Compañia -> Actualizar Tablas
+4.- Abrir venta Actualizar Tablas COA y presionar el Boton Actualizar Tablas
