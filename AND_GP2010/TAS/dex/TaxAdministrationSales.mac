@@ -1,0 +1,131 @@
+# DEXVERSION=11.00.0214.0
+  MenuSelect title File entry 'Open Source Dictionary...' 
+  FileOpen file 'C:/dexterity/TII/GP2010/TAS/dynamics.dic' type 0 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MoveTo field 'Toolbar Utilities Button' item 0 
+  ClickHit field 'Toolbar Utilities Button' item 6  # 'Extract' 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+ActivateWindow dictionary 'default'  form Extractor window Extractor 
+ActivateWindow dictionary 'default'  form Extractor window Extractor 
+  ClickHit field '(L) Extract Button' 
+  FileSave file 'C:/dexterity/TII/GP2010/TAS/TWR9879.DIC' 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MoveTo field 'Toolbar Transfer Button' item 0 
+  ClickHit field 'Toolbar Transfer Button' item 4  # 'Dictionary Module' 
+# Please open a Destination Dictionary.
+NewActiveWin dictionary 'default'  form DiaLog window DiaLog 
+  ClickHit field OK 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MenuSelect title File entry 'Close Source Dictionary' 
+  MenuSelect title File entry 'Close Editable Dictionary' 
+  MenuSelect title File entry 'Open Source Dictionary...' 
+  FileOpen file 'C:/dexterity/TII/GP2010/TAS/dynamics.dic' type 0 
+  MenuSelect title File entry 'Open Destination Dictionary...' 
+  FileOpen file 'C:/dexterity/TII/GP2010/TAS/TWR9879.DIC' type 0 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  ClickHit field 'Toolbar Transfer Button' item 4  # 'Dictionary Module' 
+NewActiveWin dictionary 'default'  form 'Build Dictionary' window 'Transfer Module' 
+  ClickHit field 'Common Series DDL' item 2  # 'Sales' 
+  MoveTo field 'Module DDL' item 1  # 'Forms' 
+  ClickHit field 'Module DDL' item 2  # 'Reports' 
+  MoveTo field 'Resource Listbox' item 0 
+  ClickCancel field 'Resource Listbox' item 0 
+  ClickCancel field 'Resource Listbox' item 0 
+  ClickCancel field 'Resource Listbox' item 0 
+  ClickCancel field 'Resource Listbox' item 0 
+  ClickCancel field 'Resource Listbox' item 0 
+  ClickCancel field 'Resource Listbox' item 0 
+  ClickHit field 'Resource Listbox' item 287  # '[Rpt ] MC RM Detail Historical Aged Trial Balance' 
+  MoveTo field 'Transfer Button' 
+  ClickHit field 'Transfer Button' 
+  MoveTo field 'Resource Listbox' item 287  # '[Rpt ] MC RM Detail Historical Aged Trial Balance' 
+  ClickHit field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  MoveTo field 'Transfer Button' 
+  ClickHit field 'Transfer Button' 
+  MoveTo field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  ClickCancel field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  ClickCancel field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  ClickCancel field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  ClickCancel field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  ClickCancel field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  ClickCancel field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  ClickCancel field 'Resource Listbox' item 96  # '[Rpt ] MC RM HATB Currency Summary Aging Report' 
+  ClickHit field 'Resource Listbox' item 32  # '[Rpt ] RM Detail Historical Aged Trial Balance' 
+  MoveTo field 'Transfer Button' 
+  ClickHit field 'Transfer Button' 
+  MoveTo field 'Resource Listbox' item 32  # '[Rpt ] RM Detail Historical Aged Trial Balance' 
+  ClickCancel field 'Resource Listbox' item 32  # '[Rpt ] RM Detail Historical Aged Trial Balance' 
+  ClickCancel field 'Resource Listbox' item 32  # '[Rpt ] RM Detail Historical Aged Trial Balance' 
+  ClickCancel field 'Resource Listbox' item 32  # '[Rpt ] RM Detail Historical Aged Trial Balance' 
+  ClickCancel field 'Resource Listbox' item 32  # '[Rpt ] RM Detail Historical Aged Trial Balance' 
+  ClickCancel field 'Resource Listbox' item 32  # '[Rpt ] RM Detail Historical Aged Trial Balance' 
+  ClickHit field 'Resource Listbox' item 73  # '[Rpt ] RM Summary Historical Aged Trial Balance' 
+  MoveTo field 'Transfer Button' 
+  ClickHit field 'Transfer Button' 
+  MoveTo field '(L) Close Button' 
+  ClickHit field '(L) Close Button' 
+  MenuSelect title File entry 'Close Source Dictionary' 
+  MenuSelect title File entry 'Close Destination Dictionary' 
+  MenuSelect title File entry 'Open Editable Dictionary...' 
+  FileOpen file ':C:/dexterity/TII/GP2010/TAS/TWR9879.DIC' type 0 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MoveTo field 'Toolbar Resources Button' item 0 
+  ClickHit field 'Toolbar Resources Button' item 2  # 'Series Resources' 
+NewActiveWin dictionary 'default'  form 'Series Resource Groups' window 'Series Resource Groups' 
+  ClickHit field 'Series Group Types' item 2  # 'Reports' 
+  MoveTo field 'Common Series DDL' item 1  # 'Financial' 
+  ClickHit field 'Common Series DDL' item 2  # 'Sales' 
+  MoveTo field '(L) Update Button' 
+  ClickHit field '(L) Update Button' 
+  MoveTo field '(L) Close Button' 
+  ClickHit field '(L) Close Button' 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MoveTo field 'Toolbar Utilities Button' item 6  # 'Extract' 
+  ClickHit field 'Toolbar Utilities Button' item 9  # 'Auto-Chunk' 
+NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  ClickHit field 'Lookup Button 3' 
+  FileSave file 'C:/dexterity/TII/GP2010/TAS/TwR.cnk' 
+  MoveTo field 'Accounting Modules' item 0 
+  ClickHit field 'Accounting Modules' item 1  # 'Module 054' 
+  MoveTo field '(L) Major Version' 
+  TypeTo field '(L) Major Version' , '11'
+  MoveTo field '(L) Minor Version' 
+  MoveTo field '(L) Build Number'  
+  TypeTo field '(L) Build Number' , '0' 
+  MoveTo field 'Ok Button' 
+  ClickHit field 'Ok Button' 
+# The edit dictionary does not have product information. Do you wish to add it now ?
+NewActiveWin dictionary 'default'  form DiaLog window DiaLog 
+  ClickHit field OK 
+NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+NewActiveWin dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  TypeTo field 'File Name' , 'DYNAMICS.SET'
+  MoveTo field 'Cluster ID' 
+  MoveTo field 'Product Name' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Product Name' , 'Admon de Impuestos en Ventas'
+  MoveTo field 'Product ID' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  TypeTo field 'Product ID' , '9879'
+  MoveTo field 'Form Dictionary' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  TypeTo field 'Form Dictionary' , 'FRM9879.DIC'
+  MoveTo field 'Report Dictionary' 
+  TypeTo field 'Report Dictionary' , 'RPT9879.DIC'
+  MoveTo field '(L) Compatiblity ID' 
+  TypeTo field '(L) Compatiblity ID' , 'Dyn11.0'
+  MoveTo field '(L) Compatiblity Message' 
+  TypeTo field '(L) Compatiblity Message' , 'Use Dynamics Utilities to update your modified forms and reports.'
+  MoveTo field 'Ok Button' 
+  ClickHit field 'Ok Button' 
+NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  ClickHit field 'Ok Button' 
+NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  MenuSelect title File entry 'Close Source Dictionary' 
+  MenuSelect title File entry 'Close Editable Dictionary' 
+  MenuSelect title File entry 'Close Destination Dictionary' 
