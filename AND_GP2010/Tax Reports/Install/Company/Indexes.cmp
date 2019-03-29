@@ -1,0 +1,564 @@
+/*Count : 35 */
+ 
+set DATEFORMAT ymd 
+GO 
+ 
+/*Begin_nsaIF_40000*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_40000' and id = object_id(N'[dbo].[nsaIF_40000]'))
+drop index [dbo].[nsaIF_40000].[AK2nsaIF_40000]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_40000] ON [dbo].[nsaIF_40000]([nsaIF_Code_Ciudad], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_40000*/
+/*Begin_nsaIF_40001*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_40001' and id = object_id(N'[dbo].[nsaIF_40001]'))
+drop index [dbo].[nsaIF_40001].[AK2nsaIF_40001]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_40001] ON [dbo].[nsaIF_40001]([nsaIF_Code], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_40001*/
+/*Begin_nsaIF_70000*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_70000' and id = object_id(N'[dbo].[nsaIF_70000]'))
+drop index [dbo].[nsaIF_70000].[AK2nsaIF_70000]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_70000] ON [dbo].[nsaIF_70000]([ORMSTRID], [ORDOCNUM], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_70000*/
+/*Begin_nsaIF_CM00100*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_CM00100' and id = object_id(N'[dbo].[nsaIF_CM00100]'))
+drop index [dbo].[nsaIF_CM00100].[AK2nsaIF_CM00100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_CM00100] ON [dbo].[nsaIF_CM00100]([DSCRIPTN], [CHEKBKID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF_CM00100' and id = object_id(N'[dbo].[nsaIF_CM00100]'))
+drop index [dbo].[nsaIF_CM00100].[AK3nsaIF_CM00100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF_CM00100] ON [dbo].[nsaIF_CM00100]([nsaIF_Type_Nit], [nsaIFNit], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF_CM00100' and id = object_id(N'[dbo].[nsaIF_CM00100]'))
+drop index [dbo].[nsaIF_CM00100].[AK4nsaIF_CM00100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF_CM00100] ON [dbo].[nsaIF_CM00100]([ACTINDX], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK5nsaIF_CM00100' and id = object_id(N'[dbo].[nsaIF_CM00100]'))
+drop index [dbo].[nsaIF_CM00100].[AK5nsaIF_CM00100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK5nsaIF_CM00100] ON [dbo].[nsaIF_CM00100]([CHEKBKID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_CM00100*/
+/*Begin_nsaIF_ERROR_TEMP*/
+if exists (select * from dbo.sysindexes where name = N'AK1nsaIF_ERROR_TEMP' and id = object_id(N'[dbo].[nsaIF_ERROR_TEMP]'))
+drop index [dbo].[nsaIF_ERROR_TEMP].[AK1nsaIF_ERROR_TEMP]
+GO
+
+ CREATE  UNIQUE  INDEX [AK1nsaIF_ERROR_TEMP] ON [dbo].[nsaIF_ERROR_TEMP]([ACTINDX], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_ERROR_TEMP*/
+/*Begin_nsaIF_GL00010*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL00010' and id = object_id(N'[dbo].[nsaIF_GL00010]'))
+drop index [dbo].[nsaIF_GL00010].[AK2nsaIF_GL00010]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL00010] ON [dbo].[nsaIF_GL00010]([DSCRIPTN], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF_GL00010' and id = object_id(N'[dbo].[nsaIF_GL00010]'))
+drop index [dbo].[nsaIF_GL00010].[AK3nsaIF_GL00010]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF_GL00010] ON [dbo].[nsaIF_GL00010]([DSCRIPTN], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL00010*/
+/*Begin_nsaIF_GL00030*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL00030' and id = object_id(N'[dbo].[nsaIF_GL00030]'))
+drop index [dbo].[nsaIF_GL00030].[AK2nsaIF_GL00030]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL00030] ON [dbo].[nsaIF_GL00030]([nsaIF_Base], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF_GL00030' and id = object_id(N'[dbo].[nsaIF_GL00030]'))
+drop index [dbo].[nsaIF_GL00030].[AK3nsaIF_GL00030]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF_GL00030] ON [dbo].[nsaIF_GL00030]([nsaIF_Destination], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL00030*/
+/*Begin_nsaIF_GL00040*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL00040' and id = object_id(N'[dbo].[nsaIF_GL00040]'))
+drop index [dbo].[nsaIF_GL00040].[AK2nsaIF_GL00040]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL00040] ON [dbo].[nsaIF_GL00040]([DSCRIPTN], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL00040*/
+/*Begin_nsaIF_GL00050*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL00050' and id = object_id(N'[dbo].[nsaIF_GL00050]'))
+drop index [dbo].[nsaIF_GL00050].[AK2nsaIF_GL00050]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL00050] ON [dbo].[nsaIF_GL00050]([nsaIF_YEAR], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF_GL00050' and id = object_id(N'[dbo].[nsaIF_GL00050]'))
+drop index [dbo].[nsaIF_GL00050].[AK3nsaIF_GL00050]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF_GL00050] ON [dbo].[nsaIF_GL00050]([nsaIF_YEAR], [ACTNUMBR_1], [ACTNUMBR_2], [ACTNUMBR_3], [ACTNUMBR_4], [ACTNUMBR_5], [ORMSTRID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF_GL00050' and id = object_id(N'[dbo].[nsaIF_GL00050]'))
+drop index [dbo].[nsaIF_GL00050].[AK4nsaIF_GL00050]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF_GL00050] ON [dbo].[nsaIF_GL00050]([nsaIF_YEAR], [ACTNUMBR_1], [ACTNUMBR_2], [ACTNUMBR_3], [ACTNUMBR_4], [ACTNUMBR_5], [nsaIFNit], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK5nsaIF_GL00050' and id = object_id(N'[dbo].[nsaIF_GL00050]'))
+drop index [dbo].[nsaIF_GL00050].[AK5nsaIF_GL00050]
+GO
+
+ CREATE  UNIQUE  INDEX [AK5nsaIF_GL00050] ON [dbo].[nsaIF_GL00050]([ACTINDX], [nsaIF_YEAR], [nsaIFNit], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK6nsaIF_GL00050' and id = object_id(N'[dbo].[nsaIF_GL00050]'))
+drop index [dbo].[nsaIF_GL00050].[AK6nsaIF_GL00050]
+GO
+
+ CREATE  UNIQUE  INDEX [AK6nsaIF_GL00050] ON [dbo].[nsaIF_GL00050]([nsaIF_YEAR], [ACTNUMBR_1], [ACTNUMBR_2], [ACTNUMBR_3], [ACTNUMBR_4], [ACTNUMBR_5], [nsaIFNit], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK7nsaIF_GL00050' and id = object_id(N'[dbo].[nsaIF_GL00050]'))
+drop index [dbo].[nsaIF_GL00050].[AK7nsaIF_GL00050]
+GO
+
+ CREATE  UNIQUE  INDEX [AK7nsaIF_GL00050] ON [dbo].[nsaIF_GL00050]([ACTNUMST], [nsaIF_YEAR], [ORMSTRID], [nsaIFNit]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL00050*/
+/*Begin_nsaIF_GL00100*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL00100' and id = object_id(N'[dbo].[nsaIF_GL00100]'))
+drop index [dbo].[nsaIF_GL00100].[AK2nsaIF_GL00100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL00100] ON [dbo].[nsaIF_GL00100]([nsaIF_Code], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF_GL00100' and id = object_id(N'[dbo].[nsaIF_GL00100]'))
+drop index [dbo].[nsaIF_GL00100].[AK3nsaIF_GL00100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF_GL00100] ON [dbo].[nsaIF_GL00100]([nsaIF_Man_Tercero], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF_GL00100' and id = object_id(N'[dbo].[nsaIF_GL00100]'))
+drop index [dbo].[nsaIF_GL00100].[AK4nsaIF_GL00100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF_GL00100] ON [dbo].[nsaIF_GL00100]([nsaIF_Code], [ACTINDX]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL00100*/
+/*Begin_nsaIF_GL10000*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL10000' and id = object_id(N'[dbo].[nsaIF_GL10000]'))
+drop index [dbo].[nsaIF_GL10000].[AK2nsaIF_GL10000]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL10000] ON [dbo].[nsaIF_GL10000]([ORMSTRID], [nsaIFNit], [PERIODID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF_GL10000' and id = object_id(N'[dbo].[nsaIF_GL10000]'))
+drop index [dbo].[nsaIF_GL10000].[AK3nsaIF_GL10000]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF_GL10000] ON [dbo].[nsaIF_GL10000]([CMNYTXID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL10000*/
+/*Begin_nsaIF_SY00101*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_SY00101' and id = object_id(N'[dbo].[nsaIF_SY00101]'))
+drop index [dbo].[nsaIF_SY00101].[AK2nsaIF_SY00101]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_SY00101] ON [dbo].[nsaIF_SY00101]([DSCRIPTN], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_SY00101*/
+/*Begin_nsaIF_Temp70000*/
+if exists (select * from dbo.sysindexes where name = N'CL1nsaIF_Temp70000' and id = object_id(N'[dbo].[nsaIF_Temp70000]'))
+drop index [dbo].[nsaIF_Temp70000].[CL1nsaIF_Temp70000]
+GO
+
+ CREATE  CLUSTERED  INDEX [CL1nsaIF_Temp70000] ON [dbo].[nsaIF_Temp70000]([ORDOCNUM], [ORMSTRID], [YEAR1], [PERIODID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK1nsaIF_Temp70000' and id = object_id(N'[dbo].[nsaIF_Temp70000]'))
+drop index [dbo].[nsaIF_Temp70000].[AK1nsaIF_Temp70000]
+GO
+
+ CREATE  UNIQUE  INDEX [AK1nsaIF_Temp70000] ON [dbo].[nsaIF_Temp70000]([ORDOCNUM], [ORMSTRID], [YEAR1], [PERIODID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_Temp70000*/
+/*Begin_nsaIF00666*/
+if exists (select * from dbo.sysindexes where name = N'AK1nsaIF00666' and id = object_id(N'[dbo].[nsaIF00666]'))
+drop index [dbo].[nsaIF00666].[AK1nsaIF00666]
+GO
+
+ CREATE  UNIQUE  INDEX [AK1nsaIF00666] ON [dbo].[nsaIF00666]([nsaIFNit], [nsaIF_Type_Nit], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF00666' and id = object_id(N'[dbo].[nsaIF00666]'))
+drop index [dbo].[nsaIF00666].[AK2nsaIF00666]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF00666] ON [dbo].[nsaIF00666]([nsaIF_Name], [nsaIF_Type_Nit], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF00666*/
+/*Begin_nsaIF006661*/
+if exists (select * from dbo.sysindexes where name = N'AK1nsaIF006661' and id = object_id(N'[dbo].[nsaIF006661]'))
+drop index [dbo].[nsaIF006661].[AK1nsaIF006661]
+GO
+
+ CREATE  UNIQUE  INDEX [AK1nsaIF006661] ON [dbo].[nsaIF006661]([nsaIFNit], [nsaIF_Type_Nit], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF006661' and id = object_id(N'[dbo].[nsaIF006661]'))
+drop index [dbo].[nsaIF006661].[AK2nsaIF006661]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF006661] ON [dbo].[nsaIF006661]([nsaIF_Name], [nsaIF_Type_Nit], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF006661*/
+/*Begin_nsaIF01666*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF01666' and id = object_id(N'[dbo].[nsaIF01666]'))
+drop index [dbo].[nsaIF01666].[AK2nsaIF01666]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF01666] ON [dbo].[nsaIF01666]([nsaIFNit], [nsaIF_CV], [VENDORID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF01666' and id = object_id(N'[dbo].[nsaIF01666]'))
+drop index [dbo].[nsaIF01666].[AK3nsaIF01666]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF01666] ON [dbo].[nsaIF01666]([nsaIFNit], [nsaIF_CV], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF01666' and id = object_id(N'[dbo].[nsaIF01666]'))
+drop index [dbo].[nsaIF01666].[AK4nsaIF01666]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF01666] ON [dbo].[nsaIF01666]([VENDORID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF01666*/
+/*Begin_nsaIF02666*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF02666' and id = object_id(N'[dbo].[nsaIF02666]'))
+drop index [dbo].[nsaIF02666].[AK2nsaIF02666]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF02666] ON [dbo].[nsaIF02666]([nsaIFNit], [nsaIF_CV], [CUSTNMBR]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF02666' and id = object_id(N'[dbo].[nsaIF02666]'))
+drop index [dbo].[nsaIF02666].[AK3nsaIF02666]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF02666] ON [dbo].[nsaIF02666]([nsaIFNit], [nsaIF_CV], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF02666' and id = object_id(N'[dbo].[nsaIF02666]'))
+drop index [dbo].[nsaIF02666].[AK4nsaIF02666]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF02666] ON [dbo].[nsaIF02666]([CUSTNMBR], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF02666*/
+/*Begin_nsaIF10120*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF10120' and id = object_id(N'[dbo].[nsaIF10120]'))
+drop index [dbo].[nsaIF10120].[AK2nsaIF10120]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF10120] ON [dbo].[nsaIF10120]([ACTINDX], [nsaIFNit], [nsaIF_CV], [YEAR1], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF10120' and id = object_id(N'[dbo].[nsaIF10120]'))
+drop index [dbo].[nsaIF10120].[AK3nsaIF10120]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF10120] ON [dbo].[nsaIF10120]([ACTINDX], [YEAR1], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF10120' and id = object_id(N'[dbo].[nsaIF10120]'))
+drop index [dbo].[nsaIF10120].[AK4nsaIF10120]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF10120] ON [dbo].[nsaIF10120]([YEAR1], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK5nsaIF10120' and id = object_id(N'[dbo].[nsaIF10120]'))
+drop index [dbo].[nsaIF10120].[AK5nsaIF10120]
+GO
+
+ CREATE  UNIQUE  INDEX [AK5nsaIF10120] ON [dbo].[nsaIF10120]([ACTNUMST], [nsaIFNit], [ORMSTRID], [YEAR1], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF10120*/
+/*Begin_nsaIF10130*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF10130' and id = object_id(N'[dbo].[nsaIF10130]'))
+drop index [dbo].[nsaIF10130].[AK2nsaIF10130]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF10130] ON [dbo].[nsaIF10130]([ACTINDX], [ORMSTRID], [YEAR1], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF10130' and id = object_id(N'[dbo].[nsaIF10130]'))
+drop index [dbo].[nsaIF10130].[AK3nsaIF10130]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF10130] ON [dbo].[nsaIF10130]([ACTINDX], [YEAR1], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF10130' and id = object_id(N'[dbo].[nsaIF10130]'))
+drop index [dbo].[nsaIF10130].[AK4nsaIF10130]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF10130] ON [dbo].[nsaIF10130]([YEAR1], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF10130*/
+/*Begin_nsaIF70110*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF70110' and id = object_id(N'[dbo].[nsaIF70110]'))
+drop index [dbo].[nsaIF70110].[AK2nsaIF70110]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF70110] ON [dbo].[nsaIF70110]([ACTINDX], [nsaIFNit], [nsaIF_CV], [YEAR1], [PERIODID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF70110' and id = object_id(N'[dbo].[nsaIF70110]'))
+drop index [dbo].[nsaIF70110].[AK3nsaIF70110]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF70110] ON [dbo].[nsaIF70110]([ACTINDX], [YEAR1], [PERIODID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF70110' and id = object_id(N'[dbo].[nsaIF70110]'))
+drop index [dbo].[nsaIF70110].[AK4nsaIF70110]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF70110] ON [dbo].[nsaIF70110]([YEAR1], [PERIODID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF70110*/
+/*Begin_IF10100*/
+if exists (select * from dbo.sysindexes where name = N'AK2IF10100' and id = object_id(N'[dbo].[IF10100]'))
+drop index [dbo].[IF10100].[AK2IF10100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IF10100] ON [dbo].[IF10100]([VCHRNMBR], [DSTSQNUM], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_IF10100*/
+/*Begin_IF00390*/
+if exists (select * from dbo.sysindexes where name = N'AK2IF00390' and id = object_id(N'[dbo].[IF00390]'))
+drop index [dbo].[IF00390].[AK2IF00390]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IF00390] ON [dbo].[IF00390]([POPRCTNM], [SEQNUMBR]) ON [PRIMARY]
+GO
+
+/*End_IF00390*/
+/*Begin_IF01390*/
+if exists (select * from dbo.sysindexes where name = N'AK2IF01390' and id = object_id(N'[dbo].[IF01390]'))
+drop index [dbo].[IF01390].[AK2IF01390]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IF01390] ON [dbo].[IF01390]([POPRCTNM], [SEQNUMBR]) ON [PRIMARY]
+GO
+
+/*End_IF01390*/
+/*Begin_nsaIF_GL00060*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL00060' and id = object_id(N'[dbo].[nsaIF_GL00060]'))
+drop index [dbo].[nsaIF_GL00060].[AK2nsaIF_GL00060]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL00060] ON [dbo].[nsaIF_GL00060]([nsaIF_Base], [nsaIF_Destination], [ACTNUMST3]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL00060*/
+/*Begin_nsaIF_GL00070*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL00070' and id = object_id(N'[dbo].[nsaIF_GL00070]'))
+drop index [dbo].[nsaIF_GL00070].[AK2nsaIF_GL00070]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL00070] ON [dbo].[nsaIF_GL00070]([nsaIF_Code], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF_GL00070' and id = object_id(N'[dbo].[nsaIF_GL00070]'))
+drop index [dbo].[nsaIF_GL00070].[AK3nsaIF_GL00070]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF_GL00070] ON [dbo].[nsaIF_GL00070]([nsaIF_Man_Tercero], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK4nsaIF_GL00070' and id = object_id(N'[dbo].[nsaIF_GL00070]'))
+drop index [dbo].[nsaIF_GL00070].[AK4nsaIF_GL00070]
+GO
+
+ CREATE  UNIQUE  INDEX [AK4nsaIF_GL00070] ON [dbo].[nsaIF_GL00070]([nsaIF_Base], [nsaIF_Destination], [nsaIF_Code], [ACTNUMST3], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL00070*/
+/*Begin_nsaIF_GL00080*/
+if exists (select * from dbo.sysindexes where name = N'AK2nsaIF_GL00080' and id = object_id(N'[dbo].[nsaIF_GL00080]'))
+drop index [dbo].[nsaIF_GL00080].[AK2nsaIF_GL00080]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2nsaIF_GL00080] ON [dbo].[nsaIF_GL00080]([nsaIF_Code], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3nsaIF_GL00080' and id = object_id(N'[dbo].[nsaIF_GL00080]'))
+drop index [dbo].[nsaIF_GL00080].[AK3nsaIF_GL00080]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3nsaIF_GL00080] ON [dbo].[nsaIF_GL00080]([nsaIF_Base], [nsaIF_Destination], [nsaIF_Code], [CHANGED], [ACTNUMST3], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_nsaIF_GL00080*/
+/*Begin_IF_FA00905*/
+if exists (select * from dbo.sysindexes where name = N'CL1IF_FA00905' and id = object_id(N'[dbo].[IF_FA00905]'))
+drop index [dbo].[IF_FA00905].[CL1IF_FA00905]
+GO
+
+ CREATE  CLUSTERED  INDEX [CL1IF_FA00905] ON [dbo].[IF_FA00905]([ACTINDX]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK1IF_FA00905' and id = object_id(N'[dbo].[IF_FA00905]'))
+drop index [dbo].[IF_FA00905].[AK1IF_FA00905]
+GO
+
+ CREATE  UNIQUE  INDEX [AK1IF_FA00905] ON [dbo].[IF_FA00905]([ACTINDX], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK2IF_FA00905' and id = object_id(N'[dbo].[IF_FA00905]'))
+drop index [dbo].[IF_FA00905].[AK2IF_FA00905]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IF_FA00905] ON [dbo].[IF_FA00905]([VENDORID], [ACTINDX], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_IF_FA00905*/
+/*Begin_IFCM20501*/
+if exists (select * from dbo.sysindexes where name = N'AK2IFCM20501' and id = object_id(N'[dbo].[IFCM20501]'))
+drop index [dbo].[IFCM20501].[AK2IFCM20501]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IFCM20501] ON [dbo].[IFCM20501]([CHEKBKID], [RECONUM], [DSTSQNUM]) ON [PRIMARY]
+GO
+
+/*End_IFCM20501*/
+/*Begin_IFRM10101*/
+if exists (select * from dbo.sysindexes where name = N'CL2IFRM10101' and id = object_id(N'[dbo].[IFRM10101]'))
+drop index [dbo].[IFRM10101].[CL2IFRM10101]
+GO
+
+ CREATE  CLUSTERED  INDEX [CL2IFRM10101] ON [dbo].[IFRM10101]([DOCNUMBR], [SEQNUMBR]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK2IFRM10101' and id = object_id(N'[dbo].[IFRM10101]'))
+drop index [dbo].[IFRM10101].[AK2IFRM10101]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IFRM10101] ON [dbo].[IFRM10101]([DOCNUMBR], [SEQNUMBR], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+/*End_IFRM10101*/
+/*Begin_IFGL10100*/
+if exists (select * from dbo.sysindexes where name = N'AK2IFGL10100' and id = object_id(N'[dbo].[IFGL10100]'))
+drop index [dbo].[IFGL10100].[AK2IFGL10100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IFGL10100] ON [dbo].[IFGL10100]([OFFINDX], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3IFGL10100' and id = object_id(N'[dbo].[IFGL10100]'))
+drop index [dbo].[IFGL10100].[AK3IFGL10100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3IFGL10100] ON [dbo].[IFGL10100]([JRNENTRY]) ON [PRIMARY]
+GO
+
+/*End_IFGL10100*/
+/*Begin_IFGL10101*/
+if exists (select * from dbo.sysindexes where name = N'AK2IFGL10101' and id = object_id(N'[dbo].[IFGL10101]'))
+drop index [dbo].[IFGL10101].[AK2IFGL10101]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IFGL10101] ON [dbo].[IFGL10101]([ACTINDX], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_IFGL10101*/
+/*Begin_IFGL40100*/
+if exists (select * from dbo.sysindexes where name = N'AK2IFGL40100' and id = object_id(N'[dbo].[IFGL40100]'))
+drop index [dbo].[IFGL40100].[AK2IFGL40100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IFGL40100] ON [dbo].[IFGL40100]([OFFINDX], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+if exists (select * from dbo.sysindexes where name = N'AK3IFGL40100' and id = object_id(N'[dbo].[IFGL40100]'))
+drop index [dbo].[IFGL40100].[AK3IFGL40100]
+GO
+
+ CREATE  UNIQUE  INDEX [AK3IFGL40100] ON [dbo].[IFGL40100]([BSNSFDSC], [BSNSFMID]) ON [PRIMARY]
+GO
+
+/*End_IFGL40100*/
+/*Begin_IFGL40101*/
+if exists (select * from dbo.sysindexes where name = N'AK2IFGL40101' and id = object_id(N'[dbo].[IFGL40101]'))
+drop index [dbo].[IFGL40101].[AK2IFGL40101]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IFGL40101] ON [dbo].[IFGL40101]([ACTINDX], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_IFGL40101*/
+/*Begin_IFSOP10102*/
+if exists (select * from dbo.sysindexes where name = N'AK2IFSOP10102' and id = object_id(N'[dbo].[IFSOP10102]'))
+drop index [dbo].[IFSOP10102].[AK2IFSOP10102]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IFSOP10102] ON [dbo].[IFSOP10102]([SOPNUMBE], [SEQNUMBR], [SOPTYPE]) ON [PRIMARY]
+GO
+
+/*End_IFSOP10102*/
+/*Begin_IFSD4020*/
+if exists (select * from dbo.sysindexes where name = N'AK2IFSD4020' and id = object_id(N'[dbo].[IFSD4020]'))
+drop index [dbo].[IFSD4020].[AK2IFSD4020]
+GO
+
+ CREATE  UNIQUE  INDEX [AK2IFSD4020] ON [dbo].[IFSD4020]([SEQID], [DEX_ROW_ID]) ON [PRIMARY]
+GO
+
+/*End_IFSD4020*/
