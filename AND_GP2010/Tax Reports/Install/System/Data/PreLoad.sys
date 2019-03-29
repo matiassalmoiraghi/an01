@@ -1,0 +1,14 @@
+/*COUNT : 3 */
+
+/*Begin_DU000010*/
+delete from DU000010 where PRODID=9887
+GO
+/*End_DU000010*/
+/*Begin_SY10700 */
+delete from SY10700 where DICTID=9887
+GO
+/*End_SY10700 */
+/*Begin_SY10800*/
+delete from SY10800 where ALTDICID=9887
+GO
+/*End_SY10800*/
