@@ -1,16 +1,16 @@
 # DEXVERSION=11.00.214.0
   MenuSelect title File entry 'Open Source Dictionary...' 
-  FileOpen file 'D:/11.00.2044/Tax Reports/dynamics.dic' type 0 
+  FileOpen file 'C:/TiiSelam/DESA_MSAL/an01/AND_GP2010/Tax Reports/dynamics.dic' type 0 
 ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
   ClickHit field 'Toolbar Utilities Button' item 6  # 'Extract' 
 NewActiveWin dictionary 'default'  form Extractor window Extractor 
 ActivateWindow dictionary 'default'  form Extractor window Extractor 
   ClickHit field '(L) Extract Button' 
-  FileSave file 'D:/11.00.2044/Tax Reports/IF75.DIC' 
+  FileSave file 'C:/TiiSelam/DESA_MSAL/an01/AND_GP2010/Tax Reports/IF75.DIC' 
 NewActiveWin dictionary 'default'  form Extractor window Extractor 
 NewActiveWin dictionary 'default'  form Extractor window Extractor 
   MenuSelect title File entry 'Open Destination Dictionary...' 
-  FileOpen file 'D:/11.00.2044/Tax Reports/IF75.DIC' type 0 
+  FileOpen file 'C:/TiiSelam/DESA_MSAL/an01/AND_GP2010/Tax Reports/IF75.DIC' type 0 
 ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
   MoveTo field 'Toolbar Transfer Button' item 0 
   ClickHit field 'Toolbar Transfer Button' item 4  # 'Dictionary Module' 
@@ -154,7 +154,7 @@ ActivateWindow dictionary 'default'  form 'Build Dictionary' window 'Transfer Mo
   ClickHit field '(L) Close Button' 
   MenuSelect title File entry 'Close Destination Dictionary' 
   MenuSelect title File entry 'Open Editable Dictionary...' 
-  FileOpen file 'D:/11.00.2044/Tax Reports/IF75.DIC' type 0 
+  FileOpen file 'C:/TiiSelam/DESA_MSAL/an01/AND_GP2010/Tax Reports/IF75.DIC' type 0 
 ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
   MoveTo field 'Toolbar Resources Button' item 0 
   ClickHit field 'Toolbar Resources Button' item 2  # 'Series Resources' 
@@ -185,7 +185,7 @@ ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar'
 NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
 ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
   ClickHit field 'Lookup Button 3' 
-  FileSave file 'D:/11.00.2044/Tax Reports/IF.cnk' 
+  FileSave file 'C:/TiiSelam/DESA_MSAL/an01/AND_GP2010/Tax Reports/IF.cnk' 
   MoveTo field 'Accounting Modules' item 1  # 'Module 001' 
   ClickHit field 'Accounting Modules' item 54  # 'Module 054' 
   MoveTo field '(L) Major Version' 
