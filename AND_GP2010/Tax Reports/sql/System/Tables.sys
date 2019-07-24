@@ -1,0 +1,123 @@
+/*Count : 3 */
+ 
+set DATEFORMAT ymd 
+GO 
+ 
+/*Begin_nsaIF_ERRORLOG*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_ERRORLOG]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_ERRORLOG]
+GO
+
+CREATE TABLE [nsaIF_ERRORLOG] (
+ [LOGINDEX] [int] NOT NULL ,
+ [DATE1] [datetime] NOT NULL ,
+ [TIME1] [datetime] NOT NULL ,
+ [Script] [char] (79) NOT NULL ,
+ [MsgText] [char] (255) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_ERRORLOG] PRIMARY KEY  CLUSTERED 
+ (
+ [DATE1],
+ [TIME1],
+ [Script]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[DATE1]) = 0 and datepart(minute,[DATE1]) = 0 and datepart(second,[DATE1]) = 0 and datepart(millisecond,[DATE1]) = 0),
+ CHECK (datepart(day,[TIME1]) = 1 and datepart(month,[TIME1]) = 1 and datepart(year,[TIME1]) = 1900)
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[nsaIF_ERRORLOG].[DATE1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[nsaIF_ERRORLOG].[TIME1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_ERRORLOG].[MsgText]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_ERRORLOG].[Script]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_ERRORLOG].[LOGINDEX]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_ERRORLOG]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_ERRORLOG*/
+/*Begin_nsaIFINSREPORT*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIFINSREPORT]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIFINSREPORT]
+GO
+
+CREATE TABLE [nsaIFINSREPORT] (
+ [Install_Date_and_Time] [char] (31) NOT NULL ,
+ [CMPANYID] [smallint] NOT NULL ,
+ [Install_Step] [char] (81) NOT NULL ,
+ [Install_Component_Name] [char] (81) NOT NULL ,
+ [ERMSGTXT] [char] (255) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIFINSREPORT] PRIMARY KEY  CLUSTERED 
+ (
+ [Install_Date_and_Time],
+ [CMPANYID],
+ [Install_Step],
+ [Install_Component_Name]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIFINSREPORT].[ERMSGTXT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIFINSREPORT].[Install_Component_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIFINSREPORT].[Install_Date_and_Time]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIFINSREPORT].[Install_Step]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIFINSREPORT].[CMPANYID]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIFINSREPORT]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIFINSREPORT*/
+/*Begin_nsaIFINSTALL*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIFINSTALL]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIFINSTALL]
+GO
+
+CREATE TABLE [nsaIFINSTALL] (
+ [CMPANYID] [smallint] NOT NULL ,
+ [Major_Version] [smallint] NOT NULL ,
+ [Minor_Version] [smallint] NOT NULL ,
+ [Build_Number] [smallint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIFINSTALL] PRIMARY KEY  CLUSTERED 
+ (
+ [CMPANYID]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIFINSTALL].[Build_Number]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIFINSTALL].[CMPANYID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIFINSTALL].[Major_Version]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIFINSTALL].[Minor_Version]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIFINSTALL]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIFINSTALL*/

@@ -1,0 +1,4330 @@
+Table	"nsaIF_Bancos_Chequeras"	"Project"	22000
+Table	"nsaIF_Account_MSTR"	"System"	22001
+Table	"nsaIF_Account_TEMP"	"Financial"	22002
+Table	"nsaIF_Account_Thids_Nit_SUM_MSTR_TEMP"	"Sales"	22003
+Table	"nsaIF_Account_Thirds_Nit_Sum_initial_Year"	"Purchasing"	22004
+Table	"nsaIF_Account_Thirds_SUM_MM_HEADER"	"Inventory"	22005
+Table	"nsaIF_Acoount_Thisrds_Nit-SUM_MSTR_MM"	"Payroll"	22006
+Table	"nsaIF_Base_Destino"	"Project"	22007
+Table	"nsaIF_Certificados_HDR"	"System"	22008
+Table	"nsaIF_Certificados_HDR_II"	"Financial"	22009
+Table	"nsaIF_Certificados_LINE"	"Sales"	22010
+Table	"nsaIF_Company_SETP"	"Purchasing"	22011
+Table	"nsaIF_Conciliacion_saldos"	"Inventory"	22012
+Table	"nsaIF_Customer_Nit_MSTR"	"Payroll"	22013
+Table	"nsaIF_Customer_Nit_TEMP"	"Project"	22014
+Table	"nsaIF_Error_Log_MSTR"	"System"	22015
+Table	"nsaIF_Installation_Report_MSTR"	"Financial"	22016
+Table	"nsaIF_Installation_Status_MSTR"	"Sales"	22017
+Table	"nsaIF_LOG_ERROR"	"Purchasing"	22018
+Table	"nsaIF_Magnetic_Media_MSTR"	"Inventory"	22019
+Table	"nsaIF_Medios_Magneticos_SUM"	"Payroll"	22020
+Table	"nsaIF_Nit_Thirds_MSTR"	"Project"	22021
+Table	"nsaIF_TRX_Detalle_TEMP"	"System"	22022
+Table	"nsaIF_TRX_HIST_TEMP"	"Financial"	22023
+Table	"nsaIF_TRX_OPEN_TEMP"	"Sales"	22024
+Table	"nsaIF_TRX_Resumen_TEMP"	"Purchasing"	22025
+Table	"nsaIF_Type_Withholding"	"Inventory"	22026
+Table	"nsaIF_Vendor_Nit_MSTR"	"Payroll"	22027
+Table	"nsaIF_Vendor_Nit_TEMP"	"Project"	22028
+Table	"nsaTE_GL_TRX_LINE_WORK"	"System"	22029
+Table	"nsaGL_YTD_TRX_OPEN"	"Financial"	22030
+Table	"nsaIF_Codigos_MSTR"	"Sales"	22031
+Table	"nsaIF_NUM_Adhesivo"	"Purchasing"	22032
+Table	"nsaIF_NUM_Adhesivo_TEMP"	"Inventory"	22033
+Table	"nsaIF_Config_Ciudades"	"Payroll"	22034
+Table	"nsaIF_Config_Departamentos"	"Project"	22035
+Table	"nsaIF_Conciliacion_saldos_TEMP"	"System"	22036
+Table	"nsaIF_Nit_Thirds_MSTR_Temp"	"Financial"	22037
+Table	"nsaIF_Vendor_Nit_MSTR_Temp"	"Sales"	22038
+Table	"nsalF_Customer_Nit_MSTR_Temp"	"Purchasing"	22039
+Table	"nsaIF_Account_MSTR_TEMP"	"Inventory"	22040
+Table	"nsaIF_Generacion_Archivos_Hdr_TEMP"	"Payroll"	22041
+Table	"nsaIF_Generacion_Archivos_TEMP"	"Project"	22042
+Table	"nsaIF_Generacion_Formats"	"System"	22043
+Table	"nsaIF_Numero_Formato"	"Financial"	22044
+Table	"nsaIF_Tipo_Documento"	"Sales"	22045
+Table	"IF_GL_Period_Terceros_Temp"	"Purchasing"	22046
+Table	"IF_GL_TRX_LINE_WORK"	"Inventory"	22047
+Table	"IF_GL_Terceros_Temp"	"Payroll"	22048
+Table	"IF_PM_Distribution"	"Project"	22049
+Table	"IF_POP_Distribution"	"System"	22050
+Table	"IF_POP_Invoice_Distribution"	"Financial"	22051
+Table	"trpt_Account_Index_Details"	"Sales"	22052
+Table	"trpt_GL_TRX_LINE_WORK_TEMP"	"Purchasing"	22053
+Table	"trpt_GL_YTD_TRX_OPEN_TEMP"	"Inventory"	22054
+Table	"trpt_Tercero_Summary_Details"	"Payroll"	22055
+Table	"nsaIF_Account_Range_MSTR"	"Project"	22056
+Table	"nsaIF_Account_Range_MSTR_TEMP"	"System"	22057
+Table	"nsaIF_Account_Ranges"	"Financial"	22058
+Table	"nsaIF_Account_Ranges_Concept"	"Sales"	22059
+Table	"nsaIF_Account_Ranges_Concept_TEMP"	"Purchasing"	22060
+Table	"nsaIF_Report_1007"	"Inventory"	22061
+Table	"nsaIF_Setup_Reports"	"Payroll"	22062
+Table	"nsaIF_Setup_Reports_temp"	"Project"	22063
+Table	"FA_Batch_Headers"	"System"	22064
+Table	"FA_GL_Interface_WORK"	"Financial"	22065
+Table	"IF_FA_Feature_Setup"	"Sales"	22066
+Table	"IF_FA_GL_Interface_WORK"	"Purchasing"	22067
+Table	"faPurchaseMaster"	"Inventory"	22068
+Table	"faPurchaseMasterTemp"	"Payroll"	22069
+Table	"IF_RM_Distribution_WORK"	"Project"	22070
+Table	"trpt_CM_Distribution"	"System"	22071
+Table	"trpt_CM_Distribution_TEMP"	"Financial"	22072
+Table	"trpt_CM_Reconcile_Adjustments"	"Sales"	22073
+Table	"trpt_GL_Business_Form_Account_SETP"	"Purchasing"	22074
+Table	"trpt_GL_Business_Form_HDR_WORK"	"Inventory"	22075
+Table	"trpt_GL_Business_Form_LINE_WORK"	"Payroll"	22076
+Table	"trpt_GL_Business_Form_SETP"	"Project"	22077
+Table	"nsaIF_Cuenta_NIT_Resumen_TEMP"	"System"	22078
+Table	"IF_SOP_Distribution_WORK_HIST"	"Financial"	22079
+Table	"nsaIF_Certificados_LINE_temp"	"System"	22080
+Table	"nsaIF_Certificados_LINE2"	"Purchasing"	22081
+Table	"nsaIF_SD_Num_SETP"	"Inventory"	22082
+Key	"FA_Batch_Headers_Key1"	"System"	22000
+Key	"FA_GL_Interface_TEMP_Key1"	"Financial"	22001
+Key	"nsaIF_FA_Feature_Setupkey1"	"Sales"	22002
+Key	"FA_GL_Interface_TEMP_Test_Key12"	"Purchasing"	22003
+Key	"IF_FA_GL_Interface_TEMP_Key11"	"Purchasing"	22004
+Key	"IF_GL_Period_Terceros_Temp _KEY1"	"Purchasing"	22005
+Key	"IF_GL_TRX_LINE_WORK_Key11"	"Inventory"	22006
+Key	"IF_GL_Terceros_Temp _KEY11"	"Payroll"	22007
+Key	"IF_PM_Distribution_WORK_OPEN_Key1"	"Project"	22008
+Key	"IF_PM_Distribution_WORK_OPEN_Key2"	"Project"	22009
+Key	"IF_POP_Distribution_Key1"	"System"	22010
+Key	"IF_POP_Distribution_Key2"	"System"	22011
+Key	"IF_POP_Invoice_Distribution_Key1"	"Financial"	22012
+Key	"IF_POP_Invoice_Distribution_Key2"	"Financial"	22013
+Key	"IF_RM_Distribution_WORK_Key1"	"Project"	22014
+Key	"IF_RM_Distribution_WORK_Key2"	"Project"	22015
+Key	"IF_SOP_Distribution_WORK_HIST_Key1"	"Financial"	22016
+Key	"IF_SOP_Distribution_WORK_HIST_Key2"	"Financial"	22017
+Key	"faPurchaseMaster_IdxDate"	"Inventory"	22018
+Key	"faPurchaseMaster_IdxFAAPPostindex"	"Inventory"	22019
+Key	"faPurchaseMaster_IdxSeqNo"	"Inventory"	22020
+Key	"faPurchaseMaster_IdxVendID"	"Inventory"	22021
+Key	"faPurchaseMaster_IdxDate1"	"Payroll"	22022
+Key	"faPurchaseMaster_IdxSeqNo1"	"Payroll"	22023
+Key	"faPurchaseMaster_IdxVendID1"	"Payroll"	22024
+Key	"GL_YTD_TRX_OPEN_Key11"	"Financial"	22025
+Key	"GL_YTD_TRX_OPEN_Key21"	"Financial"	22026
+Key	"GL_YTD_TRX_OPEN_Key31"	"Financial"	22027
+Key	"GL_YTD_TRX_OPEN_Key41"	"Financial"	22028
+Key	"GL_YTD_TRX_OPEN_Key51"	"Financial"	22029
+Key	"GL_YTD_TRX_OPEN_Key61"	"Financial"	22030
+Key	"GL_YTD_TRX_OPEN_Key81"	"Financial"	22031
+Key	"nsaIF_Account_MSTR_KEY1"	"System"	22032
+Key	"nsaIF_Account_MSTR_KEY2"	"System"	22033
+Key	"nsaIF_Account_MSTR_KEY3"	"System"	22034
+Key	"nsaIF_Account_MSTR_KEY4"	"System"	22035
+Key	"nsaIF_Account_MSTR_TEMP_KEY1"	"Inventory"	22036
+Key	"nsaIF_Account_MSTR_TEMP_KEY2"	"Inventory"	22037
+Key	"nsaIF_Account_MSTR_TEMP_KEY3"	"Inventory"	22038
+Key	"nsaIF_Account_Range_MSTR_KEY11"	"Project"	22039
+Key	"nsaIF_Account_Range_MSTR_KEY21"	"Project"	22040
+Key	"nsaIF_Account_Range_MSTR_KEY31"	"Project"	22041
+Key	"nsaIF_Account_Ranges_Key1"	"Financial"	22045
+Key	"nsaIF_Account_Ranges_Key2"	"Financial"	22046
+Key	"nsaIF_Account_Ranges_Concept_KEY1111"	"Sales"	22047
+Key	"nsaIF_Account_Ranges_Concept_KEY2111"	"Sales"	22048
+Key	"nsaIF_Account_Ranges_Concept_KEY3111"	"Sales"	22049
+Key	"nsaIF_Account_Ranges_Concept_KEY4111"	"Sales"	22050
+Key	"nsaIF_Account_Ranges_Concept_TEMP_KEY1"	"Purchasing"	22051
+Key	"nsaIF_Account_Ranges_Concept_TEMP_KEY2"	"Purchasing"	22052
+Key	"nsaIF_Account_Ranges_Concept_TEMP_KEY3"	"Purchasing"	22053
+Key	"nsaIF_Account_Ranges_Concept_TEMP_KEY4"	"Purchasing"	22054
+Key	"nsaIF_Account_TEMP_Key1"	"Financial"	22055
+Key	"nsaIF_Account_TEMP_Key2"	"Financial"	22056
+Key	"nsaIF_Account_TEMP_Key3"	"Financial"	22057
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key11"	"Sales"	22058
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key21"	"Sales"	22059
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key31"	"Sales"	22060
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key41"	"Sales"	22061
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key111"	"Purchasing"	22062
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key211"	"Purchasing"	22063
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key311"	"Purchasing"	22064
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key411"	"Purchasing"	22065
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_K411"	"Inventory"	22066
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key121"	"Inventory"	22067
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key221"	"Inventory"	22068
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key321"	"Inventory"	22069
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_K41"	"Payroll"	22070
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_K51"	"Payroll"	22071
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key12"	"Payroll"	22072
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key22"	"Payroll"	22073
+Key	"nsaIF_Account_Thirds_Nit_SUM_MSTR_Key32"	"Payroll"	22074
+Key	"nsaIF_Chequeras_Key1"	"Project"	22075
+Key	"nsaIF_Chequeras_Key2"	"Project"	22076
+Key	"nsaIF_Chequeras_Key3"	"Project"	22077
+Key	"nsaIF_Chequeras_Key4"	"Project"	22078
+Key	"nsaIF_Chequeras_Key5"	"Project"	22079
+Key	"nsaIF_Base_Destino_Key1"	"Project"	22080
+Key	"nsaIF_Base_Destino_Key2"	"Project"	22081
+Key	"nsaIF_Base_Destino_Key3"	"Project"	22082
+Key	"nsaIF_Certificados_HDR_Key1"	"System"	22083
+Key	"nsaIF_Certificados_HDR_II_Key1"	"Financial"	22084
+Key	"nsaIF_Certificados_LINE_Key1"	"Sales"	22085
+Key	"nsaIF_Certificados_LINE_Key2"	"Sales"	22086
+Key	"nsaIF_Certificados_LINE_Key3"	"Sales"	22087
+Key	"nsaIF_Certificados_LINE_temp_key1"	"System"	22088
+Key	"nsaIF_Certificados_LINE_temp_key2"	"System"	22089
+Key	"nsaIF_Certificados_LINE_temp_key3"	"System"	22090
+Key	"nsaIF_Codigos_MSTR_KEY1"	"Sales"	22091
+Key	"nsaIF_Codigos_MSTR_KEY2"	"Sales"	22092
+Key	"nsaIF_Company_SETP_Key1"	"Purchasing"	22093
+Key	"nsaIF_Conciliacion_saldos_KEY1"	"Inventory"	22094
+Key	"nsaIF_Conciliacion_saldos_KEY2"	"Inventory"	22095
+Key	"nsaIF_Conciliacion_saldos_KEY3"	"Inventory"	22096
+Key	"nsaIF_Conciliacion_saldos_KEY4"	"Inventory"	22097
+Key	"nsaIF_Conciliacion_saldos_KEY5"	"Inventory"	22098
+Key	"nsaIF_Conciliacion_saldos_KEY6"	"Inventory"	22099
+Key	"nsaIF_Conciliacion_saldos_KEY7"	"Inventory"	22100
+Key	"nsaIF_Conciliacion_saldos_TEMP_Key1"	"System"	22101
+Key	"nsaIF_Config_Ciudades_KEY1"	"Payroll"	22102
+Key	"nsaIF_Config_Ciudades_KEY2"	"Payroll"	22103
+Key	"nsaIF_Config_Departamentos_KEY1"	"Project"	22104
+Key	"nsaIF_Config_Departamentos_KEY2"	"Project"	22105
+Key	"nsaIF_Cuenta_NIT_Resumen_Key1"	"System"	22106
+Key	"nsaIF_Customer_Nit_MSTR_Key1"	"Payroll"	22107
+Key	"nsaIF_Customer_Nit_MSTR_Key2"	"Payroll"	22108
+Key	"nsaIF_Customer_Nit_MSTR_Key3"	"Payroll"	22109
+Key	"nsaIF_Customer_Nit_MSTR_Key4"	"Payroll"	22110
+Key	"nsaIF_Customer_Nit_TEMP_Key1"	"Project"	22111
+Key	"nsaIF_Customer_Nit_TEMP_Key2"	"Project"	22112
+Key	"nsaIF_Customer_Nit_TEMP_Key3"	"Project"	22113
+Key	"nsaIF_Error_Log_KEY1"	"System"	22114
+Key	"nsaIF_Generacion_Archivos_Hdr_TEMP_Key1"	"Payroll"	22115
+Key	"nsaIF_Generacion_Archivos_TEMP_Key1"	"Project"	22116
+Key	"nsaIF_Generacion_Formats_Key_1"	"System"	22117
+Key	"nsaIF_Generacion_Formats_Key_2"	"System"	22118
+Key	"nsaIF_Installation_Report_Key1"	"Financial"	22119
+Key	"nsaIF_Installation_Status_Key1"	"Sales"	22120
+Key	"nsaIF_LOG_ERROR_KEY1"	"Purchasing"	22121
+Key	"nsaIF_Magnetic_Media_MSTR_Key1"	"Inventory"	22122
+Key	"nsaIF_Magnetic_Media_MSTR_Key2"	"Inventory"	22123
+Key	"nsaIF_Magnetic_Media_MSTR_Key3"	"Inventory"	22124
+Key	"nsaIF_Magnetic_Media_MSTR_Key4"	"Inventory"	22125
+Key	"nsaIF_Medios_Magneticos_SUM_Key1"	"Payroll"	22126
+Key	"nsaIF_NUM_Adhesivo_KEY1"	"Purchasing"	22127
+Key	"nsaIF_NUM_Adhesivo_KEY2"	"Purchasing"	22128
+Key	"nsaIF_NUM_Adhesivo_KEY11"	"Inventory"	22129
+Key	"nsaIF_Nit_Thirds_MSTR_Key1"	"Project"	22130
+Key	"nsaIF_Nit_Thirds_MSTR_Key2"	"Project"	22131
+Key	"nsaIF_Nit_Thirds_MSTR_Key3"	"Project"	22132
+Key	"nsaIF_Nit_Thirds_MSTR_Temp_Key1"	"Financial"	22133
+Key	"nsaIF_Nit_Thirds_MSTR_Temp_Key2"	"Financial"	22134
+Key	"nsaIF_Nit_Thirds_MSTR_Temp_Key3"	"Financial"	22135
+Key	"nsaIF_Numero_Formato_Key1"	"Financial"	22136
+Key	"nsaIF_Report_1007_Key1"	"Inventory"	22137
+Key	"nsaIF_Setup_Reports_Key1"	"Payroll"	22138
+Key	"nsaIF_Setup_Reports_temp_Key1"	"Project"	22139
+Key	"nsaIF_TRX_Detalle_TEMP_KEY1"	"System"	22140
+Key	"nsaIF_TRX_Detalle_TEMP_KEY2"	"System"	22141
+Key	"nsaIF_TRX_HIST_TEMP_KEYp"	"Financial"	22142
+Key	"nsaIF_TRX_OPEN_TEMP_KEY1"	"Sales"	22143
+Key	"nsaIF_TRX_Resumen_TEMP_KEY1"	"Purchasing"	22144
+Key	"nsaIF_TRX_Resumen_TEMP_KEY2"	"Purchasing"	22145
+Key	"nsaIF_Tipo_Documento_Key1"	"Sales"	22146
+Key	"nsaIF_Type_Withholding_Key1"	"Inventory"	22147
+Key	"nsaIF_Type_Withholding_Key2"	"Inventory"	22148
+Key	"nsaIF_Vendor_Nit_MSTR_Key1"	"Payroll"	22149
+Key	"nsaIF_Vendor_Nit_MSTR_Key3"	"Payroll"	22150
+Key	"nsaIF_Vendor_Nit_MSTR_Key4"	"Payroll"	22151
+Key	"nsaIF_Vendor_Nit_MSTR_key2"	"Payroll"	22152
+Key	"nsaIF_Vendor_Nit_MSTR_Key11"	"Sales"	22153
+Key	"nsaIF_Vendor_Nit_MSTR_Key31"	"Sales"	22154
+Key	"nsaIF_Vendor_Nit_MSTR_Key41"	"Sales"	22155
+Key	"nsaIF_Vendor_Nit_MSTR_key21"	"Sales"	22156
+Key	"nsaIF_Vendor_Nit_TEMP_Key1"	"Project"	22157
+Key	"nsaIF_Vendor_Nit_TEMP_Key3"	"Project"	22158
+Key	"nsaIF_Vendor_Nit_TEMP_key2"	"Project"	22159
+Key	"nsaTE_GL_TRX_LINE_WORK_Key1"	"System"	22160
+Key	"nsaIF_Customer_Nit_MSTR_Key11"	"Purchasing"	22161
+Key	"nsaIF_Customer_Nit_MSTR_Key21"	"Purchasing"	22162
+Key	"nsaIF_Customer_Nit_MSTR_Key31"	"Purchasing"	22163
+Key	"nsaIF_Customer_Nit_MSTR_Key41"	"Purchasing"	22164
+Key	"trpt_Account_Index_Details_Key1"	"Sales"	22165
+Key	"ByLinkRecordNumber1"	"System"	22166
+Key	"DistributionSequenceNumber1"	"Financial"	22167
+Key	"BySequenceNumber1"	"Sales"	22168
+Key	"ReconcileNumberBySequence1"	"Sales"	22169
+Key	"trpt_GL_Business_Form_Account_SETP_Key11"	"Purchasing"	22170
+Key	"trpt_GL_Business_Form_Account_SETP_Key21"	"Purchasing"	22171
+Key	"trpt_GL_Business_Form_HDR_WORK_Key11"	"Inventory"	22172
+Key	"trpt_GL_Business_Form_HDR_WORK_Key21"	"Inventory"	22173
+Key	"trpt_GL_Business_Form_HDR_WORK_Key31"	"Inventory"	22174
+Key	"trpt_GL_Business_Form_LINE_WORK_Key11"	"Payroll"	22175
+Key	"trpt_GL_Business_Form_LINE_WORK_Key21"	"Payroll"	22176
+Key	"trpt_GL_Business_Form_SETP_Key11"	"Project"	22177
+Key	"trpt_GL_Business_Form_SETP_Key21"	"Project"	22178
+Key	"trpt_GL_Business_Form_SETP_Key31"	"Project"	22179
+Key	"trpt_GL_TRX_LINE_WORK_TEMP_Key1"	"Purchasing"	22180
+Key	"trpt_GL_TRX_LINE_WORK_TEMP_Key2"	"Purchasing"	22181
+Key	"trpt_GL_TRX_LINE_WORK_TEMP_Key3"	"Purchasing"	22182
+Key	"trpt_GL_TRX_LINE_WORK_TEMP_Key4"	"Purchasing"	22183
+Key	"trpt_GL_YTD_TRX_OPEN_TEMP_Key1"	"Inventory"	22184
+Key	"trpt_GL_YTD_TRX_OPEN_TEMP_Key2"	"Inventory"	22185
+Key	"trpt_GL_YTD_TRX_OPEN_TEMP_Key3"	"Inventory"	22186
+Key	"trpt_GL_YTD_TRX_OPEN_TEMP_Key4"	"Inventory"	22187
+Key	"trpt_GL_YTD_TRX_OPEN_TEMP_Key5"	"Inventory"	22188
+Key	"trpt_GL_YTD_TRX_OPEN_TEMP_Key6"	"Inventory"	22189
+Key	"trpt_GL_YTD_TRX_OPEN_TEMP_Key7"	"Inventory"	22190
+Key	"trpt_GL_YTD_TRX_OPEN_TEMP_Key8"	"Inventory"	22191
+Key	"trpt_Tercero_Summary_Details_Key1"	"Payroll"	22192
+Key	"nsaIF_Account_Range_MSTR_TEMP_KEY1"	"System"	22193
+Key	"nsaIF_Account_Range_MSTR_TEMP_KEY2"	"System"	22194
+Key	"nsaIF_SD_Num_SETP_KEY1"	"Inventory"	22195
+Key	"nsaIF_SD_Num_SETP_KEY2"	"Inventory"	22196
+Key	"nsaIF_Account_Range_MSTR_TEMP_KEY3"	"System"	22197
+Key	"nsaIF_Certificados_LINE2_Key1"	"Purchasing"	22198
+Key	"nsaIF_Certificados_LINE2_Key2"	"Purchasing"	22199
+Key	"nsaIF_Certificados_LINE2_Key3"	"Purchasing"	22200
+Form	"GL_Business_Form_Entry"	37
+
+{
+	Field	"Customer/Vendor ID"	22000
+	Field	"Customer/Vendor Name"	22001
+	Field	"Scroll Customer/Vendor ID"	22002
+	Field	"Scroll Customer/Vendor Name"	22003
+	Field	"Scroll Tercero Type"	22004
+	Field	"Tercero Type"	22005
+	EventScript	"Account_Scroll Lookup Button 11_CHG"	22000
+	EventScript	"Account_Scroll l_Scroll Customer/Vendor ID_CHG"	22001
+	EventScript	"GL_Business_Form_Entry Lookup Button 11_CHG"	22002
+	EventScript	"GL_Business_Form_Entry Lookup Button 12_CHG"	22003
+	EventScript	"GL_Business_Form_Entry l_Customer/Vendor ID_CHG"	22004
+	EventScript	"GL_Business_Form_Entry l_Tercero Type_CHG"	22005
+}
+Form	"GL_Business_Form_Setup"	38
+
+{
+	Field	"Customer/Vendor ID"	22000
+	Field	"Customer/Vendor Name"	22001
+	Field	"Expand Window"	22002
+	Field	"Scroll Customer/Vendor ID"	22003
+	Field	"Scroll Customer/Vendor Name"	22004
+	Field	"Scroll Tercero Type"	22005
+	Field	"Tercero Type"	22006
+	Datatype	"Expand Window"	22000
+	EventScript	"Account_Scroll Lookup Button 11_CHG"	22000
+	EventScript	"Account_Scroll SCROLL_POST"	22001
+	EventScript	"Account_Scroll l_Scroll Customer/Vendor ID_CHG"	22002
+	EventScript	"GL_Business_Form_Setup Account_Scroll_CHG"	22003
+	EventScript	"GL_Business_Form_Setup Lookup Button 11_CHG"	22004
+	EventScript	"GL_Business_Form_Setup Lookup Button 12_CHG"	22005
+	EventScript	"GL_Business_Form_Setup Scrolling Window Expand Button_CHG"	22006
+	EventScript	"GL_Business_Form_Setup Scrolling Window Expand Button_CHG_DUP"	22007
+	EventScript	"GL_Business_Form_Setup Scrolling Window Shrink_CHG"	22008
+	EventScript	"GL_Business_Form_Setup Scrolling Window Shrink_CHG_DUP"	22009
+	EventScript	"GL_Business_Form_Setup l_Customer/Vendor ID_CHG"	22010
+	EventScript	"GL_Business_Form_Setup l_Tercero Type_CHG"	22011
+}
+Form	"GL_Inquiry_Current_Detail"	47
+
+{
+	Field	"trpt_Customer_ID"	22000
+	Field	"trpt_Customer_Vendor_ID"	22001
+	Field	"trpt_Tercero_ID"	22002
+	Field	"trpt_TotalCredits"	22003
+	Field	"trpt_TotalDebits"	22004
+	Field	"trpt_Vendor_ID"	22005
+	Datatype	"trpt_Customer_ID"	22000
+	Datatype	"trpt_Tercero_ID"	22001
+	Datatype	"trpt_Vendor_ID"	22002
+	Procedure	"UpdateTotalsAndBalance"	22000
+	EventScript	"GL_Inquiry_Current_Detail Lookup Button 6_CHG"	22000
+	EventScript	"GL_Inquiry_Current_Detail l_trpt_Customer_Vendor_ID_CHG"	22001
+	EventScript	"GL_Inquiry_Current_Detail l_trpt_Tercero_ID_CHG"	22002
+}
+Form	"GL_Inquiry_Current_Summary"	48
+
+{
+	Field	"trpt_Customer_ID"	22000
+	Field	"trpt_Customer_Vendor_ID"	22001
+	Field	"trpt_Tercero_ID"	22002
+	Field	"trpt_TotalCredits"	22003
+	Field	"trpt_TotalDebits"	22004
+	Field	"trpt_Vendor_ID"	22005
+	Datatype	"trpt_Customer_ID"	22000
+	Datatype	"trpt_Tercero_ID"	22001
+	Datatype	"trpt_Vendor_ID"	22002
+	EventScript	"GL_Inquiry_Current_Summary Lookup Button 2_CHG"	22000
+	EventScript	"GL_Inquiry_Current_Summary l_trpt_Customer_Vendor_ID_CHG"	22001
+	EventScript	"GL_Inquiry_Current_Summary l_trpt_Tercero_ID_CHG"	22002
+}
+Form	"GL_Transaction_Entry"	62
+
+{
+	Field	"Tercero Type"	22000
+	Field	"GL_Trx_Temp_Table"	22001
+	Field	"MSListbox97"	22002
+	Field	"MSListbox99"	22003
+	Field	"Text98"	22004
+	Field	"TreeView96"	22005
+	Datatype	"GL_Trx_Temp_Table"	22000
+	Datatype	"MSListbox97"	22001
+	Datatype	"MSListbox99"	22002
+	Datatype	"Text98"	22003
+	Datatype	"TreeView96"	22004
+	Procedure	"Fill_Scrolling_Window2"	22000
+	Procedure	"Fill_Temp_Table"	22001
+	Procedure	"Save_Tercero_Table"	22002
+	Procedure	"Fill_Scrolling_Window"	22003
+	Function	"DeleteLinkedTaxDists"	22000
+	EventScript	"GL_Transaction_Entry Lookup Button 11_CHG"	22000
+	EventScript	"Transaction_Scroll Customer/Vendor ID_CHG"	22001
+	EventScript	"Transaction_Scroll Lookup Button 11_CHG"	22002
+	EventScript	"Transaction_Scroll Customer/Vendor ID_POST"	22003
+	EventScript	"Transaction_Scroll SCROLL_POST"	22004
+}
+Form	"GL_Zoom_Current_Transaction"	69
+
+{
+	Field	"Tercero Type"	22000
+	Constant	"CUSTOMER"	22000
+	Constant	"VENDOR"	22001
+}
+Form	"GL_Zoom_History_Transaction"	71
+
+{
+	Field	"Tercero Type"	22000
+	Constant	"CUSTOMER"	22000
+	Constant	"VENDOR"	22001
+}
+Form	"PM_Distribution_Zoom"	226
+Form	"PM_Transaction_Entry_Distribution"	253
+
+{
+	EventScript	"Distribution_Scroll Lookup Button 5_CHG"	22000
+	EventScript	"PM_Transaction_Entry_Distribution Lookup Button 5_CHG"	22001
+	EventScript	"Distribution_Scroll Vendor ID_CHG"	22002
+}
+Form	"RM_Cash_Distribution"	384
+
+{
+	EventScript	"Distribution_Scrolling_Window Lookup Button 2_CHG"	22000
+	EventScript	"RM_Cash_Distribution Lookup Button 2_CHG"	22001
+	EventScript	"Distribution_Scrolling_Window Customer Number_CHG"	22002
+}
+Form	"RM_Sales_Distribution"	405
+
+{
+	EventScript	"RM_Sales_Distribution Lookup Button 2_CHG"	22000
+	EventScript	"Sales_Distributions_Accounts_Scroll Lookup Button 2_CHG"	22001
+	EventScript	"Sales_Distributions_Accounts_Scroll Customer Number_CHG"	22002
+}
+Form	"RM_Distribution_Inquiry"	427
+Form	"SOP_Inquiry_Dist"	652
+Form	"SOP_Distribution_Entry"	665
+
+{
+	EventScript	"Dist_Scroll Lookup Button 2_CHG"	22000
+	EventScript	"SOP_Distribution_Entry Lookup Button 2_CHG"	22001
+	EventScript	"Dist_Scroll Customer Number_CHG"	22002
+}
+Form	"CM_Reconcile"	685
+
+{
+	Field	"Tercero Type"	22000
+	Procedure	"ReconcileCheckbook2"	22000
+	Function	"ReconcileAdjustments2"	22000
+	Function	"RemoveAdjustments2"	22001
+	Function	"DeleteReconcile2"	22002
+	EventScript	"Adjustment_Scroll Customer/Vendor ID_CHG"	22000
+	EventScript	"Adjustment_Scroll Lookup Button 11_CHG"	22001
+	EventScript	"CM_Reconcile_Adjustments Lookup Button 11_CHG"	22002
+}
+Form	"CM_Transaction_Zoom"	690
+
+{
+	Field	"Tercero Type"	22000
+	Procedure	"OpenToView"	22000
+}
+Form	"CM_Transaction_Entry"	692
+
+{
+	Field	"Tercero Type"	22000
+	Procedure	"ClearCheckbook2"	22000
+	Procedure	"ClearTotals2"	22001
+	Procedure	"RecalcScrollingWindow2"	22002
+	Function	"DisplayTransaction2"	22000
+	Function	"GetReversingDistributions2"	22001
+	Function	"UpdateCashAccount2"	22002
+	Function	"UpdateTotals2"	22003
+	EventScript	"CMTrx_Distributions Customer/Vendor ID_CHG"	22000
+	EventScript	"CMTrx_Distributions Lookup Button 11_CHG"	22001
+	EventScript	"CM_Transaction_Entry Lookup Button 11_CHG"	22002
+	EventScript	"CMTrx_Distributions SCROLL_POST"	22003
+}
+Form	"POP_Inquiry_Distribution"	777
+Form	"POP_Distribution_Entry"	797
+
+{
+	EventScript	"Dist_Scroll Lookup Button 2_CHG"	22000
+	EventScript	"Dist_Scroll Vendor ID_CHG"	22001
+	EventScript	"POP_Distribution_Entry Lookup Button 2_CHG"	22002
+	EventScript	"Dist_Scroll SCROLL_FILL"	22003
+}
+Form	"POP_Invoice_Distribution_Entry"	886
+
+{
+	EventScript	"Dist_Scroll Lookup Button 2_CHG"	22000
+	EventScript	"POP_Invoice_Distribution_Entry Lookup Button 2_CHG"	22001
+	EventScript	"Dist_Scroll Vendor ID_CHG"	22002
+}
+Form	"GL_Journal_Entry_Inquiry"	918
+
+{
+	Field	"Tercero Type"	22000
+	Constant	"CUSTOMER"	22000
+	Constant	"VENDOR"	22001
+}
+Form	"CM_Transfer_Zoom"	1199
+
+{
+	Field	"Transfer From Customer/Vendor ID"	22000
+	Field	"Transfer From Customer/Vendor Name"	22001
+	Field	"Transfer From Tercero Type"	22002
+	Field	"Transfer To Customer/Vendor ID"	22003
+	Field	"Transfer To Customer/Vendor Name"	22004
+	Field	"Transfer To Tercero Type"	22005
+	Procedure	"DisplayTransfer2"	22000
+}
+Form	"CM_Transfer_Entry"	1201
+
+{
+	Field	"Transfer From Customer/Vendor ID"	22000
+	Field	"Transfer From Customer/Vendor Name"	22001
+	Field	"Transfer From Tercero Type"	22002
+	Field	"Transfer To Customer/Vendor ID"	22003
+	Field	"Transfer To Customer/Vendor Name"	22004
+	Field	"Transfer To Tercero Type"	22005
+	Procedure	"ClearCheckbookInfo2"	22000
+	Procedure	"DisplayTransfer2"	22001
+	EventScript	"Transfer_Entry Lookup Button 11_CHG"	22000
+	EventScript	"Transfer_Entry Lookup Button 12_CHG"	22001
+	EventScript	"Transfer_Entry l_Transfer From Customer/Vendor ID_CHG"	22002
+	EventScript	"Transfer_Entry l_Transfer From Tercero Type_CHG"	22003
+	EventScript	"Transfer_Entry l_Transfer To Customer/Vendor ID_CHG"	22004
+	EventScript	"Transfer_Entry l_Transfer To Tercero Type_CHG"	22005
+}
+Form	"CM_Print_Check"	1428
+
+{
+	Field	"Tercero Type"	22000
+	EventScript	"BankDistributions Customer/Vendor ID_CHG"	22000
+	EventScript	"BankDistributions Lookup Button 11_CHG"	22001
+	EventScript	"CM_Print_Quick_Check Lookup Button 11_CHG"	22002
+	EventScript	"BankDistributions SCROLL_POST"	22003
+}
+Form	"Paleta - Informes Fiscales"	22000
+
+{
+	Window	"Paleta - Informes Fiscales"	22000
+	Field	"Codigo-SubCodigo"	22000
+	Field	"PushButton0"	22001
+	Field	"PushButton1"	22002
+	Field	"PushButton10"	22003
+	Field	"PushButton11"	22004
+	Field	"PushButton12"	22005
+	Field	"PushButton13"	22006
+	Field	"PushButton15"	22007
+	Field	"PushButton2"	22008
+	Field	"PushButton3"	22009
+	Field	"PushButton4"	22010
+	Field	"PushButton5"	22011
+	Field	"PushButton6"	22012
+	Field	"PushButton7"	22013
+	Field	"PushButton8"	22014
+	Field	"PushButton9"	22015
+	Datatype	"Codigo-SubCodigo"	22000
+	Datatype	"PushButton0"	22001
+	Datatype	"PushButton1"	22002
+	Datatype	"PushButton10"	22003
+	Datatype	"PushButton11"	22004
+	Datatype	"PushButton12"	22005
+	Datatype	"PushButton13"	22006
+	Datatype	"PushButton15"	22007
+	Datatype	"PushButton2"	22008
+	Datatype	"PushButton3"	22009
+	Datatype	"PushButton4"	22010
+	Datatype	"PushButton5"	22011
+	Datatype	"PushButton6"	22012
+	Datatype	"PushButton7"	22013
+	Datatype	"PushButton8"	22014
+	Datatype	"PushButton9"	22015
+	EventScript	"Informes Fiscales l_PushButton5_CHG"	22000
+	EventScript	"Paleta - Informes Fiscales l_Codigo-SubCodigo_CHG"	22001
+	EventScript	"Paleta - Informes Fiscales l_PushButton0_CHG"	22002
+	EventScript	"Paleta - Informes Fiscales l_PushButton10_CHG"	22003
+	EventScript	"Paleta - Informes Fiscales l_PushButton11_CHG"	22004
+	EventScript	"Paleta - Informes Fiscales l_PushButton15_CHG"	22005
+	EventScript	"Paleta - Informes Fiscales l_PushButton8_CHG"	22006
+	EventScript	"Paleta - Informes Fiscales l_PushButton9_CHG"	22007
+	EventScript	"Window1 l_PushButton0_CHG"	22008
+	EventScript	"Window1 l_PushButton1_CHG"	22009
+	EventScript	"Window1 l_PushButton2_CHG"	22010
+	EventScript	"Window1 l_PushButton3_CHG"	22011
+	EventScript	"Window1 l_PushButton4_CHG"	22012
+	EventScript	"Paleta - Informes Fiscales_WIN_PRE"	22013
+}
+Form	"nsaIF_Account_MSTR"	22001
+
+{
+	Window	"nsaIF_Account_MSTR"	22000
+	Window	"nsaIF_Account_MSTR_Scroll_Window"	22001
+	Window	"nsaIF_Modify_Account_Range"	22002
+	Window	"Diponibles"	22003
+	Window	"Seleccionados"	22004
+	Window	"nsaIF_Select_AccSegment Ranges"	22005
+	Window	"nsaIF_Find_Account"	22006
+	Field	"Account_Description_Destination"	22000
+	Field	"PushButton7"	22001
+	Field	"PushButton9"	22002
+	Field	"RadioButton3"	22003
+	Field	"RadioButton4"	22004
+	Field	"RadioGroup0"	22005
+	Field	"RadioGroup1"	22006
+	Field	"RadioGroup2"	22007
+	Field	"RadioGroup5"	22008
+	Field	"Return_Code_SubCode"	22009
+	Field	"Update_Fields"	22010
+	Field	"nsaIF_Code"	22011
+	Field	"Account Description Until"	22012
+	Field	"Account Index Until"	22013
+	Field	"Account Number From"	22014
+	Field	"Account Number Until"	22015
+	Field	"Change Flag"	22016
+	Field	"End"	22017
+	Field	"End Account Number"	22018
+	Field	"Open ModifyAccRange"	22019
+	Field	"PushButton1"	22020
+	Field	"PushButton8"	22021
+	Field	"Ranges Selected"	22022
+	Field	"Segment Range"	22023
+	Field	"Sel Acc From"	22024
+	Field	"Start"	22025
+	Field	"Start Account Number"	22026
+	Field	"Temp End Position String"	22027
+	Field	"Temp Start Position String"	22028
+	Field	"Virutal Key"	22029
+	Field	"Format"	22030
+	Datatype	"Account_Description_Destination"	22000
+	Datatype	"PushButton7"	22001
+	Datatype	"PushButton9"	22002
+	Datatype	"RadioButton3"	22003
+	Datatype	"RadioButton4"	22004
+	Datatype	"RadioGroup0"	22005
+	Datatype	"RadioGroup1"	22006
+	Datatype	"RadioGroup2"	22007
+	Datatype	"RadioGroup5"	22008
+	Datatype	"Return_Code_SubCode"	22009
+	Datatype	"Update_Fields"	22010
+	Datatype	"nsaIF_Code"	22011
+	Datatype	"Change Flag"	22012
+	Datatype	"Open ModifyAccRange"	22013
+	Datatype	"PushButton1"	22014
+	Datatype	"PushButton8"	22015
+	Datatype	"Ranges Selected"	22016
+	Datatype	"Sel Acc From"	22017
+	Datatype	"Temp End Position String"	22018
+	Datatype	"Temp Start Position String"	22019
+	Datatype	"Virutal Key"	22020
+	Datatype	"Format"	22021
+	Procedure	"OPEN"	22000
+	Procedure	"nsaIF_Update_Temp_Table"	22001
+	Procedure	"nsaIF_Account_Concept_Added_To_Range"	22002
+	Procedure	"nsaIF_Account_Concept_Removal_From_Range"	22003
+	Procedure	"nsaIF_Account_MSTR_Mass_Delete"	22004
+	Procedure	"nsaIF_Account_MSTR_Mass_Update"	22005
+	Procedure	"nsaIF_Account_Save_By_Accounts"	22006
+	Procedure	"nsaIF_Account_Save_By_Segment"	22007
+	Procedure	"nsaIF_Concept_Addition_To_Account_Range"	22008
+	Procedure	"nsaIF_Concept_Chk_In_Other_Range"	22009
+	Procedure	"nsaIF_Concept_Removal_From_Account_Range"	22010
+	Procedure	"nsaIF_SegmentValidation"	22011
+	Procedure	"nsaIF_Update_Temp_Table_Ranges"	22012
+	Procedure	"nsaIF_Account_Concept_Added_To_Ranges"	22013
+	EventScript	"nsaIF_Account_MSTR Account Number_CHG"	22000
+	EventScript	"nsaIF_Account_MSTR Clear Button_CHG"	22001
+	EventScript	"nsaIF_Account_MSTR Delete Button_CHG"	22002
+	EventScript	"nsaIF_Account_MSTR Display Existing Record_CHG"	22003
+	EventScript	"nsaIF_Account_MSTR Dummy Note Show Hide_CHG"	22004
+	EventScript	"nsaIF_Account_MSTR End of File Button - Toolbar_CHG"	22005
+	EventScript	"nsaIF_Account_MSTR Handle Changes_CHG"	22006
+	EventScript	"nsaIF_Account_MSTR Lookup Button 11_CHG"	22007
+	EventScript	"nsaIF_Account_MSTR Lookup Button 1_CHG"	22008
+	EventScript	"nsaIF_Account_MSTR Lookup Button 2_CHG"	22009
+	EventScript	"nsaIF_Account_MSTR Next Button - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Account_MSTR Note Absent Button - Toolbar_CHG"	22011
+	EventScript	"nsaIF_Account_MSTR Note Present Button - Toolbar_CHG"	22012
+	EventScript	"nsaIF_Account_MSTR Previous Button - Toolbar_CHG"	22013
+	EventScript	"nsaIF_Account_MSTR Save Button_CHG"	22014
+	EventScript	"nsaIF_Account_MSTR Save Record_CHG"	22015
+	EventScript	"nsaIF_Account_MSTR Top of File Button - Toolbar_CHG"	22016
+	EventScript	"nsaIF_Account_MSTR Zoom Buttons[2]_CHG"	22017
+	EventScript	"nsaIF_Account_MSTR l_PushButton7_CHG"	22018
+	EventScript	"nsaIF_Account_MSTR l_PushButton9_CHG"	22019
+	EventScript	"nsaIF_Account_MSTR l_Return_Code_SubCode_CHG"	22020
+	EventScript	"nsaIF_Account_MSTR nsaIF_Code_CHG"	22021
+	EventScript	"nsaIF_Account_MSTR nsaIF_SubCode_CHG"	22022
+	EventScript	"nsaIF_Account_MSTR nsaIF_Vr1_Reporte_CHG"	22023
+	EventScript	"nsaIF_Account_MSTR nsaIF_Vr2_Reporte_CHG"	22024
+	EventScript	"nsaIF_Account_MSTR nsaIF_Vr3_Reporte_CHG"	22025
+	EventScript	"nsaIF_Account_MSTR_FORM_PRE"	22026
+	EventScript	"nsaIF_Account_MSTR_WIN_POST"	22027
+	EventScript	"nsaIF_Account_MSTR_WIN_PRE"	22028
+	EventScript	"nsaIF_Account_MSTR Lookup Button 3_CHG"	22029
+	EventScript	"nsaIF_Account_MSTR_Scroll_Window Lookup Button 1_CHG"	22030
+	EventScript	"nsaIF_Account_MSTR_Scroll_Window SCROLL_CHG"	22031
+	EventScript	"nsaIF_Account_MSTR_Scroll_Window SCROLL_DEL"	22032
+	EventScript	"nsaIF_Account_MSTR_Scroll_Window SCROLL_FILL"	22033
+	EventScript	"nsaIF_Account_MSTR_Scroll_Window l_Update_Fields_CHG"	22034
+	EventScript	"nsaIF_Account_MSTR_Scroll_Window nsaIF_Code_CHG"	22035
+	EventScript	"nsaIF_Account_MSTR_Scroll_Window nsaIF_Vr1_Reporte_CHG"	22036
+	EventScript	"nsaIF_Account_MSTR WindowHelp_CHG"	22037
+	EventScript	"Diponibles SCROLL_FILL"	22038
+	EventScript	"Seleccionados SCROLL_DEL"	22039
+	EventScript	"Seleccionados SCROLL_FILL"	22040
+	EventScript	"nsaIF_Account_MSTR Lookup Button 4_CHG"	22041
+	EventScript	"nsaIF_Account_MSTR l_Account Number Until_CHG"	22042
+	EventScript	"nsaIF_Account_MSTR l_PushButton8_CHG"	22043
+	EventScript	"nsaIF_Account_MSTR l_Sel Acc From_CHG"	22044
+	EventScript	"nsaIF_Modify_Account_Range Dummy Note Show Hide_CHG"	22045
+	EventScript	"nsaIF_Modify_Account_Range Insert Button_CHG"	22046
+	EventScript	"nsaIF_Modify_Account_Range Note Absent Button - Toolbar_CHG"	22047
+	EventScript	"nsaIF_Modify_Account_Range Note Present Button - Toolbar_CHG"	22048
+	EventScript	"nsaIF_Modify_Account_Range OK Button_CHG"	22049
+	EventScript	"nsaIF_Modify_Account_Range Remove Button_CHG"	22050
+	EventScript	"nsaIF_Modify_Account_Range Scrolling Window Expand Button 2_CHG"	22051
+	EventScript	"nsaIF_Modify_Account_Range Scrolling Window Expand Button_CHG"	22052
+	EventScript	"nsaIF_Modify_Account_Range Scrolling Window Expand Button_CHG_DUP"	22053
+	EventScript	"nsaIF_Modify_Account_Range Scrolling Window Shrink Button 2_CHG"	22054
+	EventScript	"nsaIF_Modify_Account_Range Scrolling Window Shrink Button 2_CHG_DUP"	22055
+	EventScript	"nsaIF_Modify_Account_Range Scrolling Window Shrink Button_CHG"	22056
+	EventScript	"nsaIF_Modify_Account_Range Scrolling Window Shrink Button_CHG_DUP"	22057
+	EventScript	"nsaIF_Modify_Account_Range l_PushButton1_CHG"	22058
+	EventScript	"nsaIF_Modify_Account_Range_WIN_PRE"	22059
+	EventScript	"nsaIF_Select_AccSegment Ranges Clear Button_CHG"	22060
+	EventScript	"nsaIF_Select_AccSegment Ranges Insert Button_CHG"	22061
+	EventScript	"nsaIF_Select_AccSegment Ranges Lookup Button 1_CHG"	22062
+	EventScript	"nsaIF_Select_AccSegment Ranges Lookup Button 2_CHG"	22063
+	EventScript	"nsaIF_Select_AccSegment Ranges Lookup Button 3_CHG"	22064
+	EventScript	"nsaIF_Select_AccSegment Ranges Remove Button_CHG"	22065
+	EventScript	"nsaIF_Select_AccSegment Ranges Save Button_CHG"	22066
+	EventScript	"nsaIF_Select_AccSegment Ranges Save Record_CHG"	22067
+	EventScript	"nsaIF_Select_AccSegment Ranges l_End_CHG"	22068
+	EventScript	"nsaIF_Select_AccSegment Ranges l_Segment Range_CHG"	22069
+	EventScript	"nsaIF_Select_AccSegment Ranges l_Start_CHG"	22070
+	EventScript	"nsaIF_Select_AccSegment Ranges_WIN_PRE"	22071
+	EventScript	"nsaIF_Find_Account Cancel Button_CHG"	22072
+	EventScript	"nsaIF_Find_Account Find Button_CHG"	22073
+	EventScript	"nsaIF_Find_Account Sort By_CHG"	22074
+	EventScript	"nsaIF_Find_Account_WIN_PRE"	22075
+}
+Form	"nsaIF_Account_Setup"	22002
+
+{
+	Window	"nsaIF_Account_Setup"	22000
+	Window	"nsaIF_Account_Setup_Scroll"	22001
+	Field	"Prueba Borrar SETP"	22000
+	Field	"PushButton5"	22001
+	Field	"RadioGroup2"	22002
+	Field	"Sort By"	22003
+	Field	"nsaIF_Selector_Account"	22004
+	Field	"nsaIF_Thirds_Selecction"	22005
+	Datatype	"Prueba Borrar SETP"	22000
+	Datatype	"PushButton5"	22001
+	Datatype	"RadioGroup2"	22002
+	Datatype	"Sort By"	22003
+	Datatype	"nsaIF_Selector_Account"	22004
+	Datatype	"nsaIF_Thirds_Selecction"	22005
+	EventScript	"nsaIF_Account_Setup Mark All_CHG"	22000
+	EventScript	"nsaIF_Account_Setup Mark None_CHG"	22001
+	EventScript	"nsaIF_Account_Setup OK Button_CHG"	22002
+	EventScript	"nsaIF_Account_Setup Redisplay Button_CHG"	22003
+	EventScript	"nsaIF_Account_Setup l_PushButton4_CHG"	22004
+	EventScript	"nsaIF_Account_Setup l_PushButton5_CHG"	22005
+	EventScript	"nsaIF_Account_Setup l_nsaIF_Selector_Account_CHG"	22006
+	EventScript	"nsaIF_Account_Setup_Scroll SCROLL_FILL"	22007
+	EventScript	"nsaIF_Account_Setup_Scroll SCROLL_FILL_DUP"	22008
+	EventScript	"nsaIF_Account_Setup_Scroll nsaIF_Account_With_Third_CHG"	22009
+	EventScript	"nsaIF_Relationchip_Customers_Nit SCROLL_CHG"	22010
+	EventScript	"nsaIF_Relationchip_Vendors_Nit SCROLL_CHG"	22011
+	EventScript	"nsaIF_Account_Setup_WIN_PRE"	22012
+}
+Form	"nsaIF_Agregar_NIT"	22003
+
+{
+	Window	"nsaIF_Agregar_NIT"	22000
+	Field	"Checkbox0"	22000
+	Field	"Checkbox1"	22001
+	Field	"Nombre"	22002
+	Field	"PushButton7"	22003
+	Field	"String2"	22004
+	Field	"String3"	22005
+	Field	"String4"	22006
+	Field	"String5"	22007
+	Field	"First_name"	22008
+	Field	"First_name_1"	22009
+	Field	"First_surname"	22010
+	Field	"First_surname_1"	22011
+	Field	"Other_names"	22012
+	Field	"Other_names_1"	22013
+	Field	"Razon_social"	22014
+	Field	"Second_surname"	22015
+	Field	"Second_surname_1"	22016
+	Field	"Old_nsaIFNit"	22017
+	Field	"Old_nsaIF_Type"	22018
+	Field	"l_Comp_Name"	22019
+	Field	"nsaIF_CCode"	22020
+	Datatype	"Checkbox0"	22000
+	Datatype	"Checkbox1"	22001
+	Datatype	"Nombre"	22002
+	Datatype	"PushButton7"	22003
+	Datatype	"String2"	22004
+	Datatype	"String3"	22005
+	Datatype	"String4"	22006
+	Datatype	"String5"	22007
+	EventScript	"Window1 Dummy Note Show Hide_CHG"	22000
+	EventScript	"nsaIF_Agregar_NIT WindowHelp_CHG"	22001
+	EventScript	"nsaIF_Agregar_NIT Cancel Button_CHG"	22002
+	EventScript	"nsaIF_Agregar_NIT Customer Number_CHG"	22003
+	EventScript	"nsaIF_Agregar_NIT Delete Button_CHG"	22004
+	EventScript	"nsaIF_Agregar_NIT Lookup Button 1_CHG"	22005
+	EventScript	"nsaIF_Agregar_NIT Note Absent Button - Toolbar_CHG"	22006
+	EventScript	"nsaIF_Agregar_NIT Note Present - Toolbar_CHG"	22007
+	EventScript	"nsaIF_Agregar_NIT Save Button_CHG"	22008
+	EventScript	"nsaIF_Agregar_NIT Save Record_CHG"	22009
+	EventScript	"nsaIF_Agregar_NIT Vendor ID_CHG"	22010
+	EventScript	"nsaIF_Agregar_NIT l_PushButton7_CHG"	22011
+	EventScript	"nsaIF_Agregar_NIT nsaIFNit_CHG"	22012
+	EventScript	"nsaIF_Agregar_NIT_FORM_PRE"	22013
+	EventScript	"nsaIF_Agregar_NIT_WIN_POST"	22014
+	EventScript	"nsaIF_Agregar_NIT Lookup Button 2_CHG"	22015
+	EventScript	"nsaIF_Agregar_NIT nsaIF_Site_Code_CHG"	22016
+	EventScript	"nsaIF_Agregar_NIT_WIN_PRE"	22017
+	EventScript	"nsaIF_Agregar_NIT Customer Name_CHG"	22018
+	EventScript	"nsaIF_Agregar_NIT Lookup Button 3_CHG"	22019
+	EventScript	"nsaIF_Agregar_NIT Vendor Name_CHG"	22020
+	EventScript	"nsaIF_Agregar_NIT nsaIF_Type_CHG"	22021
+}
+Form	"nsaIF_Base_Destino"	22004
+
+{
+	Window	"nsaIF_Base_Destino"	22000
+	Window	"Diponibles"	22001
+	Window	"Seleccionados"	22002
+	Window	"nsaIF_Find_Account"	22003
+	Field	"PushButton0"	22000
+	Field	"PushButton1"	22001
+	Field	"Account Description From"	22002
+	Field	"Account Description Until"	22003
+	Field	"Account Index From"	22004
+	Field	"Account Index Until"	22005
+	Field	"Account Max"	22006
+	Field	"Account No"	22007
+	Field	"Account No1"	22008
+	Field	"nsaIF_Code"	22009
+	Datatype	"PushButton0"	22000
+	Datatype	"PushButton1"	22001
+	Datatype	"nsaIF_Code"	22002
+	Procedure	"OPEN"	22000
+	Procedure	"nsaIF_Get_Num_Descrip"	22001
+	EventScript	"Seleccionados SCROLL_DEL"	22000
+	EventScript	"Seleccionados SCROLL_FILL"	22001
+	EventScript	"nsaIF_Base_Destino Dummy Note Show Hide_CHG"	22002
+	EventScript	"nsaIF_Base_Destino Insert Button_CHG"	22003
+	EventScript	"nsaIF_Base_Destino Note Absent Button - Toolbar _CHG"	22004
+	EventScript	"nsaIF_Base_Destino Note Present Button - Toolbar_CHG"	22005
+	EventScript	"nsaIF_Base_Destino OK Button_CHG"	22006
+	EventScript	"nsaIF_Base_Destino Remove Button_CHG"	22007
+	EventScript	"nsaIF_Base_Destino Scrolling Window Expand Button 2_CHG"	22008
+	EventScript	"nsaIF_Base_Destino Scrolling Window Expand Button_CHG"	22009
+	EventScript	"nsaIF_Base_Destino Scrolling Window Shrink Button 2_CHG"	22010
+	EventScript	"nsaIF_Base_Destino Scrolling Window Shrink Button_CHG"	22011
+	EventScript	"nsaIF_Base_Destino l_PushButton1_CHG"	22012
+	EventScript	"nsaIF_Base_Destino_FORM_PRE"	22013
+	EventScript	"nsaIF_Base_Destino_WIN_PRE"	22014
+	EventScript	"nsaIF_Find_Account Cancel Button_CHG"	22015
+	EventScript	"nsaIF_Find_Account Find Button_CHG"	22016
+	EventScript	"nsaIF_Find_Account Sort By_CHG"	22017
+	EventScript	"nsaIF_Find_Account_WIN_PRE"	22018
+	EventScript	"nsaIF_Base_Destino WindowHelp_CHG"	22019
+	EventScript	"nsaIF_Base_Destino End of File Button - Toolbar_CHG"	22020
+	EventScript	"nsaIF_Base_Destino Lookup Button 1_CHG"	22021
+	EventScript	"nsaIF_Base_Destino Next Button - Toolbar_CHG"	22022
+	EventScript	"nsaIF_Base_Destino Previous Button - Toolbar_CHG"	22023
+	EventScript	"nsaIF_Base_Destino Top of File Button - Toolbar_CHG"	22024
+	EventScript	"nsaIF_Base_Destino l_Account No1_CHG"	22025
+	EventScript	"nsaIF_Base_Destino l_Account No_CHG"	22026
+}
+Form	"nsaIF_Certificados_Inquiry"	22005
+
+{
+	Window	"nsaIF_Certificados_Inquiry"	22000
+	Window	"nsaIF_Certificados_Inquiry_Scroll"	22001
+	Field	"All Nit"	22000
+	Field	"All Period"	22001
+	Field	"All Vendor"	22002
+	Field	"Año"	22003
+	Field	"Financial"	22004
+	Field	"From  Vendor"	22005
+	Field	"From CV"	22006
+	Field	"From Nit"	22007
+	Field	"From Nit ID"	22008
+	Field	"From Period"	22009
+	Field	"From Period ID"	22010
+	Field	"From Vendor ID"	22011
+	Field	"From Vendor Name"	22012
+	Field	"Fuente"	22013
+	Field	"Ica"	22014
+	Field	"Iva"	22015
+	Field	"Print_Date"	22016
+	Field	"ProgressIndicator39"	22017
+	Field	"ProgressIndicator42"	22018
+	Field	"Purchasing"	22019
+	Field	"PushButton21"	22020
+	Field	"RadioButton15"	22021
+	Field	"RadioButton16"	22022
+	Field	"RadioButton35"	22023
+	Field	"RadioGroup17"	22024
+	Field	"RadioGroup20"	22025
+	Field	"RadioGroup30"	22026
+	Field	"RadioNit"	22027
+	Field	"RadioPeriodo"	22028
+	Field	"RadioVendor"	22029
+	Field	"Return_From_Nit"	22030
+	Field	"Return_To_Nit"	22031
+	Field	"Serie"	22032
+	Field	"TIPO NIT"	22033
+	Field	"To CV"	22034
+	Field	"To Nit ID"	22035
+	Field	"To Period ID"	22036
+	Field	"To Vendor ID"	22037
+	Field	"To Vendor Name"	22038
+	Field	"Year"	22039
+	Field	"año"	22040
+	Field	"nsaIF_GroupBy"	22041
+	Field	"nsaIF_Nit"	22042
+	Field	"nsaIF_Tercero"	22043
+	Datatype	"All Nit"	22000
+	Datatype	"All Period"	22001
+	Datatype	"All Vendor"	22002
+	Datatype	"Año"	22003
+	Datatype	"Financial"	22004
+	Datatype	"From  Vendor"	22005
+	Datatype	"From Nit"	22006
+	Datatype	"From Period"	22007
+	Datatype	"From Vendor ID"	22008
+	Datatype	"From Vendor Name"	22009
+	Datatype	"Fuente"	22010
+	Datatype	"Ica"	22011
+	Datatype	"Iva"	22012
+	Datatype	"Print_Date"	22013
+	Datatype	"ProgressIndicator39"	22014
+	Datatype	"ProgressIndicator42"	22015
+	Datatype	"Purchasing"	22016
+	Datatype	"PushButton21"	22017
+	Datatype	"RadioButton15"	22018
+	Datatype	"RadioButton16"	22019
+	Datatype	"RadioButton35"	22020
+	Datatype	"RadioGroup17"	22021
+	Datatype	"RadioGroup20"	22022
+	Datatype	"RadioGroup30"	22023
+	Datatype	"RadioNit"	22024
+	Datatype	"RadioPeriodo"	22025
+	Datatype	"RadioVendor"	22026
+	Datatype	"Serie"	22027
+	Datatype	"TIPO NIT"	22028
+	Datatype	"To Vendor ID"	22029
+	Datatype	"To Vendor Name"	22030
+	Datatype	"Year"	22031
+	Datatype	"año"	22032
+	Datatype	"nsaIF_GroupBy"	22033
+	Datatype	"nsaIF_Nit"	22034
+	Datatype	"nsaIF_Tercero"	22035
+	Procedure	"Fill_nsaIF_Certificados_LINE2"	22000
+	EventScript	"nsaIF_Certificados_Inquiry Dummy Note Show Hide_CHG"	22000
+	EventScript	"nsaIF_Certificados_Inquiry Lookup Button 1_CHG"	22001
+	EventScript	"nsaIF_Certificados_Inquiry Lookup Button 2_CHG"	22002
+	EventScript	"nsaIF_Certificados_Inquiry Lookup Button 3_CHG"	22003
+	EventScript	"nsaIF_Certificados_Inquiry Lookup Button 4_CHG"	22004
+	EventScript	"nsaIF_Certificados_Inquiry Lookup Button 5_CHG"	22005
+	EventScript	"nsaIF_Certificados_Inquiry Lookup Button 6_CHG"	22006
+	EventScript	"nsaIF_Certificados_Inquiry Note Absent Button - Toolbar_CHG"	22007
+	EventScript	"nsaIF_Certificados_Inquiry Note Present Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Certificados_Inquiry Print Button_CHG"	22009
+	EventScript	"nsaIF_Certificados_Inquiry Process Button P_CHG"	22010
+	EventScript	"nsaIF_Certificados_Inquiry Redisplay Button_CHG"	22011
+	EventScript	"nsaIF_Certificados_Inquiry Scrolling Window Expand Button_CHG"	22012
+	EventScript	"nsaIF_Certificados_Inquiry Scrolling Window Shrink Button_CHG"	22013
+	EventScript	"nsaIF_Certificados_Inquiry l_From Nit ID_CHG"	22014
+	EventScript	"nsaIF_Certificados_Inquiry l_From Vendor ID_CHG"	22015
+	EventScript	"nsaIF_Certificados_Inquiry l_RadioGroup2_CHG"	22016
+	EventScript	"nsaIF_Certificados_Inquiry l_RadioNit_CHG"	22017
+	EventScript	"nsaIF_Certificados_Inquiry l_RadioPeriodo_CHG"	22018
+	EventScript	"nsaIF_Certificados_Inquiry l_Return_From_Nit_CHG"	22019
+	EventScript	"nsaIF_Certificados_Inquiry l_Return_To_Nit_CHG"	22020
+	EventScript	"nsaIF_Certificados_Inquiry l_TIPO NIT_CHG"	22021
+	EventScript	"nsaIF_Certificados_Inquiry l_To Nit ID_CHG"	22022
+	EventScript	"nsaIF_Certificados_Inquiry l_To Vendor ID_CHG"	22023
+	EventScript	"nsaIF_Certificados_Inquiry nsaIF_Type_Nit_CHG"	22024
+	EventScript	"nsaIF_Certificados_Inquiry_FORM_PRE"	22025
+	EventScript	"nsaIF_Certificados_Inquiry_Scroll SCROLL_CHG"	22026
+	EventScript	"nsaIF_Certificados_Inquiry_Scroll Tax Detail Total Taxable Sales/Purchases_CHG"	22028
+	EventScript	"nsaIF_Certificados_Inquiry_WIN_PRE"	22029
+	EventScript	"nsaIF_Agregar_Adhesivo_Scroll SCROLL_CHG"	22030
+	EventScript	"nsaIF_Certificados_Inquiry Expansion Button 1_CHG"	22031
+	EventScript	"nsaIF_Certificados_Inquiry l_From Period ID_CHG"	22032
+	EventScript	"nsaIF_Certificados_Inquiry l_To Period ID_CHG"	22033
+	EventScript	"nsaIF_Certificados_Inquiry Lookup Button 7_CHG"	22034
+	EventScript	"nsaIF_Certificados_Inquiry Lookup Button 8_CHG"	22035
+	EventScript	"nsaIF_Certificados_Inquiry WindowHelp_CHG"	22036
+}
+Form	"nsaIF_Code_SubCode_lookup"	22006
+
+{
+	Window	"nsaIF_Code_SubCode"	22000
+	Window	"nsaIF_Code_SubCode_Scroll"	22001
+	Field	"Find"	22000
+	Field	"Find Prompt"	22001
+	Field	"PushButton2"	22002
+	Field	"PushButton4"	22003
+	Field	"PushButton5"	22004
+	Field	"PushButton6"	22005
+	Field	"Sort By"	22006
+	Datatype	"Find"	22000
+	Datatype	"Find Prompt"	22001
+	Datatype	"PushButton2"	22002
+	Datatype	"PushButton4"	22003
+	Datatype	"PushButton5"	22004
+	Datatype	"PushButton6"	22005
+	Datatype	"Sort By"	22006
+	Procedure	"OPEN"	22001
+	EventScript	"nsaIF_Code_SubCode Cancel Button_CHG"	22000
+	EventScript	"nsaIF_Code_SubCode Dummy Note Show Hide_CHG"	22001
+	EventScript	"nsaIF_Code_SubCode New Button_CHG"	22002
+	EventScript	"nsaIF_Code_SubCode Note Absent Button - Toolbar_CHG"	22003
+	EventScript	"nsaIF_Code_SubCode Note Present Button - Toolbar_CHG"	22004
+	EventScript	"nsaIF_Code_SubCode Open Button_CHG"	22005
+	EventScript	"nsaIF_Code_SubCode Redisplay Button_CHG"	22006
+	EventScript	"nsaIF_Code_SubCode Select Button_CHG"	22007
+	EventScript	"nsaIF_Code_SubCode l_Find_CHG"	22008
+	EventScript	"nsaIF_Code_SubCode l_PushButton4_CHG"	22009
+	EventScript	"nsaIF_Code_SubCode l_PushButton6_CHG"	22011
+	EventScript	"nsaIF_Code_SubCode l_Sort By_CHG"	22012
+	EventScript	"nsaIF_Code_SubCode_WIN_PRE"	22013
+	EventScript	"nsaIF_Code_SubCode_WIN_PRE_DUP"	22014
+}
+Form	"nsaIF_Company_SETP"	22007
+
+{
+	Window	"nsaIF_Company_SETP"	22000
+	Field	"RadioGroup0"	22000
+	Field	"RadioGroup1"	22001
+	Field	"RadioGroup2"	22002
+	Field	"RadioGroup3"	22003
+	Field	"Change Flag"	22004
+	Datatype	"RadioGroup0"	22000
+	Datatype	"RadioGroup1"	22001
+	Datatype	"RadioGroup2"	22002
+	Datatype	"RadioGroup3"	22003
+	Datatype	"Change Flag"	22004
+	EventScript	"nsaIF_Company_SETP Display Existing Record_CHG"	22000
+	EventScript	"nsaIF_Company_SETP Dummy Note Show Hide_CHG"	22001
+	EventScript	"nsaIF_Company_SETP Handle Changes_CHG"	22002
+	EventScript	"nsaIF_Company_SETP Note Absent Button - Toolbar_CHG"	22003
+	EventScript	"nsaIF_Company_SETP Note Present Button - Toolbar_CHG"	22004
+	EventScript	"nsaIF_Company_SETP OK Button_CHG"	22005
+	EventScript	"nsaIF_Company_SETP Save Record_CHG"	22006
+	EventScript	"nsaIF_Company_SETP nsaIFNit_CHG"	22007
+	EventScript	"nsaIF_Company_SETP nsaIF_Type_Nit_CHG"	22008
+	EventScript	"nsaIF_Company_SETP_WIN_POST"	22009
+	EventScript	"nsaIF_Company_SETP_WIN_PRE"	22010
+	EventScript	"nsaIF_Company_SETP WindowHelp_CHG"	22011
+}
+Form	"nsaIF_Magnetic_Media_MSTR"	22010
+
+{
+	Window	"nsaIF_Magnetic_Media_MSTR"	22000
+	Field	"Return_Code_SubCode"	22003
+	Field	"Cliente_del_Exterior"	22004
+	Field	"Nid_Agrupado"	22005
+	Field	"Nid_Detallado"	22006
+	Field	"Percentage"	22007
+	Field	"Percentage_Group"	22008
+	Field	"Percentage_No"	22009
+	Field	"Percentage_Yes"	22010
+	Field	"Report_Nid_Group"	22011
+	Field	"Reporte_Nid"	22012
+	Field	"nsaIF_Tipo Formato"	22013
+	Datatype	"Return_Code_SubCode"	22003
+	Datatype	"Cliente_del_Exterior"	22004
+	Datatype	"Nid_Agrupado"	22005
+	Datatype	"Nid_Detallado"	22006
+	Datatype	"Percentage"	22007
+	Datatype	"Percentage_Group"	22008
+	Datatype	"Percentage_No"	22009
+	Datatype	"Percentage_Yes"	22010
+	Datatype	"Report_Nid_Group"	22011
+	Datatype	"Reporte_Nid"	22012
+	Datatype	"nsaIF_Tipo Formato"	22013
+	EventScript	"nsaIF_Magnetic_Media_MSTR Clear Button_CHG"	22000
+	EventScript	"nsaIF_Magnetic_Media_MSTR Delete Button_CHG"	22001
+	EventScript	"nsaIF_Magnetic_Media_MSTR Display Existing Record_CHG"	22002
+	EventScript	"nsaIF_Magnetic_Media_MSTR Dummy Note Show Hide_CHG"	22003
+	EventScript	"nsaIF_Magnetic_Media_MSTR End of File Button - Toolbar_CHG"	22004
+	EventScript	"nsaIF_Magnetic_Media_MSTR Handle Changes_CHG"	22005
+	EventScript	"nsaIF_Magnetic_Media_MSTR Lookup Button 1_CHG"	22006
+	EventScript	"nsaIF_Magnetic_Media_MSTR Next Button - Toolbar_CHG"	22007
+	EventScript	"nsaIF_Magnetic_Media_MSTR Note Absent Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Magnetic_Media_MSTR Note Present Button - Toolbar_CHG"	22009
+	EventScript	"nsaIF_Magnetic_Media_MSTR Previous Button - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Magnetic_Media_MSTR Save Button_CHG"	22011
+	EventScript	"nsaIF_Magnetic_Media_MSTR Save Record_CHG"	22012
+	EventScript	"nsaIF_Magnetic_Media_MSTR Top of File Button - Toolbar_CHG"	22013
+	EventScript	"nsaIF_Magnetic_Media_MSTR l_Return_Code_SubCode_CHG"	22014
+	EventScript	"nsaIF_Magnetic_Media_MSTR nsaIF_Code_CHG"	22015
+	EventScript	"nsaIF_Magnetic_Media_MSTR WindowHelp_CHG"	22016
+	EventScript	"nsaIF_Magnetic_Media_MSTR_WIN_POST"	22018
+	EventScript	"nsaIF_Magnetic_Media_MSTR_WIN_PRE"	22019
+	EventScript	"nsaIF_Magnetic_Media_MSTR Lookup Button 2_CHG"	22020
+	EventScript	"nsaIF_Magnetic_Media_MSTR l_Percentage_Group_CHG"	22021
+	EventScript	"nsaIF_Magnetic_Media_MSTR l_Report_Nid_Group_CHG"	22022
+	EventScript	"nsaIF_Magnetic_Media_MSTR l_nsaIF_Tipo Formato_CHG"	22023
+}
+Form	"nsaIF_Medios_Mag_Inquiry"	22011
+
+{
+	Window	"nsaIF_Medios_Mag_Inquiry"	22000
+	Window	"nsaIF_Medios_Mag_Inquiry_Scroll"	22001
+	Window	"Generacion_de_Archivos"	22002
+	Window	"nsaIF_Generacion_Archivos_Scrolling_Window"	22003
+	Field	"All Account Number"	22000
+	Field	"All Nit"	22001
+	Field	"All Period"	22002
+	Field	"All Vendor"	22003
+	Field	"Checkbox45"	22004
+	Field	"Checkbox46"	22005
+	Field	"Financial"	22006
+	Field	"From  Vendor"	22007
+	Field	"From Account"	22008
+	Field	"From Account Index"	22009
+	Field	"From Account Number"	22010
+	Field	"From CV"	22011
+	Field	"From Nit"	22012
+	Field	"From Nit ID"	22013
+	Field	"From Period"	22014
+	Field	"From Period ID"	22015
+	Field	"From Vendor ID"	22016
+	Field	"From Vendor Name"	22017
+	Field	"Fuente"	22018
+	Field	"Ica"	22019
+	Field	"Iva"	22020
+	Field	"Mes_1"	22021
+	Field	"Mes_2"	22022
+	Field	"Print_Date"	22023
+	Field	"ProgressIndicator51"	22024
+	Field	"Purchasing"	22025
+	Field	"PushButton21"	22026
+	Field	"RadioAccount"	22027
+	Field	"RadioButton15"	22028
+	Field	"RadioButton16"	22029
+	Field	"RadioButton43"	22030
+	Field	"RadioButton44"	22031
+	Field	"RadioGroup17"	22032
+	Field	"RadioGroup20"	22033
+	Field	"RadioGroup30"	22034
+	Field	"RadioGroup49"	22035
+	Field	"RadioNit"	22036
+	Field	"RadioPeriodo"	22037
+	Field	"RadioVendor"	22038
+	Field	"Return_From_Nit"	22039
+	Field	"Return_To_Nit"	22040
+	Field	"Serie"	22041
+	Field	"Tipo Doc"	22042
+	Field	"To Account Index"	22043
+	Field	"To Account Number"	22044
+	Field	"To CV"	22045
+	Field	"To Nit ID"	22046
+	Field	"To Period ID"	22047
+	Field	"To Vendor ID"	22048
+	Field	"To Vendor Name"	22049
+	Field	"Year"	22050
+	Field	"nsaIF_Third_Type"	22051
+	Field	"Accept Button"	22052
+	Field	"Num_De_Format"	22053
+	Field	"Update_Temp_Table"	22054
+	Field	"Format_display"	22055
+	Field	"Progress_ProcessRpt"	22056
+	Field	"Table_name"	22057
+	Datatype	"All Account Number"	22000
+	Datatype	"All Nit"	22001
+	Datatype	"All Period"	22002
+	Datatype	"All Vendor"	22003
+	Datatype	"Checkbox45"	22004
+	Datatype	"Checkbox46"	22005
+	Datatype	"Financial"	22006
+	Datatype	"From  Vendor"	22007
+	Datatype	"From Account"	22008
+	Datatype	"From Nit"	22009
+	Datatype	"From Period"	22010
+	Datatype	"From Vendor ID"	22011
+	Datatype	"From Vendor Name"	22012
+	Datatype	"Fuente"	22013
+	Datatype	"Ica"	22014
+	Datatype	"Iva"	22015
+	Datatype	"Mes_1"	22016
+	Datatype	"Mes_2"	22017
+	Datatype	"Print_Date"	22018
+	Datatype	"ProgressIndicator51"	22019
+	Datatype	"Purchasing"	22020
+	Datatype	"PushButton21"	22021
+	Datatype	"RadioAccount"	22022
+	Datatype	"RadioButton15"	22023
+	Datatype	"RadioButton16"	22024
+	Datatype	"RadioButton43"	22025
+	Datatype	"RadioButton44"	22026
+	Datatype	"RadioGroup17"	22027
+	Datatype	"RadioGroup20"	22028
+	Datatype	"RadioGroup30"	22029
+	Datatype	"RadioGroup49"	22030
+	Datatype	"RadioNit"	22031
+	Datatype	"RadioPeriodo"	22032
+	Datatype	"RadioVendor"	22033
+	Datatype	"Serie"	22034
+	Datatype	"Tipo Doc"	22035
+	Datatype	"To Vendor ID"	22036
+	Datatype	"To Vendor Name"	22037
+	Datatype	"Year"	22038
+	Datatype	"nsaIF_Third_Type"	22039
+	Datatype	"Accept Button"	22040
+	Datatype	"Update_Temp_Table"	22041
+	Datatype	"Format_display"	22042
+	Datatype	"Progress_ProcessRpt"	22043
+	Datatype	"Table_name"	22044
+	Procedure	"Generacion_de_Archivos_Excel_Formated"	22000
+	Procedure	"Generacion_de_Archivos_Generate_SqlQuery"	22001
+	Procedure	"NIT_Validation"	22002
+	Procedure	"Generacion_de_Archivos_Generate_XML"	22003
+	Procedure	"Generacion_de_Archivos_Excel_Hdr"	22004
+	Procedure	"Generacion_de_Archivos_Update"	22005
+	Procedure	"Generacion_de_Archivos_Validate_Client_Exterior"	22006
+	Procedure	"Generacion_de_Archivos_Validate_Concepts"	22007
+	Procedure	"Generacion_de_Archivos_Validate_Concepts_Amounts"	22008
+	Procedure	"Generacion_de_Archivos_Validate_Format1001"	22009
+	Procedure	"Generacion_de_Archivos_Validate_Format1007"	22011
+	Procedure	"Generacion_de_Archivos_Validate_Format1008"	22012
+	Procedure	"Generacion_de_Archivos_Validate_Format1011"	22013
+	Procedure	"Generacion_de_Archivos_Validate_Format1012"	22014
+	Procedure	"Generacion_de_Archivos_Validate_Menor_Cuantia"	22015
+	Procedure	"Generacion_de_Archivos_Validate_Records"	22016
+	Procedure	"Generacion_de_Archivos_Validate_Tax"	22017
+	Procedure	"Generacion_de_Archivos_Exclude_ZeroB"	22018
+	Procedure	"Generacion_de_Archivos_Validate_Concepts_Amounts_UPD"	22022
+	Procedure	"Generacion_de_Archivos_Validate_Format1001_NEW"	22023
+	Procedure	"Generacion_de_Archivos_Validate_Format1006"	22024
+	Procedure	"Generacion_de_Archivos_Validate_Format1006_Last"	22025
+	Procedure	"Generacion_de_Archivos_Validate_Group_Menor_Cuantia"	22026
+	Procedure	"Generacion_de_Archivos_Validate_Group_Menor_Cuantia_89"	22027
+	Procedure	"Validate_XML"	22028
+	Procedure	"Generacion_de_Archivos_Group_Cuantia"	22029
+	Procedure	"Generacion_de_Archivos_Validate_Concepts_Amounts_UPD_CurrentYear"	22030
+	Procedure	"Generacion_de_Archivos_Validate_Format1001_Last"	22031
+	Procedure	"nsaIF_Check_Concept_Previous"	22032
+	Procedure	"nsaIF_Check_GL_ORMSTRID"	22033
+	Function	"Generacion_De_Archivos_Field_Calc"	22000
+	Function	"RemoveDecimal"	22001
+	Function	"RemoveDecimal1"	22002
+	EventScript	"nsaIF_Medios_Mag_Inquiry Clear Button_CHG"	22000
+	EventScript	"nsaIF_Medios_Mag_Inquiry Create File Button_CHG"	22001
+	EventScript	"nsaIF_Medios_Mag_Inquiry Dummy Note Show Hide_CHG"	22002
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 1_CHG"	22003
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 2_CHG"	22004
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 3_CHG"	22005
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 4_CHG"	22006
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 5_CHG"	22007
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 6_CHG"	22008
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 7_CHG"	22009
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 8_CHG"	22010
+	EventScript	"nsaIF_Medios_Mag_Inquiry Note Absent Button - Toolbar_CHG"	22011
+	EventScript	"nsaIF_Medios_Mag_Inquiry Note Present Button - Toolbar_CHG"	22012
+	EventScript	"nsaIF_Medios_Mag_Inquiry Print Button_CHG"	22013
+	EventScript	"nsaIF_Medios_Mag_Inquiry Process Button P_CHG"	22014
+	EventScript	"nsaIF_Medios_Mag_Inquiry Redisplay Button_CHG"	22015
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_From Account Number_CHG"	22016
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_From Nit ID_CHG"	22017
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_From Vendor ID_CHG"	22018
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_RadioAccount_CHG"	22019
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_RadioGroup2_CHG"	22020
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_RadioNit_CHG"	22021
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_RadioPeriodo_CHG"	22022
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_Return_From_Nit_CHG"	22023
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_Return_To_Nit_CHG"	22024
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_Tipo Doc_CHG"	22025
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_To Account Number_CHG"	22026
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_To Nit ID_CHG"	22027
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_To Vendor ID_CHG"	22028
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_Year_CHG"	22029
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_nsaIF_Third_Type_CHG"	22030
+	EventScript	"nsaIF_Medios_Mag_Inquiry nsaIF_Type_Nit_CHG"	22031
+	EventScript	"nsaIF_Medios_Mag_Inquiry_FORM_PRE"	22032
+	EventScript	"nsaIF_Medios_Mag_Inquiry_Scroll SCROLL_CHG"	22033
+	EventScript	"nsaIF_Medios_Mag_Inquiry_Scroll SCROLL_FILL"	22034
+	EventScript	"nsaIF_Medios_Mag_Inquiry_WIN_PRE"	22035
+	EventScript	"nsaIF_Medios_Mag_Inquiry Mark All_CHG"	22036
+	EventScript	"nsaIF_Medios_Mag_Inquiry Mark None_CHG"	22037
+	EventScript	"nsaIF_Medios_Mag_Inquiry l_Mes_2_CHG"	22038
+	EventScript	"Generacion_de_Archivos Cancel Button_CHG"	22039
+	EventScript	"Generacion_de_Archivos Dummy Note Show Hide_CHG"	22040
+	EventScript	"Generacion_de_Archivos l_Accept Button_CHG"	22041
+	EventScript	"Generacion_de_Archivos_WIN_PRE"	22042
+	EventScript	"nsaIF_Generacion_Archivos_Scrolling_Window Print Detailed _CHG"	22043
+	EventScript	"nsaIF_Generacion_Archivos_Scrolling_Window l_Update_Temp_Table_CHG"	22044
+	EventScript	"nsaIF_Generacion_Archivos_Scrolling_Window nsaIF_Export_Type_CHG"	22045
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 10_CHG"	22046
+	EventScript	"nsaIF_Medios_Mag_Inquiry Lookup Button 9_CHG"	22047
+	EventScript	"Generacion_de_Archivos WindowHelp_CHG"	22048
+	EventScript	"nsaIF_Medios_Mag_Inquiry WindowHelp_CHG"	22049
+	Constant	"CRJ"	22000
+	Constant	"GJ"	22001
+	Constant	"GL"	22002
+	Constant	"PMPAY"	22003
+	Constant	"SJ"	22004
+	Constant	"CUANT"	22005
+	Constant	"OPERACIONES"	22006
+}
+Form	"nsaIF_Nits_Customers"	22012
+
+{
+	Window	"nsaIF_Nits_Customers"	22000
+	Window	"nsaIF_Nits_Customers_Scroll"	22001
+	Field	"Cambios"	22000
+	Field	"Pruebas Borrar"	22001
+	Field	"RadioGroup2"	22002
+	Field	"Sort By"	22003
+	Field	"nsaIF_Selector_Account"	22004
+	Field	"nsaIF_Thirds_Selecction"	22005
+	Field	"PushButton6"	22006
+	Datatype	"Cambios"	22000
+	Datatype	"Pruebas Borrar"	22001
+	Datatype	"RadioGroup2"	22002
+	Datatype	"Sort By"	22003
+	Datatype	"nsaIF_Selector_Account"	22004
+	Datatype	"nsaIF_Thirds_Selecction"	22005
+	Datatype	"PushButton6"	22006
+	EventScript	"nsaIF_Account_Setup_Scroll SCROLL_CHG"	22000
+	EventScript	"nsaIF_Nit_Thirds_Setup nsaIF_CV_CHG"	22001
+	EventScript	"nsaIF_Nits_Customers Cancel Button_CHG"	22002
+	EventScript	"nsaIF_Nits_Customers Clear Button_CHG"	22003
+	EventScript	"nsaIF_Nits_Customers Delete Button_CHG"	22004
+	EventScript	"nsaIF_Nits_Customers Dummy Note Show Hide_CHG"	22005
+	EventScript	"nsaIF_Nits_Customers End of File Button - Toolbar_CHG"	22006
+	EventScript	"nsaIF_Nits_Customers Lookup Button 1_CHG"	22007
+	EventScript	"nsaIF_Nits_Customers Next Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Nits_Customers Note Absent Button - Toolbar_CHG"	22009
+	EventScript	"nsaIF_Nits_Customers Note Present - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Nits_Customers Save Button_CHG"	22011
+	EventScript	"nsaIF_Nits_Customers Top of File Button - Toolbar_CHG"	22012
+	EventScript	"nsaIF_Nits_Customers WindowHelp_CHG"	22013
+	EventScript	"nsaIF_Nits_Customers Zoom Button_CHG"	22014
+	EventScript	"nsaIF_Nits_Customers_Scroll Customer Number_CHG"	22015
+	EventScript	"nsaIF_Nits_Customers_Scroll SCROLL_CHG"	22016
+	EventScript	"nsaIF_Nits_Customers_Scroll SCROLL_DEL"	22017
+	EventScript	"nsaIF_Nits_Customers_Scroll SCROLL_FILL"	22018
+	EventScript	"nsaIF_Nits_Customers_WIN_POST"	22019
+	EventScript	"nsaIF_Nits_Customers_WIN_PRE"	22020
+	EventScript	"nsaIF_Nits_Customerss Previous Button - Toolbar_CHG"	22021
+	EventScript	"nsaIF_Nits_Relations Lookup Button 2_CHG"	22022
+	EventScript	"nsaIF_Nits_Relations nsaIFNit_CHG"	22023
+	EventScript	"nsaIF_Nits_Customers_Scroll Lookup Button 1_CHG"	22024
+	EventScript	"nsaIF_Nits_Customers Lookup Button 3_CHG"	22025
+	EventScript	"nsaIF_Nits_Customers nsaIF_Site_Code_CHG"	22026
+	EventScript	"nsaIF_Nits_Customers l_PushButton6_CHG"	22027
+	EventScript	"nsaIF_Nits_Customers Lookup Button 4_CHG"	22028
+	EventScript	"nsaIF_Nits_Customers nsaIF_Type_Nit_CHG"	22029
+}
+Form	"nsaIF_Nits_Lookup"	22013
+
+{
+	Window	"nsaIF_Nits_Lookup"	22000
+	Window	"nsaIF_NIts_Lookup_Scroll"	22001
+	Field	"ASI_LU_View_Win"	22000
+	Field	"BuscarNIT"	22001
+	Field	"Pruebas Borrar"	22002
+	Field	"PushButton11"	22003
+	Field	"PushButton12"	22004
+	Field	"PushButton13"	22005
+	Field	"PushButton14"	22006
+	Field	"PushButton15"	22007
+	Field	"PushButton16"	22008
+	Field	"PushButton5"	22009
+	Field	"PushButton7"	22010
+	Field	"PushButton8"	22011
+	Field	"RadioGroup2"	22012
+	Field	"Sort By"	22013
+	Field	"String8"	22014
+	Field	"nsaIF_Selector_Account"	22015
+	Field	"nsaIF_Thirds_Selecction"	22016
+	Datatype	"ASI_LU_View_Win"	22000
+	Datatype	"Pruebas Borrar"	22001
+	Datatype	"PushButton11"	22002
+	Datatype	"PushButton12"	22003
+	Datatype	"PushButton13"	22004
+	Datatype	"PushButton14"	22005
+	Datatype	"PushButton15"	22006
+	Datatype	"PushButton16"	22007
+	Datatype	"PushButton5"	22008
+	Datatype	"PushButton7"	22009
+	Datatype	"PushButton8"	22010
+	Datatype	"RadioGroup2"	22011
+	Datatype	"Sort By"	22012
+	Datatype	"String8"	22013
+	Datatype	"nsaIF_Selector_Account"	22014
+	Datatype	"nsaIF_Thirds_Selecction"	22015
+	Procedure	"OPEN"	22000
+	EventScript	"nsaIF_Account_Setup_Scroll SCROLL_CHG"	22000
+	EventScript	"nsaIF_NIts_Lookup_Scroll SCROLL_FILL"	22001
+	EventScript	"nsaIF_NIts_Lookup_Scroll nsaIF_Type_Nit_CHG"	22002
+	EventScript	"nsaIF_Nit_Thirds_Setup nsaIF_CV_CHG"	22003
+	EventScript	"nsaIF_Nits_Lookup ASI_LU_View_Button_CHG"	22004
+	EventScript	"nsaIF_Nits_Lookup Dummy Note Show Hide_CHG"	22005
+	EventScript	"nsaIF_Nits_Lookup New Button_CHG"	22006
+	EventScript	"nsaIF_Nits_Lookup Note Absent Button - Toolbar_CHG"	22007
+	EventScript	"nsaIF_Nits_Lookup Note Present Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Nits_Lookup Open Button_CHG"	22009
+	EventScript	"nsaIF_Nits_Lookup PB_Refresh_Scrolling_Window_CHG"	22010
+	EventScript	"nsaIF_Nits_Lookup Redisplay Button_CHG"	22011
+	EventScript	"nsaIF_Nits_Lookup Select Button_CHG"	22012
+	EventScript	"nsaIF_Nits_Lookup l_Checkbox10_CHG"	22013
+	EventScript	"nsaIF_Nits_Lookup l_PushButton7_CHG"	22014
+	EventScript	"nsaIF_Nits_Lookup l_String6_CHG"	22015
+	EventScript	"nsaIF_Nits_Thirds_LooKup Cancel Button_CHG"	22016
+	EventScript	"nsaIF_Nits_Thirds_LooKup_WIN_PRE"	22017
+	EventScript	"nsaIF_Relationchip_Customers_Nit SCROLL_CHG"	22018
+}
+Form	"nsaIF_Nits_Setup"	22014
+
+{
+	Window	"nsaIF_Nit_Thirds_Setup"	22000
+	Window	"nsaif_Cargar_NIT"	22001
+	Window	"nsaIF_Cargar_Ciudades"	22002
+	Field	"Actual"	22000
+	Field	"Almacenamiento"	22001
+	Field	"Legend1"	22002
+	Field	"Legend2"	22003
+	Field	"Principal"	22004
+	Field	"ProgressIndicator6"	22005
+	Field	"ProgressIndicator7"	22006
+	Field	"PushButton18"	22007
+	Field	"PushButton4"	22008
+	Field	"RadioButton13"	22009
+	Field	"RadioButton14"	22010
+	Field	"RadioButton15"	22011
+	Field	"RadioGroup2"	22012
+	Field	"Sort By"	22013
+	Field	"String8"	22014
+	Field	"Valor_DOC"	22015
+	Field	"VisualSwitch5"	22016
+	Field	"nsaIF_Selector_Account"	22017
+	Field	"nsaIF_Thirds_Selecction"	22018
+	Field	"PushButton19"	22019
+	Field	"ProgressIndicator21"	22020
+	Field	"ProgressIndicator22"	22021
+	Field	"PushButton20"	22022
+	Field	"VisualSwitch23"	22023
+	Field	"DDL26"	22024
+	Field	"Combobox25"	22025
+	Field	"Listbox24"	22026
+	Datatype	"Actual"	22000
+	Datatype	"Almacenamiento"	22001
+	Datatype	"Legend1"	22002
+	Datatype	"Legend2"	22003
+	Datatype	"Principal"	22004
+	Datatype	"ProgressIndicator6"	22005
+	Datatype	"ProgressIndicator7"	22006
+	Datatype	"PushButton18"	22007
+	Datatype	"PushButton4"	22008
+	Datatype	"RadioButton13"	22009
+	Datatype	"RadioButton14"	22010
+	Datatype	"RadioButton15"	22011
+	Datatype	"RadioGroup2"	22012
+	Datatype	"Sort By"	22013
+	Datatype	"String8"	22014
+	Datatype	"Valor_DOC"	22015
+	Datatype	"VisualSwitch5"	22016
+	Datatype	"nsaIF_Selector_Account"	22017
+	Datatype	"nsaIF_Thirds_Selecction"	22018
+	Datatype	"PushButton19"	22019
+	Datatype	"ProgressIndicator21"	22020
+	Datatype	"ProgressIndicator22"	22021
+	Datatype	"PushButton20"	22022
+	Datatype	"VisualSwitch23"	22023
+	Datatype	"DDL26"	22024
+	Datatype	"Combobox25"	22025
+	Datatype	"Listbox24"	22026
+	Procedure	"OPEN"	22000
+	Procedure	"OPEN_TERCERO"	22001
+	Procedure	"nsaIF_Check_nsaIF_Tipo_Documento"	22002
+	Procedure	"nsaIF_Copy_Nits_Setup"	22003
+	Procedure	"nsaIF_Copy_TEMP_NITS"	22004
+	Procedure	"nsaIF_Default_nsaIF_Tipo_Documento"	22005
+	Procedure	"nsaIF_Nits_Setup_Name"	22006
+	Procedure	"Install_SQL_Table"	22007
+	EventScript	"nsaIF_Account_Setup_Scroll SCROLL_CHG"	22000
+	EventScript	"nsaIF_Nit_Thirds_Setup Cancel Button_CHG"	22001
+	EventScript	"nsaIF_Nit_Thirds_Setup Clear Button_CHG"	22002
+	EventScript	"nsaIF_Nit_Thirds_Setup Delete Button_CHG"	22003
+	EventScript	"nsaIF_Nit_Thirds_Setup Dummy Note Show Hide_CHG"	22004
+	EventScript	"nsaIF_Nit_Thirds_Setup End of File Button - Toolbar_CHG"	22005
+	EventScript	"nsaIF_Nit_Thirds_Setup Lookup Button 1_CHG"	22006
+	EventScript	"nsaIF_Nit_Thirds_Setup Next Button - Toolbar_CHG"	22007
+	EventScript	"nsaIF_Nit_Thirds_Setup Note Absent Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Nit_Thirds_Setup Note Present - Toolbar_CHG"	22009
+	EventScript	"nsaIF_Nit_Thirds_Setup Previous Button - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Nit_Thirds_Setup Save Button_CHG"	22011
+	EventScript	"nsaIF_Nit_Thirds_Setup Top of File Button - Toolbar_CHG"	22012
+	EventScript	"nsaIF_Nit_Thirds_Setup WindowHelp_CHG"	22013
+	EventScript	"nsaIF_Nit_Thirds_Setup l_PushButton4_CHG"	22014
+	EventScript	"nsaIF_Nit_Thirds_Setup nsaIFNit_CHG"	22015
+	EventScript	"nsaIF_Nit_Thirds_Setup nsaIF_CV_CHG"	22016
+	EventScript	"nsaif_Cargar_NIT Dummy Note Show Hide_CHG"	22017
+	EventScript	"nsaIF_Nit_Thirds_Setup_WIN_POST"	22018
+	EventScript	"nsaIF_Nit_Thirds_Setup_WIN_PRE"	22019
+	EventScript	"nsaIF_Relationchip_Customers_Nit SCROLL_CHG"	22020
+	EventScript	"nsaif_Cargar_NIT Cancel Button_CHG"	22021
+	EventScript	"nsaif_Cargar_NIT Next Button_CHG"	22022
+	EventScript	"nsaif_Cargar_NIT Print Button_CHG"	22023
+	EventScript	"nsaif_Cargar_NIT l_Almacenamiento_CHG"	22024
+	EventScript	"nsaif_Cargar_NIT_WIN_POST"	22025
+	EventScript	"nsaif_Cargar_NIT_WIN_PRE"	22026
+	EventScript	"nsaIF_Cargar_Ciudades Cancel Button_CHG"	22027
+	EventScript	"nsaIF_Cargar_Ciudades Next Button_CHG"	22028
+	EventScript	"nsaIF_Cargar_Ciudades_WIN_PRE"	22029
+	EventScript	"nsaIF_Nit_Thirds_Setup l_PushButton20_CHG"	22030
+	EventScript	"nsaIF_Nit_Thirds_Setup Lookup Button 2_CHG"	22031
+	EventScript	"nsaIF_Nit_Thirds_Setup nsaIF_Type_CHG"	22032
+	EventScript	"nsaif_Cargar_NIT Note Absent Button - Toolbar_CHG"	22033
+	EventScript	"nsaif_Cargar_NIT Note Present - Toolbar_CHG"	22034
+	EventScript	"nsaif_Cargar_NIT WindowHelp_CHG"	22035
+}
+Form	"nsaIF_Nits_Vendors"	22015
+
+{
+	Window	"nsaIF_Nits_Vendors"	22000
+	Window	"nsaIF_Nits_Vendors_Scroll"	22001
+	Field	"Cambios"	22000
+	Field	"Pruebas Borrar"	22001
+	Field	"RadioGroup2"	22002
+	Field	"Sort By"	22003
+	Field	"nsaIF_Selector_Account"	22004
+	Field	"nsaIF_Thirds_Selecction"	22005
+	Field	"PushButton6"	22006
+	Datatype	"Cambios"	22000
+	Datatype	"Pruebas Borrar"	22001
+	Datatype	"RadioGroup2"	22002
+	Datatype	"Sort By"	22003
+	Datatype	"nsaIF_Selector_Account"	22004
+	Datatype	"nsaIF_Thirds_Selecction"	22005
+	Datatype	"PushButton6"	22006
+	EventScript	"nsaIF_Account_Setup_Scroll SCROLL_CHG"	22000
+	EventScript	"nsaIF_Nit_Thirds_Setup nsaIF_CV_CHG"	22001
+	EventScript	"nsaIF_Nits_Relations Lookup Button 2_CHG"	22002
+	EventScript	"nsaIF_Nits_Relations nsaIFNit_CHG"	22003
+	EventScript	"nsaIF_Nits_Vendors Cancel Button_CHG"	22004
+	EventScript	"nsaIF_Nits_Vendors Clear Button_CHG"	22005
+	EventScript	"nsaIF_Nits_Vendors Delete Button_CHG"	22006
+	EventScript	"nsaIF_Nits_Vendors Dummy Note Show Hide_CHG"	22007
+	EventScript	"nsaIF_Nits_Vendors End of File Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Nits_Vendors Lookup Button 1_CHG"	22009
+	EventScript	"nsaIF_Nits_Vendors Next Button - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Nits_Vendors Note Absent Button - Toolbar_CHG"	22011
+	EventScript	"nsaIF_Nits_Vendors Note Present - Toolbar_CHG"	22012
+	EventScript	"nsaIF_Nits_Vendors Previous Button - Toolbar_CHG"	22013
+	EventScript	"nsaIF_Nits_Vendors Save Button_CHG"	22014
+	EventScript	"nsaIF_Nits_Vendors Top of File Button - Toolbar_CHG"	22015
+	EventScript	"nsaIF_Nits_Vendors Zoom Button_CHG"	22016
+	EventScript	"nsaIF_Nits_Vendors_Scroll SCROLL_CHG"	22017
+	EventScript	"nsaIF_Nits_Vendors_Scroll SCROLL_DEL"	22018
+	EventScript	"nsaIF_Nits_Vendors_Scroll SCROLL_FILL"	22019
+	EventScript	"nsaIF_Nits_Vendors_Scroll Vendor ID_CHG"	22020
+	EventScript	"nsaIF_Nits_Vendors_WIN_POST"	22021
+	EventScript	"nsaIF_Nits_Vendors_WIN_PRE"	22022
+	EventScript	"nsaIF_Nits_Vendors_Scroll Lookup Button 1_CHG"	22023
+	EventScript	"nsaIF_Nits_Vendors Lookup Button 3_CHG"	22024
+	EventScript	"nsaIF_Nits_Vendors nsaIF_Site_Code_CHG"	22025
+	EventScript	"nsaIF_Nits_Vendors l_PushButton6_CHG"	22026
+	EventScript	"nsaIF_Nits_Vendors Lookup Button 4_CHG"	22027
+	EventScript	"nsaIF_Nits_Vendors nsaIF_Type_Nit_CHG"	22028
+	EventScript	"nsaIF_Nits_Vendors WindowHelp_CHG"	22029
+}
+Form	"nsaIF_Pruebas"	22016
+
+{
+	Window	"nsaIF_Pruebas"	22000
+	Field	"Codigo-SubCodigo"	22000
+	Field	"PushButton0"	22001
+	Field	"PushButton2"	22002
+	Field	"PushButton3"	22003
+	Field	"PushButton4"	22004
+	Field	"PushButton5"	22005
+	Field	"PushButton6"	22006
+	Field	"PushButton7"	22007
+	Datatype	"Codigo-SubCodigo"	22000
+	Datatype	"PushButton0"	22001
+	Datatype	"PushButton2"	22002
+	Datatype	"PushButton3"	22003
+	Datatype	"PushButton4"	22004
+	Datatype	"PushButton5"	22005
+	Datatype	"PushButton6"	22006
+	Datatype	"PushButton7"	22007
+	EventScript	"nsaIF_Pruebas l_Codigo-SubCodigo_CHG"	22000
+	EventScript	"nsaIF_Pruebas l_PushButton0_CHG"	22001
+	EventScript	"nsaIF_Pruebas l_PushButton2_CHG"	22002
+	EventScript	"nsaIF_Pruebas l_PushButton3_CHG"	22003
+	EventScript	"nsaIF_Pruebas l_PushButton4_CHG"	22004
+	EventScript	"nsaIF_Pruebas l_PushButton5_CHG"	22005
+}
+Form	"nsaIF_Reconcile_Accounts"	22017
+
+{
+	Window	"nsaIF_Reconcile_Accounts"	22000
+	Field	"History"	22000
+	Field	"Open"	22001
+	Field	"Open Or History"	22002
+	Field	"ProgressIndicator10"	22003
+	Field	"PushButton4"	22004
+	Field	"Reconcile_Indicator"	22005
+	Field	"S_CONCILIAR"	22006
+	Field	"VisualSwitch11"	22007
+	Field	"VisualSwitch12"	22008
+	Field	"Year"	22009
+	Field	"nsaIF_Reconcile"	22010
+	Field	"nsaIF_Reconcile_Status"	22011
+	Field	"nsaIF_Reconcile_Table"	22012
+	Field	"Account Index1"	22013
+	Field	"Account Index2"	22014
+	Field	"All Months"	22015
+	Field	"All Year"	22016
+	Field	"All Years"	22017
+	Field	"Combobox30"	22018
+	Field	"From Year"	22019
+	Field	"FromMon"	22020
+	Field	"MonthFrom"	22021
+	Field	"MonthTo"	22022
+	Field	"RadioButton16"	22023
+	Field	"RadioGroup13"	22024
+	Field	"RadioGroup15"	22025
+	Field	"RadioGroup18"	22026
+	Field	"RadioGroup26"	22027
+	Field	"Vendor ID From"	22028
+	Field	"Vendor ID To"	22029
+	Field	"Year CMB2"	22030
+	Datatype	"History"	22000
+	Datatype	"Open"	22001
+	Datatype	"Open Or History"	22002
+	Datatype	"ProgressIndicator10"	22003
+	Datatype	"PushButton4"	22004
+	Datatype	"Reconcile_Indicator"	22005
+	Datatype	"S_CONCILIAR"	22006
+	Datatype	"VisualSwitch11"	22007
+	Datatype	"VisualSwitch12"	22008
+	Datatype	"Year"	22009
+	Datatype	"nsaIF_Reconcile"	22010
+	Datatype	"nsaIF_Reconcile_Status"	22011
+	Datatype	"nsaIF_Reconcile_Table"	22012
+	Datatype	"All Months"	22013
+	Datatype	"All Year"	22014
+	Datatype	"All Years"	22015
+	Datatype	"Combobox30"	22016
+	Datatype	"From Year"	22017
+	Datatype	"FromMon"	22018
+	Datatype	"MonthFrom"	22019
+	Datatype	"MonthTo"	22020
+	Datatype	"RadioButton16"	22021
+	Datatype	"RadioGroup13"	22022
+	Datatype	"RadioGroup15"	22023
+	Datatype	"RadioGroup18"	22024
+	Datatype	"RadioGroup26"	22025
+	Datatype	"Year CMB2"	22026
+	Procedure	"AddTrx_New_Year"	22000
+	Procedure	"AddYear"	22001
+	Procedure	"ProcessAllHistoryYears"	22002
+	Procedure	"ProcessAllOpenYears"	22003
+	Procedure	"ProcessHistoryBalance"	22005
+	Procedure	"ProcessHistoryYear"	22006
+	Procedure	"ProcessOpenYear"	22007
+	EventScript	"nsaIF_Reconcile_Accounts Account Number_CHG"	22000
+	EventScript	"nsaIF_Reconcile_Accounts Cancel Button_CHG"	22001
+	EventScript	"nsaIF_Reconcile_Accounts Dummy Note Show Hide_CHG"	22002
+	EventScript	"nsaIF_Reconcile_Accounts Lookup Button 1_CHG"	22003
+	EventScript	"nsaIF_Reconcile_Accounts Next Button_CHG"	22004
+	EventScript	"nsaIF_Reconcile_Accounts Note Absent Button - Toolbar_CHG"	22005
+	EventScript	"nsaIF_Reconcile_Accounts Note Present - Toolbar_CHG"	22006
+	EventScript	"nsaIF_Reconcile_Accounts Process Button P_CHG"	22007
+	EventScript	"nsaIF_Reconcile_Accounts WindowHelp_CHG"	22008
+	EventScript	"nsaIF_Reconcile_Accounts_WIN_PRE"	22009
+	EventScript	"nsaIF_Reconcile_Accounts Account Number Array[1]_CHG"	22010
+	EventScript	"nsaIF_Reconcile_Accounts Account Number Array[1]_POST"	22011
+	EventScript	"nsaIF_Reconcile_Accounts Account Number Array[2]_CHG"	22012
+	EventScript	"nsaIF_Reconcile_Accounts Account Number Array[2]_POST"	22013
+	EventScript	"nsaIF_Reconcile_Accounts All Or Range2_CHG"	22014
+	EventScript	"nsaIF_Reconcile_Accounts All Or Range3_CHG"	22015
+	EventScript	"nsaIF_Reconcile_Accounts All Or Range_CHG"	22016
+	EventScript	"nsaIF_Reconcile_Accounts History_CHG"	22017
+	EventScript	"nsaIF_Reconcile_Accounts Lookup Button 2_CHG"	22018
+	EventScript	"nsaIF_Reconcile_Accounts Lookup Button 3_CHG"	22019
+	EventScript	"nsaIF_Reconcile_Accounts Open_CHG"	22020
+	EventScript	"nsaIF_Reconcile_Accounts Year CMB_CHG"	22021
+	EventScript	"nsaIF_Reconcile_Accounts Year CMB_POST"	22022
+	EventScript	"nsaIF_Reconcile_Accounts l_MonthFrom_CHG"	22023
+	EventScript	"nsaIF_Reconcile_Accounts l_MonthFrom_PRE"	22024
+	EventScript	"nsaIF_Reconcile_Accounts l_MonthTo_CH"	22025
+	EventScript	"nsaIF_Reconcile_Accounts l_Year CMB2_POST"	22026
+}
+Form	"nsaIF_Reports"	22018
+
+{
+	Window	"nsaIF_Reports"	22000
+	Field	"Agregar Meses"	22000
+	Field	"Determinar Fecha"	22001
+	Field	"Determinar fecha"	22002
+	Field	"Fin mes"	22003
+	Field	"Fin_MES"	22004
+	Field	"Inicio mes"	22005
+	Field	"Inicio_MES"	22006
+	Field	"Numeric43"	22007
+	Field	"Numeric44"	22008
+	Field	"Tipo_Doc"	22009
+	Field	"imprimir ant"	22010
+	Field	"mes_1"	22011
+	Field	"mes_2"	22012
+	Field	"nsaIF_Account"	22013
+	Field	"nsaIF_All_Accounts"	22014
+	Field	"nsaIF_All_Nits"	22015
+	Field	"nsaIF_All_Periods"	22016
+	Field	"nsaIF_All_Thirds"	22017
+	Field	"nsaIF_All_Years"	22018
+	Field	"nsaIF_CV_Array"	22019
+	Field	"nsaIF_Control_Report"	22020
+	Field	"nsaIF_From_Account"	22021
+	Field	"nsaIF_From_Nit"	22022
+	Field	"nsaIF_From_Period"	22023
+	Field	"nsaIF_From_Third"	22024
+	Field	"nsaIF_From_Year"	22025
+	Field	"nsaIF_History"	22026
+	Field	"nsaIF_Nit"	22027
+	Field	"nsaIF_Nit_Array"	22028
+	Field	"nsaIF_Opened"	22029
+	Field	"nsaIF_Originating Master_ID"	22030
+	Field	"nsaIF_Period"	22031
+	Field	"nsaIF_PeriodId_Array"	22032
+	Field	"nsaIF_Report_Type"	22033
+	Field	"nsaIF_Select_Account"	22034
+	Field	"nsaIF_Select_Nit"	22035
+	Field	"nsaIF_Select_Period"	22036
+	Field	"nsaIF_Select_Third"	22037
+	Field	"nsaIF_Select_Year"	22038
+	Field	"nsaIF_Third"	22039
+	Field	"nsaIF_Third_Type"	22040
+	Field	"nsaIF_Type_Report"	22041
+	Field	"nsaIF_Year"	22042
+	Field	"nsaIF_Year_Array"	22043
+	Field	"nsaIF_Year_Array1"	22044
+	Field	"nsaIF_Year_Selector"	22045
+	Datatype	"Agregar Meses"	22000
+	Datatype	"Determinar Fecha"	22001
+	Datatype	"Determinar fecha"	22002
+	Datatype	"Fin_MES"	22003
+	Datatype	"Inicio_MES"	22004
+	Datatype	"Numeric43"	22005
+	Datatype	"Numeric44"	22006
+	Datatype	"Tipo_Doc"	22007
+	Datatype	"imprimir ant"	22008
+	Datatype	"mes_1"	22009
+	Datatype	"mes_2"	22010
+	Datatype	"nsaIF_Account"	22011
+	Datatype	"nsaIF_All_Accounts"	22012
+	Datatype	"nsaIF_All_Nits"	22013
+	Datatype	"nsaIF_All_Periods"	22014
+	Datatype	"nsaIF_All_Thirds"	22015
+	Datatype	"nsaIF_All_Years"	22016
+	Datatype	"nsaIF_Control_Report"	22017
+	Datatype	"nsaIF_From_Account"	22018
+	Datatype	"nsaIF_From_Nit"	22019
+	Datatype	"nsaIF_From_Period"	22020
+	Datatype	"nsaIF_From_Third"	22021
+	Datatype	"nsaIF_From_Year"	22022
+	Datatype	"nsaIF_History"	22023
+	Datatype	"nsaIF_Nit"	22024
+	Datatype	"nsaIF_Opened"	22025
+	Datatype	"nsaIF_Period"	22026
+	Datatype	"nsaIF_Report_Type"	22027
+	Datatype	"nsaIF_Select_Account"	22028
+	Datatype	"nsaIF_Select_Nit"	22029
+	Datatype	"nsaIF_Select_Period"	22030
+	Datatype	"nsaIF_Select_Third"	22031
+	Datatype	"nsaIF_Select_Year"	22032
+	Datatype	"nsaIF_Third"	22033
+	Datatype	"nsaIF_Third_Type"	22034
+	Datatype	"nsaIF_Type_Report"	22035
+	Datatype	"nsaIF_Year"	22036
+	Datatype	"nsaIF_Year_Array"	22037
+	Datatype	"nsaIF_Year_Array1"	22038
+	Datatype	"nsaIF_Year_Selector"	22039
+	Procedure	"nsaIF_Add_Year"	22000
+	Procedure	"nsaIF_Crear_Legends"	22001
+	Procedure	"nsaIF_Enable_Fields"	22003
+	Procedure	"nsaIF_Reports Detallado_HISTORICO"	22004
+	Procedure	"nsaIF_Reports Detallado_OPEN"	22005
+	Procedure	"nsaIF_Reports Resumido"	22006
+	EventScript	"nsaIF_Reports Account Number Array[1]_CHG"	22000
+	EventScript	"nsaIF_Reports Account Number Array[2]_CHG"	22001
+	EventScript	"nsaIF_Reports Cancel Button_CHG"	22002
+	EventScript	"nsaIF_Reports Dummy Note Show Hide_CHG"	22003
+	EventScript	"nsaIF_Reports Lookup Button 1_CHG"	22004
+	EventScript	"nsaIF_Reports Lookup Button 2_CHG"	22005
+	EventScript	"nsaIF_Reports Lookup Button 3_CHG"	22006
+	EventScript	"nsaIF_Reports Lookup Button 4_CHG"	22007
+	EventScript	"nsaIF_Reports Lookup Button 5_CHG"	22008
+	EventScript	"nsaIF_Reports Lookup Button 6_CHG"	22009
+	EventScript	"nsaIF_Reports Lookup Button 7_CHG"	22010
+	EventScript	"nsaIF_Reports Lookup Button 8_CHG"	22011
+	EventScript	"nsaIF_Reports Note Absent Button - Toolbar _CHG"	22012
+	EventScript	"nsaIF_Reports Note Present - Toolbar_CHG"	22013
+	EventScript	"nsaIF_Reports Print Button_CHG"	22014
+	EventScript	"nsaIF_Reports Redisplay Button_CHG"	22015
+	EventScript	"nsaIF_Reports l_Checkbox37_CHG"	22016
+	EventScript	"nsaIF_Reports l_Determinar fecha_CHG"	22017
+	EventScript	"nsaIF_Reports l_Tipo_Doc_CHG"	22018
+	EventScript	"nsaIF_Reports l_mes_1_CHG"	22019
+	EventScript	"nsaIF_Reports l_mes_2_CHG"	22020
+	EventScript	"nsaIF_Reports l_nsaIF_Nit_Array[1]_CHG"	22021
+	EventScript	"nsaIF_Reports l_nsaIF_Nit_Array[2]_CHG"	22022
+	EventScript	"nsaIF_Reports l_nsaIF_Originating Master_ID[1]_CHG"	22023
+	EventScript	"nsaIF_Reports l_nsaIF_Originating Master_ID[2]_CHG"	22024
+	EventScript	"nsaIF_Reports l_nsaIF_PeriodId_Array[1]_CHG"	22025
+	EventScript	"nsaIF_Reports l_nsaIF_PeriodId_Array[2]_CHG"	22026
+	EventScript	"nsaIF_Reports l_nsaIF_Select_Account_CHG"	22027
+	EventScript	"nsaIF_Reports l_nsaIF_Select_Nit_CHG"	22028
+	EventScript	"nsaIF_Reports l_nsaIF_Select_Period_CHG"	22029
+	EventScript	"nsaIF_Reports l_nsaIF_Select_Third_CHG"	22030
+	EventScript	"nsaIF_Reports l_nsaIF_Select_Year_CHG"	22031
+	EventScript	"nsaIF_Reports l_nsaIF_Third_Type[1]_CHG"	22032
+	EventScript	"nsaIF_Reports l_nsaIF_Third_Type[2]_CHG"	22033
+	EventScript	"nsaIF_Reports l_nsaIF_Type_Report_CHG"	22034
+	EventScript	"nsaIF_Reports l_nsaIF_Year_Array[1]_CHG"	22035
+	EventScript	"nsaIF_Reports l_nsaIF_Year_Selector_CHG"	22036
+	EventScript	"nsaIF_Reports nsaIF_Type_Nit_CHG"	22037
+	EventScript	"nsaIF_Reports_WIN_PRE"	22038
+	EventScript	"nsaIF_Reports Lookup Button 10_CHG"	22039
+	EventScript	"nsaIF_Reports Lookup Button 9_CHG"	22040
+	EventScript	"nsaIF_Reports WindowHelp_CHG"	22041
+}
+Form	"nsaIF_Type_Withholding"	22019
+
+{
+	Window	"nsaIF_Type_Withholding"	22000
+	Field	"RadioGroup0"	22000
+	Field	"RadioGroup1"	22001
+	Field	"RadioGroup2"	22002
+	Datatype	"RadioGroup0"	22000
+	Datatype	"RadioGroup1"	22001
+	Datatype	"RadioGroup2"	22002
+	Procedure	"OPEN"	22000
+	EventScript	"nsaIF_Type_Withholding Clear Button_CHG"	22000
+	EventScript	"nsaIF_Type_Withholding Company Tax ID_CHG"	22001
+	EventScript	"nsaIF_Type_Withholding Delete Button_CHG"	22002
+	EventScript	"nsaIF_Type_Withholding Display Existing Record_CHG"	22003
+	EventScript	"nsaIF_Type_Withholding Dummy Note Show Hide_CHG"	22004
+	EventScript	"nsaIF_Type_Withholding End of File Button - Toolbar_CHG"	22005
+	EventScript	"nsaIF_Type_Withholding Handle Changes_CHG"	22006
+	EventScript	"nsaIF_Type_Withholding Lookup Button 1_CHG"	22007
+	EventScript	"nsaIF_Type_Withholding Next Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Type_Withholding Note Absent Button - Toolbar_CHG"	22009
+	EventScript	"nsaIF_Type_Withholding Note Present Button - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Type_Withholding Previous Button - Toolbar_CHG"	22011
+	EventScript	"nsaIF_Type_Withholding Save Button_CHG"	22012
+	EventScript	"nsaIF_Type_Withholding Save Record_CHG"	22013
+	EventScript	"nsaIF_Type_Withholding Top of File Button - Toolbar_CHG"	22014
+	EventScript	"nsaIF_Type_Withholding_FORM_PRE"	22015
+	EventScript	"nsaIF_Type_Withholding_WIN_POST"	22016
+	EventScript	"nsaIF_Type_Withholding_WIN_PRE"	22017
+	EventScript	"nsaIF_Type_Withholding WindowHelp_CHG"	22018
+}
+Form	"nsaIF_Type_Withholding_Lookup"	22020
+
+{
+	Window	"nsaIF_Type_Withholding"	22000
+	Window	"nsaIF_Type_Withholding_Scroll"	22001
+	Field	"Find"	22000
+	Field	"Find Prompt"	22001
+	Field	"PushButton2"	22002
+	Field	"PushButton4"	22003
+	Field	"PushButton5"	22004
+	Field	"PushButton6"	22005
+	Field	"Sort By"	22006
+	Datatype	"Find"	22000
+	Datatype	"Find Prompt"	22001
+	Datatype	"PushButton2"	22002
+	Datatype	"PushButton4"	22003
+	Datatype	"PushButton5"	22004
+	Datatype	"PushButton6"	22005
+	Datatype	"Sort By"	22006
+	EventScript	"nsaIF_Type_Withholding Cancel Button_CHG"	22000
+	EventScript	"nsaIF_Type_Withholding Dummy Note Show Hide_CHG"	22001
+	EventScript	"nsaIF_Type_Withholding Find Button_CHG"	22002
+	EventScript	"nsaIF_Type_Withholding Note Absent Button - Toolbar_CHG"	22003
+	EventScript	"nsaIF_Type_Withholding Note Present Button - Toolbar_CHG"	22004
+	EventScript	"nsaIF_Type_Withholding Redisplay Button_CHG"	22005
+	EventScript	"nsaIF_Type_Withholding Select Button_CHG"	22006
+	EventScript	"nsaIF_Type_Withholding l_PushButton4_CHG"	22007
+	EventScript	"nsaIF_Type_Withholding l_PushButton6_CHG"	22008
+	EventScript	"nsaIF_Type_Withholding l_Sort By_CHG"	22009
+	EventScript	"nsaIF_Type_Withholding_WIN_PRE"	22010
+	EventScript	"nsaIF_Type_Withholding_WIN_PRE_DUP"	22011
+}
+Form	"nsaIF_Agregar_NIT_Banco"	22021
+
+{
+	Window	"nsaIF_Agregar_NIT_Banco"	22000
+	Field	"Checkbox0"	22000
+	Field	"Checkbox1"	22001
+	Field	"Nombre"	22002
+	Field	"PushButton7"	22003
+	Field	"String2"	22004
+	Field	"String3"	22005
+	Field	"String4"	22006
+	Field	"String5"	22007
+	Datatype	"Checkbox0"	22000
+	Datatype	"Checkbox1"	22001
+	Datatype	"Nombre"	22002
+	Datatype	"PushButton7"	22003
+	Datatype	"String2"	22004
+	Datatype	"String3"	22005
+	Datatype	"String4"	22006
+	Datatype	"String5"	22007
+	EventScript	"Window1 Dummy Note Show Hide_CHG"	22000
+	EventScript	"Window1 nsaIF_Type_Nit_CHG"	22001
+	EventScript	"nsaIF_Agregar_NIT Cancel Button_CHG"	22002
+	EventScript	"nsaIF_Agregar_NIT Delete Button_CHG"	22003
+	EventScript	"nsaIF_Agregar_NIT Note Absent Button - Toolbar_CHG"	22004
+	EventScript	"nsaIF_Agregar_NIT Note Present - Toolbar_CHG"	22005
+	EventScript	"nsaIF_Agregar_NIT Save Button_CHG"	22006
+	EventScript	"nsaIF_Agregar_NIT Save Record_CHG"	22007
+	EventScript	"nsaIF_Agregar_NIT l_PushButton7_CHG"	22008
+	EventScript	"nsaIF_Agregar_NIT nsaIFNit_CHG"	22009
+	EventScript	"nsaIF_Agregar_NIT_Banco Checkbook ID_CHG"	22010
+	EventScript	"nsaIF_Agregar_NIT_Banco Lookup Button 1_CHG"	22011
+	EventScript	"nsaIF_Agregar_NIT_Banco_WIN_PRE"	22012
+	EventScript	"nsaIF_Agregar_NIT_FORM_PRE"	22013
+	EventScript	"nsaIF_Agregar_NIT_WIN_POST"	22014
+	EventScript	"nsaIF_Agregar_NIT_Banco Lookup Button 2_CHG"	22015
+	EventScript	"nsaIF_Agregar_NIT_Banco Lookup Button 3_CHG"	22016
+	EventScript	"nsaIF_Agregar_NIT_Banco Top of File Button - Toolbar_CHG"	22017
+	EventScript	"nsaIF_Agregar_NIT_Banco nsaIF_Site_Code_CHG"	22018
+	EventScript	"nsaIF_Agregar_NIT_Banco Lookup Button 4_CHG"	22019
+}
+Form	"nsaIF_Codigos_Lookup"	22022
+
+{
+	Window	"nsaIF_Codigos_Lookup"	22000
+	Window	"nsaIF_Codigos_Scroll"	22001
+	Field	"Find"	22000
+	Field	"Find Prompt"	22001
+	Field	"PushButton2"	22002
+	Field	"PushButton4"	22003
+	Field	"PushButton5"	22004
+	Field	"PushButton6"	22005
+	Field	"Sort By"	22006
+	Datatype	"Find"	22000
+	Datatype	"Find Prompt"	22001
+	Datatype	"PushButton2"	22002
+	Datatype	"PushButton4"	22003
+	Datatype	"PushButton5"	22004
+	Datatype	"PushButton6"	22005
+	Datatype	"Sort By"	22006
+	EventScript	"nsaIF_Code_SubCode Cancel Button_CHG"	22000
+	EventScript	"nsaIF_Code_SubCode Dummy Note Show Hide_CHG"	22001
+	EventScript	"nsaIF_Code_SubCode New Button_CHG"	22002
+	EventScript	"nsaIF_Code_SubCode Note Absent Button - Toolbar_CHG"	22003
+	EventScript	"nsaIF_Code_SubCode Note Present Button - Toolbar_CHG"	22004
+	EventScript	"nsaIF_Code_SubCode Open Button_CHG"	22005
+	EventScript	"nsaIF_Code_SubCode Redisplay Button_CHG"	22006
+	EventScript	"nsaIF_Code_SubCode Select Button_CHG"	22007
+	EventScript	"nsaIF_Code_SubCode l_Find_CHG"	22008
+	EventScript	"nsaIF_Code_SubCode l_PushButton6_CHG"	22009
+	EventScript	"nsaIF_Code_SubCode l_Sort By_CHG"	22010
+	EventScript	"nsaIF_Code_SubCode_WIN_PRE"	22011
+	EventScript	"nsaIF_Code_SubCode_WIN_PRE_DUP"	22012
+}
+Form	"nsaIF_Codigos_MSTR"	22023
+
+{
+	Window	"nsaIF_Codigos_MSTR"	22000
+	Window	"nsaIF_Ciudad_Lookup"	22001
+	Window	"nsaIF_Ciudades"	22002
+	Window	"nsaIF_Depto_Loookup"	22003
+	Window	"Departamento"	22004
+	Field	"RadioGroup0"	22000
+	Field	"RadioGroup1"	22001
+	Field	"RadioGroup2"	22002
+	Field	"Return_Code_SubCode"	22003
+	Field	"String4"	22004
+	Field	"String5"	22005
+	Field	"Time7"	22006
+	Field	"l_City"	22007
+	Datatype	"RadioGroup0"	22000
+	Datatype	"RadioGroup1"	22001
+	Datatype	"RadioGroup2"	22002
+	Datatype	"Return_Code_SubCode"	22003
+	Datatype	"String4"	22004
+	Datatype	"String5"	22005
+	Datatype	"Time7"	22006
+	EventScript	"nsaIF_Codigos_MSTR Lookup Button 1_CHG"	22000
+	EventScript	"nsaIF_Codigos_MSTR nsaIF_Site_Code_CHG"	22001
+	EventScript	"nsaIF_Magnetic_Media_MSTR Clear Button_CHG"	22002
+	EventScript	"nsaIF_Magnetic_Media_MSTR Delete Button_CHG"	22003
+	EventScript	"nsaIF_Magnetic_Media_MSTR Display Existing Record_CHG"	22004
+	EventScript	"nsaIF_Magnetic_Media_MSTR Dummy Note Show Hide_CHG"	22005
+	EventScript	"nsaIF_Magnetic_Media_MSTR End of File Button - Toolbar_CHG"	22006
+	EventScript	"nsaIF_Magnetic_Media_MSTR Handle Changes_CHG"	22007
+	EventScript	"nsaIF_Magnetic_Media_MSTR Next Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Magnetic_Media_MSTR Note Absent Button - Toolbar_CHG"	22009
+	EventScript	"nsaIF_Magnetic_Media_MSTR Note Present Button - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Magnetic_Media_MSTR Previous Button - Toolbar_CHG"	22011
+	EventScript	"nsaIF_Magnetic_Media_MSTR Save Button_CHG"	22012
+	EventScript	"nsaIF_Magnetic_Media_MSTR Save Record_CHG"	22013
+	EventScript	"nsaIF_Magnetic_Media_MSTR Top of File Button - Toolbar_CHG"	22014
+	EventScript	"nsaIF_Magnetic_Media_MSTR l_Return_Code_SubCode_CHG"	22015
+	EventScript	"nsaIF_Magnetic_Media_MSTR_WIN_POST"	22016
+	EventScript	"nsaIF_Magnetic_Media_MSTR_WIN_PRE"	22017
+	EventScript	"Window3 PB_Refresh_Scrolling_Window_CHG"	22018
+	EventScript	"Window3 Redisplay Button_CHG"	22019
+	EventScript	"nsaIF_Ciudad_Lookup Cancel Button_CHG"	22020
+	EventScript	"nsaIF_Ciudad_Lookup Select Button_CHG"	22021
+	EventScript	"nsaIF_Codigos_MSTR City_CHG"	22022
+	EventScript	"nsaIF_Codigos_MSTR Lookup Button 2_CHG"	22023
+	EventScript	"nsaIF_Codigos_MSTR Lookup Button 3_CHG"	22024
+	EventScript	"nsaIF_Codigos_MSTR State_CHG"	22025
+	EventScript	"nsaIF_Codigos_MSTR nsaIF_Code_Ciudad_CHG"	22026
+	EventScript	"nsaIF_Depto_Loookup Cancel Button_CHG"	22027
+	EventScript	"nsaIF_Depto_Loookup Select Button_CHG"	22028
+	EventScript	"nsaIF_Codigos_MSTR WindowHelp_CHG"	22029
+	EventScript	"nsaIF_Selec_Ciudad PB_Refresh_Scrolling_Window_CHG"	22030
+	EventScript	"nsaIF_Selec_Ciudad Redisplay Button_CHG"	22031
+	EventScript	"nsaIF_Codigos_MSTR nsaIF_Code_CHG"	22033
+	EventScript	"nsaIF_Ciudad_Lookup Dummy Note Show Hide_CHG"	22034
+	EventScript	"nsaIF_Ciudad_Lookup Note Absent Button - Toolbar_CHG"	22035
+	EventScript	"nsaIF_Ciudad_Lookup Note Present Button - Toolbar_CHG"	22036
+	EventScript	"nsaIF_Ciudad_Lookup_WIN_PRE"	22037
+	EventScript	"nsaIF_Depto_Loookup Dummy Note Show Hide_CHG"	22038
+	EventScript	"nsaIF_Depto_Loookup Note Absent Button - Toolbar _CHG"	22039
+	EventScript	"nsaIF_Depto_Loookup Note Present Button - Toolbar_CHG"	22040
+	EventScript	"nsaIF_Depto_Loookup_WIN_PRE"	22041
+}
+Form	"nsaIF_Num_Adhesivo"	22024
+
+{
+	Window	"nsaIF_Num_Adhesivo"	22000
+	Procedure	"OPEN"	22000
+	EventScript	"nsaIF_Num_Adhesivo Cancel Button_CHG"	22000
+	EventScript	"nsaIF_Num_Adhesivo Clear Button_CHG"	22001
+	EventScript	"nsaIF_Num_Adhesivo Delete Button_CHG"	22002
+	EventScript	"nsaIF_Num_Adhesivo End of File Button - Toolbar_CHG"	22003
+	EventScript	"nsaIF_Num_Adhesivo Handle Changes_CHG"	22004
+	EventScript	"nsaIF_Num_Adhesivo Next Button - Toolbar_CHG"	22005
+	EventScript	"nsaIF_Num_Adhesivo Previous Button - Toolbar_CHG"	22006
+	EventScript	"nsaIF_Num_Adhesivo Save Button_CHG"	22007
+	EventScript	"nsaIF_Num_Adhesivo Top of File Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Num_Adhesivo_WIN_POST"	22009
+	EventScript	"nsaIF_Num_Adhesivo Dummy Note Show Hide_CH"	22010
+	EventScript	"nsaIF_Num_Adhesivo Note Absent Button - Toolbar_CH"	22011
+	EventScript	"nsaIF_Num_Adhesivo Note Present Button - Toolbar_CH"	22012
+	EventScript	"nsaIF_Num_Adhesivo_WIN_PR"	22013
+	EventScript	"nsaIF_Num_Adhesivo WindowHelp_CHG"	22014
+}
+Form	"nsaIF_NIT_Bancos_Lookup"	22025
+
+{
+	Window	"nsaIF_Nits_Bancos_Lookup"	22000
+	Window	"nsaIF_NIts_Lookup_Scroll"	22001
+	Field	"ASI_LU_View_Win"	22000
+	Field	"BuscarNIT"	22001
+	Field	"Pruebas Borrar"	22002
+	Field	"PushButton11"	22003
+	Field	"PushButton12"	22004
+	Field	"PushButton13"	22005
+	Field	"PushButton14"	22006
+	Field	"PushButton15"	22007
+	Field	"PushButton16"	22008
+	Field	"PushButton17"	22009
+	Field	"PushButton5"	22010
+	Field	"PushButton7"	22011
+	Field	"PushButton8"	22012
+	Field	"RadioGroup2"	22013
+	Field	"Sort By"	22014
+	Field	"String8"	22015
+	Field	"nsaIF_Selector_Account"	22016
+	Field	"nsaIF_Thirds_Selecction"	22017
+	Datatype	"ASI_LU_View_Win"	22000
+	Datatype	"Pruebas Borrar"	22001
+	Datatype	"PushButton11"	22002
+	Datatype	"PushButton12"	22003
+	Datatype	"PushButton13"	22004
+	Datatype	"PushButton14"	22005
+	Datatype	"PushButton15"	22006
+	Datatype	"PushButton16"	22007
+	Datatype	"PushButton17"	22008
+	Datatype	"PushButton5"	22009
+	Datatype	"PushButton7"	22010
+	Datatype	"PushButton8"	22011
+	Datatype	"RadioGroup2"	22012
+	Datatype	"Sort By"	22013
+	Datatype	"String8"	22014
+	Datatype	"nsaIF_Selector_Account"	22015
+	Datatype	"nsaIF_Thirds_Selecction"	22016
+	Procedure	"OPEN"	22000
+	EventScript	"nsaIF_Account_Setup_Scroll SCROLL_CHG"	22000
+	EventScript	"nsaIF_Nit_Thirds_Setup nsaIF_CV_CHG"	22001
+	EventScript	"nsaIF_Nits_Lookup ASI_LU_View_Button_CHG"	22002
+	EventScript	"nsaIF_Nits_Lookup Dummy Note Show Hide_CHG"	22003
+	EventScript	"nsaIF_Nits_Lookup New Button_CHG"	22004
+	EventScript	"nsaIF_Nits_Lookup Note Absent Button - Toolbar_CHG"	22005
+	EventScript	"nsaIF_Nits_Lookup Note Present Button - Toolbar_CHG"	22006
+	EventScript	"nsaIF_Nits_Lookup Open Button_CHG"	22007
+	EventScript	"nsaIF_Nits_Lookup PB_Refresh_Scrolling_Window_CHG"	22008
+	EventScript	"nsaIF_Nits_Lookup Redisplay Button_CHG"	22009
+	EventScript	"nsaIF_Nits_Lookup Select Button_CHG"	22010
+	EventScript	"nsaIF_Nits_Lookup l_Checkbox10_CHG"	22011
+	EventScript	"nsaIF_Nits_Lookup l_PushButton7_CHG"	22012
+	EventScript	"nsaIF_Nits_Lookup l_String6_CHG"	22013
+	EventScript	"nsaIF_Nits_Thirds_LooKup Cancel Button_CHG"	22014
+	EventScript	"nsaIF_Nits_Thirds_LooKup_WIN_PRE"	22015
+	EventScript	"nsaIF_Relationchip_Customers_Nit SCROLL_CHG"	22016
+}
+Form	"Command_nsaIF"	22026
+
+{
+	Command	"CL_InformesFiscales"	22000
+	Command	"Inquiry_Terceros_Summary_Details"	22001
+	Command	"Config_Account_Definition"	22002
+	Command	"Config_Accounts"	22003
+	Command	"Config_Codes"	22004
+	Command	"Config_Codes_Subcodes"	22005
+	Command	"Config_Company"	22006
+	Command	"Config_Customer_to_Nits"	22007
+	Command	"Config_Nits_Creation"	22008
+	Command	"Config_Vendors_to_Nits"	22009
+	Command	"Config_Withholding_Items"	22010
+	Command	"Reports_Balance_Updating"	22011
+	Command	"Reports_Certification_Withholding"	22012
+	Command	"Reports_Magnetic_Media"	22013
+	Command	"Reports_Tax_Reports"	22014
+	Command	"Setup_Reports"	22015
+	Command	"Config_Numero_Format"	22016
+	Command	"Config_Tipo_Documento"	22017
+	Command	"Config_FA_Feature_Setup"	22018
+}
+Form	"nsaIFAboutBox"	22027
+
+{
+	Window	"nsaIFAboutBox"	22000
+	Field	"Build Date"	22000
+	Field	"Info"	22001
+	Field	"Logo"	22002
+	Field	"String2"	22003
+	Field	"String3"	22004
+	Field	"String4"	22005
+	Field	"String5"	22006
+	Field	"String6"	22007
+	Field	"Version"	22008
+	Field	"tt"	22009
+	Datatype	"Build Date"	22000
+	Datatype	"Info"	22001
+	Datatype	"Logo"	22002
+	Datatype	"String2"	22003
+	Datatype	"String3"	22004
+	Datatype	"String4"	22005
+	Datatype	"String5"	22006
+	Datatype	"String6"	22007
+	Datatype	"Version"	22008
+	Datatype	"tt"	22009
+	EventScript	"EP_About_Box_WIN_PRE"	22000
+	EventScript	"nsaIFAboutBox OK Button_CHG"	22001
+	EventScript	"nsaIFAboutBox_WIN_PRE"	22002
+}
+Form	"nsaIF_Numero_Format"	22028
+
+{
+	Window	"nsaIF_Numero_Format"	22000
+	Field	"Cliente_Exterior"	22000
+	Field	"Concepto"	22001
+	Field	"DDL19"	22002
+	Field	"Dept Code"	22003
+	Field	"Descripcion"	22004
+	Field	"Format_Numero"	22005
+	Field	"Menor_Cuantia"	22006
+	Field	"Municipal Code"	22007
+	Field	"Num Identification"	22008
+	Field	"RadioButton10"	22009
+	Field	"RadioButton7"	22010
+	Field	"RadioButton9"	22011
+	Field	"RadioGroup3"	22012
+	Field	"RadioGroup6"	22013
+	Field	"Tipo de Documento"	22014
+	Field	"Valor_Min"	22015
+	Field	"Group By:"	22016
+	Field	"RadioGroup16"	22017
+	Datatype	"Cliente_Exterior"	22000
+	Datatype	"Concepto"	22001
+	Datatype	"DDL19"	22002
+	Datatype	"Dept Code"	22003
+	Datatype	"Descripcion"	22004
+	Datatype	"Format_Numero"	22005
+	Datatype	"Menor_Cuantia"	22006
+	Datatype	"Municipal Code"	22007
+	Datatype	"Num Identification"	22008
+	Datatype	"RadioButton10"	22009
+	Datatype	"RadioButton7"	22010
+	Datatype	"RadioButton9"	22011
+	Datatype	"RadioGroup3"	22012
+	Datatype	"RadioGroup6"	22013
+	Datatype	"Tipo de Documento"	22014
+	Datatype	"Valor_Min"	22015
+	Datatype	"Group By:"	22016
+	Datatype	"RadioGroup16"	22017
+	Procedure	"OPEN"	22000
+	EventScript	"nsaIF_Numero_Format Clear Button_CHG"	22000
+	EventScript	"nsaIF_Numero_Format Delete Button_CHG"	22001
+	EventScript	"nsaIF_Numero_Format Dummy Note Show Hide_CHG"	22002
+	EventScript	"nsaIF_Numero_Format End of File Button - Toolbar_CHG"	22003
+	EventScript	"nsaIF_Numero_Format Handle Changes_CHG"	22004
+	EventScript	"nsaIF_Numero_Format Lookup Button 1_CHG"	22005
+	EventScript	"nsaIF_Numero_Format Next Button - Toolbar_CHG"	22006
+	EventScript	"nsaIF_Numero_Format Note Absent Button - Toolbar_CHG"	22007
+	EventScript	"nsaIF_Numero_Format Note Present - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Numero_Format Previous Button - Toolbar_CHG"	22009
+	EventScript	"nsaIF_Numero_Format Save Button_CHG"	22010
+	EventScript	"nsaIF_Numero_Format Save Record_CHG"	22011
+	EventScript	"nsaIF_Numero_Format Top of File Button - Toolbar_CHG"	22012
+	EventScript	"nsaIF_Numero_Format l_Format_Numero_CHG"	22013
+	EventScript	"nsaIF_Numero_Format l_Valor_Min_CHG"	22014
+	EventScript	"nsaIF_Numero_Format_WIN_POST"	22015
+	EventScript	"nsaIF_Numero_Format_WIN_PRE"	22016
+	EventScript	"nsaIF_Numero_Format WindowHelp_CHG"	22017
+}
+Form	"nsaIF_Numero_Format_Lookup"	22029
+
+{
+	Window	"nsaIF_Numero_Format_Lookup"	22000
+	Window	"nsaIF_Numero_Format_Scroll"	22001
+	Field	"Cancel"	22000
+	Field	"Description"	22001
+	Field	"Listbox2"	22002
+	Field	"Select"	22003
+	Field	"nsaIF_Type"	22004
+	Datatype	"Cancel"	22000
+	Datatype	"Description"	22001
+	Datatype	"Listbox2"	22002
+	Datatype	"Select"	22003
+	Datatype	"nsaIF_Type"	22004
+	EventScript	"nsaIF_Numero_Format_Lookup Dummy Note Show Hide_CHG"	22000
+	EventScript	"nsaIF_Tipo_Documento_Lookup Note Absent Button - Toolbar_CHG"	22001
+	EventScript	"nsaIF_Tipo_Documento_Lookup Note Present Button - Toolbar_CHG"	22002
+	EventScript	"nsaIF_Tipo_Documento_Lookup l_Cancel_CHG"	22003
+	EventScript	"nsaIF_Tipo_Documento_Lookup l_Select_CHG"	22004
+	EventScript	"nsaIF_Tipo_Documento_Lookup_WIN_PRE"	22005
+}
+Form	"nsaIF_Tipo_Documento"	22030
+
+{
+	Window	"nsaIF_Tipo_Documento"	22000
+	Field	"Checkbox8"	22000
+	Field	"Cliente Exterior"	22001
+	Field	"Crear Cod Verificaión"	22002
+	Field	"Description"	22003
+	Field	"NIT_Type"	22004
+	Field	"String4"	22005
+	Field	"String5"	22006
+	Field	"String7"	22007
+	Field	"nsaIF_Type_Nit"	22008
+	Datatype	"Checkbox8"	22000
+	Datatype	"Cliente Exterior"	22001
+	Datatype	"Crear Cod Verificaión"	22002
+	Datatype	"Description"	22003
+	Datatype	"NIT_Type"	22004
+	Datatype	"String4"	22005
+	Datatype	"String5"	22006
+	Datatype	"String7"	22007
+	Datatype	"nsaIF_Type_Nit"	22008
+	Procedure	"OPEN"	22000
+	EventScript	"nsaIF_Tipo_Documento Clear Button_CHG"	22000
+	EventScript	"nsaIF_Tipo_Documento Delete Button_CHG"	22001
+	EventScript	"nsaIF_Tipo_Documento Dummy Note Show Hide_CHG"	22002
+	EventScript	"nsaIF_Tipo_Documento Dummy Note Show Hide_CHG_DUP"	22003
+	EventScript	"nsaIF_Tipo_Documento End of File Button - Toolbar_CHG"	22004
+	EventScript	"nsaIF_Tipo_Documento Handle Changes_CHG"	22005
+	EventScript	"nsaIF_Tipo_Documento Lookup Button 1_CHG"	22006
+	EventScript	"nsaIF_Tipo_Documento Next Button - Toolbar_CHG"	22007
+	EventScript	"nsaIF_Tipo_Documento Note Absent Button - Toolbar_CHG"	22008
+	EventScript	"nsaIF_Tipo_Documento Note Absent Button - Toolbar_CHG_DUP"	22009
+	EventScript	"nsaIF_Tipo_Documento Note Present - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Tipo_Documento Note Present - Toolbar_CHG_DUP"	22011
+	EventScript	"nsaIF_Tipo_Documento Previous Button - Toolbar_CHG"	22012
+	EventScript	"nsaIF_Tipo_Documento Save Button_CHG"	22013
+	EventScript	"nsaIF_Tipo_Documento Save Record_CHG"	22014
+	EventScript	"nsaIF_Tipo_Documento Top of File Button - Toolbar_CHG"	22015
+	EventScript	"nsaIF_Tipo_Documento l_NIT_Type_CHG"	22016
+	EventScript	"nsaIF_Tipo_Documento_WIN_POST"	22017
+	EventScript	"nsaIF_Tipo_Documento_WIN_PRE"	22018
+	EventScript	"nsaIF_Tipo_Documento_WIN_PRE_DUP"	22019
+	EventScript	"nsaIF_Tipo_Documento WindowHelp_CHG"	22020
+}
+Form	"nsaIF_Tipo_Documento_Lookup"	22031
+
+{
+	Window	"nsaIF_Tipo_Documento_Lookup"	22000
+	Window	"nsaIF_Tipo_Documento_Scroll"	22001
+	Field	"Cancel"	22000
+	Field	"Description"	22001
+	Field	"Listbox2"	22002
+	Field	"Select"	22003
+	Field	"nsaIF_Type"	22004
+	Datatype	"Cancel"	22000
+	Datatype	"Description"	22001
+	Datatype	"Listbox2"	22002
+	Datatype	"Select"	22003
+	Datatype	"nsaIF_Type"	22004
+	EventScript	"nsaIF_Tipo_Documento_Lookup Dummy Note Show Hide_CHG"	22000
+	EventScript	"nsaIF_Tipo_Documento_Lookup Note Absent Button - Toolbar_CHG"	22001
+	EventScript	"nsaIF_Tipo_Documento_Lookup Note Present Button - Toolbar_CHG"	22002
+	EventScript	"nsaIF_Tipo_Documento_Lookup l_Cancel_CHG"	22003
+	EventScript	"nsaIF_Tipo_Documento_Lookup l_Select_CHG"	22004
+	EventScript	"nsaIF_Tipo_Documento_Lookup_WIN_PRE"	22005
+}
+Form	"IFGLPeriodTercerosTemp"	22032
+
+{
+	Constant	"IFGLPRDTERCEROSTMPIDX_ID"	22000
+}
+Form	"IFGLTRXLINEWORK"	22033
+
+{
+	Procedure	"AddNew"	22000
+	Procedure	"Change"	22001
+	Procedure	"ClearRange"	22002
+	Procedure	"Delete"	22003
+	Procedure	"DeleteRange"	22004
+	Procedure	"Destroy"	22005
+	Procedure	"Release"	22006
+	Procedure	"SetAcctIndx"	22007
+	Procedure	"SetCrdtAmt"	22008
+	Procedure	"SetCustVendorID"	22009
+	Procedure	"SetDebtAmt"	22010
+	Procedure	"SetIdxID"	22011
+	Procedure	"SetJrnEntry"	22012
+	Procedure	"SetPosted"	22013
+	Procedure	"SetRangeByJrnEntry"	22014
+	Procedure	"SetSeqLine"	22015
+	Procedure	"SetTRXDate"	22016
+	Procedure	"SetTercType"	22017
+	Procedure	"SetYear"	22018
+	Function	"Commit"	22000
+	Function	"Create"	22001
+	Function	"Get"	22002
+	Function	"GetAcctIndx"	22003
+	Function	"GetCrdtAmt"	22004
+	Function	"GetCustVendorID"	22005
+	Function	"GetDebtAmt"	22006
+	Function	"GetJrnEntry"	22007
+	Function	"GetPosted"	22008
+	Function	"GetSeqLine"	22009
+	Function	"GetTRXDate"	22010
+	Function	"GetTercType"	22011
+	Function	"GetYear"	22012
+	Function	"IsRequired"	22013
+	Constant	"IFGLTRXLINEWORKIDX_ID"	22000
+}
+Form	"IFGLTercerosTemp"	22034
+
+{
+	Constant	"IFGLTERCEROSTMPIDX_ID"	22000
+}
+Form	"IFPMDistribution"	22035
+
+{
+	Procedure	"AddNew"	22000
+	Procedure	"Change"	22001
+	Procedure	"ClearRange"	22002
+	Procedure	"Delete"	22003
+	Procedure	"DeleteRange"	22004
+	Procedure	"Destroy"	22005
+	Procedure	"Release"	22006
+	Procedure	"SetAcctIndx"	22007
+	Procedure	"SetApToVchrNum"	22008
+	Procedure	"SetCtrlType"	22009
+	Procedure	"SetDistSeqNum"	22010
+	Procedure	"SetIdxID"	22011
+	Procedure	"SetIdxID2"	22012
+	Procedure	"SetPosted"	22013
+	Procedure	"SetRangeBy1"	22014
+	Procedure	"SetRangeBy2"	22015
+	Procedure	"SetRangeByVchrNum"	22016
+	Procedure	"SetSpecDist"	22017
+	Procedure	"SetVchrNum"	22018
+	Procedure	"SetVendorID"	22019
+	Procedure	"SetVendorName"	22020
+	Function	"Commit"	22000
+	Function	"Create"	22001
+	Function	"Get"	22002
+	Function	"GetAcctIndx"	22003
+	Function	"GetApToVchrNum"	22004
+	Function	"GetCtrlType"	22005
+	Function	"GetDistSeqNum"	22006
+	Function	"GetPosted"	22007
+	Function	"GetSpecDist"	22008
+	Function	"GetVchrNum"	22009
+	Function	"GetVendorID"	22010
+	Function	"GetVendorName"	22011
+	Function	"IsRequired"	22012
+	Constant	"IFPMDISTRIBUTIONIDX_ID"	22000
+	Constant	"IFPMDISTRIBUTIONIDX_ID2"	22001
+}
+Form	"IFPOPDistribution"	22036
+
+{
+	Procedure	"AddNew"	22000
+	Procedure	"Change"	22001
+	Procedure	"ClearRange"	22002
+	Procedure	"Delete"	22003
+	Procedure	"DeleteRange"	22004
+	Procedure	"Destroy"	22005
+	Procedure	"Release"	22006
+	Procedure	"SetAcctIndx"	22007
+	Procedure	"SetCurrencyID"	22008
+	Procedure	"SetDistType"	22009
+	Procedure	"SetExgRate"	22010
+	Procedure	"SetIdxID"	22011
+	Procedure	"SetIdxID2"	22012
+	Procedure	"SetPOPRptNum"	22013
+	Procedure	"SetPosted"	22014
+	Procedure	"SetRangeByPOPRectNum"	22015
+	Procedure	"SetSeqNum"	22016
+	Procedure	"SetVendorID"	22017
+	Procedure	"SetVendorName"	22018
+	Function	"Commit"	22000
+	Function	"Create"	22001
+	Function	"Get"	22002
+	Function	"GetAcctIndx"	22003
+	Function	"GetCurrencyID"	22004
+	Function	"GetDistType"	22005
+	Function	"GetExgRate"	22006
+	Function	"GetPOPRptNum"	22007
+	Function	"GetPosted"	22008
+	Function	"GetSeqNum"	22009
+	Function	"GetVendorID"	22010
+	Function	"GetVendorName"	22011
+	Function	"IsRequired"	22012
+	Constant	"IFPOPDISTRIBUTIONIDX_ID"	22000
+	Constant	"IFPOPDISTRIBUTIONIDX_ID1"	22001
+}
+Form	"IFPOPINVDistribution"	22037
+
+{
+	Constant	"IFPOPINVDISTRIBUTIONIDX_ID"	22000
+}
+Form	"trpt_GL_Inquiry_Current_Summary"	22038
+
+{
+	Window	"trpt_GL_Inquiry_Current_Summary"	22000
+	Window	"Current_Summary_Scroll"	22001
+	Field	"Browse"	22000
+	Field	"Calculate Total"	22001
+	Field	"Currency Index"	22002
+	Field	"Dummy Script"	22003
+	Field	"Return To Modify Rate"	22004
+	Field	"glAcctState"	22005
+	Field	"trpt_All"	22006
+	Field	"trpt_Customer_Vendor_ID"	22007
+	Field	"trpt_From"	22008
+	Field	"trpt_From_Period"	22009
+	Field	"trpt_Tercero_ID"	22010
+	Field	"trpt_To_Period"	22011
+	Field	"trpt_TotalCredits"	22012
+	Field	"trpt_TotalDebits"	22013
+	Datatype	"Calculate Total"	22000
+	Datatype	"Dummy Script"	22001
+	Datatype	"Return To Modify Rate"	22002
+	Datatype	"trpt_All"	22003
+	Datatype	"trpt_From"	22004
+	Datatype	"trpt_Tercero_ID"	22005
+	Menu	"View"	22000
+	Procedure	"MC_ChangeCurrencyView"	22001
+	Procedure	"MC_OpenWindow_ModifyReportingRate"	22002
+	EventScript	"GL_Current_Summary Clear Button CHG"	22000
+	EventScript	"GL_Current_Summary Current_Summary_Scroll_FILL"	22001
+	EventScript	"trpt_GL_Inquiry_Current_Summary Account Number_CHG"	22002
+	EventScript	"trpt_GL_Inquiry_Current_Summary Calculate Total_CHG"	22003
+	EventScript	"trpt_GL_Inquiry_Current_Summary Currency Button_CHG"	22004
+	EventScript	"trpt_GL_Inquiry_Current_Summary Currency View Button_CHG"	22005
+	EventScript	"trpt_GL_Inquiry_Current_Summary Currency View Button_PRE"	22006
+	EventScript	"trpt_GL_Inquiry_Current_Summary Current Year CMB_CHG"	22007
+	EventScript	"trpt_GL_Inquiry_Current_Summary Dummy WIN PRE_CHG"	22008
+	EventScript	"trpt_GL_Inquiry_Current_Summary Dummy_Note_Show_Hide_CHG"	22009
+	EventScript	"trpt_GL_Inquiry_Current_Summary End Of File Button CHG"	22010
+	EventScript	"trpt_GL_Inquiry_Current_Summary Expansion Button_CHG"	22011
+	EventScript	"trpt_GL_Inquiry_Current_Summary FORM_PRE"	22012
+	EventScript	"trpt_GL_Inquiry_Current_Summary Lookup Button 1 CHG"	22013
+	EventScript	"trpt_GL_Inquiry_Current_Summary Lookup Button 2_CHG"	22014
+	EventScript	"trpt_GL_Inquiry_Current_Summary Lookup Button 3_CHG"	22015
+	EventScript	"trpt_GL_Inquiry_Current_Summary Next Button CHG"	22016
+	EventScript	"trpt_GL_Inquiry_Current_Summary Note_Absent_Button_CHG"	22017
+	EventScript	"trpt_GL_Inquiry_Current_Summary Note_Present_Button_CHG"	22018
+	EventScript	"trpt_GL_Inquiry_Current_Summary PRE WIN"	22019
+	EventScript	"trpt_GL_Inquiry_Current_Summary Previous Button CHG"	22020
+	EventScript	"trpt_GL_Inquiry_Current_Summary Sort By_CHG"	22021
+	EventScript	"trpt_GL_Inquiry_Current_Summary Top Of File Button CHG"	22022
+	EventScript	"trpt_GL_Inquiry_Current_Summary WindowHelp_CHG"	22023
+	EventScript	"trpt_GL_Inquiry_Current_Summary WindowPrint_CHG"	22024
+	EventScript	"trpt_GL_Inquiry_Current_Summary Zoom Button 2_CHG"	22025
+	EventScript	"trpt_GL_Inquiry_Current_Summary Zoom_Button_CHG"	22026
+	EventScript	"trpt_GL_Inquiry_Current_Summary l_Return To Modify Rate_CHG"	22027
+	EventScript	"trpt_GL_Inquiry_Current_Summary l_trpt_From_Period_CHG"	22028
+	EventScript	"trpt_GL_Inquiry_Current_Summary l_trpt_Tercero_ID_CHG"	22029
+	EventScript	"trpt_GL_Inquiry_Current_Summary l_trpt_To_Period_CHG"	22030
+	EventScript	"trpt_GL_Inquiry_Current_Summary_FORM_POST"	22031
+	EventScript	"trpt_GL_Inquiry_Current_Summary_MENU_View_ITEM_&Functional"	22032
+	EventScript	"trpt_GL_Inquiry_Current_Summary_MENU_View_ITEM_&Modify Reporting Rate..."	22033
+	EventScript	"trpt_GL_Inquiry_Current_Summary_MENU_View_ITEM_&Reporting"	22034
+	EventScript	"trpt_GL_Inquiry_Current_Summary_WIN_POST"	22035
+	EventScript	"trpt_GL_Inquiry_Current_Summary_WIN_PRINT"	22036
+	Constant	"CURRENCYBUTTON_MODIFYREPORTINGRATE"	22000
+	Constant	"GLINQUIRYCURRENTSUMMARY"	22001
+	Constant	"MENU_VIEWCURRENCY_FUNCTIONAL"	22002
+	Constant	"MENU_VIEWCURRENCY_MODIFYREPORTING"	22003
+	Constant	"MENU_VIEWCURRENCY_ORIGINATING"	22004
+	Constant	"MENU_VIEWCURRENCY_PULLRIGHT"	22005
+	Constant	"MENU_VIEWCURRENCY_REPORTING"	22006
+}
+Form	"nsaIF_Account_Ranges_Lookup"	22039
+
+{
+	Window	"nsaIF_Account_Ranges_Lookup"	22000
+	Window	"nsaIF_Account_Ranges_Scroll"	22001
+	Field	"Cancel"	22000
+	Field	"Description"	22001
+	Field	"Listbox2"	22002
+	Field	"Position"	22003
+	Field	"Select"	22004
+	Field	"nsaIF_Type"	22005
+	Datatype	"Cancel"	22000
+	Datatype	"Description"	22001
+	Datatype	"Listbox2"	22002
+	Datatype	"Position"	22003
+	Datatype	"Select"	22004
+	Datatype	"nsaIF_Type"	22005
+	EventScript	"nsaIF_Account_Ranges_Lookup Dummy Note Show Hide_CHG"	22000
+	EventScript	"nsaIF_Account_Ranges_Lookup Note Absent Button - Toolbar_CHG"	22001
+	EventScript	"nsaIF_Account_Ranges_Lookup Note Present Button - Toolbar_CHG"	22002
+	EventScript	"nsaIF_Account_Ranges_Lookup l_Cancel_CHG"	22003
+	EventScript	"nsaIF_Account_Ranges_Lookup l_Select_CHG"	22004
+	EventScript	"nsaIF_Account_Ranges_Lookup_WIN_PRE"	22005
+	EventScript	"nsaIF_Account_Ranges_Scroll SCROLL_FILL"	22006
+}
+Form	"nsaIF_Setup_Reports"	22040
+
+{
+	Window	"nsaIF_Setup_Reports"	22000
+	Field	"Account Number From"	22000
+	Field	"Account Number To"	22001
+	Field	"Account_Index_Frm"	22002
+	Field	"Account_Index_To"	22003
+	Field	"Account_description_Frm"	22004
+	Field	"Account_description_To"	22005
+	Field	"Cpt_From"	22006
+	Field	"Cpt_To"	22007
+	Field	"Delete"	22008
+	Field	"Descriptio_From"	22009
+	Field	"Description_To"	22010
+	Field	"Dummy Return"	22011
+	Field	"Existing Record"	22012
+	Field	"Frmt_From"	22013
+	Field	"Frmt_To"	22014
+	Field	"Insert"	22015
+	Field	"Print"	22016
+	Field	"Ranges"	22017
+	Field	"Ranges Selected"	22018
+	Field	"Report Options"	22019
+	Field	"SaveRecord"	22020
+	Datatype	"Delete"	22000
+	Datatype	"Dummy Return"	22001
+	Datatype	"Existing Record"	22002
+	Datatype	"Frmt_From"	22003
+	Datatype	"Frmt_To"	22004
+	Datatype	"Insert"	22005
+	Datatype	"Print"	22006
+	Datatype	"Ranges"	22007
+	Datatype	"Ranges Selected"	22008
+	Datatype	"Report Options"	22009
+	Datatype	"SaveRecord"	22010
+	Procedure	"AddRanges"	22000
+	EventScript	"nsaIF_Setup_Reports Clear Button_CHG"	22000
+	EventScript	"nsaIF_Setup_Reports Delete Button_CHG"	22001
+	EventScript	"nsaIF_Setup_Reports Destination Button_CHG"	22002
+	EventScript	"nsaIF_Setup_Reports Lookup Button 1_CHG"	22003
+	EventScript	"nsaIF_Setup_Reports Lookup Button 2_CHG"	22004
+	EventScript	"nsaIF_Setup_Reports Lookup Button 3_CHG"	22005
+	EventScript	"nsaIF_Setup_Reports Lookup Button 4_CHG"	22006
+	EventScript	"nsaIF_Setup_Reports Lookup Button 5_CHG"	22007
+	EventScript	"nsaIF_Setup_Reports Lookup Button 6_CHG"	22008
+	EventScript	"nsaIF_Setup_Reports Note Absent Button - Toolbar_CHG"	22009
+	EventScript	"nsaIF_Setup_Reports Note Present - Toolbar_CHG"	22010
+	EventScript	"nsaIF_Setup_Reports Print Button_CHG"	22011
+	EventScript	"nsaIF_Setup_Reports Save Button_CHG"	22012
+	EventScript	"nsaIF_Setup_Reports WindowHelp_CHG"	22013
+	EventScript	"nsaIF_Setup_Reports WindowNote_CHG"	22014
+	EventScript	"nsaIF_Setup_Reports l_Account Number From_CHG"	22015
+	EventScript	"nsaIF_Setup_Reports l_Account Number To_CHG"	22016
+	EventScript	"nsaIF_Setup_Reports l_Cpt_From_CHG"	22017
+	EventScript	"nsaIF_Setup_Reports l_Cpt_To_CHG"	22018
+	EventScript	"nsaIF_Setup_Reports l_Delete_CHG"	22019
+	EventScript	"nsaIF_Setup_Reports l_Dummy Return_CHG"	22020
+	EventScript	"nsaIF_Setup_Reports l_Frmt_From_CHG"	22021
+	EventScript	"nsaIF_Setup_Reports l_Frmt_To_CHG"	22022
+	EventScript	"nsaIF_Setup_Reports l_Insert_CHG"	22023
+	EventScript	"nsaIF_Setup_Reports l_Print_CHG"	22024
+	EventScript	"nsaIF_Setup_Reports l_Ranges_CHG"	22025
+	EventScript	"nsaIF_Setup_Reports l_Report Options_CHG"	22026
+	EventScript	"nsaIF_Setup_Reports l_SaveRecord_CHG"	22027
+	EventScript	"nsaIF_Setup_Reports_WIN_PRE"	22028
+	Constant	"ACCOUNT"	22000
+	Constant	"CONCEPT"	22001
+	Constant	"FORM"	22002
+	Constant	"FORMAT"	22003
+}
+Form	"IF_FA_Feature_Setup"	22041
+
+{
+	Window	"IF_FA_Feature_Setup"	22000
+	Procedure	"Fill_Feature_Setup"	22000
+	Procedure	"Handle_Changes"	22001
+	Procedure	"Save_Record"	22002
+	EventScript	"IF_FA_Feature_Setup Dummy Note Show Hide_CHG"	22000
+	EventScript	"IF_FA_Feature_Setup Note Absent Button - Toolbar _CHG"	22001
+	EventScript	"IF_FA_Feature_Setup Note Present Button - Toolbar_CHG"	22002
+	EventScript	"IF_FA_Feature_Setup OK Button_CHG"	22003
+	EventScript	"IF_FA_Feature_Setup WindowHelp_CHG"	22004
+	EventScript	"IF_FA_Feature_Setup_WIN_PRE"	22005
+	EventScript	"MM_Feature_Setup Activate Magnetic Media_CHG"	22006
+	EventScript	"MM_Feature_Setup Cancel Button_CHG"	22007
+	EventScript	"MM_Feature_Setup Cancel Button_CHG_DUP"	22008
+	EventScript	"MM_Feature_Setup OK Button_CHG"	22009
+	Constant	"IF_FA_Feature_Setup"	22000
+}
+Form	"nsaIF_Shipping_Doc_Num_Lookup"	22042
+
+{
+	Window	"nsaIF_Shipping_Doc_Num_Lookup"	22000
+	Window	"nsaIF_Shipping_Doc_Num_Lookup_Scroll"	22001
+	Field	"Format Type"	22000
+	Field	"Module List"	22001
+	Datatype	"Format Type"	22000
+	Datatype	"Module List"	22001
+	EventScript	"LoCh_Shipping_Doc_Num_Lookup_FORM_PRE"	22000
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup Dummy Note Show Hide_CHG"	22001
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup Note Absent Button - Toolbar_CHG"	22002
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup Note Present Button - Toolbar_CHG"	22003
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup Scrolling Window Expand Button_CHG"	22004
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup Scrolling Window Shrink_CHG"	22005
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup Select Button_CHG"	22006
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup WindowHelp_CHG"	22007
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup_FORM_PRE"	22008
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup_Scroll SCROLL_FILL"	22009
+	EventScript	"nsaIF_Shipping_Doc_Num_Lookup_WIN_PRE"	22010
+	Constant	"nsaIF_Shipping_Doc_Num_Lookup"	22000
+}
+Form	"nsaIF_Shipping_Doc_Num_Setup"	22043
+
+{
+	Window	"nsaIF_Shipping_Doc_Num_Setup"	22000
+	Field	"Display Existing Record"	22000
+	Field	"Handle Changes"	22001
+	Field	"Save Record"	22002
+	Field	"Temp Sequence Number ID"	22003
+	Datatype	"Display Existing Record"	22000
+	Datatype	"Handle Changes"	22001
+	Datatype	"Save Record"	22002
+	EventScript	"And_Shipping_Doc_Num_Setup_WIN_POST"	22000
+	EventScript	"And_Shipping_Doc_Num_Setup_WIN_PRE"	22001
+	EventScript	"And_Shipping_Doc_Num_Setup_WIN_PRINT"	22002
+	EventScript	"SD_Doc_Num_Setup Report Format Type_CHG"	22003
+	EventScript	"SD_Document_Num_Setup Lookup Button 1_CHG"	22004
+	EventScript	"SD_Document_Num_Setup Module List_CHG"	22005
+	EventScript	"SD_Document_Num_Setup Print Button_CHG"	22006
+	EventScript	"nsaIF_SD_Document_Num_Setup Clear Button_CHG"	22007
+	EventScript	"nsaIF_SD_Document_Num_Setup Delete Button_CHG"	22008
+	EventScript	"nsaIF_SD_Document_Num_Setup Save Button_CHG"	22009
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Dummy Note Show Hide_CHG"	22010
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup End of File Button_CHG"	22011
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Lookup Button 1_CHG"	22012
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Next Button - Toolbar_CHG"	22013
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Note Absent Button - Toolbar_CHG"	22014
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Note Present Button - Toolbar_CHG"	22015
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Previous Button - Toolbar_CHG"	22016
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Sequence Number ID_CHG"	22017
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Ship Module Option_CHG"	22018
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup Top of File Button_CHG"	22019
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup WindowHelp_CHG"	22020
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup l_Display Existing Record_CHG"	22021
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup l_Handle Changes_CHG"	22022
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup l_Save Record_CHG"	22023
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup l_Temp Sequence Number ID_CHG"	22024
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup_WIN_POST"	22025
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup_WIN_PRE"	22026
+	EventScript	"nsaIF_Shipping_Doc_Num_Setup_WIN_PRINT"	22027
+}
+Datatype	"nsaIFNit"	"Project"	22000
+Datatype	"nsaIF_Selector"	"System"	22001
+Datatype	"nsaIF_Type_Nit"	"Financial"	22002
+Datatype	"nsaIF_Phone"	"Sales"	22003
+Datatype	"nsaIF_CV"	"Purchasing"	22004
+Datatype	"nsaIF_Reporte"	"Inventory"	22005
+Datatype	"nsaIF_Movimiento"	"Payroll"	22006
+Datatype	"nsaIF_Naturaleza"	"Project"	22007
+Datatype	"nsaIF_MM"	"System"	22008
+Datatype	"nsaIF_CI"	"Financial"	22009
+Datatype	"TE_DDL_Tipo_Reorganiza"	"Sales"	22010
+Datatype	"nsaIF_STR2"	"Purchasing"	22011
+Datatype	"ASI_LU_View_Button"	"Inventory"	22012
+Datatype	"nsaIF_Man_Tercero"	"Payroll"	22013
+Datatype	"STR80_Install_Component"	"Project"	22014
+Datatype	"STR80_Install_Step"	"System"	22015
+Datatype	"STR30_Install_Date_and_Time"	"Financial"	22016
+Datatype	"LI6_Log_Index"	"Sales"	22017
+Datatype	"Script_Name"	"Purchasing"	22018
+Datatype	"Message_Text"	"Inventory"	22019
+Datatype	"VS_FAM_Install"	"Payroll"	22020
+Datatype	"STR80_Progress_Status"	"Project"	22021
+Datatype	"Chunk_Progress_Indicator"	"System"	22022
+Datatype	"DDL_ACRS_Life_Years"	"Financial"	22023
+Datatype	"VS_FAM_Install_Small"	"Sales"	22024
+Datatype	"nsaIF_CTA_Reten"	"System"	22025
+Datatype	"nsaIF_Agrup_NIT"	"System"	22026
+Datatype	"NsaIF_Dir_Banco"	"System"	22027
+Datatype	"nsaIF_Client_Exterior"	"Project"	22028
+Datatype	"Crear Cod Verificaión"	"System"	22029
+Datatype	"Numero de Formato"	"Financial"	22030
+Datatype	"Reporte_Menor_Cuantia"	"Sales"	22031
+Datatype	"Reporte_Cliente_Exterior"	"Purchasing"	22032
+Datatype	"Concepto"	"Inventory"	22033
+Datatype	"Tipo_Documento"	"Payroll"	22034
+Datatype	"Num_Identification"	"Project"	22035
+Datatype	"Cod_Departmento"	"System"	22036
+Datatype	"Cod_Municipo"	"Financial"	22037
+Datatype	"nsaIF_STR4"	"Sales"	22038
+Datatype	"nsaIF_Export_Type"	"Purchasing"	22039
+Datatype	"Propiedad"	"Inventory"	22040
+Datatype	"Concept"	"Payroll"	22041
+Datatype	"Format Code"	"Project"	22042
+Datatype	"Format Version"	"System"	22043
+Datatype	"Sending Number"	"Financial"	22044
+Datatype	"Sending Date"	"Sales"	22045
+Datatype	"InicialDate"	"Purchasing"	22046
+Datatype	"FinalDate"	"Inventory"	22047
+Datatype	"TotalValue"	"Payroll"	22048
+Datatype	"Quantity Registers"	"Project"	22049
+Datatype	"Document Type"	"System"	22050
+Datatype	"Document Identification Number"	"Financial"	22051
+Datatype	"Verification Digit"	"Sales"	22052
+Datatype	"First Last Name"	"Purchasing"	22053
+Datatype	"Second Last Name"	"Inventory"	22054
+Datatype	"First Name Of the Informed One"	"Payroll"	22055
+Datatype	"Second Name Of the Informed One"	"Project"	22056
+Datatype	"Trade Name Of the Informed One"	"System"	22057
+Datatype	"AddressDIR"	"Financial"	22058
+Datatype	"Department Code"	"Sales"	22059
+Datatype	"Code Of the Municipality"	"Purchasing"	22060
+Datatype	"Identifier"	"Inventory"	22061
+Datatype	"DDL_Terceros"	"Payroll"	22062
+Datatype	"IFGLPeriodTercerosTempState"	"Project"	22063
+Datatype	"IFGLTercerosTempState"	"System"	22064
+Datatype	"IFGLTRXLINEWORKState"	"Financial"	22065
+Datatype	"IFPMDistributionState"	"Sales"	22066
+Datatype	"IFPOPDistributionState"	"Purchasing"	22067
+Datatype	"IFPOPINVDistributionState"	"Inventory"	22068
+Datatype	"nsaIF_Formats"	"Payroll"	22069
+Datatype	"nsaIF_Exclude_ZeroB"	"Project"	22070
+Datatype	"CB_ACTPSTFADTL"	"System"	22071
+Datatype	"LI9_Asset_Index"	"Financial"	22072
+Datatype	"STR30_GL_Interface_Comment"	"Sales"	22073
+Datatype	"LI9_PurchaseLineSequence"	"Purchasing"	22074
+Datatype	"STR40_AssetPurchaseDescription"	"Inventory"	22075
+Datatype	"nsaIF_Cost_Deduction"	"Payroll"	22076
+Datatype	"STR_Sequence_Number_Id"	"Project"	22077
+Datatype	"RB_Module"	"System"	22078
+Datatype	"DDL_Module"	"Financial"	22079
+Datatype	"Ship_Rpt_Format"	"Sales"	22080
+Datatype	"ShipSeqNo"	"Purchasing"	22081
+Datatype	"RB_Group"	"Inventory"	22082
+Datatype	"nsaIF_Format1001"	"Payroll"	22083
+Datatype	"nsaIF_Format1007"	"Project"	22084
+Composite	"IFGLPeriodTercerosTempState"	"Project"	22000
+Composite	"IFGLTercerosTempState"	"System"	22001
+Composite	"IFGLTRXLINEWORKState"	"Financial"	22002
+Composite	"IFPMDistributionState"	"Sales"	22003
+Composite	"IFPOPDistributionState"	"Purchasing"	22004
+Composite	"IFPOPINVDistributionState"	"Inventory"	22005
+Format	"nsaIF_Phone"	"Project"	22000
+Format	"nsaIF_STR2"	"System"	22001
+Format	"nsaIF_NIT"	"Financial"	22002
+Format	"NUM_RB_U0"	"Sales"	22003
+Format	"nsaIF_NIT_Der"	"System"	22004
+String	"Tax0"	"System"	22000
+String	"Concepts"	"System"	22001
+String	"Format Type Configuration"	"Financial"	22002
+String	"Document Type Configuration"	"Sales"	22003
+String	"Other Names"	"Purchasing"	22004
+String	"First Surname"	"Inventory"	22005
+String	"XML"	"Payroll"	22006
+String	"1001"	"Project"	22007
+String	"Shipping Document Number Lookup"	"System"	22008
+String	"Impuesto"	"Financial"	22009
+String	"nsaIF_Account_MSTR_TEMP"	"Sales"	22010
+String	"Second Surname"	"Purchasing"	22011
+String	"1003"	"Payroll"	22013
+String	"nsaIF_Generacion_Formats"	"Project"	22014
+String	"Group External Clients"	"System"	22015
+String	"Grouped"	"Financial"	22016
+String	"Concepts Creation"	"Sales"	22017
+String	"1005"	"Purchasing"	22018
+String	"Financial TRX Percentage"	"Inventory"	22019
+String	"Third Party Period Inquiry"	"Payroll"	22020
+String	"1006"	"Project"	22021
+String	"File Generation"	"System"	22022
+String	"Third Party"	"Financial"	22023
+String	"Municipal Code"	"Sales"	22024
+String	"Identification Num."	"Purchasing"	22025
+String	"Format Number"	"Inventory"	22026
+String	"Report smaller quantities"	"Payroll"	22027
+String	"External Client Report"	"Project"	22028
+String	"Group by:"	"System"	22029
+String	"1007"	"Financial"	22030
+String	"External Client"	"Sales"	22031
+String	"1008"	"Purchasing"	22032
+String	"ADDRESS"	"Inventory"	22033
+String	"Create Verification Code"	"Payroll"	22034
+String	"Identification Type"	"Project"	22035
+String	"1009"	"System"	22036
+String	"Third Party ID"	"Financial"	22037
+String	"Third Party Name"	"Sales"	22038
+String	"Document Type Search"	"Purchasing"	22039
+String	"Third Party Type"	"Inventory"	22040
+String	"Informes Fiscal General Ledger Period Terceros Temporary"	"Payroll"	22041
+String	"YEAR"	"Project"	22042
+String	"Informes Fiscal General Ledger Transaction Line Work "	"System"	22043
+String	"Informes Fiscal  PM Distribution Work History"	"Financial"	22044
+String	"PERIOD"	"Sales"	22045
+String	"Non cost or deduction account"	"Purchasing"	22046
+String	"Informes Fiscal  POP Invoice Distribution Work History"	"Inventory"	22047
+String	"Acerca de..."	"Payroll"	22048
+String	"Informant NIT"	"Project"	22049
+String	"CxC"	"System"	22050
+String	"CxP"	"System"	22051
+String	"FIN"	"System"	22052
+String	"Por Nit"	"Purchasing"	22053
+String	"CITY WHERE THE WITHHOLDING WAS ALLOCATED"	"Inventory"	22054
+String	"Por Nombre"	"Payroll"	22055
+String	"Date Time"	"System"	22056
+String	"NAME AND/OR COMPANY NAME OF PERSON OR ENTITY FROM WHOM  AMOUNT WAS WITHHELD"	"System"	22057
+String	"NIT OR C.C."	"Financial"	22058
+String	"CONCEPT"	"Sales"	22059
+String	"Fixed Assets Installation Report"	"System"	22060
+String	"Installation Component"	"System"	22061
+String	"Installation Status"	"System"	22062
+String	"Install Step"	"System"	22063
+String	"Install Date, Time"	"System"	22064
+String	"AMOUNT SUBJECT TO WITHHOLDING"	"Financial"	22065
+String	"Installation attempt(s)"	"System"	22066
+String	"AMOUNT WITHHELD"	"Purchasing"	22067
+String	"ICA WITHHOLDING CERTIFICATE"	"Inventory"	22068
+String	"Asignar Tercero"	"Payroll"	22069
+String	"nsaIF_Base_Destino"	"Project"	22070
+String	"nsaIF_Certificados_HDR"	"System"	22071
+String	"nsaIF_Certificados_HDR_NIT"	"Financial"	22072
+String	"nsaIF_Certificados_LINE"	"Sales"	22073
+String	"nsaIF_Codigos_MSTR"	"Purchasing"	22074
+String	"nsaIF_Config_Ciudades"	"Inventory"	22075
+String	"nsaIF_Config_Departamentos"	"Payroll"	22076
+String	"IF Sales Distribution Work and History"	"Project"	22077
+String	"Date of Submission:"	"System"	22078
+String	"Cuenta 0"	"Financial"	22079
+String	"Tercero "	"Sales"	22080
+String	"Cuenta "	"Purchasing"	22081
+String	"nsaIF_Generacion_Archivos_Hdr_TEMP"	"Inventory"	22082
+String	"nsaIF_Generacion_Archivos_TEMP"	"Payroll"	22083
+String	"NIT Code"	"Project"	22084
+String	"Nit Report"	"System"	22085
+String	"nsaIF_Account_MSTR"	"System"	22086
+String	"Setup_Reports"	"Sales"	22087
+String	"1011"	"Purchasing"	22088
+String	"1012"	"Inventory"	22089
+String	"Generar Archivo"	"Payroll"	22090
+String	"Borrar Nits"	"Project"	22091
+String	"nsaIF_NUM_Adhesivo"	"System"	22092
+String	"Exclude Zero Balance"	"Financial"	22093
+String	"nsaIF_NUM_Adhesivo Temp"	"Sales"	22094
+String	"nsaIF_Conciliacion_saldos_TEMP"	"Purchasing"	22095
+String	"Temp de Nits Terceros"	"Inventory"	22096
+String	"Crear Codigos"	"Payroll"	22097
+String	"Add Note to Window"	"Project"	22098
+String	"nsaIF_Numero_Formato"	"System"	22099
+String	"Abierto0"	"Financial"	22100
+String	"NAME AND/OR COMPANY NAME OF THE WITHHOLDER"	"Sales"	22101
+String	"NIT or C.C. No"	"Purchasing"	22102
+String	"Año :"	"Inventory"	22103
+String	"&Conciliar0"	"Payroll"	22104
+String	"NIT"	"System"	22105
+String	"nsaIF_TRX_Resumen_TEMP"	"System"	22106
+String	"(Ctrl+L)"	"System"	22107
+String	"nsaIF_Tipo_Documento"	"Sales"	22108
+String	"Tercero ID"	"Purchasing"	22109
+String	"Tax Reports Account Index Details"	"Inventory"	22110
+String	"Tax Reports Transaction Amounts Work Temp"	"Payroll"	22111
+String	"Tax Reports Year-to-Date Transaction Open Temp"	"Project"	22112
+String	"Sticker No"	"System"	22113
+String	"Tax Reports Tercero Summary Details"	"Financial"	22114
+String	"Paid Amount"	"Sales"	22115
+String	"Printing Format Type"	"Purchasing"	22116
+String	"Modify Accounts Range"	"Inventory"	22117
+String	"Select By"	"Payroll"	22118
+String	"Accounts From"	"Project"	22119
+String	"Available Accounts"	"System"	22120
+String	"Select Account Segment Ranges"	"Financial"	22121
+String	"I.C.A."	"System"	22122
+String	"From: "	"Purchasing"	22123
+String	"Account From"	"Inventory"	22124
+String	"nsaIF_Account_Range_MSTR"	"Payroll"	22125
+String	"nsaIF_Account_Range_MSTR_TEMP"	"Project"	22126
+String	"nsaIF_Account_Ranges"	"System"	22127
+String	"nsaIF_Account_Ranges_Concept"	"Financial"	22128
+String	"nsaIF_Account_Ranges_Concept_TEMP"	"Sales"	22129
+String	"Range of Accounts"	"Purchasing"	22130
+String	"nsaIF_Report_1007"	"Inventory"	22131
+String	"&Insert>>"	"Payroll"	22132
+String	"Account Segement"	"Project"	22133
+String	"Tax Reports Setup"	"System"	22134
+String	"C1"	"Financial"	22135
+String	"Report a MM"	"Sales"	22136
+String	"Cuenta de retention"	"Purchasing"	22137
+String	"Crediti/Debito"	"Inventory"	22138
+String	"Concept:"	"Payroll"	22139
+String	"C2"	"Project"	22140
+String	"DEPOSITED IN AUTHORIZED LOCATIONS AS INDICATED BY THE TAX ADDRESS  "	"System"	22141
+String	"Concept And Account Details for Format"	"Financial"	22142
+String	"nsaIF Setup Reports"	"Sales"	22143
+String	"nsaIF_Setup_Reports_temp"	"Purchasing"	22144
+String	"EQUAL TO"	"Inventory"	22145
+String	"TOTAL WITHHELD"	"Payroll"	22146
+String	"Search By:"	"Project"	22147
+String	"Informes Fiscal Fixed Assets Setup"	"System"	22148
+String	"Magnetic Media"	"Financial"	22149
+String	"Fixed Assets Batch Headers"	"Sales"	22150
+String	"DATE OF ISSUE"	"Purchasing"	22151
+String	"Fixed Assets General Ledger Interface WORK"	"Inventory"	22152
+String	"Informes Fiscal Fixed Assets General Ledger Interface WORK"	"Payroll"	22153
+String	"Informes Fiscal CM Distribution"	"Project"	22154
+String	"nsaIF_Company_SETP"	"System"	22155
+String	"Informes Fiscal CM Distribution TEMP"	"Financial"	22156
+String	"Post FA Detail"	"Sales"	22157
+String	"SIGNATURE OF AGENT OR PAYER"	"Purchasing"	22158
+String	"Asset Purchase Master"	"Inventory"	22159
+String	"nsaIF_Certificados_LINE_temp"	"System"	22160
+String	"Detail Posting"	"Project"	22161
+String	"Detail Posting Setup"	"System"	22162
+String	"Asset Purchase Master Temp"	"Financial"	22163
+String	"Informes Fiscal POP Distribution Work History"	"Sales"	22164
+String	"Informes Fiscal CM Reconcile Adjustments"	"Purchasing"	22165
+String	"Informes Fiscal RM Distribution Work"	"Inventory"	22166
+String	"Informes Fiscal Quick Journal Account Setup"	"Payroll"	22167
+String	"Informes Fiscal Quick Journal Work"	"Project"	22168
+String	"Informes Fiscal Quick Journal Amounts Work"	"System"	22169
+String	"Informes Fiscal Quick Journal Setup"	"Financial"	22170
+String	"-------------------- ----------------------"	"Sales"	22171
+String	"THE TOTAL WITHHOLDINGS PREVIOUSLY INDICATED IN THE ENTITIES WERE  "	"Purchasing"	22172
+String	"AND CUSTOMS AS PROVIDED BY LAW"	"Inventory"	22173
+String	"-------------------- -------------------"	"Payroll"	22174
+String	"Cuenta"	"Project"	22175
+String	"MONTH"	"System"	22176
+String	"DEPOSITED IN AUTHORIZED LOCATIONS AS INDICATED BY THE TAX ADDRESS"	"Financial"	22177
+String	"NIT:"	"System"	22178
+String	"Account Total"	"Purchasing"	22179
+String	"nsaIF_Cuenta_NIT_Resumen_TEMP"	"Inventory"	22180
+String	"Tercero"	"Payroll"	22181
+String	"THE TOTAL WITHHOLDINGS PREVIOUSLY INDICATED IN THE ENTITIES WERE"	"Project"	22182
+String	" CUSTOMS AS PROVIDED BY LAW  "	"System"	22183
+String	"@PROD0@11.0"	"Financial"	22184
+String	"Report Format Type"	"Sales"	22185
+String	"Sequence Number ID"	"Purchasing"	22186
+String	"Shipping Document Number Setup"	"Inventory"	22187
+String	"Next Sequence Number"	"Payroll"	22188
+String	"Ship Doc Number Setup"	"Project"	22189
+String	"Account 0"	"System"	22190
+String	"SHIPPING DOCUMENT NUMBER SETUP REPORT"	"Financial"	22191
+String	" Report Format Type"	"Sales"	22192
+String	"VAT WITHHOLDING CERTIFICATE"	"Purchasing"	22193
+String	"Inventory Transfers"	"Inventory"	22194
+String	"Payment Date "	"Payroll"	22195
+String	"Quantity and Price"	"Project"	22196
+String	"Non Deduction"	"System"	22197
+String	"VAT Deduction"	"Financial"	22198
+String	"VAT Non Deduction"	"Sales"	22199
+String	"Income Withholding Applied"	"Purchasing"	22200
+String	"Income Withholding Received"	"Inventory"	22201
+String	"OPERATION CONCEPT"	"Financial"	22202
+String	"TOTAL AMOUNT"	"Financial"	22203
+String	"VAT AMOUNT"	"Financial"	22204
+String	"% OF RETENTION"	"Financial"	22205
+String	"RETAINED AMOUNT"	"Financial"	22206
+String	"VAT Withholding Regimen Common"	"Purchasing"	22207
+String	"VAT Withholding Regimen Simplified"	"Inventory"	22208
+String	"VAT Withholding Regimen Non Addressed"	"Payroll"	22209
+String	"Own Operations"	"Project"	22210
+String	"Associations or Temporal Unions"	"System"	22211
+String	"Contracts or Delegated Administration"	"Financial"	22212
+String	"Operations of Exploration or Mineral Explorations"	"Sales"	22213
+String	"Flexible Contracts"	"Purchasing"	22214
+String	"Returns and Discounts"	"Inventory"	22215
+String	"nsaIF_Certificados_LINE2"	"Payroll"	22216
+String	"IN AUTHORIZED LOCATIONS AS INDICATED BY THE TAX AND CUSTOMS ADDRESS"	"Inventory"	22222
+String	"THE WITHHOLDINGS MENTIONED ABOVE WERE DEPOSITED IN THEIR ENTIREITY"	"Sales"	22227
+String	"nsaIF_LOG_ERROR"	"System"	22244
+String	"nsaIF_Magnetic_Media_MSTR"	"System"	22248
+String	"NATIONAL AS PROVIDED BY LAW"	"Inventory"	22250
+String	"Sticker"	"Payroll"	22251
+String	"IN AUTHORIZED LOCATIONS AS INDICATED BY THE TAX AND CUSTOMS ADDRESS "	"Project"	22252
+String	"SOURCE WITHHOLDING CERTIFICATE"	"System"	22253
+String	"THE WITHHOLDINGS MENTIONED ABOVE WERE DEPOSITED IN THEIR ENTIREITY "	"Financial"	22254
+String	"Tax Reports"	"Sales"	22255
+String	"Config. Accounts"	"Inventory"	22257
+String	"Config.Codes"	"Payroll"	22258
+String	"Config. Company"	"System"	22260
+String	"Customer to Nits"	"Financial"	22261
+String	"Nits Creation"	"Sales"	22262
+String	"Vendors to Nits"	"Purchasing"	22263
+String	"CXC"	"System"	22266
+String	"CXP"	"System"	22267
+String	"Withholding Items"	"Sales"	22269
+String	"Balance Updating"	"Inventory"	22271
+String	"Ap."	"System"	22272
+String	"Certification. - Withholding"	"Purchasing"	22284
+String	"NIT - DV"	"System"	22285
+String	"Ctrl + L"	"System"	22288
+String	"Code-Subcode"	"Inventory"	22292
+String	"NIT - Clients"	"System"	22295
+String	"Customer_ID / Vendor_ID"	"System"	22297
+String	"Certificates"	"Inventory"	22299
+String	"NIT Creation"	"Project"	22301
+String	"NIT - Supplier"	"Financial"	22303
+String	"Balance Update"	"Sales"	22304
+String	"Company "	"Purchasing"	22305
+String	"Reason for Withholding"	"Project"	22308
+String	"Pallet - Tax Reports"	"System"	22309
+String	"NIT   "	"Financial"	22310
+String	"CT_Sum"	"System"	22315
+String	"nsaIF_TRX_Detalle_TEMP"	"System"	22332
+String	"nsaIF_TRX_HIST_TEMP"	"System"	22333
+String	"nsaIF_TRX_OPEN_TEMP"	"System"	22334
+String	"nsaIF_Type_Withholding"	"System"	22346
+String	"nsaTE_GL_TRX_LINE_WORK"	"System"	22349
+String	"Debit0"	"Sales"	22360
+String	"Credit0"	"Payroll"	22370
+String	"NIT      "	"System"	22408
+String	"Reports Magnetic Media"	"System"	22421
+String	"Source Withholding "	"Financial"	22422
+String	"VAT Withholding"	"Sales"	22423
+String	"ICA Withholding"	"Purchasing"	22424
+String	"Reports Balance by Third Party"	"Inventory"	22425
+String	"Withholding Account"	"Payroll"	22426
+String	"nsa Open Transaction Year to Date"	"System"	22428
+String	"Year "	"Sales"	22430
+String	"ID Third Party"	"Purchasing"	22431
+String	"Value 1"	"Inventory"	22432
+String	"Value2"	"Payroll"	22433
+String	"About Tax Reports"	"Project"	22434
+String	"Compatible with                          "	"System"	22435
+String	"Target Accounts"	"Inventory"	22439
+String	"Tax Account Setup"	"Payroll"	22440
+String	"Subcode"	"Project"	22441
+String	"Value 2"	"System"	22442
+String	"Value 3"	"Financial"	22443
+String	"Val1 Activity: "	"Sales"	22444
+String	"Val2 Activity: "	"Purchasing"	22445
+String	"Tax Certificate"	"Inventory"	22446
+String	"This Account Reports"	"Payroll"	22447
+String	"Delete SETP"	"Project"	22448
+String	"Not Selected"	"System"	22449
+String	"Third-Party Account Setup"	"Financial"	22450
+String	"Accum."	"Sales"	22451
+String	"Temporary Third-Party Account Setup"	"Purchasing"	22452
+String	"TEMP Current Third-Party Account Summary Master"	"Inventory"	22453
+String	"Temp Beginning of Year"	"Payroll"	22454
+String	"Tot Media -Current Third-Party Account Summary Master"	"Project"	22455
+String	"Media -Current Third-Party Account Summary Master"	"System"	22456
+String	"Client"	"Financial"	22457
+String	"Supplier"	"Sales"	22458
+String	"NIT Name"	"Purchasing"	22459
+String	"City/Municipality"	"Inventory"	22460
+String	"Additional Bank Information"	"Payroll"	22461
+String	"Dept/Mun Code"	"Project"	22462
+String	"nsaIF NIT- Checkbooks"	"System"	22463
+String	"Target Account Setup"	"Financial"	22464
+String	"Base Account"	"Sales"	22465
+String	"Available Accounts "	"Purchasing"	22466
+String	"Selected Accounts"	"Inventory"	22467
+String	"Find Accounts"	"Payroll"	22468
+String	"Search by:"	"Project"	22469
+String	"All "	"System"	22470
+String	"Financial "	"Financial"	22471
+String	"SOURCE"	"Sales"	22472
+String	"V.A.T"	"Purchasing"	22473
+String	"Withholding Certificate Query"	"Inventory"	22474
+String	"Third-Party ID"	"Payroll"	22475
+String	"Until"	"Project"	22476
+String	"Date Printed"	"System"	22477
+String	"Group By :"	"Financial"	22478
+String	"NIT  "	"Sales"	22479
+String	"Series :"	"Purchasing"	22480
+String	"Supplier ID"	"Inventory"	22481
+String	"Withholding ID"	"Payroll"	22482
+String	"Concept"	"Project"	22483
+String	"Withholding Base"	"System"	22484
+String	"Total Withheld"	"Financial"	22485
+String	"Supplier Name"	"Sales"	22486
+String	"Document No"	"Purchasing"	22487
+String	"View Options0"	"Payroll"	22489
+String	"Find Dept/City Code"	"Project"	22490
+String	"Cities"	"System"	22491
+String	"Municipal Code Creation"	"Financial"	22492
+String	"Department/Municipality"	"Sales"	22493
+String	"Description 0"	"Purchasing"	22494
+String	"Company Name "	"Inventory"	22495
+String	"Type of Entity"	"Payroll"	22496
+String	"Consecutive Numbers"	"Project"	22497
+String	"Source Withholding"	"System"	22498
+String	"V.A.T."	"Financial"	22499
+String	"Tax Administration City"	"Sales"	22500
+String	"Tax Administration Code"	"Purchasing"	22501
+String	"Inventory Valuation System"	"Inventory"	22502
+String	"Inventory System"	"Project"	22504
+String	"Balance Settlement by Month"	"System"	22505
+String	"NIT Total:"	"Financial"	22506
+String	"Account0"	"Sales"	22507
+String	"No."	"Purchasing"	22508
+String	"Final Balance"	"Inventory"	22509
+String	"INITIAL BALANCE"	"Payroll"	22510
+String	"DEBIT BALANCE"	"Project"	22511
+String	"CREDIT BALANCE"	"System"	22512
+String	"ENDING BALANCE"	"Financial"	22513
+String	"OPEN AUXILIARY REPORT FOR ACCOUNT AND NIT DETAIL"	"Sales"	22514
+String	"NIT Total"	"Purchasing"	22515
+String	"NIT Name "	"Inventory"	22516
+String	"Final Balance "	"Payroll"	22517
+String	"HISTORICAL AUXILIARY REPORT FOR ACCOUNT AND NIT DETAIL"	"Project"	22518
+String	"Account Description "	"System"	22519
+String	"OPEN AUXILIARY REPORT FOR ACCOUNT AND NIT SUMMARY"	"Financial"	22520
+String	"Third-Party Total:"	"Purchasing"	22522
+String	"TRX Date "	"Inventory"	22523
+String	"Journal Entry "	"Payroll"	22524
+String	"Third Party: "	"Project"	22525
+String	"OPEN AUXILIARY REPORT FOR ACCOUNT AND THIRD PARTY DETAIL"	"System"	22526
+String	"Third-Party Total"	"Financial"	22527
+String	"Account Description  "	"Sales"	22528
+String	"Third-Party Name"	"Purchasing"	22529
+String	"Third-Party Name "	"Inventory"	22530
+String	"HISTORICAL AUXILIARY REPORT FOR ACCOUNT AND THIRD PARTY DETAIL"	"Payroll"	22531
+String	"AUXILIARY REPORT FOR ACCOUNT AND THIRD PARTY SUMMARY"	"System"	22533
+String	"NIT Client Master"	"Financial"	22534
+String	"Tax Reports Error Log"	"Sales"	22535
+String	"NIT ASSIGNMENT PROCESS ERROR REPORT"	"Purchasing"	22536
+String	"Client ID or Supplier ID"	"Inventory"	22537
+String	"Name "	"Payroll"	22538
+String	"Tax Reports Installation Report Master"	"Project"	22539
+String	"Tax Reports Installation Status Master"	"System"	22540
+String	"Minimum Value"	"Purchasing"	22571
+String	"Magnetic Media Query"	"Payroll"	22573
+String	"Until:"	"Project"	22574
+String	"Creation Date0"	"System"	22575
+String	"Config."	"Financial"	22576
+String	"Month Period"	"Purchasing"	22578
+String	"Magnetic Media0"	"Inventory"	22579
+String	"Doc Type0"	"Payroll"	22580
+String	"All0"	"Project"	22581
+String	"Selected0"	"System"	22582
+String	"NIT List"	"Financial"	22583
+String	"Search by NIT"	"Sales"	22584
+String	"Debit Balance"	"Purchasing"	22585
+String	"Credit Balance "	"Inventory"	22586
+String	"System "	"Payroll"	22587
+String	"OPEN AUXILIARY REPORT FOR NIT AND ACCOUNT DETAIL"	"Project"	22588
+String	"Journal0"	"System"	22589
+String	"HISTORICAL AUXILIARY REPORT FOR NIT ACCOUNT DETAIL"	"Financial"	22590
+String	"AUXILIARY REPORT FOR NIT AND ACCOUNT SUMMARY"	"Sales"	22591
+String	"Third-Party NIT Master"	"Purchasing"	22592
+String	"Client NIT Assignment"	"Project"	22595
+String	"CLIENTS"	"System"	22596
+String	"Client ID"	"Financial"	22597
+String	"DOC Type"	"Sales"	22598
+String	"NIT                    |   DOC TYPE"	"Purchasing"	22599
+String	"User Defined (1)"	"Inventory"	22600
+String	"User Defined (2)"	"Payroll"	22601
+String	"Load Cities"	"Project"	22602
+String	"Load NIT"	"System"	22603
+String	"Process of City Creation based on Client and Supplier Tables"	"Financial"	22604
+String	"Third-Party NIT Creation"	"Sales"	22605
+String	"Address 0"	"Purchasing"	22606
+String	"Telephone0"	"Inventory"	22607
+String	"NITType "	"Payroll"	22608
+String	"LOADING NIT"	"Project"	22609
+String	"Supplier NIT Assignment"	"System"	22610
+String	"Municipality/City"	"Financial"	22611
+String	"Sticker Assignment"	"Sales"	22612
+String	"Bank Name "	"Purchasing"	22613
+String	"DOC No"	"Inventory"	22614
+String	"Withholding Type"	"Payroll"	22615
+String	"Certificates - Media"	"Project"	22616
+String	"History0"	"System"	22617
+String	"Month :"	"Financial"	22618
+String	"Account :"	"Sales"	22619
+String	"To: "	"Purchasing"	22620
+String	"BALANCE RECONCILIATION PROCESS"	"Inventory"	22621
+String	"Include :"	"Payroll"	22622
+String	"Year :"	"Project"	22623
+String	"Period0"	"System"	22624
+String	"ACCOUNT AND THIRD-PARTY DETAIL"	"Financial"	22625
+String	"ACCOUNT AND THIRD PARTY SUMMARY"	"Sales"	22626
+String	"ACCOUNT AND NIT DETAIL"	"Purchasing"	22627
+String	"ACCOUNT AND NIT SUMMARY"	"Inventory"	22628
+String	"THIRD PARTY AND ACCOUNT DETAIL"	"Payroll"	22629
+String	"THIRD PARTY AND ACCOUNT SUMMARY"	"Project"	22630
+String	"NIT AND ACCOUNT DETAIL"	"System"	22631
+String	"NIT AND ACCOUNT SUMMARY"	"Financial"	22632
+String	"Tax Information Reports"	"Sales"	22633
+String	"Third Party:"	"Purchasing"	22634
+String	"Auxiliary Report"	"Inventory"	22635
+String	"OPEN AUXILIARY REPORT FOR THIRD PARTY AND ACCOUNT DETAIL"	"Project"	22637
+String	" No."	"System"	22638
+String	"HISTORICAL AUXILIARY REPORT FOR THIRD PARTY AND ACCOUNT DETAIL"	"Financial"	22639
+String	"Third-Party Name  "	"Sales"	22640
+String	"AUXILIARY REPORT FOR THIRD PARTY AND ACCOUNT SUMMARY"	"Purchasing"	22641
+String	"Withholding Concept Setup"	"Inventory"	22642
+String	"Concept ID"	"Payroll"	22643
+String	"(Ctrl+L) "	"Project"	22644
+String	"Withholding Concept Search"	"System"	22645
+String	"NIT Supplier Master"	"Financial"	22646
+Field	"nsaIFNit"	"Project"	22000
+Field	"nsaIF_Account_With_Third"	"System"	22001
+Field	"nsaIF_Type_Nit"	"Financial"	22002
+Field	"nsaIF_Name"	"Sales"	22003
+Field	"nsaIF_Address"	"Purchasing"	22004
+Field	"nsaIF_Phone"	"Inventory"	22005
+Field	"nsaIF_CV"	"Payroll"	22006
+Field	"nsaIF_Account_With_MM"	"Project"	22007
+Field	"nsaIF_From_Window"	"System"	22008
+Field	"nsaIF_Name_OrifinatingMID"	"Financial"	22009
+Field	"nsaIF_Activity_Code"	"Sales"	22010
+Field	"nsaIF_Site_Code"	"Purchasing"	22011
+Field	"nsaIF_Type"	"Inventory"	22012
+Field	"nsaIF_Code"	"Payroll"	22013
+Field	"nsaIF_SubCode"	"Project"	22014
+Field	"nsaIF_Min_Amount"	"System"	22015
+Field	"nsaIF_Vr1_Reporte"	"Financial"	22016
+Field	"nsaIF_Vr2_Reporte"	"Sales"	22017
+Field	"nsaIF_Vr3_Reporte"	"Purchasing"	22018
+Field	"nsaIF_Vr1_Movimiento"	"Inventory"	22019
+Field	"nsaIF_Vr2_Movimiento"	"Payroll"	22020
+Field	"nsaIF_Naturaleza"	"Project"	22021
+Field	"nsaIF_MM"	"System"	22022
+Field	"nsaIF_CI"	"Financial"	22023
+Field	"nsaIF_Tax_Type"	"Sales"	22024
+Field	"nsaIF_Base"	"Purchasing"	22025
+Field	"nsaIF_Destination"	"Inventory"	22026
+Field	"nsaIF_Next_IVA"	"Payroll"	22027
+Field	"nsaIF_Next_ICA"	"Project"	22028
+Field	"nsaIF_Next_Fuente"	"System"	22029
+Field	"Annul Withholding"	"Financial"	22030
+Field	"Anulled Amount"	"Sales"	22031
+Field	"nsa_Key"	"Purchasing"	22032
+Field	"nsaIF_Code_Site_Tax"	"Inventory"	22033
+Field	"nsaIF_Site_Tax"	"Payroll"	22034
+Field	"nsaIF_Certified_Number"	"Project"	22035
+Field	"nsaIF_Periodo_From"	"System"	22036
+Field	"nsaIF_Periodo_To"	"Financial"	22037
+Field	"nsaIF_Vr1"	"Sales"	22038
+Field	"nsaIF_Vr2"	"Purchasing"	22039
+Field	"nsaIF_Vr3"	"Inventory"	22040
+Field	"nsaIF_Print"	"Payroll"	22041
+Field	"nsaIFNit_HDR"	"Project"	22042
+Field	"nsaIF_CV_HDR"	"System"	22043
+Field	"nsaIF_Nit_HDR"	"Financial"	22044
+Field	"TE Origen Tipo"	"Sales"	22045
+Field	"nsaIF_SI0"	"Purchasing"	22046
+Field	"nsaIF_SI"	"Inventory"	22047
+Field	"nsaIF_SDeb0"	"Payroll"	22048
+Field	"nsaIF Install Opened From Palette"	"Project"	22049
+Field	"nsaIF_SCred0"	"System"	22050
+Field	"nsaIF_SDeb"	"Financial"	22051
+Field	"nsaIF_SCred"	"Sales"	22052
+Field	"nsaIF_Saldo_Tercero"	"Purchasing"	22053
+Field	"nsaIF_Largo"	"Inventory"	22054
+Field	"nsaIF_Description"	"Payroll"	22055
+Field	"BrowseButton"	"Financial"	22056
+Field	"TerceroType"	"Financial"	22057
+Field	"nsaIF_Cuenta1"	"Financial"	22058
+Field	"nsaIF_Cuenta2"	"Sales"	22059
+Field	"nsaIF_SF0"	"Purchasing"	22060
+Field	"nsaIF_SF"	"Inventory"	22061
+Field	"nsaIF_Saldo_Total_Fin"	"Payroll"	22062
+Field	"nsaIF_Saldo_Total_INI"	"Project"	22063
+Field	"nsaIF Version Date"	"System"	22064
+Field	"nsaIF_YEAR"	"Financial"	22065
+Field	"ASI_LU_View_Button"	"Sales"	22066
+Field	"Major Version"	"Purchasing"	22067
+Field	"Minor Version"	"Inventory"	22068
+Field	"Build Number"	"Payroll"	22069
+Field	"Install Component Name"	"Project"	22070
+Field	"Install Step"	"System"	22071
+Field	"Install Date and Time"	"Financial"	22072
+Field	"Log Index"	"Sales"	22073
+Field	"FA Script Name"	"Purchasing"	22074
+Field	"Message Text"	"Inventory"	22075
+Field	"FAM Install Illustration"	"Payroll"	22076
+Field	"Chunk Progress Status"	"Project"	22077
+Field	"Chunk Current Item"	"System"	22078
+Field	"Chunk Progress Indicator"	"Financial"	22079
+Field	"Chunk Progress Indicator 2"	"Sales"	22080
+Field	"ACRS Life"	"Purchasing"	22081
+Field	"FAM Install Illustration Small"	"Inventory"	22082
+Field	"nsaIF Date Stamp"	"Payroll"	22083
+Field	"nsaIF Time Stamp"	"Project"	22084
+Field	"nsaIF Component Installation Successful"	"System"	22085
+Field	"nsaIF Open Installation Wizard"	"Financial"	22086
+Field	"Transaction Date Stamp"	"Sales"	22087
+Field	"Transaction Time Stamp"	"Purchasing"	22088
+Field	"nsaIF_MES"	"System"	22089
+Field	"nsaIF_CTA_RETEN"	"System"	22090
+Field	"nsaIF_eMail"	"System"	22091
+Field	"nsaIF_MET_INVT"	"System"	22092
+Field	"nsaIF_SIS_INV"	"Financial"	22093
+Field	"nsaIF_Code_Ciudad"	"System"	22094
+Field	"nsaIF_Agrup_NIT"	"System"	22095
+Field	"nsaIF_Direccion_Banco"	"System"	22096
+Field	"nsaIF_Client_Exterior"	"Payroll"	22097
+Field	"Crear Cod Verificaión"	"Project"	22098
+Field	"Numero de Formato"	"System"	22099
+Field	"Reporte_Menor_Cuantia"	"Financial"	22100
+Field	"Reporte_Cliente_Exterior"	"Sales"	22101
+Field	"Concepto"	"Purchasing"	22102
+Field	"Tipo_Documento"	"Inventory"	22103
+Field	"Num_Identification"	"Payroll"	22104
+Field	"Cod_Department"	"Project"	22105
+Field	"Cod_Municipo"	"System"	22106
+Field	"nsaIF_Percentage"	"Financial"	22107
+Field	"Primer_Appelido"	"Sales"	22108
+Field	"Segundo_Appelido"	"Purchasing"	22109
+Field	"Primer_Nombre"	"Inventory"	22110
+Field	"Otros_Nombre"	"Payroll"	22111
+Field	"Razon_Social"	"Project"	22112
+Field	"nsaIF_Export_Type"	"System"	22113
+Field	"Propiedad"	"Financial"	22114
+Field	"Concept"	"Sales"	22115
+Field	"Format Code"	"Purchasing"	22116
+Field	"Format Version"	"Inventory"	22117
+Field	"SendingNumber"	"Payroll"	22118
+Field	"Sending Date"	"Project"	22119
+Field	"InicialDate"	"System"	22120
+Field	"Final Date"	"Financial"	22121
+Field	"TotalValue"	"Sales"	22122
+Field	"QuantityRegisters"	"Purchasing"	22123
+Field	"Document_Type"	"Inventory"	22124
+Field	"Document_Identification_Number"	"Payroll"	22125
+Field	"Verification_Digit"	"Project"	22126
+Field	"First_Last_Name"	"System"	22127
+Field	"Second_Last_Name"	"Financial"	22128
+Field	"First_Name_Of_the_Informed_One"	"Sales"	22129
+Field	"Second_Name_Of_the_Informed_One"	"Purchasing"	22130
+Field	"Trade_Name_Of_the_Informed_One"	"Inventory"	22131
+Field	"AddressDIR"	"Payroll"	22132
+Field	"Department_Code"	"Project"	22133
+Field	"Code_Of_The_Municipality"	"System"	22134
+Field	"Identifier"	"Financial"	22135
+Field	"Tercero Type"	"Sales"	22136
+Field	"IFGLPeriodTercerosTempState"	"Purchasing"	22137
+Field	"IFGLTercerosTempState"	"Inventory"	22138
+Field	"IFGLTRXLINEWORKState"	"Payroll"	22139
+Field	"IFPMDistributionState"	"Project"	22140
+Field	"IFPOPDistributionState"	"System"	22141
+Field	"IFPOPINVDistributionState"	"Financial"	22142
+Field	"trpt_Voucher_Number"	"Sales"	22143
+Field	"trpt_Control_Type"	"Purchasing"	22144
+Field	"trpt_Apply_To_Voucher_Number"	"Inventory"	22145
+Field	"trpt_Distribution_Sequence_Number"	"Payroll"	22146
+Field	"trpt_Specialized_Distribution"	"Project"	22147
+Field	"trpt_POP_Receipt_Number"	"System"	22148
+Field	"trpt_Currency_ID"	"Financial"	22149
+Field	"trpt_Delete"	"Sales"	22150
+Field	"nsaIF_Formats"	"Purchasing"	22151
+Field	"nsaIF_Exclude_ZeroB"	"Inventory"	22152
+Field	"Account Number String1"	"Payroll"	22153
+Field	"Account Number String2"	"Project"	22154
+Field	"Account Number String3"	"System"	22155
+Field	"SumMinIdent"	"Financial"	22156
+Field	"Concept From"	"Sales"	22157
+Field	"Concept To"	"Purchasing"	22158
+Field	"Format From"	"Inventory"	22159
+Field	"Format To"	"Payroll"	22160
+Field	"Account Index From"	"Project"	22161
+Field	"Account Index To"	"System"	22162
+Field	"Activate Post FA Detail"	"Financial"	22163
+Field	"Asset Index"	"Sales"	22164
+Field	"Last Maintained Date"	"Purchasing"	22165
+Field	"Last Maintained Time"	"Inventory"	22166
+Field	"Last Maintained User ID"	"Payroll"	22167
+Field	"Book Index"	"Project"	22168
+Field	"Amount"	"System"	22169
+Field	"FA Year"	"Financial"	22170
+Field	"FA Period"	"Sales"	22171
+Field	"GL Interface TRX Date"	"Purchasing"	22172
+Field	"GL Interface Batch Number"	"Inventory"	22173
+Field	"Acquisition Cost"	"Payroll"	22174
+Field	"FA AP Post Index"	"Project"	22175
+Field	"Originating Acquisition Cost"	"System"	22176
+Field	"GL Interface Comment"	"Financial"	22177
+Field	"GL Interface Begin Period"	"Sales"	22178
+Field	"GL Interface End Period"	"Purchasing"	22179
+Field	"GL Interface Begin Year"	"Inventory"	22180
+Field	"GL Interface End Year"	"Payroll"	22181
+Field	"Purchase Line Sequence"	"Project"	22182
+Field	"Asset Purchase Description"	"System"	22183
+Field	"l_journalEntry"	"Financial"	22184
+Field	"nsaIF_Cost_Deduction"	"Sales"	22185
+Field	"trpt_Document_Number"	"Purchasing"	22186
+Field	"nsaIF_SCred_Sum"	"Inventory"	22187
+Field	"nsaIF_SI_Sum"	"Payroll"	22188
+Field	"nsaIF_SF_Sum"	"Project"	22189
+Field	"nsaIF_Tot_Db"	"System"	22190
+Field	"nsaIF_Tot_Cr"	"Financial"	22191
+Field	"nsaIF_Tot_SI"	"Sales"	22192
+Field	"nsaIF_Tot_SF"	"Purchasing"	22193
+Field	"nsaIF_SDeb_Sum"	"Inventory"	22194
+Field	"nsaIF_WC_BaseAmount"	"System"	22195
+Field	"Sequence Number ID"	"Project"	22196
+Field	"Ship  All Module"	"System"	22197
+Field	"Ship Module_RB"	"Financial"	22198
+Field	"Ship Module List"	"Sales"	22199
+Field	"Report Format Type"	"Purchasing"	22200
+Field	"Ship Next Sequence Number"	"Inventory"	22201
+Field	"Module_Option"	"Payroll"	22202
+Field	"Ship Module Option"	"Project"	22203
+Field	"nsaIF_Format1001"	"System"	22204
+Field	"nsaIF_Format1007"	"Financial"	22205
+Field	"SOPType"	"System"	22206
+Field	"SOPNumber"	"System"	22207
+Field	"SequenceNumber"	"System"	22208
+Field	"DocumentNumber"	"Sales"	22209
+Field	"RMDocumentType"	"Sales"	22210
+Field	"VoucherNumber"	"Financial"	22211
+Field	"ControlType"	"Financial"	22212
+Field	"ApplyToVoucherNumber"	"Financial"	22213
+Field	"SpecializedDistribution"	"Financial"	22214
+Field	"DistributionSeqNumber"	"Financial"	22215
+Field	"CheckbookID"	"Sales"	22216
+Field	"ReconcileNumber"	"Sales"	22217
+Field	"BusinessFormID"	"Financial"	22218
+Field	"JournalEntry"	"Financial"	22219
+Field	"SequenceLine"	"Financial"	22220
+Field	"CMTransactionEntry"	"Financial"	22221
+Field	"CMTransactionEntry_Type"	"Financial"	22222
+Field	"CMTransactionZoom_RecordNo"	"Financial"	22223
+Field	"CMTransactionEntryOrgAmt"	"System"	22224
+Field	"GLBusinessFormSetupID"	"System"	22225
+Field	"GLBusinessFormEntryFill"	"System"	22226
+Field	"CustomerVendorID"	"Financial"	22227
+Procedure	"ComProxy@dexproxy.dll"	"System"	22000
+Procedure	"trptTrProc_GL_Correct_Copy_JE_OKButtonCHGBefore"	"Financial"	22001
+Procedure	"trpt_SOP_Inquiry_Dist_Scroll_CHG_Before"	"Sales"	22002
+Procedure	"trpt_SOP_Inquiry_Dist_Scroll_CHG_After"	"Sales"	22003
+Procedure	"trpt_RegisterTriggers_For_Alternate_Forms"	"Sales"	22004
+Procedure	"trpt_POP_Inquiry_Distribution_Fill_After"	"Purchasing"	22005
+Procedure	"trpt_PM_Distribution_Zoom_Scroll_FILL_After"	"Purchasing"	22007
+Procedure	"Startup"	"System"	22008
+Procedure	"trptProc_GetTotals"	"Financial"	22009
+Procedure	"IF_Exec_PassThruSQL"	"System"	22010
+Procedure	"nsaCrear_Med_Mag_III"	"Financial"	22011
+Procedure	"IF_FA_GL_Posting_Post_After"	"Financial"	22012
+Procedure	"IF_FA_GL_Posting_Post_After_Constants"	"Financial"	22013
+Procedure	"IF_FA_GL_Posting_Post_Before"	"Financial"	22014
+Procedure	"trpt_GL_UpdateTempTable"	"Financial"	22015
+Procedure	"nsaIF_BUSCAR_NIT"	"Financial"	22016
+Procedure	"trpt_Triggers_FA_Integration"	"Financial"	22017
+Procedure	"nsaIF_Borrar_NIT"	"System"	22018
+Procedure	"nsaIF_Borrar_SALDOS_MES"	"Financial"	22019
+Procedure	"nsaIF_Calcula_CV"	"Financial"	22020
+Procedure	"nsaIF_Cargar_NIT"	"Financial"	22021
+Procedure	"nsaIF_Clean_Table"	"Financial"	22022
+Procedure	"nsaIF_Conciliar_Saldo_MES"	"Financial"	22023
+Procedure	"trpt_MC_HandleModifyRateChange"	"System"	22024
+Procedure	"IF_FA_Write_Error_Log"	"Financial"	22025
+Procedure	"nsaIF_Crear_MED_MAG"	"Financial"	22026
+Procedure	"trptTrProc_RM_Cash_Dist_DeleteButtonCHGAfter"	"Sales"	22027
+Procedure	"trptTrProc_RM_Cash_Dist_OKButtonCHGBefore"	"Sales"	22029
+Procedure	"trptTrProc_RM_Cash_Dist_WinPostBefore"	"Sales"	22030
+Procedure	"trptTrProc_RM_Cash_Receipts_DeleteCashReceiptAfter"	"Sales"	22031
+Procedure	"trptTrProc_RM_Cash_Receipts_PostButtonAfter"	"Sales"	22032
+Procedure	"trptTrProc_RM_Cash_Receipts_PostButtonBefore"	"Sales"	22033
+Procedure	"trptTrProc_RM_Sales_Dist_DeleteButtonCHGAfter"	"Sales"	22034
+Procedure	"trptTrProc_RM_Sales_Dist_OKButtonCHGBefore"	"Sales"	22036
+Procedure	"nsaIF_Crear_Tipo_I"	"Financial"	22037
+Procedure	"nsaIF_Crear_Trigger_GL20000"	"System"	22038
+Procedure	"nsaIF_Create_Cal_Valor_2"	"Financial"	22039
+Procedure	"nsaIF_Create_Certificados_Financial"	"Financial"	22040
+Procedure	"nsaIF_Create_Certificados_Financial_Hist"	"Financial"	22041
+Procedure	"nsaIF_Create_Certificados_Hist"	"Financial"	22042
+Procedure	"nsaIF_Create_Certificados_LINE"	"Financial"	22043
+Procedure	"nsaIF_Create_Certificados_Open"	"Financial"	22044
+Procedure	"nsaIF_Create_Certificados_Purchases"	"Financial"	22045
+Procedure	"nsaIF_Create_Certificados_Purchases_Hist"	"Financial"	22046
+Procedure	"nsaIF_Create_Certificados_Purchases_Hist_WORK"	"Financial"	22047
+Procedure	"nsaIF_Create_Certificados_Purchases_WORK"	"Financial"	22048
+Procedure	"nsaIF_Create_Pallette"	"Financial"	22049
+Procedure	"ProcessCertificadosHistY"	"Financial"	22050
+Procedure	"nsaIF_Create_nsaIF20000"	"Financial"	22051
+Procedure	"nsaIF_Determinar_mes"	"Financial"	22052
+Procedure	"ProcessCertificadosOpenY"	"Financial"	22053
+Procedure	"nsaIF_Get_Array"	"System"	22054
+Procedure	"nsaIF_Llena_de_Ceros"	"Financial"	22055
+Procedure	"nsaIF_Llena_de_Espacios"	"Financial"	22056
+Procedure	"nsaIF_Next_Number"	"Financial"	22057
+Procedure	"nsaIF_Nit_VC"	"Financial"	22058
+Procedure	"nsaIF_OPEN_Cliente"	"Financial"	22059
+Procedure	"nsaIF_OPEN_Cuenta"	"Financial"	22060
+Procedure	"nsaIF_OPEN_Impuesto"	"Financial"	22061
+Procedure	"nsaIF_OPEN_Proveedor"	"Financial"	22062
+Procedure	"nsaIF_UpdateVendorID"	"System"	22063
+Procedure	"nsaIF_SALDO_INI_CUENTA"	"Financial"	22064
+Procedure	"nsaIF_SALDO_INI_CUENTA_NIT"	"Financial"	22065
+Procedure	"nsaIF_SALDO_INI_NIT"	"Financial"	22066
+Procedure	"nsaIF_SALDO_INI_REPORTE"	"Financial"	22067
+Procedure	"nsaIF_SALDO_INI_TERCERO"	"Financial"	22068
+Procedure	"trpt_GL_Trx_Entry"	"Financial"	22069
+Procedure	"nsaIF_Saldo_Total_INI"	"System"	22070
+Procedure	"trptTrProc_RM_Sales_Dist_WinPostBefore"	"Sales"	22071
+Procedure	"nsaIF_TEMP_FISCALES"	"Financial"	22072
+Procedure	"nsaIF_TRIGGER_AFTER_Add_Successful_Login_Record"	"System"	22073
+Procedure	"nsaIF_TRIGGER_AFTER_Switch_Company"	"System"	22074
+Procedure	"nsaIF_Validar_Exist_NIT"	"System"	22075
+Procedure	"nsaIF_Validar_Tipo_Doc"	"Financial"	22076
+Procedure	"trptTrProc_RM_Sales_Entry_DeleteSalesDocAfter"	"Sales"	22077
+Procedure	"trpt_Cash_Receipts_Triggers"	"Sales"	22078
+Procedure	"trpt_Is_Alternate_Window_Used"	"Financial"	22079
+Procedure	"Generar_Reporte"	"System"	22080
+Procedure	"nsaIF_Buscar_NIT_Chequera"	"Sales"	22081
+Procedure	"nsaIF_OPEN_Banco"	"Sales"	22082
+Procedure	"nsaIF_Guardar_Codigo_Clientes"	"System"	22083
+Procedure	"nsaIF_Guardar_Codigo_Proveedor"	"System"	22084
+Procedure	"trpt_RM_Sales_Triggers"	"Sales"	22085
+Procedure	"trpt_CM_Transfer_Zoom_Is_Alternate_Window_Used"	"Financial"	22086
+Procedure	"nsaIF_Deja_SOLONUM"	"System"	22087
+Procedure	"nsaIF_Saldo_Caja"	"System"	22088
+Procedure	"nsaIF_Valores_Archivo_MM"	"System"	22089
+Procedure	"trpt_CM_Trx_Zoom_After"	"Financial"	22090
+Procedure	"nsaIF_VAL_COD"	"System"	22091
+Procedure	"nsaIF_Cambiar_MM"	"System"	22092
+Procedure	"nsaIF_Num_Fact_POP"	"Financial"	22093
+Procedure	"trpt_GL_Account_Maintenance_Post_Purchase_In_Before"	"Financial"	22094
+Procedure	"IF_ExecuteAction"	"Financial"	22095
+Procedure	"IF_LoadData_FinancialReports"	"Financial"	22096
+Procedure	"IF_TRIGGER_GetOptionsWindowIDs"	"Financial"	22097
+Procedure	"IF_TRIGGER_GetProcessIDs"	"Financial"	22098
+Procedure	"trpt_GL_Account_Maintenance_Post_Sales_In_Before"	"Financial"	22099
+Procedure	"nsaIF_Cargar_Datos_Cta_Reten_H"	"Financial"	22100
+Procedure	"nsaIF_Cargar_Datos_Cta_Reten_O"	"Financial"	22101
+Procedure	"nsaIF_CloseCommandForm"	"System"	22102
+Procedure	"trpt_SY_Posting_Settings_Post_to_GL_How_Before"	"Financial"	22103
+Procedure	"nsaIF_CreateSetupChecklist"	"Financial"	22104
+Procedure	"nsaIF_CreateSetupChecklist_Financial"	"Financial"	22105
+Procedure	"nsaIF_Create_Procedure_I"	"Financial"	22106
+Procedure	"nsaIF_Create_Procedure_II"	"Financial"	22107
+Procedure	"nsaIF_Migrar_Tablas"	"Financial"	22108
+Procedure	"nsaIF_OpenAboutForm"	"System"	22109
+Procedure	"nsaIF_OpenCommandForm"	"System"	22110
+Procedure	"nsaIF_RegisterMenus"	"System"	22111
+Procedure	"nsaIF_UP_MSTR_Nit_I"	"Financial"	22112
+Procedure	"nsaIF_Cuenta_NIT_Detallado"	"Financial"	22113
+Procedure	"nsaIF_Validar_Tabla_Nit"	"Financial"	22114
+Procedure	"nsaIF_Cuenta_NIT_Detallado_Hist"	"Financial"	22115
+Procedure	"nsaIF_Cuenta_NIT_Resumen"	"Financial"	22116
+Procedure	"nsaIF_Update_Doc_Type"	"Financial"	22117
+Procedure	"trHelpProcessing"	"System"	22118
+Procedure	"trptTrProc_PM_Trx_Entry_Dist_PM_Trx_Entry_Dist_OKButtonCHGBefore"	"Financial"	22119
+Procedure	"trptTercerosTriggers"	"System"	22120
+Procedure	"trptTrProc_Dist_Scroll_POP_Dist_Entry_DeleteAfter"	"Purchasing"	22121
+Procedure	"trptTrProc_POP_Dist_Entry_POP_Dist_Entry_WinPostBefore"	"Purchasing"	22123
+Procedure	"trptTrProc_PM_Trx_Entry_Dist_PM_Trx_Entry_Dist_DeleteButtonCHGBefore"	"Financial"	22127
+Procedure	"trptTrProc_PM_Trx_Entry_Dist_PM_Trx_Entry_Dist_WinPostBefore"	"Financial"	22128
+Procedure	"trptTrProc_PM_Trx_Entry_PM_Trx_Entry_DummyDeleteButtonCHGBefore"	"Financial"	22129
+Procedure	"trptTrProc_PM_Trx_Entry_PM_Trx_Entry_PostButtonBefore"	"Purchasing"	22130
+Procedure	"trptTrProc_PM_Trx_Entry_PM_Trx_Entry_PostButtonCHGAfter"	"Financial"	22131
+Procedure	"trptTrProc_POP_Dist_Script_DelForReceiptBefore"	"Purchasing"	22134
+Procedure	"trptTrProc_POP_Inv_Dist_Entry_Dist_Scroll_DeleteAfter"	"Purchasing"	22136
+Procedure	"trptTrProc_POP_Inv_Dist_Entry_POP_Inv_Dist_Entry_WinPostBefore"	"Purchasing"	22139
+Procedure	"trptTrProc_POP_Inv_Entry_POP_Inv_Entry_DeleteButtonCHGAfter"	"Purchasing"	22140
+Procedure	"trptTrProc_POP_Inv_Entry_POP_Inv_Entry_DeleteButtonCHGBefore"	"Purchasing"	22141
+Procedure	"trptTrProc_POP_Inv_Entry_POP_Inv_Entry_PostButtonCHGAfter"	"Purchasing"	22142
+Procedure	"trptTrProc_POP_Inv_Entry_POP_Inv_Entry_PostButtonCHGBefore"	"Purchasing"	22143
+Procedure	"trptTrProc_POP_Rec_Entry_POP_Rec_Entry_DeleteButtonCHGAfter"	"Purchasing"	22144
+Procedure	"trptTrProc_POP_Rec_Entry_POP_Rec_Entry_DeleteButtonCHGBefore"	"Purchasing"	22145
+Procedure	"trptTrProc_POP_Rec_Entry_POP_Rec_Entry_PostButtonCHGAfter"	"Purchasing"	22146
+Procedure	"trptTrProc_POP_Rec_Entry_POP_Rec_Entry_PostButtonCHGBefore"	"Purchasing"	22147
+Procedure	"trpt_PM_Trx_EntryTriggers"	"Financial"	22148
+Procedure	"trpt_PM_Trx_Entry_DistTriggers"	"Financial"	22149
+Procedure	"trpt_POP_Dist_EntryTriggers"	"Purchasing"	22150
+Procedure	"trpt_POP_Inv_Dist_EntryTriggers"	"Purchasing"	22151
+Procedure	"trpt_POP_Inv_EntryTriggers"	"Purchasing"	22152
+Procedure	"trpt_POP_Recv_EntryTriggers"	"Financial"	22153
+Procedure	"GL_InquiryDetail_Display"	"Financial"	22154
+Procedure	"ProcessAllHistYears"	"Financial"	22155
+Procedure	"ProcessAllOpenYears"	"Financial"	22156
+Procedure	"nsaIF_Add_NewAcc_In_Ranges"	"Financial"	22157
+Procedure	"CopyfromTemptoGL"	"Financial"	22158
+Procedure	"trptTrProc_PM_Manual_Payment_DeleteAFTER"	"Purchasing"	22159
+Procedure	"trptTrProc_PM_Payment_Edit_DeleteAFTER"	"Purchasing"	22160
+Procedure	"trptTrProc_POP_Inq_Dist_Script_NotifyChangeBefore"	"Purchasing"	22161
+Procedure	"trptTrProc_POP_Inq_Dist_Script_OpenWindowAfter"	"Purchasing"	22162
+Procedure	"trpt_POP_InquiryTriggers"	"Purchasing"	22163
+Procedure	"nsaIF_Cuenta_Tercero_Detallado"	"Financial"	22164
+Procedure	"nsaIF_Cuenta_Tercero_Detallado_Hist"	"Financial"	22165
+Procedure	"trptTrProc_SOP_Delete_Document_After"	"Sales"	22166
+Procedure	"trptTrProc_SOP_Post_Verify_Distributions_After"	"Sales"	22167
+Procedure	"trpt_SOP_Entry_Triggers"	"Sales"	22168
+Procedure	"nsaIF_GetTaxDtlInfo"	"Financial"	22169
+Procedure	"nsaIF_GetWHInformation"	"Financial"	22170
+Procedure	"nsaIF_UpdateWithholdingCertifateDetails"	"Financial"	22171
+Procedure	"Generacion_de_Archivos_Format1007"	"Financial"	22172
+Procedure	"nsaIF_LeapYear"	"Financial"	22173
+Procedure	"nsaIF_Get_NextSequence_number"	"Sales"	22174
+Procedure	"nsaIF_SD_Verify_Number_Setup"	"Sales"	22175
+Procedure	"nsaIF_Sequence_Number"	"Sales"	22176
+Procedure	"nsaIF_PassThruSql"	"Financial"	22177
+Procedure	"trpt_GL_YearEndClose_CloseButton_CHG_After"	"Financial"	22178
+Procedure	"trpt_GL_Zoom_History_Transaction_Scroll_FILL_After"	"Financial"	22179
+Procedure	"trpt_GL_Zoom_Current_Transaction_Scroll_FILL_After"	"Financial"	22180
+Procedure	"trpt_GL_Inquiry_Current_Summary_Dumm_WINPRE_CHG_Before"	"Financial"	22181
+Procedure	"trpt_GL_Inquiry_Current_Summary_Zoom_Button2_CHG_Before"	"Financial"	22182
+Procedure	"trpt_GL_Journal_EntryInquiry_Scroll_FILL_After"	"Financial"	22187
+Procedure	"trpt_GL_Journal_Entry_Inquiry_TopofFile_Button_Toolbar_CHG_After"	"Financial"	22189
+Procedure	"trpt_PM_Distribution_Scroll_Delete_Before"	"Purchasing"	22190
+Procedure	"trpt_PM_Distribution_Scroll_Delete_After"	"Purchasing"	22191
+Procedure	"trpt_POP_Invoice_Distribution_Entryl_HyperspaceDelete_CHG_Before"	"Purchasing"	22201
+Procedure	"trpt_SOP_Dist_Scroll_SCROLL_DEL_Before"	"Sales"	22202
+Procedure	"trpt_SOP_Dist_Scroll_SCROLL_DEL_After"	"Sales"	22203
+Procedure	"trpt_SOP_Dist_Scroll_SCROLL_FILL_After"	"Sales"	22204
+Procedure	"trpt_SOP_Dist_Scroll_SCROLL_INS_After"	"Sales"	22205
+Procedure	"trpt_SOP_Dist_Scroll_SCROLL_CHG_DUP_Before"	"Sales"	22206
+Procedure	"trpt_SOP_Dist_Scroll_SCROLL_CHG_DUP_After"	"Sales"	22207
+Procedure	"trpt_SOP_Distribution_Entryl_Fill_Window_CHG_Before"	"Sales"	22208
+Procedure	"trpt_SOP_Distribution_Entry_Default_Button_CHG_Before"	"Sales"	22209
+Procedure	"trpt_SOP_Distribution_Entry_Delete_Button_CHG_Before"	"Sales"	22210
+Procedure	"trpt_CM_Adjustment_Scroll_SCROLL_DEL_Before"	"Financial"	22211
+Procedure	"trpt_CM_Adjustment_Scroll_SCROLL_DEL_After"	"Financial"	22212
+Procedure	"trpt_CM_Reconcile_Delete_Button_CHG_Before"	"Financial"	22213
+Procedure	"trpt_CM_Reconcile_Selected_Docs_Reconcile_Button_C_CHG_Before"	"Financial"	22214
+Procedure	"trpt_CM_Reconcile_Adjustment_Scroll_SCROLL_CHG_Before"	"Financial"	22215
+Procedure	"trpt_CM_Reconcile_Adjustment_Scroll_SCROLL_FILL_After"	"Financial"	22216
+Procedure	"trpt_GL_Current_Detail_EndOfFile_Button_CHG_After"	"Financial"	22224
+Procedure	"trpt_GL_Inquiry_Current_Detail_Current_Detail_Scroll_FILL_Before"	"Financial"	22225
+Procedure	"trpt_GL_Inquiry_Current_Detail_Redisplay_Button_CHG_After"	"Financial"	22226
+Procedure	"trpt_GL_Inquiry_Current_Detail_WIN_PRINT_Before"	"Financial"	22227
+Procedure	"trpt_CM_Transfer_Entry_Checkbook_ID_CHG_Before"	"Financial"	22228
+Procedure	"trpt_CM_Transfer_Entry_Xfr_RecordNumber_CHG_After"	"Financial"	22229
+Procedure	"trpt_CM_Transfer_Entryl_Post_Button_CHG_Before"	"Financial"	22230
+Procedure	"trpt_CM_Transfer_Entryl_Transfer_Number_CHG_Before"	"Financial"	22231
+Procedure	"trpt_GL_Business_Form_Entry_Restart_Form_After"	"Financial"	22245
+Procedure	"trpt_Register_Triggers_For_GL_Business_Form_Entry"	"Financial"	22246
+Procedure	"trpt_GL_Business_Form_Entry_After"	"Financial"	22247
+Procedure	"trpt_Register_Trigger_For_GL_Business_Form_Setup"	"Financial"	22248
+Procedure	"trpt_GL_Business_Form_Setup_Account_SCROLL_INS_After"	"Financial"	22249
+Procedure	"trpt_GL_Business_Form_Setup_Account_Scroll_FILL_Before"	"Financial"	22250
+Procedure	"trpt_GL_Business_Form_Setup_Account_Scroll_FILL_After"	"Financial"	22251
+Procedure	"trpt_GL_Business_Form_Setup_Business_Form_ID_CHG_Before"	"Financial"	22252
+Procedure	"trpt_GL_Business_Form_Setup_Delete_All_CHG_Before"	"Financial"	22253
+Procedure	"trpt_GL_Business_Form_Setup_Display_Existing_Record_CHG_Before"	"Financial"	22254
+Procedure	"trpt_GL_Business_Form_Setup_Dummy_Save_CHG_Before"	"Financial"	22255
+Procedure	"trpt_GL_Business_Form_Setup_Accout_Scroll_DEL_Before"	"Financial"	22256
+Procedure	"trpt_GL_Business_Form_Setup_Account_Scroll_DEL_After"	"Financial"	22257
+Procedure	"trpt_GL_Business_Form_Setup_Form_PRE_After"	"Financial"	22258
+Procedure	"trpt_Register_Trigger_For_GL_Transaction_Entry"	"Financial"	22259
+Procedure	"trpt_GL_Business_Form_Setup_Delete_All_CHG_After"	"Financial"	22284
+Procedure	"trpt_GL_Business_Form_Setup_Dummy_Save_CHG_After"	"Financial"	22285
+Procedure	"trpt_GL_Business_Form_Setup_Dummy_Delete_CHG_Before"	"Financial"	22286
+Procedure	"trpt_GL_Business_Form_Setup_Dummy_Delete_CHG_After"	"Financial"	22287
+Procedure	"trpt_GL_Inquiry_Current_Detail_Redisplay_Button_CHG_Before"	"Financial"	22288
+Procedure	"trpt_GL_Current_Summary_Clear_Button_CHG_Before"	"Financial"	22289
+Procedure	"trpt_GL_Transaction_Entry_MC_ProcessCurrencyView_After"	"Financial"	22296
+Procedure	"trpt_Register_Trigger_For_CM_Transaction_Entry"	"Financial"	22307
+Procedure	"trpt_CM_Transaction_Entry_CMTrx_Number_Before"	"Financial"	22316
+Procedure	"trpt_CM_Transaction_Entry_ClearCheckbook_After"	"Financial"	22320
+Procedure	"trpt_CM_Transaction_Entry_UpdateTotals_After"	"Financial"	22321
+Procedure	"trpt_CM_Transaction_Entry_ClearTotals_After"	"Financial"	22322
+Procedure	"trpt_CM_Transaction_Entry_CopyToWindow_After"	"Financial"	22323
+Procedure	"trpt_CM_Transaction_Entry_RecalcAmounts_After"	"Financial"	22324
+Procedure	"trpt_CM_Transaction_Entry_RecalcScrollingWindow_Before"	"Financial"	22325
+Procedure	"trpt_CM_Transaction_Entry_OpenFromList_Before"	"Financial"	22327
+Procedure	"trpt_CM_Transaction_Entry_l_Checkbooks_CHG_Before"	"Financial"	22328
+Procedure	"trpt_CM_Transaction_Entry_Card_Name_CHG_Before"	"Financial"	22329
+Procedure	"trpt_CM_Transaction_Entry_Card_Name_CHG_After"	"Financial"	22331
+Procedure	"trpt_CM_Transaction_Entry_OpenFromList_After"	"Financial"	22332
+Procedure	"trpt_CM_Transaction_Entry_l_Checkbooks_CHG_After"	"Financial"	22333
+Procedure	"trpt_CM_Transaction__Entry_CMTrx_PreWindow_Before"	"Financial"	22334
+Procedure	"trpt_CM_Transaction_Entry_Option_Change_Before"	"Financial"	22335
+Procedure	"trpt_CM_Transaction__Entry_CMTrx_PreWindow_After"	"Financial"	22336
+Procedure	"trpt_CM_Transaction_Entry_Option_Change_After"	"Financial"	22337
+Procedure	"trpt_CM_Transaction_Entry_Type_Change_Before"	"Financial"	22338
+Procedure	"trpt_CM_Transaction_Entry_Type_Change_Before_Org"	"Financial"	22339
+Procedure	"trpt_CM_Transaction_Entry_Type_Change_Before_Org_After"	"Financial"	22340
+Procedure	"trpt_CM_Transaction_Zoom_OpenToView_After"	"Financial"	22343
+Procedure	"trpt_Alternate_Window_Used_For_TaxReports_Windows"	"System"	22344
+Procedure	"trpt_GL_Business_Form_Entry_Business_Form_ID_CHG_After"	"Financial"	22345
+NativePicture	"FAM_Dynamics_Install_Wizard"	"Project"	22000
+NativePicture	"FAM_eEnterprise_Install_Wizard"	"System"	22001
+NativePicture	"FAM_DynamicsSQL_Install_Wizard"	"Financial"	22002
+NativePicture	"FAM_Dynamics_Install_Wizard_Small"	"Sales"	22003
+NativePicture	"FAM_eEnterprise_Install_Wizard_Small"	"Purchasing"	22004
+NativePicture	"FAM_DynamicsSQL_Install_Wizard_Small"	"Inventory"	22005
+Report	"General Posting Journal"	15
+
+{
+	CalculatedField	"NIT Code"	22000
+	CalculatedField	"Tercero ID"	22001
+}
+Report	"Multicurrency General Posting Journal"	462
+
+{
+	CalculatedField	"NIT Code"	22000
+	CalculatedField	"Tercero ID"	22001
+}
+Report	"Certificado de retención de Ica II"	22000
+
+{
+	CalculatedField	"Currency ID"	22000
+	CalculatedField	"NAME"	22001
+	CalculatedField	"Part_I"	22002
+	CalculatedField	"Periodos"	22003
+	CalculatedField	"Total"	22004
+	CalculatedField	"part_II"	22005
+	CalculatedField	"Adhesivo"	22006
+	CalculatedField	"Banco"	22007
+	CalculatedField	"Fecha"	22008
+	CalculatedField	"MES"	22009
+	CalculatedField	"Valor"	22010
+	CalculatedField	"CV_HDR"	22011
+	String	"3"	22000
+	String	"Times New Roman"	22001
+	String	"Arial"	22002
+	String	"2"	22003
+	String	"4"	22004
+	String	"1"	22005
+	String	"65"	22006
+	String	"0"	22007
+	String	"-"	22009
+	String	"All"	22010
+}
+Report	"Certificado de retención de Ica"	22001
+
+{
+	CalculatedField	"Currency ID"	22000
+	CalculatedField	"NAME"	22001
+	CalculatedField	"Part_I"	22002
+	CalculatedField	"Periodos"	22003
+	CalculatedField	"Total"	22004
+	CalculatedField	"part_II"	22005
+	CalculatedField	"Adhesivo"	22006
+	CalculatedField	"Banco"	22007
+	CalculatedField	"Fecha"	22008
+	CalculatedField	"Mes"	22009
+	CalculatedField	"Valor"	22010
+	String	"3"	22000
+	String	"Times New Roman"	22001
+	String	"Arial"	22002
+	String	"2"	22003
+	String	"4"	22004
+	String	"1"	22005
+	String	"65"	22006
+	String	"0"	22007
+	String	"-"	22009
+	String	"All"	22010
+}
+Report	"Certificado de retención de Iva II"	22002
+
+{
+	CalculatedField	"Currency ID"	22000
+	CalculatedField	"NAME"	22001
+	CalculatedField	"Part_I"	22002
+	CalculatedField	"Periodos"	22003
+	CalculatedField	"Total"	22004
+	CalculatedField	"part_II"	22005
+	CalculatedField	"Adhesivo"	22006
+	CalculatedField	"Banco"	22007
+	CalculatedField	"Fecha"	22008
+	CalculatedField	"Mes"	22009
+	CalculatedField	"Valor"	22010
+	CalculatedField	"CV_HDR"	22011
+	CalculatedField	"Date"	22012
+	String	"2"	22000
+	String	"Times New Roman"	22001
+	String	"Arial"	22002
+	String	"4"	22003
+	String	"3"	22004
+	String	"1"	22005
+	String	"65"	22006
+	String	"0"	22007
+	String	"-"	22009
+	String	"All"	22010
+}
+Report	"Certificado de retención de Iva"	22003
+
+{
+	CalculatedField	"Currency ID"	22000
+	CalculatedField	"NAME"	22001
+	CalculatedField	"Part_I"	22002
+	CalculatedField	"Periodos"	22003
+	CalculatedField	"Total"	22004
+	CalculatedField	"part_II"	22005
+	CalculatedField	"Adhesivo"	22006
+	CalculatedField	"Banco"	22007
+	CalculatedField	"Fecha"	22008
+	CalculatedField	"Mes"	22009
+	CalculatedField	"Valor"	22010
+	CalculatedField	"Date"	22011
+	String	"2"	22000
+	String	"Times New Roman"	22001
+	String	"Arial"	22002
+	String	"4"	22003
+	String	"3"	22004
+	String	"1"	22005
+	String	"65"	22006
+	String	"0"	22007
+	String	"-"	22009
+	String	"All"	22010
+}
+Report	"Certificado de retención en la Fuente II"	22004
+
+{
+	CalculatedField	"Currency ID"	22000
+	CalculatedField	"NAME"	22001
+	CalculatedField	"Part_I"	22002
+	CalculatedField	"Periodos"	22003
+	CalculatedField	"Total"	22004
+	CalculatedField	"part_II"	22005
+	CalculatedField	"CV"	22006
+	String	"1"	22000
+	String	"Times New Roman"	22001
+	String	"Arial"	22002
+	String	"65"	22003
+	String	"0"	22004
+	String	"2"	22005
+	String	"-"	22006
+	String	"All"	22008
+}
+Report	"Certificado de retención en la Fuente"	22005
+
+{
+	CalculatedField	"Currency ID"	22000
+	CalculatedField	"NAME"	22001
+	CalculatedField	"Part_I"	22002
+	CalculatedField	"Periodos"	22003
+	CalculatedField	"Total"	22004
+	CalculatedField	"part_II"	22005
+	String	"1"	22000
+	String	"Times New Roman"	22001
+	String	"Arial"	22002
+	String	"65"	22003
+	String	"0"	22004
+	String	"2"	22005
+	String	"-"	22006
+	String	"All"	22008
+}
+Report	"nsaIF Installation Report"	22006
+Report	"nsaIF Medios Magneticos"	22007
+
+{
+	CalculatedField	"xx"	22000
+}
+Report	"nsaIF_Cuenta_NIT_Detallado"	22008
+
+{
+	CalculatedField	"Hide_Body"	22008
+}
+Report	"nsaIF_Cuenta_NIT_Detallado_HIST"	22009
+
+{
+	CalculatedField	"Hide_Body"	22006
+}
+Report	"nsaIF_Cuenta_NIT_Resumen"	22010
+
+{
+	CalculatedField	"Acc_Tot_Cr"	22011
+	CalculatedField	"Acc_Tot_Db"	22012
+	CalculatedField	"Acc_Tot_SF"	22013
+	CalculatedField	"Acc_Tot_SI"	22014
+	CalculatedField	"Grd_Tot_Cr"	22015
+	CalculatedField	"Grd_Tot_Db"	22016
+	CalculatedField	"Grd_Tot_SF"	22017
+	CalculatedField	"Grd_Tot_SI"	22018
+}
+Report	"nsaIF_Cuenta_Tercero_Detallado"	22011
+
+{
+	CalculatedField	"Hide_Body"	22005
+	String	"0.00000"	22000
+	String	"0"	22001
+	String	"1"	22002
+}
+Report	"nsaIF_Cuenta_Tercero_Detallado_HIST"	22012
+
+{
+	CalculatedField	"Hide_Body"	22004
+	String	"0.00000"	22000
+	String	"0"	22001
+	String	"1"	22002
+}
+Report	"nsaIF_Cuenta_Tercero_Resumen"	22013
+
+{
+	CalculatedField	"Saldo_Credito"	22000
+	CalculatedField	"Saldo_Debito"	22001
+	CalculatedField	"Saldo_INI"	22002
+	CalculatedField	"saldo_Final"	22003
+	CalculatedField	"Credit_Balance"	22004
+	CalculatedField	"Debit_Balance"	22005
+	String	"Courier"	22000
+	String	"1"	22001
+	String	"2"	22002
+	String	"3"	22003
+	String	"4"	22004
+	String	"5"	22005
+	String	"6"	22006
+	String	"7"	22007
+	String	"8"	22008
+	String	"9"	22009
+	String	"10"	22010
+	String	"11"	22011
+	String	"12"	22012
+}
+Report	"nsaIF_Error_NIT"	22014
+
+{
+	String	"Courier"	22000
+}
+Report	"nsaIF_NIT_Cuenta_Detallado"	22015
+
+{
+	CalculatedField	"Hide_Body"	22008
+}
+Report	"nsaIF_NIT_Cuenta_Detallado_HIST"	22016
+
+{
+	CalculatedField	"Hide_Body"	22006
+}
+Report	"nsaIF_NIT_Cuenta_Resumen"	22017
+
+{
+	CalculatedField	"Grd_Tot_Cr"	22010
+	CalculatedField	"Grd_Tot_Db"	22011
+	CalculatedField	"Grd_Tot_SF"	22012
+	CalculatedField	"Grd_Tot_SI"	22013
+	CalculatedField	"Nit_Tot_Cr"	22014
+	CalculatedField	"Nit_Tot_Db"	22015
+	CalculatedField	"Nit_Tot_SF"	22016
+	CalculatedField	"Nit_Tot_SI"	22017
+}
+Report	"nsaIF_Tercero_Cuenta_Detallado"	22018
+
+{
+	CalculatedField	"Hide_Body"	22004
+	String	"0.00000"	22000
+	String	"0"	22001
+	String	"1"	22002
+}
+Report	"nsaIF_Tercero_Cuenta_Detallado_HIST"	22019
+
+{
+	CalculatedField	"Hide_Body"	22004
+	String	"0.00000"	22000
+	String	"0"	22001
+	String	"1"	22002
+}
+Report	"nsaIF_Tercero_Cuenta_Resumen"	22020
+
+{
+	CalculatedField	"Saldo_Credito"	22000
+	CalculatedField	"Saldo_Debito"	22001
+	CalculatedField	"Saldo_INI"	22002
+	CalculatedField	"saldo_Final"	22003
+	CalculatedField	"Credit_Balance"	22004
+	CalculatedField	"Debit_Balance"	22005
+	String	"Courier"	22000
+	String	"1"	22001
+	String	"2"	22002
+	String	"3"	22003
+	String	"4"	22004
+	String	"5"	22005
+	String	"6"	22006
+	String	"7"	22007
+	String	"8"	22008
+	String	"9"	22009
+	String	"10"	22010
+	String	"11"	22011
+	String	"12"	22012
+}
+Report	"trpt Terceros Summary Details"	22021
+
+{
+	CalculatedField	"Currency Index"	22000
+	String	"2"	22000
+}
+Report	"trpt_GL_Detail_Inquiry"	22022
+
+{
+	CalculatedField	"Voided"	22000
+	CalculatedField	"cyCreditAmount"	22001
+	CalculatedField	"cyDebitAmount"	22002
+	CalculatedField	"nBreakIfNotOrigView"	22003
+	CalculatedField	"nBreakIfOrigViewAndCurrRange"	22004
+	CalculatedField	"nBreakIfOriginatingView"	22005
+	CalculatedField	"nCurrRangeSelected"	22006
+	CalculatedField	"nCurrencyView"	22007
+	CalculatedField	"nDecimalPlacesCurrency"	22008
+	CalculatedField	"nDecimalPlacesCurrencyFooter"	22009
+	CalculatedField	"nOrigCurrIndex"	22010
+	CalculatedField	"sCurrencyTotals"	22011
+	String	"1"	22000
+	String	"*"	22001
+	String	" "	22002
+	String	"2"	22003
+	String	"0"	22004
+	String	"14"	22005
+	String	"12"	22006
+	String	" Totals:"	22007
+}
+Report	"nsaIF_Setup_Reports"	22023
+
+{
+	CalculatedField	"AccountNumber"	22000
+	CalculatedField	"Property"	22001
+	CalculatedField	"Report MM"	22002
+	CalculatedField	"Ret"	22003
+	String	"1"	22000
+	String	"+"	22001
+	String	"-"	22002
+	String	"True"	22003
+	String	"False"	22004
+}
+Report	"Shipping Document Number Setup Report"	22024
+
+{
+	CalculatedField	"Module type"	22000
+	String	"0"	22000
+	String	"ALL"	22001
+}
+Message	"22000"	"System"	22000
+Message	"22001"	"System"	22001
+Message	"22002"	"System"	22002
+Message	"22003"	"System"	22003
+Message	"22004"	"System"	22004
+Message	"22005"	"System"	22005
+Message	"22006"	"System"	22006
+Message	"22007"	"System"	22007
+Message	"22008"	"System"	22008
+Message	"22009"	"System"	22009
+Message	"22010"	"System"	22010
+Message	"22011"	"System"	22011
+Message	"22012"	"System"	22012
+Message	"22013"	"System"	22013
+Message	"22014"	"System"	22014
+Message	"22015"	"System"	22015
+Message	"22016"	"System"	22016
+Message	"22017"	"System"	22017
+Message	"22018"	"System"	22018
+Message	"22019"	"System"	22019
+Message	"22020"	"System"	22020
+Message	"22021"	"System"	22021
+Message	"22022"	"System"	22022
+Message	"22023"	"System"	22023
+Message	"22024"	"System"	22024
+Message	"22025"	"System"	22025
+Message	"22026"	"System"	22026
+Message	"22027"	"System"	22027
+Message	"22028"	"System"	22028
+Message	"22029"	"System"	22029
+Message	"22030"	"System"	22030
+Message	"22031"	"System"	22031
+Message	"22032"	"System"	22032
+Message	"22033"	"System"	22033
+Message	"22034"	"System"	22034
+Message	"22035"	"System"	22035
+Message	"22036"	"System"	22036
+Message	"22037"	"System"	22037
+Message	"22038"	"System"	22038
+Message	"22039"	"System"	22039
+Message	"22040"	"System"	22040
+Message	"22041"	"System"	22041
+Message	"22042"	"System"	22042
+Message	"22043"	"System"	22043
+Message	"22044"	"System"	22044
+Message	"22045"	"System"	22045
+Message	"22046"	"System"	22046
+Message	"22047"	"System"	22047
+Message	"22048"	"System"	22048
+Message	"22049"	"System"	22049
+Message	"22050"	"System"	22050
+Message	"22051"	"System"	22051
+Message	"22052"	"System"	22052
+Message	"22053"	"System"	22053
+Message	"22054"	"System"	22054
+Message	"22055"	"System"	22055
+Message	"22056"	"System"	22056
+Message	"22057"	"System"	22057
+Message	"22058"	"System"	22058
+Message	"22059"	"System"	22059
+Message	"22060"	"System"	22060
+Message	"22061"	"System"	22061
+Message	"22062"	"System"	22062
+Message	"22063"	"System"	22063
+Message	"22064"	"System"	22064
+Message	"22065"	"System"	22065
+Message	"22066"	"System"	22066
+Message	"22067"	"System"	22067
+Message	"22068"	"System"	22068
+Message	"22069"	"System"	22069
+Message	"22070"	"System"	22070
+Message	"22071"	"System"	22071
+Message	"22072"	"System"	22072
+Message	"22073"	"System"	22073
+Message	"22074"	"System"	22074
+Message	"22075"	"System"	22075
+Message	"22076"	"System"	22076
+Message	"22077"	"System"	22077
+Message	"22078"	"System"	22078
+Message	"22079"	"System"	22079
+Message	"22080"	"System"	22080
+Message	"22081"	"System"	22081
+Message	"22082"	"System"	22082
+Message	"22083"	"System"	22083
+Message	"22084"	"System"	22084
+Message	"22085"	"System"	22085
+Message	"22086"	"System"	22086
+Message	"22087"	"System"	22087
+Message	"22088"	"System"	22088
+Message	"22089"	"System"	22089
+Message	"22090"	"System"	22090
+Message	"22091"	"System"	22091
+Message	"22092"	"System"	22092
+Message	"22093"	"System"	22093
+Message	"22096"	"System"	22096
+Message	"22097"	"System"	22097
+Message	"22819"	"Project"	22819
+Message	"22832"	"Payroll"	22832
+Message	"22833"	"System"	22833
+Message	"29014"	"Project"	29014
+Message	"29015"	"System"	29015
+Message	"29016"	"System"	29016
+Message	"30000"	"Payroll"	30000
+Message	"30001"	"Project"	30001
+Message	"30002"	"System"	30002
+Message	"30003"	"Financial"	30003
+Message	"30004"	"Sales"	30004
+Message	"30005"	"Purchasing"	30005
+Message	"30006"	"Inventory"	30006
+Message	"30007"	"Payroll"	30007
+Message	"30008"	"Project"	30008
+Message	"30009"	"System"	30009
+Message	"30010"	"Financial"	30010
+Message	"30020"	"Inventory"	30020
+Message	"30021"	"Payroll"	30021
+Message	"30022"	"Project"	30022
+Message	"31000"	"Inventory"	31000
+Message	"31001"	"Payroll"	31001
+Message	"31002"	"Project"	31002
+Message	"31003"	"System"	31003
+Message	"32500"	"Project"	32500
+Message	"32501"	"System"	32501
+Message	"32502"	"Financial"	32502
+Message	"32503"	"Sales"	32503
+Message	"32504"	"Purchasing"	32504
+Message	"32505"	"Inventory"	32505
+Message	"32506"	"Payroll"	32506
+Message	"32507"	"Project"	32507
+Message	"32508"	"System"	32508
+Message	"32509"	"Financial"	32509
+Message	"32510"	"Sales"	32510
+Message	"32511"	"Purchasing"	32511
+Message	"32512"	"Inventory"	32512
+Message	"32513"	"Payroll"	32513
+Message	"32514"	"Project"	32514
+Message	"32515"	"System"	32515
+Message	"32516"	"Financial"	32516
+Message	"32517"	"Sales"	32517
+Message	"32518"	"Purchasing"	32518
+Message	"32519"	"Inventory"	32519
+Message	"32520"	"Payroll"	32520
+Message	"32521"	"Project"	32521
+Message	"32522"	"System"	32522
+Message	"32523"	"Financial"	32523
+Message	"32524"	"Sales"	32524
+Message	"32600"	"Financial"	32600
+Message	"32601"	"Sales"	32601
+Message	"32602"	"Purchasing"	32602
+Message	"32700"	"Purchasing"	32700
+Message	"32702"	"Payroll"	32702
+Message	"32703"	"Project"	32703
+Message	"32704"	"System"	32704
+Message	"32705"	"Financial"	32705
+Message	"32706"	"Sales"	32706
+Message	"32707"	"Purchasing"	32707
+Message	"32708"	"Inventory"	32708
+Message	"32709"	"Payroll"	32709
+Message	"32711"	"System"	32711
+Message	"32712"	"Financial"	32712
+Message	"32714"	"Purchasing"	32714
+Message	"32715"	"Inventory"	32715
+Message	"32716"	"Payroll"	32716
+Message	"32717"	"Project"	32717
+Message	"32718"	"System"	32718
+Message	"32719"	"Financial"	32719
+Message	"32720"	"Sales"	32720
+Message	"32721"	"Purchasing"	32721
+Message	"32722"	"Inventory"	32722
+Message	"32723"	"Payroll"	32723
+Message	"32724"	"Project"	32724
+Message	"32725"	"System"	32725
+Message	"32726"	"Financial"	32726
+Message	"32727"	"Sales"	32727
+Message	"32728"	"Purchasing"	32728
+Message	"32730"	"Payroll"	32730
+Message	"32731"	"Project"	32731
+Message	"32733"	"Financial"	32733
+Message	"32734"	"Sales"	32734
+Message	"32735"	"Purchasing"	32735
+Message	"32741"	"Sales"	32741
+Message	"32742"	"Purchasing"	32742
+Message	"32743"	"Inventory"	32743
+Message	"32744"	"System"	32744
+Message	"32745"	"System"	32745
+Message	"32751"	"Payroll"	32751
+Message	"32752"	"Project"	32752
+Message	"32753"	"System"	32753
+Message	"32754"	"Financial"	32754
+Message	"32755"	"Sales"	32755
+Message	"32756"	"Purchasing"	32756
+Message	"32757"	"Inventory"	32757
+Message	"32758"	"Payroll"	32758
+Message	"32759"	"Project"	32759
+Message	"32760"	"System"	32760
+Message	"32761"	"Financial"	32761
+Message	"32762"	"Sales"	32762
+Message	"32763"	"Purchasing"	32763
+Message	"32764"	"Inventory"	32764
+Message	"32765"	"System"	32765
+Message	"32766"	"System"	32766
+Message	"32767"	"System"	32767
+Constant	"nsaIF_DICT"	"Project"	22000
+Constant	"nsaIF_MSG_IO_Error"	"System"	22001
+Constant	"nsaIF_SQL_declare_G_cursor_for_grant_execute"	"Financial"	22002
+Constant	"nsaIF_PRODID"	"Sales"	22003
+Constant	"nsaIF_WARNING"	"Purchasing"	22004
+Constant	"nsaIF_Release"	"Inventory"	22005
+Constant	"nsaIF_Yes"	"Payroll"	22006
+Constant	"nsaIF_No"	"Project"	22007
+Constant	"nsaIF_SQL_Tables"	"System"	22008
+Constant	"nsaIF_INSTALL_SQL_Tables"	"Financial"	22009
+Constant	"nsaIF_Palettes"	"Sales"	22010
+Constant	"nsaIF_Directories"	"Purchasing"	22011
+Constant	"nsaIF_INSTALL_Palettes"	"Inventory"	22012
+Constant	"nsaIF_Pre_Installation_Defaults"	"Payroll"	22013
+Constant	"nsaIF_Complete"	"Project"	22014
+Constant	"nsaIF_3rd_Party_Alert_not_found_MSG"	"System"	22015
+Constant	"nsaIF_OKAY"	"Financial"	22016
+Constant	"nsaIF_Record_locked"	"Sales"	22017
+Constant	"nsaIF_End_of_File"	"Purchasing"	22018
+Constant	"nsaIF_Duplicate_record"	"Inventory"	22019
+Constant	"nsaIF_Not_found"	"Payroll"	22020
+Constant	"nsaIF_Record_changed_by_another_user"	"Project"	22021
+Constant	"nsaIF_MSG_Script_Abort"	"System"	22022
+Constant	"nsaIF_Deadlocked"	"Financial"	22023
+Constant	"nsaIF_SQL_declare_G_cursor_for_grant1"	"Sales"	22024
+Constant	"nsaIF_INSTALL_Directories"	"Purchasing"	22025
+Constant	"nsaIF_TBL_Update_Status_MSTR"	"Inventory"	22026
+Constant	"nsaIF_IF_Management_release"	"Payroll"	22027
+Constant	"nsaIF_VERSION_DATE_NUMBER"	"Project"	22028
+Constant	"nsaIF_Selected_Installation_Components"	"System"	22029
+Constant	"nsaIF_Installation_Had_Errors"	"Financial"	22030
+Constant	"nsaIF_DEX_change"	"Sales"	22031
+Constant	"nsaIF_DEX_save"	"Purchasing"	22032
+Constant	"nsaIF_Installation_Complete"	"Inventory"	22033
+Constant	"nsaIF_ASTERISK"	"Payroll"	22034
+Constant	"nsaIF_SQL_declare_G_cursor_for_grant"	"Project"	22035
+Constant	"nsaIF_TBL_Installation_Status_MSTR"	"System"	22036
+Constant	"nsaIF_TBL_Installation_Report_MSTR"	"Financial"	22037
+Constant	"nsaIF_MSG_Login_as_sa_or_DYNSA"	"Sales"	22038
+Constant	"nsaIF_USERID_sa"	"Purchasing"	22039
+Constant	"nsaIF_USERID_DYNSA"	"Inventory"	22040
+Constant	"nsaIF_SQL_declare_G_cursor_for_grant_ACRSTBL"	"Payroll"	22041
+Constant	"nsaIF_SQL_declare_G_cursor_for_grant_execute_ACRSTBL"	"Project"	22042
+Constant	"nsaIF_Exit_Installation_Wizard_MSG"	"System"	22043
+Constant	"nsaIF_USERID_SA"	"Financial"	22044
+Constant	"TAXRPTHELP"	"Sales"	22045
+Constant	"FA_PRODID"	"Purchasing"	22046
+Constant	"IF_FA_TBL_GL_Interface_WORK"	"Inventory"	22047
+Constant	"TIME"	"Payroll"	22048
+Constant	"nsaIF_SD_SEQNUM_EXIST"	"Project"	22049
+Constant	"nsaIF_SD_QTY_n_PRICE"	"System"	22050
+Constant	"nsaIF_SD_PUR_RET"	"Financial"	22051
+Constant	"nsaIF_SDHELPFILE"	"Sales"	22052
+Function	"IF_FA_Is_Activated"	"Financial"	22000
+Function	"RW_nsaIF_Journal_Tercero_ID"	"Financial"	22001
+Function	"RW_Saldo_Credito_NIT"	"Financial"	22002
+Function	"RW_nsaIF_NIT"	"Financial"	22003
+Function	"nsaIF_CustomerNames"	"System"	22004
+Function	"nsaIF_VendorNames"	"System"	22005
+Function	"RW_Saldo_Final_NIT"	"Financial"	22006
+Function	"RW_Saldo_Inicial"	"Financial"	22007
+Function	"RW_nsaIF_NIT_Code"	"Financial"	22008
+Function	"RW_nsaIF_Tercero_ID"	"Financial"	22009
+Function	"trptTrProc_SOP_Update_SOPType_After"	"Sales"	22010
+Function	"trpt_CM_Reconcile_DeleteReconcile_Before"	"Financial"	22011
+Function	"trpt_CM_Transaction_Entry_DisplayCheckbook_Before"	"Financial"	22012
+Function	"trpt_CM_Transaction_Entry_DisplayTransaction_Before"	"Financial"	22013
+Function	"RW_nsaIF_Credito"	"Financial"	22014
+Function	"RW_nsaIF_Debito"	"Financial"	22015
+Function	"RW_nsaIF_Get_Name_Vendor"	"System"	22016
+Function	"RW_nsaIF_NIT_Tercero"	"Financial"	22017
+Function	"RW_nsaIF_Nit_Name"	"Financial"	22018
+Function	"RW_nsaIF_Saldo_Debito_NIT"	"Financial"	22019
+Function	"RW_nsaIF_Saldo_Final"	"Financial"	22020
+Function	"RW_nsaIF_Saldo_INI"	"Financial"	22021
+Function	"trpt_CM_Transaction_Entry_GetReversingDistributions_Before"	"Financial"	22022
+Function	"trpt_CM_Transaction_Entry_UpdateCashAccount_Before"	"Financial"	22023
+Function	"nsaIF_Get_Return_Code_Description"	"System"	22028
+Function	"nsaIF_FAM_Release_as_String"	"System"	22029
+Function	"RW_nsaIF_NUM_Adhesivo"	"Sales"	22031
+Function	"RW_nsaIF_NUM_Adhesivo_Valor"	"Sales"	22032
+Function	"IF_RunMyReport"	"Financial"	22033
+Function	"IF_TRIGGER_GetReportCategoryName"	"Financial"	22034
+Function	"IF_TRIGGER_GetReportDisplayName"	"Financial"	22035
+Function	"IF_TRIGGER_GetReportSeriesName"	"Financial"	22036
+Function	"RW_nsaIF_NUM_Adhesivo_I"	"Sales"	22037
+Function	"RW_nsaIF_NUM_Adhesivo_Valor_I"	"Sales"	22038
+Function	"nsaIF_Check_OriginatingMaster"	"Financial"	22039
+Function	"nsaIF_DelAcc_In_Ranges"	"Financial"	22040
