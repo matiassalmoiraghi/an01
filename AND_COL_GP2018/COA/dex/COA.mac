@@ -1,0 +1,73 @@
+# DEXVERSION=18.00.0015.000 2 2
+Logging file none
+  MenuSelect title File entry 'Open Source Dictionary...' 
+  FileOpen file ':C:jcTii/Desarrollo/GPDex/scc/AndinaCOAGp2018R2/DynGP2018R2Dev.dic' type 0 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  MoveTo field 'Toolbar Utilities Button' item 0 
+  ClickHit field 'Toolbar Utilities Button' item 6  # 'Extract' 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+  ClickHit field '(L) Extract Button' 
+  FileSave file ':C:jcTii/Desarrollo/GPDex/scc/AndinaCOAGp2018R2/COA5064.DIC' 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+NewActiveWin dictionary 'default'  form Extractor window Extractor 
+  MenuSelect title File entry 'Close Source Dictionary' 
+  MenuSelect title File entry 'Open Editable Dictionary...' 
+  FileOpen file ':C:jcTii/Desarrollo/GPDex/scc/AndinaCOAGp2018R2/COA5064.DIC' type 0 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  ClickCancel field 'Toolbar Utilities Button' item 6  # 'Extract' 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  ClickHit field 'Toolbar Utilities Button' item 5  # 'Create Product Information' 
+NewActiveWin dictionary 'default'  form 'Product Res' window 'Product Resource' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'File Name' , 'DYNAMICS.SET'
+  MoveTo field 'Cluster ID' 
+  MoveTo field 'Product Name' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Product Name' , 'COA'
+  MoveTo field 'Product ID' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Product ID' , '5064'
+  MoveTo field 'Form Dictionary' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Form Dictionary' , 'FRM5064.DIC'
+  MoveTo field 'Report Dictionary' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field 'Report Dictionary' , 'RPT5064.DIC'
+  MoveTo field '(L) Compatiblity ID' 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  MenuSelect title Edit entry Paste 
+  TypeTo field '(L) Compatiblity ID' , 'Dyn18.0'
+  MoveTo field '(L) Compatiblity Message' 
+  MoveTo field 'Product Name' 
+  MenuSelect title Edit entry Copy 
+  MoveTo field '(L) Compatiblity Message' 
+  MenuSelect title Edit entry Paste 
+ActivateWindow dictionary 'default'  form 'Product Res' window 'Product Resource' 
+  TypeTo field '(L) Compatiblity Message' , 'COA'
+  MoveTo field 'Ok Button' 
+  ClickHit field 'Ok Button' 
+ActivateWindow dictionary 'default'  form 'Main Menu' window 'DexUtils Toolbar' 
+  ClickHit field 'Toolbar Utilities Button' item 9  # 'Auto-Chunk' 
+NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  ClickHit field 'Lookup Button 3' 
+  FileSave file ':C:jcTii/Desarrollo/GPDex/scc/AndinaCOAGp2018R2/COA5064.cnk' 
+ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  MoveTo field 'Accounting Modules' item 1  # 'Module 001' 
+  ClickHit field 'Accounting Modules' item 54  # 'Module 054' 
+  MoveTo field '(L) Major Version' 
+  TypeTo field '(L) Major Version' , '18'
+  MoveTo field '(L) Minor Version' 
+  MoveTo field '(L) Build Number' 
+ActivateWindow dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+  TypeTo field '(L) Build Number' , '1745'
+  MoveTo field '(L) Group Box' item 0  # 'Total Compression' 
+  MoveTo field 'Ok Button' 
+  ClickHit field 'Ok Button' 
+NewActiveWin dictionary 'default'  form 'Auto Chunk' window 'Auto Chunk' 
+MenuSelect title File entry Exit

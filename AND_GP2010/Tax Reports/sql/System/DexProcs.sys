@@ -1,0 +1,318 @@
+/*Count : 3 */
+ 
+set DATEFORMAT ymd 
+GO 
+ 
+/*Begin_nsaIF*/
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIF_ERRORLOGF_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIF_ERRORLOGF_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIF_ERRORLOGF_1 (@DATE1_RS datetime, @TIME1_RS datetime, @Script_RS char(79), @DATE1_RE datetime, @TIME1_RE datetime, @Script_RE char(79)) AS  set nocount on IF @DATE1_RS IS NULL BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG ORDER BY DATE1 ASC, TIME1 ASC, Script ASC END ELSE IF @DATE1_RS = @DATE1_RE BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG WHERE DATE1 = @DATE1_RS AND TIME1 BETWEEN @TIME1_RS AND @TIME1_RE AND Script BETWEEN @Script_RS AND @Script_RE ORDER BY DATE1 ASC, TIME1 ASC, Script ASC END ELSE BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG WHERE DATE1 BETWEEN @DATE1_RS AND @DATE1_RE AND TIME1 BETWEEN @TIME1_RS AND @TIME1_RE AND Script BETWEEN @Script_RS AND @Script_RE ORDER BY DATE1 ASC, TIME1 ASC, Script ASC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIF_ERRORLOGF_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIF_ERRORLOGL_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIF_ERRORLOGL_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIF_ERRORLOGL_1 (@DATE1_RS datetime, @TIME1_RS datetime, @Script_RS char(79), @DATE1_RE datetime, @TIME1_RE datetime, @Script_RE char(79)) AS  set nocount on IF @DATE1_RS IS NULL BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG ORDER BY DATE1 DESC, TIME1 DESC, Script DESC END ELSE IF @DATE1_RS = @DATE1_RE BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG WHERE DATE1 = @DATE1_RS AND TIME1 BETWEEN @TIME1_RS AND @TIME1_RE AND Script BETWEEN @Script_RS AND @Script_RE ORDER BY DATE1 DESC, TIME1 DESC, Script DESC END ELSE BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG WHERE DATE1 BETWEEN @DATE1_RS AND @DATE1_RE AND TIME1 BETWEEN @TIME1_RS AND @TIME1_RE AND Script BETWEEN @Script_RS AND @Script_RE ORDER BY DATE1 DESC, TIME1 DESC, Script DESC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIF_ERRORLOGL_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIF_ERRORLOGN_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIF_ERRORLOGN_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIF_ERRORLOGN_1 (@BS int, @DATE1 datetime, @TIME1 datetime, @Script char(79), @DATE1_RS datetime, @TIME1_RS datetime, @Script_RS char(79), @DATE1_RE datetime, @TIME1_RE datetime, @Script_RE char(79)) AS  set nocount on IF @DATE1_RS IS NULL BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG WHERE ( DATE1 = @DATE1 AND TIME1 = @TIME1 AND Script > @Script OR DATE1 = @DATE1 AND TIME1 > @TIME1 OR DATE1 > @DATE1 ) ORDER BY DATE1 ASC, TIME1 ASC, Script ASC END ELSE IF @DATE1_RS = @DATE1_RE BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG WHERE DATE1 = @DATE1_RS AND TIME1 BETWEEN @TIME1_RS AND @TIME1_RE AND Script BETWEEN @Script_RS AND @Script_RE AND ( DATE1 = @DATE1 AND TIME1 = @TIME1 AND Script > @Script OR DATE1 = @DATE1 AND TIME1 > @TIME1 OR DATE1 > @DATE1 ) ORDER BY DATE1 ASC, TIME1 ASC, Script ASC END ELSE BEGIN SELECT TOP 25  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG WHERE DATE1 BETWEEN @DATE1_RS AND @DATE1_RE AND TIME1 BETWEEN @TIME1_RS AND @TIME1_RE AND Script BETWEEN @Script_RS AND @Script_RE AND ( DATE1 = @DATE1 AND TIME1 = @TIME1 AND Script > @Script OR DATE1 = @DATE1 AND TIME1 > @TIME1 OR DATE1 > @DATE1 ) ORDER BY DATE1 ASC, TIME1 ASC, Script ASC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIF_ERRORLOGN_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIF_ERRORLOGSD]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIF_ERRORLOGSD]
+GO
+
+CREATE PROC dbo.zDP_nsaIF_ERRORLOGSD (@DATE1 datetime, @TIME1 datetime, @Script char(79), @RowsAffected int OUT, @RID int = 0, @TN char(99) = 'TN') AS  set nocount on BEGIN IF @RID > 0 DELETE FROM .nsaIF_ERRORLOG WHERE DATE1 = @DATE1 AND TIME1 = @TIME1 AND Script = @Script AND ( NOT EXISTS ( SELECT 1 FROM tempdb.dbo.DEX_LOCK WHERE row_id = @RID AND table_path_name = @TN ) ) ELSE DELETE FROM .nsaIF_ERRORLOG WHERE DATE1 = @DATE1 AND TIME1 = @TIME1 AND Script = @Script SELECT @RowsAffected = @@rowcount END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIF_ERRORLOGSD to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIF_ERRORLOGSI]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIF_ERRORLOGSI]
+GO
+
+CREATE PROC dbo.zDP_nsaIF_ERRORLOGSI (@LOGINDEX int, @DATE1 datetime, @TIME1 datetime, @Script char(79), @MsgText char(255), @DEX_ROW_ID int OUT) AS  set nocount on BEGIN INSERT INTO .nsaIF_ERRORLOG (LOGINDEX, DATE1, TIME1, Script, MsgText) VALUES ( @LOGINDEX, @DATE1, @TIME1, @Script, @MsgText) SELECT @DEX_ROW_ID = @@IDENTITY END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIF_ERRORLOGSI to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIF_ERRORLOGSS_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIF_ERRORLOGSS_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIF_ERRORLOGSS_1 (@DATE1 datetime, @TIME1 datetime, @Script char(79)) AS  set nocount on SELECT TOP 1  LOGINDEX, DATE1, TIME1, Script, MsgText, DEX_ROW_ID FROM .nsaIF_ERRORLOG WHERE DATE1 = @DATE1 AND TIME1 = @TIME1 AND Script = @Script ORDER BY DATE1 ASC, TIME1 ASC, Script ASC set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIF_ERRORLOGSS_1 to DYNGRP 
+GO 
+
+/*End_nsaIF*/
+/*Begin_nsaIFINSREPORT*/
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSREPORTF_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSREPORTF_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSREPORTF_1 (@Install_Date_and_Time_RS char(31), @CMPANYID_RS smallint, @Install_Step_RS char(81), @Install_Component_Name_RS char(81), @Install_Date_and_Time_RE char(31), @CMPANYID_RE smallint, @Install_Step_RE char(81), @Install_Component_Name_RE char(81)) AS  set nocount on IF @Install_Date_and_Time_RS IS NULL BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT ORDER BY Install_Date_and_Time ASC, CMPANYID ASC, Install_Step ASC, Install_Component_Name ASC END ELSE IF @Install_Date_and_Time_RS = @Install_Date_and_Time_RE BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT WHERE Install_Date_and_Time = @Install_Date_and_Time_RS AND CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE AND Install_Step BETWEEN @Install_Step_RS AND @Install_Step_RE AND Install_Component_Name BETWEEN @Install_Component_Name_RS AND @Install_Component_Name_RE ORDER BY Install_Date_and_Time ASC, CMPANYID ASC, Install_Step ASC, Install_Component_Name ASC END ELSE BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT WHERE Install_Date_and_Time BETWEEN @Install_Date_and_Time_RS AND @Install_Date_and_Time_RE AND CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE AND Install_Step BETWEEN @Install_Step_RS AND @Install_Step_RE AND Install_Component_Name BETWEEN @Install_Component_Name_RS AND @Install_Component_Name_RE ORDER BY Install_Date_and_Time ASC, CMPANYID ASC, Install_Step ASC, Install_Component_Name ASC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSREPORTF_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSREPORTL_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSREPORTL_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSREPORTL_1 (@Install_Date_and_Time_RS char(31), @CMPANYID_RS smallint, @Install_Step_RS char(81), @Install_Component_Name_RS char(81), @Install_Date_and_Time_RE char(31), @CMPANYID_RE smallint, @Install_Step_RE char(81), @Install_Component_Name_RE char(81)) AS  set nocount on IF @Install_Date_and_Time_RS IS NULL BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT ORDER BY Install_Date_and_Time DESC, CMPANYID DESC, Install_Step DESC, Install_Component_Name DESC END ELSE IF @Install_Date_and_Time_RS = @Install_Date_and_Time_RE BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT WHERE Install_Date_and_Time = @Install_Date_and_Time_RS AND CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE AND Install_Step BETWEEN @Install_Step_RS AND @Install_Step_RE AND Install_Component_Name BETWEEN @Install_Component_Name_RS AND @Install_Component_Name_RE ORDER BY Install_Date_and_Time DESC, CMPANYID DESC, Install_Step DESC, Install_Component_Name DESC END ELSE BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT WHERE Install_Date_and_Time BETWEEN @Install_Date_and_Time_RS AND @Install_Date_and_Time_RE AND CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE AND Install_Step BETWEEN @Install_Step_RS AND @Install_Step_RE AND Install_Component_Name BETWEEN @Install_Component_Name_RS AND @Install_Component_Name_RE ORDER BY Install_Date_and_Time DESC, CMPANYID DESC, Install_Step DESC, Install_Component_Name DESC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSREPORTL_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSREPORTN_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSREPORTN_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSREPORTN_1 (@BS int, @Install_Date_and_Time char(31), @CMPANYID smallint, @Install_Step char(81), @Install_Component_Name char(81), @Install_Date_and_Time_RS char(31), @CMPANYID_RS smallint, @Install_Step_RS char(81), @Install_Component_Name_RS char(81), @Install_Date_and_Time_RE char(31), @CMPANYID_RE smallint, @Install_Step_RE char(81), @Install_Component_Name_RE char(81)) AS  set nocount on IF @Install_Date_and_Time_RS IS NULL BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT WHERE ( Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID = @CMPANYID AND Install_Step = @Install_Step AND Install_Component_Name > @Install_Component_Name OR Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID = @CMPANYID AND Install_Step > @Install_Step OR Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID > @CMPANYID OR Install_Date_and_Time > @Install_Date_and_Time ) ORDER BY Install_Date_and_Time ASC, CMPANYID ASC, Install_Step ASC, Install_Component_Name ASC END ELSE IF @Install_Date_and_Time_RS = @Install_Date_and_Time_RE BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT WHERE Install_Date_and_Time = @Install_Date_and_Time_RS AND CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE AND Install_Step BETWEEN @Install_Step_RS AND @Install_Step_RE AND Install_Component_Name BETWEEN @Install_Component_Name_RS AND @Install_Component_Name_RE AND ( Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID = @CMPANYID AND Install_Step = @Install_Step AND Install_Component_Name > @Install_Component_Name OR Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID = @CMPANYID AND Install_Step > @Install_Step OR Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID > @CMPANYID OR Install_Date_and_Time > @Install_Date_and_Time ) ORDER BY Install_Date_and_Time ASC, CMPANYID ASC, Install_Step ASC, Install_Component_Name ASC END ELSE BEGIN SELECT TOP 25  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT WHERE Install_Date_and_Time BETWEEN @Install_Date_and_Time_RS AND @Install_Date_and_Time_RE AND CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE AND Install_Step BETWEEN @Install_Step_RS AND @Install_Step_RE AND Install_Component_Name BETWEEN @Install_Component_Name_RS AND @Install_Component_Name_RE AND ( Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID = @CMPANYID AND Install_Step = @Install_Step AND Install_Component_Name > @Install_Component_Name OR Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID = @CMPANYID AND Install_Step > @Install_Step OR Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID > @CMPANYID OR Install_Date_and_Time > @Install_Date_and_Time ) ORDER BY Install_Date_and_Time ASC, CMPANYID ASC, Install_Step ASC, Install_Component_Name ASC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSREPORTN_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSREPORTSI]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSREPORTSI]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSREPORTSI (@Install_Date_and_Time char(31), @CMPANYID smallint, @Install_Step char(81), @Install_Component_Name char(81), @ERMSGTXT char(255), @DEX_ROW_ID int OUT) AS  set nocount on BEGIN INSERT INTO .nsaIFINSREPORT (Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT) VALUES ( @Install_Date_and_Time, @CMPANYID, @Install_Step, @Install_Component_Name, @ERMSGTXT) SELECT @DEX_ROW_ID = @@IDENTITY END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSREPORTSI to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSREPORTSS_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSREPORTSS_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSREPORTSS_1 (@Install_Date_and_Time char(31), @CMPANYID smallint, @Install_Step char(81), @Install_Component_Name char(81)) AS  set nocount on SELECT TOP 1  Install_Date_and_Time, CMPANYID, Install_Step, Install_Component_Name, ERMSGTXT, DEX_ROW_ID FROM .nsaIFINSREPORT WHERE Install_Date_and_Time = @Install_Date_and_Time AND CMPANYID = @CMPANYID AND Install_Step = @Install_Step AND Install_Component_Name = @Install_Component_Name ORDER BY Install_Date_and_Time ASC, CMPANYID ASC, Install_Step ASC, Install_Component_Name ASC set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSREPORTSS_1 to DYNGRP 
+GO 
+
+/*End_nsaIFINSREPORT*/
+/*Begin_nsaIFINSTALL*/
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSTALLF_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSTALLF_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSTALLF_1 (@CMPANYID_RS smallint, @CMPANYID_RE smallint) AS  set nocount on IF @CMPANYID_RS IS NULL BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL ORDER BY CMPANYID ASC END ELSE IF @CMPANYID_RS = @CMPANYID_RE BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL WHERE CMPANYID = @CMPANYID_RS ORDER BY CMPANYID ASC END ELSE BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL WHERE CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE ORDER BY CMPANYID ASC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSTALLF_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSTALLL_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSTALLL_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSTALLL_1 (@CMPANYID_RS smallint, @CMPANYID_RE smallint) AS  set nocount on IF @CMPANYID_RS IS NULL BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL ORDER BY CMPANYID DESC END ELSE IF @CMPANYID_RS = @CMPANYID_RE BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL WHERE CMPANYID = @CMPANYID_RS ORDER BY CMPANYID DESC END ELSE BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL WHERE CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE ORDER BY CMPANYID DESC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSTALLL_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSTALLN_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSTALLN_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSTALLN_1 (@BS int, @CMPANYID smallint, @CMPANYID_RS smallint, @CMPANYID_RE smallint) AS  set nocount on IF @CMPANYID_RS IS NULL BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL WHERE ( CMPANYID > @CMPANYID ) ORDER BY CMPANYID ASC END ELSE IF @CMPANYID_RS = @CMPANYID_RE BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL WHERE CMPANYID = @CMPANYID_RS AND ( CMPANYID > @CMPANYID ) ORDER BY CMPANYID ASC END ELSE BEGIN SELECT TOP 25  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL WHERE CMPANYID BETWEEN @CMPANYID_RS AND @CMPANYID_RE AND ( CMPANYID > @CMPANYID ) ORDER BY CMPANYID ASC END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSTALLN_1 to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSTALLSI]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSTALLSI]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSTALLSI (@CMPANYID smallint, @Major_Version smallint, @Minor_Version smallint, @Build_Number smallint, @DEX_ROW_ID int OUT) AS  set nocount on BEGIN INSERT INTO .nsaIFINSTALL (CMPANYID, Major_Version, Minor_Version, Build_Number) VALUES ( @CMPANYID, @Major_Version, @Minor_Version, @Build_Number) SELECT @DEX_ROW_ID = @@IDENTITY END set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSTALLSI to DYNGRP 
+GO 
+ 
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS OFF 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zDP_nsaIFINSTALLSS_1]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[zDP_nsaIFINSTALLSS_1]
+GO
+
+CREATE PROC dbo.zDP_nsaIFINSTALLSS_1 (@CMPANYID smallint) AS  set nocount on SELECT TOP 1  CMPANYID, Major_Version, Minor_Version, Build_Number, DEX_ROW_ID FROM .nsaIFINSTALL WHERE CMPANYID = @CMPANYID ORDER BY CMPANYID ASC set nocount off 
+GO
+SET QUOTED_IDENTIFIER OFF 
+GO
+SET ANSI_NULLS ON 
+GO
+
+grant execute on zDP_nsaIFINSTALLSS_1 to DYNGRP 
+GO 
+
+/*End_nsaIFINSTALL*/

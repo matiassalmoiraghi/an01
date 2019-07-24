@@ -1,0 +1,2844 @@
+/*Count : 45 */
+ 
+set DATEFORMAT ymd 
+GO 
+ 
+/*Begin_nsaIF_40000*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_40000]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_40000]
+GO
+
+CREATE TABLE [nsaIF_40000] (
+ [CITY] [char] (35) NOT NULL ,
+ [nsaIF_Code_Ciudad] [char] (3) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_40000] PRIMARY KEY  CLUSTERED 
+ (
+ [CITY]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_40000].[CITY]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_40000].[nsaIF_Code_Ciudad]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_40000]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_40000*/
+/*Begin_nsaIF_40001*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_40001]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_40001]
+GO
+
+CREATE TABLE [nsaIF_40001] (
+ [STATE] [char] (29) NOT NULL ,
+ [nsaIF_Code] [char] (5) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_40001] PRIMARY KEY  NONCLUSTERED 
+ (
+ [STATE]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_40001].[STATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_40001].[nsaIF_Code]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_40001]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_40001*/
+/*Begin_nsaIF_70000*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_70000]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_70000]
+GO
+
+CREATE TABLE [nsaIF_70000] (
+ [ORDOCNUM] [char] (21) NOT NULL ,
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [PERIODID] [smallint] NOT NULL ,
+ [nsaIF_CI] [smallint] NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [DOCAMNT] [numeric](19, 5) NOT NULL ,
+ [DOCDATE] [datetime] NOT NULL ,
+ [nsaIF_MES] [char] (11) NOT NULL ,
+ [BankIDNum] [char] (31) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_70000] PRIMARY KEY  CLUSTERED 
+ (
+ [ORDOCNUM],
+ [ORMSTRID],
+ [YEAR1],
+ [PERIODID],
+ [DSCRIPTN]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[DOCDATE]) = 0 and datepart(minute,[DOCDATE]) = 0 and datepart(second,[DOCDATE]) = 0 and datepart(millisecond,[DOCDATE]) = 0)
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[nsaIF_70000].[DOCDATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_70000].[BankIDNum]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_70000].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_70000].[ORDOCNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_70000].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_70000].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_70000].[nsaIF_MES]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_70000].[PERIODID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_70000].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_70000].[nsaIF_CI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_70000].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_70000].[DOCAMNT]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_70000]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_70000*/
+/*Begin_nsaIF_CM00100*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_CM00100]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_CM00100]
+GO
+
+CREATE TABLE [nsaIF_CM00100] (
+ [CHEKBKID] [char] (15) NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [BANKID] [char] (15) NOT NULL ,
+ [CURNCYID] [char] (15) NOT NULL ,
+ [ACTINDX] [int] NOT NULL ,
+ [BNKACTNM] [char] (15) NOT NULL ,
+ [INACTIVE] [tinyint] NOT NULL ,
+ [CMUSRDF2] [char] (21) NOT NULL ,
+ [nsaIF_Site_Code] [char] (5) NOT NULL ,
+ [nsaIF_Dir_Banco] [char] (41) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_CM00100] PRIMARY KEY  NONCLUSTERED 
+ (
+ [nsaIF_Type_Nit],
+ [nsaIFNit],
+ [CHEKBKID]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[BANKID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[BNKACTNM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[CHEKBKID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[CMUSRDF2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[CURNCYID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[nsaIF_Dir_Banco]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[nsaIF_Site_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_CM00100].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_CM00100].[INACTIVE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_CM00100].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_CM00100].[nsaIF_Type_Nit]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_CM00100]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_CM00100*/
+/*Begin_nsaIF_ERROR_TEMP*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_ERROR_TEMP]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_ERROR_TEMP]
+GO
+
+CREATE TABLE [nsaIF_ERROR_TEMP] (
+ [ACTINDX] [int] NOT NULL ,
+ [nsaIF_Description] [char] (101) NOT NULL ,
+ [TRXDATE] [datetime] NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [DSCRPTN1] [char] (15) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_ERROR_TEMP] PRIMARY KEY  NONCLUSTERED 
+ (
+ [DEX_ROW_ID]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[TRXDATE]) = 0 and datepart(minute,[TRXDATE]) = 0 and datepart(second,[TRXDATE]) = 0 and datepart(millisecond,[TRXDATE]) = 0)
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[nsaIF_ERROR_TEMP].[TRXDATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_ERROR_TEMP].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_ERROR_TEMP].[DSCRPTN1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_ERROR_TEMP].[nsaIF_Description]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_ERROR_TEMP].[ACTINDX]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_ERROR_TEMP]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_ERROR_TEMP*/
+/*Begin_nsaIF_GL00010*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL00010]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL00010]
+GO
+
+CREATE TABLE [nsaIF_GL00010] (
+ [nsaIF_Code] [char] (5) NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [Numero_de_Formato] [char] (5) NOT NULL ,
+ [nsaIF_Min_Amount] [numeric](19, 5) NOT NULL ,
+ [Reporte_Menor_Cuantia] [smallint] NOT NULL ,
+ [Reporte_Cliente_Exterior] [smallint] NOT NULL ,
+ [nsaIF_Percentage] [smallint] NOT NULL ,
+ [nsaIF_Client_Exterior] [tinyint] NOT NULL ,
+ [nsaIF_Exclude_ZeroB] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL00010] PRIMARY KEY  NONCLUSTERED 
+ (
+ [nsaIF_Code]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00010].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00010].[Numero_de_Formato]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00010].[nsaIF_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00010].[Reporte_Cliente_Exterior]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00010].[Reporte_Menor_Cuantia]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00010].[nsaIF_Client_Exterior]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00010].[nsaIF_Exclude_ZeroB]'
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00010].[nsaIF_Percentage]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00010].[nsaIF_Min_Amount]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL00010]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL00010*/
+/*Begin_nsaIF_GL00030*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL00030]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL00030]
+GO
+
+CREATE TABLE [nsaIF_GL00030] (
+ [nsaIF_Base] [int] NOT NULL ,
+ [nsaIF_Destination] [int] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL00030] PRIMARY KEY  NONCLUSTERED 
+ (
+ [nsaIF_Base],
+ [nsaIF_Destination]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00030].[nsaIF_Base]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00030].[nsaIF_Destination]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL00030]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL00030*/
+/*Begin_nsaIF_GL00040*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL00040]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL00040]
+GO
+
+CREATE TABLE [nsaIF_GL00040] (
+ [CMNYTXID] [char] (15) NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL00040] PRIMARY KEY  NONCLUSTERED 
+ (
+ [CMNYTXID]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00040].[CMNYTXID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00040].[DSCRIPTN]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL00040]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL00040*/
+/*Begin_nsaIF_GL00050*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL00050]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL00050]
+GO
+
+CREATE TABLE [nsaIF_GL00050] (
+ [nsaIF_YEAR] [smallint] NOT NULL ,
+ [ACTINDX] [int] NOT NULL ,
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [ORMSTRNM] [char] (65) NOT NULL ,
+ [ACTNUMBR_1] [char] (9) NOT NULL ,
+ [ACTNUMBR_2] [char] (9) NOT NULL ,
+ [ACTNUMBR_3] [char] (9) NOT NULL ,
+ [ACTNUMBR_4] [char] (9) NOT NULL ,
+ [ACTNUMBR_5] [char] (9) NOT NULL ,
+ [ACTNUMST] [char] (129) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIF_SDeb01] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb0] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF0] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI0] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_1] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_2] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_3] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_4] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_5] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_6] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_7] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_8] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_9] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_10] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_11] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SCred_12] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_1] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_2] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_3] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_4] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_5] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_6] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_7] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_8] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_9] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_10] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_11] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SDeb_12] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_1] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_2] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_3] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_4] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_5] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_6] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_7] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_8] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_9] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_10] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_11] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SF_12] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_1] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_2] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_3] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_4] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_5] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_6] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_7] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_8] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_9] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_10] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_11] [numeric](19, 5) NOT NULL ,
+ [nsaIF_SI_12] [numeric](19, 5) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL00050] PRIMARY KEY  NONCLUSTERED 
+ (
+ [ACTINDX],
+ [ORMSTRID],
+ [nsaIF_YEAR]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[ACTNUMBR_1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[ACTNUMBR_2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[ACTNUMBR_3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[ACTNUMBR_4]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[ACTNUMBR_5]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[ACTNUMST]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[ORMSTRNM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00050].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00050].[nsaIF_Type_Nit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00050].[nsaIF_YEAR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_10]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_11]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_12]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_4]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_5]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_6]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_7]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_8]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SCred_9]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb0]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb01]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_10]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_11]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_12]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_4]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_5]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_6]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_7]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_8]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SDeb_9]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF0]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_10]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_11]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_12]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_4]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_5]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_6]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_7]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_8]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SF_9]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI0]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_10]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_11]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_12]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_4]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_5]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_6]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_7]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_8]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL00050].[nsaIF_SI_9]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL00050]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL00050*/
+/*Begin_nsaIF_GL00100*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL00100]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL00100]
+GO
+
+CREATE TABLE [nsaIF_GL00100] (
+ [ACTINDX] [int] NOT NULL ,
+ [nsaIF_Code] [char] (5) NOT NULL ,
+ [nsaIF_Vr1_Reporte] [smallint] NOT NULL ,
+ [nsaIF_Vr1_Movimiento] [smallint] NOT NULL ,
+ [Propiedad] [smallint] NOT NULL ,
+ [nsaIF_Naturaleza] [smallint] NOT NULL ,
+ [nsaIF_MM] [tinyint] NOT NULL ,
+ [nsaIF_CI] [smallint] NOT NULL ,
+ [nsaIF_Tax_Type] [char] (21) NOT NULL ,
+ [nsaIF_Man_Tercero] [tinyint] NOT NULL ,
+ [nsaIF_CTA_RETEN] [tinyint] NOT NULL ,
+ [nsaIF_Cost_Deduction] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL00100] PRIMARY KEY  CLUSTERED 
+ (
+ [ACTINDX],
+ [nsaIF_Code]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00100].[nsaIF_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00100].[nsaIF_Tax_Type]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[Propiedad]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[nsaIF_CI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[nsaIF_CTA_RETEN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[nsaIF_MM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[nsaIF_Man_Tercero]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[nsaIF_Naturaleza]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[nsaIF_Vr1_Movimiento]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[nsaIF_Vr1_Reporte]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00100].[nsaIF_Cost_Deduction]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL00100]  TO [DYNGRP] 
+GO
+
+/*End_nsaIF_GL00100*/
+/*Begin_nsaIF_GL10000*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL10000]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL10000]
+GO
+
+CREATE TABLE [nsaIF_GL10000] (
+ [ORDOCNUM] [char] (21) NOT NULL ,
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [TAXDTLID] [char] (15) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [PERIODID] [smallint] NOT NULL ,
+ [PRCNTOFTTL] [numeric](19, 5) NOT NULL ,
+ [TXDTTXSP] [numeric](19, 5) NOT NULL ,
+ [TXDTSPTX] [numeric](19, 5) NOT NULL ,
+ [CMNYTXID] [char] (15) NOT NULL ,
+ [nsaIF_CI] [smallint] NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [SERIES] [smallint] NOT NULL ,
+ [TRXSORCE] [char] (13) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL10000] PRIMARY KEY  NONCLUSTERED 
+ (
+ [ORDOCNUM],
+ [ORMSTRID],
+ [TAXDTLID],
+ [YEAR1],
+ [PERIODID]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10000].[CMNYTXID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10000].[ORDOCNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10000].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10000].[TAXDTLID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10000].[TRXSORCE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10000].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10000].[PERIODID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10000].[SERIES]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10000].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10000].[nsaIF_CI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10000].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL10000].[PRCNTOFTTL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL10000].[TXDTSPTX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_GL10000].[TXDTTXSP]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL10000]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL10000*/
+/*Begin_nsaIF_GL10100*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL10100]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL10100]
+GO
+
+CREATE TABLE [nsaIF_GL10100] (
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [nsaIF_CI] [smallint] NOT NULL ,
+ [nsa_Certified_Number] [char] (15) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [nsaIF_Periodo_From] [smallint] NOT NULL ,
+ [nsaIF_Periodo_To] [smallint] NOT NULL ,
+ [nsaIF_Site_Tax] [char] (51) NOT NULL ,
+ [nsaIF_Address] [char] (101) NOT NULL ,
+ [nsaIF_Name] [char] (101) NOT NULL ,
+ [TRXDATE] [datetime] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL10100] PRIMARY KEY  NONCLUSTERED 
+ (
+ [ORMSTRID],
+ [nsaIF_CI]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[TRXDATE]) = 0 and datepart(minute,[TRXDATE]) = 0 and datepart(second,[TRXDATE]) = 0 and datepart(millisecond,[TRXDATE]) = 0)
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[nsaIF_GL10100].[TRXDATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10100].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10100].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10100].[nsaIF_Address]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10100].[nsaIF_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10100].[nsaIF_Site_Tax]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10100].[nsa_Certified_Number]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10100].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10100].[nsaIF_CI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10100].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10100].[nsaIF_Periodo_From]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10100].[nsaIF_Periodo_To]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL10100]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL10100*/
+/*Begin_nsaIF_GL10110*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL10110]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL10110]
+GO
+
+CREATE TABLE [nsaIF_GL10110] (
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [nsaIF_Nit_HDR] [char] (15) NOT NULL ,
+ [nsaIF_CV_HDR] [smallint] NOT NULL ,
+ [nsaIF_CI] [smallint] NOT NULL ,
+ [nsa_Certified_Number] [char] (15) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [nsaIF_Periodo_From] [smallint] NOT NULL ,
+ [nsaIF_Periodo_To] [smallint] NOT NULL ,
+ [nsaIF_Site_Tax] [char] (51) NOT NULL ,
+ [nsaIF_Address] [char] (101) NOT NULL ,
+ [nsaIF_Name] [char] (101) NOT NULL ,
+ [TRXDATE] [datetime] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL10110] PRIMARY KEY  NONCLUSTERED 
+ (
+ [nsaIF_Nit_HDR],
+ [nsaIF_CI]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[TRXDATE]) = 0 and datepart(minute,[TRXDATE]) = 0 and datepart(second,[TRXDATE]) = 0 and datepart(millisecond,[TRXDATE]) = 0)
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[nsaIF_GL10110].[TRXDATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10110].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10110].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10110].[nsaIF_Address]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10110].[nsaIF_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10110].[nsaIF_Nit_HDR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10110].[nsaIF_Site_Tax]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL10110].[nsa_Certified_Number]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10110].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10110].[nsaIF_CI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10110].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10110].[nsaIF_CV_HDR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10110].[nsaIF_Periodo_From]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL10110].[nsaIF_Periodo_To]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL10110]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL10110*/
+/*Begin_nsaIF_SY00100*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_SY00100]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_SY00100]
+GO
+
+CREATE TABLE [nsaIF_SY00100] (
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [nsaIF_Name] [char] (101) NOT NULL ,
+ [nsaIF_Activity_Code] [char] (5) NOT NULL ,
+ [nsaIF_Address] [char] (101) NOT NULL ,
+ [nsaIF_Site_Code] [char] (5) NOT NULL ,
+ [nsaIF_Type] [char] (3) NOT NULL ,
+ [nsaIF_Next_IVA] [char] (15) NOT NULL ,
+ [nsaIF_Next_ICA] [char] (15) NOT NULL ,
+ [nsaIF_Next_Fuente] [char] (15) NOT NULL ,
+ [nsaIF_Code_Site_Tax] [char] (21) NOT NULL ,
+ [nsaIF_Site_Tax] [char] (51) NOT NULL ,
+ [nsaIF_eMail] [char] (41) NOT NULL ,
+ [nsaIF_MET_INVT] [char] (25) NOT NULL ,
+ [nsaIF_SIS_INV] [char] (25) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_SY00100] PRIMARY KEY  CLUSTERED 
+ (
+ [nsaIFNit]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Activity_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Address]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Code_Site_Tax]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_MET_INVT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Next_Fuente]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Next_ICA]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Next_IVA]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_SIS_INV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Site_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Site_Tax]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_Type]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00100].[nsaIF_eMail]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00100].[nsaIF_CV]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_SY00100]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_SY00100*/
+/*Begin_nsaIF_SY00101*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_SY00101]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_SY00101]
+GO
+
+CREATE TABLE [nsaIF_SY00101] (
+ [nsaIF_Site_Code] [char] (5) NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_SY00101] PRIMARY KEY  NONCLUSTERED 
+ (
+ [nsaIF_Site_Code]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00101].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00101].[nsaIF_Site_Code]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_SY00101]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_SY00101*/
+/*Begin_nsaIF_SY00102*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_SY00102]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_SY00102]
+GO
+
+CREATE TABLE [nsaIF_SY00102] (
+ [nsaIF_Type] [char] (3) NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [nsaIF_Client_Exterior] [tinyint] NOT NULL ,
+ [Crear_Cod_Verificaion] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_SY00102] PRIMARY KEY  NONCLUSTERED 
+ (
+ [nsaIF_Type]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00102].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00102].[nsaIF_Type]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00102].[Crear_Cod_Verificaion]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00102].[nsaIF_Client_Exterior]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_SY00102]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_SY00102*/
+/*Begin_nsaIF_SY00103*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_SY00103]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_SY00103]
+GO
+
+CREATE TABLE [nsaIF_SY00103] (
+ [Numero_de_Formato] [char] (5) NOT NULL ,
+ [STRGB255] [char] (255) NOT NULL ,
+ [nsaIF_Formats] [smallint] NOT NULL ,
+ [nsaIF_Min_Amount] [numeric](19, 5) NOT NULL ,
+ [Reporte_Menor_Cuantia] [smallint] NOT NULL ,
+ [Reporte_Cliente_Exterior] [smallint] NOT NULL ,
+ [Concepto] [tinyint] NOT NULL ,
+ [Tipo_Documento] [tinyint] NOT NULL ,
+ [Num_Identification] [tinyint] NOT NULL ,
+ [DeptCode] [tinyint] NOT NULL ,
+ [Cod_Municipo] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_SY00103] PRIMARY KEY  NONCLUSTERED 
+ (
+ [Numero_de_Formato]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00103].[Numero_de_Formato]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_SY00103].[STRGB255]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00103].[Cod_Municipo]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00103].[Concepto]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00103].[DeptCode]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00103].[Num_Identification]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00103].[Reporte_Cliente_Exterior]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00103].[Reporte_Menor_Cuantia]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00103].[Tipo_Documento]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_SY00103].[nsaIF_Formats]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_SY00103].[nsaIF_Min_Amount]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_SY00103]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_SY00103*/
+/*Begin_nsaIF_Temp70000*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_Temp70000]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_Temp70000]
+GO
+
+CREATE TABLE [nsaIF_Temp70000] (
+ [ORDOCNUM] [char] (21) NOT NULL ,
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [PERIODID] [smallint] NOT NULL ,
+ [nsaIF_CI] [smallint] NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [DOCAMNT] [numeric](19, 5) NOT NULL ,
+ [DOCDATE] [datetime] NOT NULL ,
+ [nsaIF_MES] [char] (11) NOT NULL ,
+ [BankIDNum] [char] (31) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_Temp70000] PRIMARY KEY  NONCLUSTERED 
+ (
+ [DEX_ROW_ID]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[DOCDATE]) = 0 and datepart(minute,[DOCDATE]) = 0 and datepart(second,[DOCDATE]) = 0 and datepart(millisecond,[DOCDATE]) = 0)
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[nsaIF_Temp70000].[DOCDATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_Temp70000].[BankIDNum]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_Temp70000].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_Temp70000].[ORDOCNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_Temp70000].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_Temp70000].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_Temp70000].[nsaIF_MES]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_Temp70000].[PERIODID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_Temp70000].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_Temp70000].[nsaIF_CI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_Temp70000].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF_Temp70000].[DOCAMNT]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_Temp70000]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_Temp70000*/
+/*Begin_nsaIF00666*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF00666]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF00666]
+GO
+
+CREATE TABLE [nsaIF00666] (
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIF_Name] [char] (101) NOT NULL ,
+ [nsaIF_Address] [char] (101) NOT NULL ,
+ [PHNUMBR2] [char] (21) NOT NULL ,
+ [USERDEF1] [char] (21) NOT NULL ,
+ [USERDEF2] [char] (21) NOT NULL ,
+ [USRDEF03] [char] (21) NOT NULL ,
+ [USRDEF04] [char] (21) NOT NULL ,
+ [USRDEF05] [char] (21) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF00666] PRIMARY KEY  CLUSTERED 
+ (
+ [nsaIFNit],
+ [nsaIF_CV],
+ [nsaIF_Type_Nit]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[PHNUMBR2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[USERDEF1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[USERDEF2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[USRDEF03]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[USRDEF04]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[USRDEF05]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[nsaIF_Address]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[nsaIF_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF00666].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF00666].[nsaIF_Type_Nit]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF00666]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF00666*/
+/*Begin_nsaIF006661*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF006661]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF006661]
+GO
+
+CREATE TABLE [nsaIF006661] (
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIF_Name] [char] (101) NOT NULL ,
+ [nsaIF_Address] [char] (101) NOT NULL ,
+ [PHNUMBR2] [char] (21) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF006661] PRIMARY KEY  CLUSTERED 
+ (
+ [nsaIFNit],
+ [nsaIF_CV],
+ [nsaIF_Type_Nit]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF006661].[PHNUMBR2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF006661].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF006661].[nsaIF_Address]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF006661].[nsaIF_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF006661].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF006661].[nsaIF_Type_Nit]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF006661]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF006661*/
+/*Begin_nsaIF01666*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF01666]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF01666]
+GO
+
+CREATE TABLE [nsaIF01666] (
+ [VENDORID] [char] (15) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [VENDNAME] [char] (65) NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIF_Site_Code] [char] (5) NOT NULL ,
+ [Fsurname] [char] (65) NOT NULL ,
+ [Ssurname] [char] (65) NOT NULL ,
+ [Fname] [char] (65) NOT NULL ,
+ [Oname] [char] (65) NOT NULL ,
+ [Rsocial] [char] (65) NOT NULL ,
+ [CCode] [char] (7) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF01666] PRIMARY KEY  CLUSTERED 
+ (
+ [VENDORID],
+ [nsaIF_Type_Nit]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[Fname]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[Fsurname]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[Oname]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[Rsocial]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[Ssurname]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[VENDNAME]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[VENDORID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[nsaIF_Site_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[nsaIF_Type_Nit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF01666].[nsaIF_CV]' 
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF01666].[CCode]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF01666]  TO [DYNGRP] 
+GO
+
+/*End_nsaIF01666*/
+/*Begin_nsaIF02666*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF02666]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF02666]
+GO
+
+CREATE TABLE [nsaIF02666] (
+ [CUSTNMBR] [char] (15) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [CUSTNAME] [char] (65) NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIF_Site_Code] [char] (5) NOT NULL ,
+ [Fsurname] [char] (65) NOT NULL ,
+ [Ssurname] [char] (65) NOT NULL ,
+ [Fname] [char] (65) NOT NULL ,
+ [Oname] [char] (65) NOT NULL ,
+ [Rsocial] [char] (65) NOT NULL ,
+ [CCode] [char] (7) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF02666] PRIMARY KEY  CLUSTERED 
+ (
+ [CUSTNMBR],
+ [nsaIF_Type_Nit],
+ [nsaIFNit]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[CUSTNAME]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[CUSTNMBR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[Fname]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[Fsurname]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[Oname]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[Rsocial]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[Ssurname]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[nsaIF_Site_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[nsaIF_Type_Nit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF02666].[nsaIF_CV]' 
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF02666].[CCode]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF02666]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF02666*/
+/*Begin_nsaIF10120*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF10120]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF10120]
+GO
+
+CREATE TABLE [nsaIF10120] (
+ [ACTINDX] [int] NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [nsaIF_Name_OrifinatingMI] [char] (65) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [ACCATNUM] [smallint] NOT NULL ,
+ [PERDBLNC] [numeric](19, 5) NOT NULL ,
+ [CRDTAMNT] [numeric](19, 5) NOT NULL ,
+ [DEBITAMT] [numeric](19, 5) NOT NULL ,
+ [BGNGBAL] [numeric](19, 5) NOT NULL ,
+ [Closed] [tinyint] NOT NULL ,
+ [ACTNUMST] [char] (129) NOT NULL ,
+ [nsaIF_Code] [char] (5) NOT NULL ,
+ [nsaIF_Vr1] [numeric](19, 5) NOT NULL ,
+ [nsaIF_Vr2] [numeric](19, 5) NOT NULL ,
+ [nsaIF_Vr3] [smallint] NOT NULL ,
+ [nsaIF_MM] [tinyint] NOT NULL ,
+ [nsaIF_Print] [char] (1) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF10120] PRIMARY KEY  CLUSTERED 
+ (
+ [ACTINDX],
+ [nsaIF_Code],
+ [ORMSTRID],
+ [YEAR1]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10120].[ACTNUMST]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10120].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10120].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10120].[nsaIF_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10120].[nsaIF_Name_OrifinatingMI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10120].[nsaIF_Print]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10120].[ACCATNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10120].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10120].[Closed]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10120].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10120].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10120].[nsaIF_MM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10120].[nsaIF_Type_Nit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10120].[nsaIF_Vr3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10120].[BGNGBAL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10120].[CRDTAMNT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10120].[DEBITAMT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10120].[PERDBLNC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10120].[nsaIF_Vr1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10120].[nsaIF_Vr2]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF10120]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF10120*/
+/*Begin_nsaIF10130*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF10130]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF10130]
+GO
+
+CREATE TABLE [nsaIF10130] (
+ [ACTINDX] [int] NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [nsaIF_Name_OrifinatingMI] [char] (65) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [ACCATNUM] [smallint] NOT NULL ,
+ [PERDBLNC] [numeric](19, 5) NOT NULL ,
+ [CRDTAMNT] [numeric](19, 5) NOT NULL ,
+ [DEBITAMT] [numeric](19, 5) NOT NULL ,
+ [BGNGBAL] [numeric](19, 5) NOT NULL ,
+ [Closed] [tinyint] NOT NULL ,
+ [ACTNUMST] [char] (129) NOT NULL ,
+ [nsaIF_Code] [char] (5) NOT NULL ,
+ [nsaIF_Vr1] [numeric](19, 5) NOT NULL ,
+ [nsaIF_Vr2] [numeric](19, 5) NOT NULL ,
+ [nsaIF_Vr3] [smallint] NOT NULL ,
+ [nsaIF_MM] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF10130] PRIMARY KEY  CLUSTERED 
+ (
+ [ACTINDX],
+ [nsaIFNit],
+ [YEAR1]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10130].[ACTNUMST]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10130].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10130].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10130].[nsaIF_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10130].[nsaIF_Name_OrifinatingMI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10130].[ACCATNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10130].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10130].[Closed]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10130].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10130].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10130].[nsaIF_MM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10130].[nsaIF_Type_Nit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10130].[nsaIF_Vr3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10130].[BGNGBAL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10130].[CRDTAMNT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10130].[DEBITAMT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10130].[PERDBLNC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10130].[nsaIF_Vr1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10130].[nsaIF_Vr2]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF10130]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF10130*/
+/*Begin_nsaIF10140*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF10140]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF10140]
+GO
+
+CREATE TABLE [nsaIF10140] (
+ [ACTINDX] [int] NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [nsaIF_Name_OrifinatingMI] [char] (65) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_Type_Nit] [char] (3) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [ACCATNUM] [smallint] NOT NULL ,
+ [PERDBLNC] [numeric](19, 5) NOT NULL ,
+ [CRDTAMNT] [numeric](19, 5) NOT NULL ,
+ [DEBITAMT] [numeric](19, 5) NOT NULL ,
+ [BGNGBAL] [numeric](19, 5) NOT NULL ,
+ [Closed] [tinyint] NOT NULL ,
+ [ACTNUMST] [char] (129) NOT NULL ,
+ [nsaIF_Code] [char] (5) NOT NULL ,
+ [nsaIF_Vr1] [numeric](19, 5) NOT NULL ,
+ [nsaIF_Vr2] [numeric](19, 5) NOT NULL ,
+ [nsaIF_Vr3] [smallint] NOT NULL ,
+ [nsaIF_MM] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF10140] PRIMARY KEY  CLUSTERED 
+ (
+ [nsaIF_Code],
+ [nsaIFNit]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10140].[ACTNUMST]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10140].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10140].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10140].[nsaIF_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10140].[nsaIF_Name_OrifinatingMI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10140].[ACCATNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10140].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10140].[Closed]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10140].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10140].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10140].[nsaIF_MM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF10140].[nsaIF_Type_Nit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF10140].[nsaIF_Vr3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10140].[BGNGBAL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10140].[CRDTAMNT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10140].[DEBITAMT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10140].[PERDBLNC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10140].[nsaIF_Vr1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF10140].[nsaIF_Vr2]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF10140]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF10140*/
+/*Begin_nsaIF70110*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF70110]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF70110]
+GO
+
+CREATE TABLE [nsaIF70110] (
+ [ACTINDX] [int] NOT NULL ,
+ [YEAR1] [smallint] NOT NULL ,
+ [PERIODID] [smallint] NOT NULL ,
+ [ORMSTRID] [char] (31) NOT NULL ,
+ [nsaIF_Name_OrifinatingMI] [char] (65) NOT NULL ,
+ [nsaIFNit] [char] (15) NOT NULL ,
+ [nsaIF_CV] [smallint] NOT NULL ,
+ [ACCATNUM] [smallint] NOT NULL ,
+ [PERDBLNC] [numeric](19, 5) NOT NULL ,
+ [CRDTAMNT] [numeric](19, 5) NOT NULL ,
+ [DEBITAMT] [numeric](19, 5) NOT NULL ,
+ [BGNGBAL] [numeric](19, 5) NOT NULL ,
+ [Closed] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF70110] PRIMARY KEY  CLUSTERED 
+ (
+ [ACTINDX],
+ [ORMSTRID],
+ [YEAR1],
+ [PERIODID]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70110].[ORMSTRID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70110].[nsaIFNit]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70110].[nsaIF_Name_OrifinatingMI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70110].[ACCATNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70110].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70110].[Closed]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70110].[PERIODID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70110].[YEAR1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70110].[nsaIF_CV]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF70110].[BGNGBAL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF70110].[CRDTAMNT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF70110].[DEBITAMT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[nsaIF70110].[PERDBLNC]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF70110]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF70110*/
+/*Begin_IF00390*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IF00390]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IF00390]
+GO
+
+CREATE TABLE [dbo].[IF00390] (
+	[POPRCTNM] [char] (17) NOT NULL ,
+	[CURNCYID] [char] (15) NOT NULL ,
+	[VENDORID] [char] (15) NOT NULL ,
+	[DISTTYPE] [smallint] NOT NULL ,
+	[ACTINDX] [int] NOT NULL ,
+	[XCHGRATE] [numeric](19, 7) NOT NULL ,
+	[SEQNUMBR] [int] NOT NULL ,
+	[VENDNAME] [char] (65) NOT NULL ,
+	[POSTED] [tinyint] NOT NULL ,
+	[DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIF00390] PRIMARY KEY  CLUSTERED 
+ (
+ 		[POPRCTNM],
+		[CURNCYID],
+		[VENDORID],
+		[DISTTYPE],
+		[ACTINDX],
+		[XCHGRATE],
+		[SEQNUMBR]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF00390].[ACTINDX]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF00390].[CURNCYID]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF00390].[DISTTYPE]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF00390].[POPRCTNM]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF00390].[POSTED]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF00390].[SEQNUMBR]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF00390].[VENDNAME]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF00390].[VENDORID]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IF00390].[XCHGRATE]'
+GO
+
+setuser
+GO
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IF00390]  TO [DYNGRP] 
+GO 
+
+/*End_IF00390*/
+/*Begin_IF01390*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IF01390]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IF01390]
+GO
+
+CREATE TABLE [dbo].[IF01390] (
+	[POPRCTNM] [char] (17) NOT NULL ,
+	[CURNCYID] [char] (15) NOT NULL ,
+	[VENDORID] [char] (15) NOT NULL ,
+	[DISTTYPE] [smallint] NOT NULL ,
+	[ACTINDX] [int] NOT NULL ,
+	[XCHGRATE] [numeric](19, 7) NOT NULL ,
+	[SEQNUMBR] [int] NOT NULL ,
+	[VENDNAME] [char] (65) NOT NULL ,
+	[POSTED] [tinyint] NOT NULL ,
+	[DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIF01390] PRIMARY KEY  CLUSTERED 
+ (
+		[POPRCTNM],
+		[CURNCYID],
+		[VENDORID],
+		[DISTTYPE],
+		[ACTINDX],
+		[XCHGRATE],
+		[SEQNUMBR]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF01390].[ACTINDX]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF01390].[CURNCYID]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF01390].[DISTTYPE]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF01390].[POPRCTNM]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF01390].[POSTED]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF01390].[SEQNUMBR]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF01390].[VENDNAME]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF01390].[VENDORID]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IF01390].[XCHGRATE]'
+GO
+
+setuser
+GO
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IF01390]  TO [DYNGRP] 
+GO 
+
+/*End_IF01390*/
+/*Begin_IF10001*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IF10001]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IF10001]
+GO
+
+CREATE TABLE [dbo].[IF10001] (
+	[JRNENTRY] [int] NOT NULL ,
+	[SQNCLINE] [numeric](19, 5) NOT NULL ,
+	[CUSTVNDR] [char] (15) NOT NULL ,
+	[TERCTYPE] [smallint] NOT NULL ,
+	[POSTED] [tinyint] NOT NULL ,
+	[TRXDATE] [datetime] NOT NULL ,
+	[DEBITAMT] [numeric](19, 5) NOT NULL ,
+	[CRDTAMNT] [numeric](19, 5) NOT NULL ,
+	[ACTINDX] [int] NOT NULL ,
+	[YEAR1] [smallint] NOT NULL ,
+	[DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIF10001] PRIMARY KEY  CLUSTERED 
+ (
+		[JRNENTRY],
+		[SQNCLINE]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10001].[JRNENTRY]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IF10001].[SQNCLINE]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF10001].[CUSTVNDR]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10001].[TERCTYPE]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10001].[POSTED]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IF10001].[TRXDATE]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IF10001].[DEBITAMT]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IF10001].[CRDTAMNT]'  
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10001].[ACTINDX]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10001].[YEAR1]'
+GO
+
+setuser
+GO
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IF10001]  TO [DYNGRP] 
+GO 
+
+/*End_IF10001*/
+/*Begin_IF10100*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IF10100]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IF10100]
+GO
+
+CREATE TABLE [dbo].[IF10100] (
+	[VCHRNMBR] [char] (21) NOT NULL ,
+	[CNTRLTYP] [smallint] NOT NULL ,
+	[APTVCHNM] [char] (21) NOT NULL ,
+	[SPCLDIST] [smallint] NOT NULL ,
+	[DSTSQNUM] [int] NOT NULL ,
+	[ACTINDX] [int] NOT NULL ,
+	[VENDORID] [char] (15) NOT NULL ,
+	[VENDNAME] [char] (65) NOT NULL ,
+	[POSTED] [tinyint] NOT NULL ,
+	[DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIF10100] PRIMARY KEY  CLUSTERED 
+ (
+		[VCHRNMBR],
+		[CNTRLTYP],
+		[APTVCHNM],
+		[SPCLDIST],
+		[DSTSQNUM]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10100].[ACTINDX]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF10100].[APTVCHNM]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10100].[CNTRLTYP]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10100].[DSTSQNUM]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10100].[POSTED]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF10100].[SPCLDIST]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF10100].[VCHRNMBR]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF10100].[VENDNAME]'
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF10100].[VENDORID]'
+GO
+
+setuser
+GO
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IF10100]  TO [DYNGRP] 
+GO 
+
+/*End_IF10100*/
+/*Begin_nsaIF_GL00060*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL00060]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL00060]
+GO
+
+CREATE TABLE [nsaIF_GL00060] (
+ [nsaIF_Base] [int] NOT NULL ,
+ [ACTNUMST1] [char] (129) NOT NULL ,
+ [nsaIF_Destination] [int] NOT NULL ,
+ [ACTNUMST2] [char] (129) NOT NULL ,
+ [ACTINDX] [int] NOT NULL ,
+ [ACTNUMST3] [char] (129) NOT NULL ,
+ [CHANGED] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL00060] PRIMARY KEY  NONCLUSTERED 
+ (
+ [nsaIF_Base],
+ [nsaIF_Destination],
+ [ACTINDX]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00060].[ACTNUMST1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00060].[ACTNUMST2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00060].[ACTNUMST3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00060].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00060].[CHANGED]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00060].[nsaIF_Base]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00060].[nsaIF_Destination]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL00060]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL00060*/
+/*Begin_nsaIF_GL00070*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL00070]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL00070]
+GO
+
+CREATE TABLE [nsaIF_GL00070] (
+ [nsaIF_Base] [int] NOT NULL ,
+ [ACTNUMST1] [char] (129) NOT NULL ,
+ [nsaIF_Destination] [int] NOT NULL ,
+ [ACTNUMST2] [char] (129) NOT NULL ,
+ [ACTNUMST3] [char] (129) NOT NULL ,
+ [nsaIF_Code] [char] (5) NOT NULL ,
+ [nsaIF_Vr1_Reporte] [smallint] NOT NULL ,
+ [nsaIF_Vr1_Movimiento] [smallint] NOT NULL ,
+ [Propiedad] [smallint] NOT NULL ,
+ [nsaIF_Naturaleza] [smallint] NOT NULL ,
+ [nsaIF_MM] [tinyint] NOT NULL ,
+ [nsaIF_CI] [smallint] NOT NULL ,
+ [nsaIF_Tax_Type] [char] (21) NOT NULL ,
+ [nsaIF_Man_Tercero] [tinyint] NOT NULL ,
+ [nsaIF_CTA_RETEN] [tinyint] NOT NULL ,
+ [nsaIF_Cost_Deduction] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL00070] PRIMARY KEY  CLUSTERED 
+ (
+ [nsaIF_Base],
+ [nsaIF_Destination],
+ [nsaIF_Code]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00070].[ACTNUMST1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00070].[ACTNUMST2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00070].[ACTNUMST3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00070].[nsaIF_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00070].[nsaIF_Tax_Type]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[Propiedad]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_Base]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_CI]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_CTA_RETEN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_Destination]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_MM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_Man_Tercero]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_Naturaleza]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_Vr1_Movimiento]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_Vr1_Reporte]' 
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00070].[nsaIF_Cost_Deduction]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL00070]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL00070*/
+/*Begin_nsaIF_GL00080*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF_GL00080]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF_GL00080]
+GO
+
+CREATE TABLE [nsaIF_GL00080] (
+ [nsaIF_Base] [int] NOT NULL ,
+ [ACTNUMST1] [char] (129) NOT NULL ,
+ [nsaIF_Destination] [int] NOT NULL ,
+ [ACTNUMST2] [char] (129) NOT NULL ,
+ [ACTNUMST3] [char] (129) NOT NULL ,
+ [ACTINDX] [int] NOT NULL ,
+ [nsaIF_Code] [char] (5) NOT NULL ,
+ [CHANGED] [tinyint] NOT NULL ,
+ [nsaIF_Format1001] [smallint] NOT NULL,
+ [nsaIF_Format1007] [smallint] NOT NULL,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF_GL00080] PRIMARY KEY  CLUSTERED 
+ (
+ [nsaIF_Base],
+ [nsaIF_Destination],
+ [nsaIF_Code],
+ [ACTINDX]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00080].[ACTNUMST1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00080].[ACTNUMST2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00080].[ACTNUMST3]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF_GL00080].[nsaIF_Code]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00080].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00080].[CHANGED]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00080].[nsaIF_Base]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00080].[nsaIF_Destination]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00080].[nsaIF_Format1001]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF_GL00080].[nsaIF_Format1007]' 
+GO  
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF_GL00080]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF_GL00080*/
+/*Begin_nsaIF70000*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[nsaIF70000]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [nsaIF70000]
+GO
+
+CREATE TABLE [nsaIF70000] (
+ [RPRTNAME] [char] (31) NOT NULL ,
+ [FRMCPT] [char] (5) NOT NULL ,
+ [TOCPT] [char] (5) NOT NULL ,
+ [FRMFRMT] [char] (5) NOT NULL ,
+ [TOFRMT] [char] (5) NOT NULL ,
+ [ACTINDXFRM] [int] NOT NULL ,
+ [ACTINDXTO] [int] NOT NULL ,
+ [FILEXPNM] [char] (255) NOT NULL ,
+ [IFFILXST] [smallint] NOT NULL ,
+ [ASKECHTM] [tinyint] NOT NULL ,
+ [EXPTTYPE] [smallint] NOT NULL ,
+ [PRNTOFIL] [tinyint] NOT NULL ,
+ [PRTOPRTR] [tinyint] NOT NULL ,
+ [PRTOSCRN] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKnsaIF70000] PRIMARY KEY  CLUSTERED 
+ (
+ [RPRTNAME]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70000].[FILEXPNM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70000].[FRMCPT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70000].[FRMFRMT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70000].[RPRTNAME]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70000].[TOCPT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[nsaIF70000].[TOFRMT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70000].[ACTINDXFRM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70000].[ACTINDXTO]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70000].[ASKECHTM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70000].[EXPTTYPE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70000].[IFFILXST]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70000].[PRNTOFIL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70000].[PRTOPRTR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[nsaIF70000].[PRTOSCRN]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[nsaIF70000]  TO [DYNGRP] 
+GO 
+
+/*End_nsaIF70000*/
+/*Begin_IF_FA00905*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IF_FA00905]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IF_FA00905]
+GO
+
+CREATE TABLE [IF_FA00905] (
+ [GLINTBTCHNUM] [char] (15) NOT NULL ,
+ [GLINTTRXDATE] [datetime] NOT NULL ,
+ [ACTINDX] [int] NOT NULL ,
+ [ASSETINDEX] [int] NOT NULL ,
+ [FAYEAR] [smallint] NOT NULL ,
+ [FAPERIOD] [smallint] NOT NULL ,
+ [SOURCDOC] [char] (11) NOT NULL ,
+ [AMOUNT] [numeric](19, 5) NOT NULL ,
+ [VENDORID] [char] (15) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIF_FA00905] PRIMARY KEY  NONCLUSTERED 
+ (
+ [DEX_ROW_ID]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[GLINTTRXDATE])=(0) AND datepart(minute,[GLINTTRXDATE])=(0) AND datepart(second,[GLINTTRXDATE])=(0) AND datepart(millisecond,[GLINTTRXDATE])=(0))
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IF_FA00905].[GLINTTRXDATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF_FA00905].[GLINTBTCHNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF_FA00905].[SOURCDOC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IF_FA00905].[VENDORID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF_FA00905].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF_FA00905].[ASSETINDEX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF_FA00905].[FAPERIOD]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF_FA00905].[FAYEAR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IF_FA00905].[AMOUNT]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IF_FA00905]  TO [DYNGRP] 
+GO 
+
+/*End_IF_FA00905*/
+/*Begin_IF00100*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IF00100]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IF00100]
+GO
+
+CREATE TABLE [IF00100] (
+ [CMPANYID] [smallint] NOT NULL ,
+ [ACTIVATEPSTFADTL] [tinyint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIF00100] PRIMARY KEY  CLUSTERED 
+ (
+ [CMPANYID]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF00100].[ACTIVATEPSTFADTL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IF00100].[CMPANYID]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IF00100]  TO [DYNGRP] 
+GO 
+
+/*End_IF00100*/
+/*Begin_IFCM20400*/
+if exists (select * from dbo.sysobjects where id = object_id(N'[IFCM20400]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IFCM20400]
+GO
+
+CREATE TABLE [IFCM20400](
+	[CMDNUMWK] [numeric](19, 5) NOT NULL,
+	[VOIDED] [tinyint] NOT NULL,
+	[DSTSQNUM] [int] NOT NULL,
+	[ACTINDX] [int] NOT NULL,
+	[DEBITAMT] [numeric](19, 5) NOT NULL,
+	[CRDTAMNT] [numeric](19, 5) NOT NULL,
+	[DistRef] [char](31) NOT NULL,
+	[GLPOSTDT] [datetime] NOT NULL,
+	[ORCRDAMT] [numeric](19, 5) NOT NULL,
+	[ORDBTAMT] [numeric](19, 5) NOT NULL,
+	[TERCTYPE] [smallint] NOT NULL,
+	[CustomerVendor_ID] [char](15) NOT NULL,
+	[CustomerVendor_Name] [char](65) NOT NULL,
+	[DEX_ROW_ID] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PKIFCM20400] PRIMARY KEY  NONCLUSTERED 
+ (
+ [CMDNUMWK],
+ [VOIDED],
+ [DSTSQNUM]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[GLPOSTDT]) = 0 and datepart(minute,[GLPOSTDT]) = 0 and datepart(second,[GLPOSTDT]) = 0 and datepart(millisecond,[GLPOSTDT]) = 0)
+) ON [PRIMARY]
+GO
+
+setuser
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20400].[ACTINDX]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20400].[CMDNUMWK]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20400].[CRDTAMNT]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20400].[DEBITAMT]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20400].[DSTSQNUM]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20400].[DistRef]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFCM20400].[GLPOSTDT]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20400].[ORCRDAMT]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20400].[ORDBTAMT]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20400].[VOIDED]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20400].[TERCTYPE]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20400].[CustomerVendor_ID]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20400].[CustomerVendor_Name]'
+GO
+setuser
+GO
+
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFCM20400]  TO [DYNGRP]
+GO
+
+/*End_IFCM20400*/
+/*Begin_IFCM20501*/
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[IFCM20501]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[IFCM20501]
+GO
+
+CREATE TABLE [dbo].[IFCM20501](
+	[CHEKBKID] [char](15) NOT NULL,
+	[CMRECNUM] [numeric](19, 5) NOT NULL,
+	[RECONUM] [numeric](19, 5) NOT NULL,
+	[DSTSQNUM] [int] NOT NULL,
+	[DSTINDX] [int] NOT NULL,
+	[TRXDATE] [datetime] NOT NULL,
+	[CMTrxType] [smallint] NOT NULL,
+	[TRXAMNT] [numeric](19, 5) NOT NULL,
+	[POSTED] [tinyint] NOT NULL,
+	[DistRef] [char](31) NOT NULL,
+	[CMTrxNum] [char](21) NOT NULL,
+	[GLPOSTDT] [datetime] NOT NULL,
+	[NOTEINDX] [numeric](19, 5) NOT NULL,
+	[CURNCYID] [char](15) NOT NULL,
+	[CURRNIDX] [smallint] NOT NULL,
+	[RATETPID] [char](15) NOT NULL,
+	[EXGTBLID] [char](15) NOT NULL,
+	[XCHGRATE] [numeric](19, 7) NOT NULL,
+	[EXCHDATE] [datetime] NOT NULL,
+	[TIME1] [datetime] NOT NULL,
+	[RTCLCMTD] [smallint] NOT NULL,
+	[EXPNDATE] [datetime] NOT NULL,
+	[DECPLCUR] [smallint] NOT NULL,
+	[DENXRATE] [numeric](19, 7) NOT NULL,
+	[MCTRXSTT] [smallint] NOT NULL,
+	[TERCTYPE] [smallint] NOT NULL,
+	[CustomerVendor_ID] [char](15) NOT NULL,
+	[CustomerVendor_Name] [char](65) NOT NULL,
+	[DEX_ROW_ID] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PKIFCM20501] PRIMARY KEY  NONCLUSTERED 
+ (
+ [CHEKBKID],
+ [RECONUM],
+ [DSTSQNUM]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[EXCHDATE]) = 0 and datepart(minute,[EXCHDATE]) = 0 and datepart(second,[EXCHDATE]) = 0 and datepart(millisecond,[EXCHDATE]) = 0),
+ CHECK (datepart(hour,[EXPNDATE]) = 0 and datepart(minute,[EXPNDATE]) = 0 and datepart(second,[EXPNDATE]) = 0 and datepart(millisecond,[EXPNDATE]) = 0),
+ CHECK (datepart(hour,[GLPOSTDT]) = 0 and datepart(minute,[GLPOSTDT]) = 0 and datepart(second,[GLPOSTDT]) = 0 and datepart(millisecond,[GLPOSTDT]) = 0),
+ CHECK (datepart(day,[TIME1]) = 1 and datepart(month,[TIME1]) = 1 and datepart(year,[TIME1]) = 1900),
+ CHECK (datepart(hour,[TRXDATE]) = 0 and datepart(minute,[TRXDATE]) = 0 and datepart(second,[TRXDATE]) = 0 and datepart(millisecond,[TRXDATE]) = 0)
+) ON [PRIMARY]
+GO
+
+setuser
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20501].[CHEKBKID]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20501].[CMRECNUM]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20501].[CMTrxNum]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[CMTrxType]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20501].[CURNCYID]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[CURRNIDX]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[DECPLCUR]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20501].[DENXRATE]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[DSTINDX]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[DSTSQNUM]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20501].[DistRef]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFCM20501].[EXCHDATE]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20501].[EXGTBLID]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFCM20501].[EXPNDATE]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFCM20501].[GLPOSTDT]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[MCTRXSTT]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20501].[NOTEINDX]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[POSTED]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20501].[RATETPID]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20501].[RECONUM]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[RTCLCMTD]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFCM20501].[TIME1]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20501].[TRXAMNT]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFCM20501].[TRXDATE]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFCM20501].[XCHGRATE]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFCM20501].[TERCTYPE]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20501].[CustomerVendor_ID]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFCM20501].[CustomerVendor_Name]'
+GO
+
+setuser
+GO
+
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFCM20501]  TO [DYNGRP]
+GO
+
+/*End_IFCM20501*/
+/*Begin_IFRM10101*/
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[IFRM10101]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [dbo].[IFRM10101]
+GO
+
+CREATE TABLE [dbo].[IFRM10101](
+	[DOCNUMBR] [char](21) NOT NULL,
+	[USERID] [char](15) NOT NULL,
+	[POSTED] [tinyint] NOT NULL,
+	[TRXSORCE] [char](13) NOT NULL,
+	[RMDTYPAL] [smallint] NOT NULL,
+	[SEQNUMBR] [int] NOT NULL,
+	[DSTINDX] [int] NOT NULL,
+	[CUSTNMBR] [char](15) NOT NULL,
+	[CUSTNAME] [char](65) NOT NULL,
+	[DEX_ROW_ID] [int] IDENTITY(1,1) NOT NULL,
+ CONSTRAINT [PKIFRM10101] PRIMARY KEY  NONCLUSTERED 
+ (
+	[DOCNUMBR],
+	[RMDTYPAL],
+	[SEQNUMBR] 
+ )  ON [PRIMARY] ,
+) ON [PRIMARY]
+GO
+
+setuser
+GO
+
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFRM10101].[CUSTNMBR]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFRM10101].[DOCNUMBR]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFRM10101].[DSTINDX]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFRM10101].[POSTED]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFRM10101].[RMDTYPAL]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFRM10101].[SEQNUMBR]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFRM10101].[TRXSORCE]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFRM10101].[USERID]'
+GO
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFRM10101].[CUSTNAME]'
+GO
+setuser
+GO
+
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFRM10101]  TO [DYNGRP]
+GO
+
+/*End_IFRM10101*/
+/*Begin_IFGL10100*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IFGL10100]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IFGL10100]
+GO
+
+CREATE TABLE [IFGL10100] (
+ [BSNSFMID] [char] (15) NOT NULL ,
+ [JRNENTRY] [int] NOT NULL ,
+ [CURNCYID] [char] (15) NOT NULL ,
+ [OFFINDX] [int] NOT NULL ,
+ [TRXDATE] [datetime] NOT NULL ,
+ [TRXBALNC] [numeric](19, 5) NOT NULL ,
+ [PSTGSTUS] [smallint] NOT NULL ,
+ [LASTUSER] [char] (15) NOT NULL ,
+ [LSTDTEDT] [datetime] NOT NULL ,
+ [USWHPSTD] [char] (15) NOT NULL ,
+ [PSTDAMNT] [numeric](19, 5) NOT NULL ,
+ [REFRENCE] [char] (31) NOT NULL ,
+ [SOURCDOC] [char] (11) NOT NULL ,
+ [SQNCLINE] [numeric](19, 5) NOT NULL ,
+ [TRXSORCE] [char] (13) NOT NULL ,
+ [GLHDRMSG] [binary] (4) NOT NULL ,
+ [GLHDRMS2] [binary] (4) NOT NULL ,
+ [NOTEINDX] [numeric](19, 5) NOT NULL ,
+ [GLHDRVAL] [binary] (4) NOT NULL ,
+ [PERIODID] [smallint] NOT NULL ,
+ [OPENYEAR] [smallint] NOT NULL ,
+ [CLOSEDYR] [smallint] NOT NULL ,
+ [ERRSTATE] [int] NOT NULL ,
+ [HISTRX] [tinyint] NOT NULL ,
+ [OFFACTYP] [smallint] NOT NULL ,
+ [OFFBLCLC] [smallint] NOT NULL ,
+ [OFFXVAR] [smallint] NOT NULL ,
+ [OFFPSTYP] [smallint] NOT NULL ,
+ [DOCDATE] [datetime] NOT NULL ,
+ [VOIDED] [tinyint] NOT NULL ,
+ [TERCTYPE] [smallint] NOT NULL ,
+ [CustomerVendor_ID] [char] (15) NOT NULL ,
+ [CustomerVendor_Name] [char] (65) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIFGL10100] PRIMARY KEY  NONCLUSTERED 
+ (
+ [BSNSFMID],
+ [JRNENTRY]
+ )  ON [PRIMARY] ,
+ CHECK (datepart(hour,[DOCDATE])=(0) AND datepart(minute,[DOCDATE])=(0) AND datepart(second,[DOCDATE])=(0) AND datepart(millisecond,[DOCDATE])=(0)),
+ CHECK (datepart(hour,[LSTDTEDT])=(0) AND datepart(minute,[LSTDTEDT])=(0) AND datepart(second,[LSTDTEDT])=(0) AND datepart(millisecond,[LSTDTEDT])=(0)),
+ CHECK (datepart(hour,[TRXDATE])=(0) AND datepart(minute,[TRXDATE])=(0) AND datepart(second,[TRXDATE])=(0) AND datepart(millisecond,[TRXDATE])=(0))
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFGL10100].[DOCDATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFGL10100].[LSTDTEDT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_DATE]', N'[IFGL10100].[TRXDATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[BSNSFMID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[CURNCYID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[CustomerVendor_ID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[CustomerVendor_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[LASTUSER]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[REFRENCE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[SOURCDOC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[TRXSORCE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10100].[USWHPSTD]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[CLOSEDYR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[ERRSTATE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[GLHDRMS2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[GLHDRMSG]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[GLHDRVAL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[HISTRX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[JRNENTRY]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[OFFACTYP]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[OFFBLCLC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[OFFINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[OFFPSTYP]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[OFFXVAR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[OPENYEAR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[PERIODID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[PSTGSTUS]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[TERCTYPE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10100].[VOIDED]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL10100].[NOTEINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL10100].[PSTDAMNT]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL10100].[SQNCLINE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL10100].[TRXBALNC]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFGL10100]  TO [DYNGRP] 
+GO 
+
+/*End_IFGL10100*/
+/*Begin_IFGL10101*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IFGL10101]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IFGL10101]
+GO
+
+CREATE TABLE [IFGL10101] (
+ [BSNSFMID] [char] (15) NOT NULL ,
+ [JRNENTRY] [int] NOT NULL ,
+ [SQNCLINE] [numeric](19, 5) NOT NULL ,
+ [ACTINDX] [int] NOT NULL ,
+ [TRXAMNT] [numeric](19, 5) NOT NULL ,
+ [GLLINMSG] [binary] (4) NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [GLLINVAL] [binary] (4) NOT NULL ,
+ [ACCTTYPE] [smallint] NOT NULL ,
+ [FXDORVAR] [smallint] NOT NULL ,
+ [BALFRCLC] [smallint] NOT NULL ,
+ [PSTNGTYP] [smallint] NOT NULL ,
+ [DECPLACS] [smallint] NOT NULL ,
+ [TERCTYPE] [smallint] NOT NULL ,
+ [CustomerVendor_ID] [char] (15) NOT NULL ,
+ [CustomerVendor_Name] [char] (65) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIFGL10101] PRIMARY KEY  NONCLUSTERED 
+ (
+ [BSNSFMID],
+ [JRNENTRY],
+ [SQNCLINE]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10101].[BSNSFMID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10101].[CustomerVendor_ID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10101].[CustomerVendor_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL10101].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[ACCTTYPE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[BALFRCLC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[DECPLACS]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[FXDORVAR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[GLLINMSG]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[GLLINVAL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[JRNENTRY]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[PSTNGTYP]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL10101].[TERCTYPE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL10101].[SQNCLINE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL10101].[TRXAMNT]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFGL10101]  TO [DYNGRP] 
+GO 
+
+/*End_IFGL10101*/
+/*Begin_IFGL40100*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IFGL40100]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IFGL40100]
+GO
+
+CREATE TABLE [IFGL40100] (
+ [BSNSFMID] [char] (15) NOT NULL ,
+ [BSNSFDSC] [char] (31) NOT NULL ,
+ [OFFINDX] [int] NOT NULL ,
+ [OVOACNUM] [tinyint] NOT NULL ,
+ [BCHEMSG1] [binary] (4) NOT NULL ,
+ [BCHEMSG2] [binary] (4) NOT NULL ,
+ [SOURCDOC] [char] (11) NOT NULL ,
+ [REFRENCE] [char] (31) NOT NULL ,
+ [BRKDNALL] [tinyint] NOT NULL ,
+ [NOTEINDX] [numeric](19, 5) NOT NULL ,
+ [TERCTYPE] [smallint] NOT NULL ,
+ [CustomerVendor_ID] [char] (15) NOT NULL ,
+ [CustomerVendor_Name] [char] (65) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIFGL40100] PRIMARY KEY  NONCLUSTERED 
+ (
+ [BSNSFMID]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40100].[BSNSFDSC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40100].[BSNSFMID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40100].[CustomerVendor_ID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40100].[CustomerVendor_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40100].[REFRENCE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40100].[SOURCDOC]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40100].[BCHEMSG1]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40100].[BCHEMSG2]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40100].[BRKDNALL]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40100].[OFFINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40100].[OVOACNUM]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40100].[TERCTYPE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL40100].[NOTEINDX]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFGL40100]  TO [DYNGRP] 
+GO 
+
+/*End_IFGL40100*/
+/*Begin_IFGL40101*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IFGL40101]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IFGL40101]
+GO
+
+CREATE TABLE [IFGL40101] (
+ [BSNSFMID] [char] (15) NOT NULL ,
+ [SEQUENCE1] [numeric](19, 5) NOT NULL ,
+ [ACTINDX] [int] NOT NULL ,
+ [TERCTYPE] [smallint] NOT NULL ,
+ [CustomerVendor_ID] [char] (15) NOT NULL ,
+ [CustomerVendor_Name] [char] (65) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIFGL40101] PRIMARY KEY  NONCLUSTERED 
+ (
+ [BSNSFMID],
+ [SEQUENCE1]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40101].[BSNSFMID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40101].[CustomerVendor_ID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40101].[CustomerVendor_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40101].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40101].[TERCTYPE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL40101].[SEQUENCE1]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFGL40101]  TO [DYNGRP] 
+GO 
+
+/*End_IFGL40101*/
+/*Begin_IFGL40101*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IFGL40101]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IFGL40101]
+GO
+
+CREATE TABLE [IFGL40101] (
+ [BSNSFMID] [char] (15) NOT NULL ,
+ [SEQUENCE1] [numeric](19, 5) NOT NULL ,
+ [ACTINDX] [int] NOT NULL ,
+ [TERCTYPE] [smallint] NOT NULL ,
+ [CustomerVendor_ID] [char] (15) NOT NULL ,
+ [CustomerVendor_Name] [char] (65) NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIFGL40101] PRIMARY KEY  NONCLUSTERED 
+ (
+ [BSNSFMID],
+ [SEQUENCE1]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40101].[BSNSFMID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40101].[CustomerVendor_ID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFGL40101].[CustomerVendor_Name]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40101].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFGL40101].[TERCTYPE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_MONEY]', N'[IFGL40101].[SEQUENCE1]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFGL40101]  TO [DYNGRP] 
+GO 
+
+/*End_IFGL40101*/
+/*Begin_IFSOP10102*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IFSOP10102]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IFSOP10102]
+GO
+
+CREATE TABLE [IFSOP10102] (
+ [SOPTYPE] [smallint] NOT NULL,
+ [SOPNUMBE] [char](21) NOT NULL,
+ [SEQNUMBR] [int] NOT NULL,
+ [ACTINDX] [int] NOT NULL,
+ [TRXSORCE] [char](13) NOT NULL,
+ [POSTED] [tinyint] NOT NULL,
+ [CUSTNMBR] [char](15) NOT NULL,
+ [CUSTNAME] [char](65) NOT NULL,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIFSOP10102] PRIMARY KEY  NONCLUSTERED 
+ (
+ [SOPTYPE],
+ [SOPNUMBE],
+ [SEQNUMBR]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFSOP10102].[SOPNUMBE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFSOP10102].[TRXSORCE]'
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFSOP10102].[CUSTNMBR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFSOP10102].[CUSTNAME]' 
+GO
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFSOP10102].[SOPTYPE]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFSOP10102].[SEQNUMBR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFSOP10102].[ACTINDX]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFSOP10102].[POSTED]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFSOP10102]  TO [DYNGRP] 
+GO 
+
+/*End_IFSOP10102*/
+/*Begin_IFSD4020*/
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[IFSD4020]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table [IFSD4020]
+GO
+
+CREATE TABLE [IFSD4020] (
+ [SEQID] [char] (25) NOT NULL ,
+ [DSCRIPTN] [char] (31) NOT NULL ,
+ [Rpt_Format_Type] [smallint] NOT NULL ,
+ [SHIP_Module_List] [smallint] NOT NULL ,
+ [SHIP_Next_SEQ_NUMBR] [char] (9) NOT NULL ,
+ [Module_Option] [smallint] NOT NULL ,
+ [DEX_ROW_ID] [int] IDENTITY (1, 1) NOT NULL ,
+ CONSTRAINT [PKIFSD4020] PRIMARY KEY  NONCLUSTERED 
+ (
+ [Module_Option],
+ [SHIP_Module_List]
+ )  ON [PRIMARY] 
+) ON [PRIMARY]
+GO
+
+setuser 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFSD4020].[DSCRIPTN]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFSD4020].[SEQID]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_CHAR]', N'[IFSD4020].[SHIP_Next_SEQ_NUMBR]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFSD4020].[Module_Option]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFSD4020].[Rpt_Format_Type]' 
+GO 
+EXEC sp_bindefault N'[dbo].[GPS_INT]', N'[IFSD4020].[SHIP_Module_List]' 
+GO 
+setuser 
+GO 
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[IFSD4020]  TO [DYNGRP] 
+GO 
+
+/*End_IFSD4020*/
