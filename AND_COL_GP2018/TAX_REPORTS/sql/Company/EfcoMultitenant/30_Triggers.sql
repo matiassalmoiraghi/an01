@@ -68,7 +68,7 @@ select  @OrgTxSrc = '',
 	@l_cTrxSrc = ''
 
 select @l_cINTERID = db_name()
-exec  @l_nStatus = dbo.synonymSpSmGetMsgString 15575, @l_cINTERID, @l_cTrxSrc output, @l_nSQL_Error_State output
+exec  @l_nStatus = DYNAMICS.dbo.smGetMsgString 15575, @l_cINTERID, @l_cTrxSrc output, @l_nSQL_Error_State output
 
 DECLARE GL_OrmstrID CURSOR STATIC FOR 
 select  ORGNTSRC,
@@ -243,7 +243,7 @@ declare @Indice  int, @Tercero char (21),@Tercero_Nombre char(31),@Año smallint,
             @Debito numeric(19,5), @Credito numeric(19,5),@f int, @deb varchar(50),  
             @Cred varchar(50),@s_f varchar(50),@s_i varchar(50),@SQL varchar(255), @TRXSOURCE varchar(20),@PostingType int,@ACTNUMST varchar(129), @CNT integer, @JrnEntry	int, @SEQNUMBR	int,
 			@Tercero2 char (21),@Tercero_Nombre2 char(31)
- select @CNT = count(1) from dbo.synonymAccountSegments
+ select @CNT = count(1) from DYNAMICS..SY00302
 
  select  @Indice = inserted.ACTINDX,  
             @Tercero= inserted.ORMSTRID,  

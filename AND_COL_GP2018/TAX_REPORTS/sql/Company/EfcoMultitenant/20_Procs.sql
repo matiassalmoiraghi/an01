@@ -86,8 +86,8 @@ GO
  select @VENDNAME=''  
  select @POPRCTNM=''  
   
-if SUBSTRING ( @OrgTxSrc ,1 , 5 ) = (select SQL_MSG FROM dbo.synonymMESSAGES WHERE MSGNUM = 00280 and Language_ID = 0)   
- OR SUBSTRING ( @OrgTxSrc ,1 , 5 ) = (select SQL_MSG FROM dbo.synonymMESSAGES WHERE MSGNUM = 00281 and Language_ID = 0)   
+if SUBSTRING ( @OrgTxSrc ,1 , 5 ) = (select SQL_MSG FROM DYNAMICS..MESSAGES WHERE MSGNUM = 00280 and Language_ID = 0)   
+ OR SUBSTRING ( @OrgTxSrc ,1 , 5 ) = (select SQL_MSG FROM DYNAMICS..MESSAGES WHERE MSGNUM = 00281 and Language_ID = 0)   
 	Begin  
 		if @OrgTrxType = 1 or @OrgTrxType = 4  OR @OrgTrxType = 5 OR @OrgTrxType = 3 or @OrgTrxType = 2  
 			select @VendorID = VENDORID from dbo.PM30600 where VCHRNMBR = @OrgTrxNum and DSTSQNUM = @OrigSeqNum AND CNTRLTYP = 0 and DSTINDX = @ActIndx  
@@ -102,8 +102,8 @@ else
 			select @VendorID = VENDORID from dbo.IF10100 where VCHRNMBR = @OrgTrxNum and DSTSQNUM = @OrigSeqNum AND CNTRLTYP = 1 and ACTINDX = @ActIndx  
 		else if @OrgTrxType = 3 or @OrgTrxType = 2  
 			begin  
-				if SUBSTRING ( @OrgTxSrc ,1 , 5 ) = (select SQL_MSG FROM dbo.synonymMESSAGES WHERE MSGNUM = 17794 and Language_ID = 0)   
-				OR SUBSTRING ( @OrgTxSrc ,1 , 5 ) = (select SQL_MSG FROM dbo.synonymMESSAGES WHERE MSGNUM = 18742 and Language_ID = 0)  
+				if SUBSTRING ( @OrgTxSrc ,1 , 5 ) = (select SQL_MSG FROM DYNAMICS..MESSAGES WHERE MSGNUM = 17794 and Language_ID = 0)   
+				OR SUBSTRING ( @OrgTxSrc ,1 , 5 ) = (select SQL_MSG FROM DYNAMICS..MESSAGES WHERE MSGNUM = 18742 and Language_ID = 0)  
 					select @VendorID = VENDORID from dbo.IF00390 where POPRCTNM = @OrgTrxNum and SEQNUMBR = @SEQNUMBR and ACTINDX = @ActIndx    
 				else  
 					select @VendorID = VENDORID from dbo.IF10100 where VCHRNMBR = @OrgTrxNum and DSTSQNUM = @OrigSeqNum AND CNTRLTYP = 0 and ACTINDX = @ActIndx  
@@ -686,7 +686,7 @@ declare @Tercero_Nombre2 char(31)
 SET @Tercero2 = replace(@Tercero,'''','''''')
 SET @Tercero_Nombre2 = replace(@Tercero_Nombre,'''','''''')
 
-select @CNT = count(1) from dbo.synonymAccountSegments
+select @CNT = count(1) from DYNAMICS..SY00302
 set @Año1 = @Año 
 set @Año2 = @Año 
 
