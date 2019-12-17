@@ -1,0 +1,1431 @@
+Table	"nsaTW_RM_Error_Log_MSTR"	"Purchasing"	22000
+Table	"nsaTW_RM_Installation_Report_MSTR"	"Purchasing"	22001
+Table	"nsaTW_RM_Installation_Status_MSTR"	"Purchasing"	22002
+Table	"nsaTW_RM_Tax_ADD"	"Purchasing"	22003
+Table	"nsaTW_RM_Tax_NULL"	"Purchasing"	22004
+Table	"nsaTW_RM_Tax_ORIGINAL"	"Purchasing"	22005
+Table	"nsaTW_RM_Tax_POTENTIAL"	"Purchasing"	22006
+Table	"nsaTW_RM_Transaction_HDR"	"Purchasing"	22007
+Table	"nsaTW_SOP_Tax_POTENTIAL"	"Purchasing"	22008
+Table	"nsaTW_SOP_Transaction_HDR"	"Purchasing"	22009
+Table	"nsaTW_Setup"	"Purchasing"	22010
+Table	"nsaWW_RMACTIVITY"	"Purchasing"	22011
+Table	"nsaWW_RM_Aplied_ND"	"Purchasing"	22012
+Table	"nsaWW_RM_OPEN_TEMP"	"Purchasing"	22013
+Table	"nsaWW_RM_TRX_TEMP"	"Purchasing"	22014
+Table	"nsaWW_RM_Tax_ADD_TEMP"	"Purchasing"	22015
+Table	"nsaWW_RM_Tax_NULL_TEMP"	"Purchasing"	22016
+Key	"nsaTW_RM_Error_Log_KEY1"	"Purchasing"	22000
+Key	"nsaTW_RM_Installation_Report_Key1"	"Purchasing"	22001
+Key	"nsaTW_RM_Installation_Status_Key1"	"Purchasing"	22002
+Key	"nsaTW_RM_Tax_ADD_Key1"	"Purchasing"	22003
+Key	"nsaTW_RM_Tax_ADD_Key2"	"Purchasing"	22004
+Key	"nsaTW_RM_Tax_NULL_Key1"	"Purchasing"	22005
+Key	"nsaTW_RM_Tax_NULL_Key2"	"Purchasing"	22006
+Key	"nsaTW_RM_Tax_ORIGINAL_Key1"	"Purchasing"	22007
+Key	"nsaTW_RM_Tax_ORIGINAL_Key2"	"Purchasing"	22008
+Key	"nsaTW_RM_Tax_POTENTIAL_Key1"	"Purchasing"	22009
+Key	"nsaTW_RM_Tax_POTENTIAL_Key2"	"Purchasing"	22010
+Key	"nsaTW_RM_Transaction_HDR_Key1"	"Purchasing"	22011
+Key	"nsaTW_RM_Transaction_HDR_Key2"	"Purchasing"	22012
+Key	"nsaTW_SOP_Tax_POTENTIAL_Key1"	"Purchasing"	22013
+Key	"nsaTW_SOP_Tax_POTENTIAL_Key2"	"Purchasing"	22014
+Key	"nsaTW_SOP_Transaction_HDR_Key1"	"Purchasing"	22015
+Key	"nsaTW_SOP_Transaction_HDR_Key2"	"Purchasing"	22016
+Key	"nsaTW_Setup_Key1"	"Purchasing"	22017
+Key	"nsaWW_RMACTIVITY_Key1"	"Purchasing"	22018
+Key	"nsaWW_RMACTIVITY_Key2"	"Purchasing"	22019
+Key	"nsaWW_RMACTIVITY_Key3"	"Purchasing"	22020
+Key	"nsaWW_RM_Aplied_ND_Key1"	"Purchasing"	22021
+Key	"nsaWW_RM_Aplied_ND_Key2"	"Purchasing"	22022
+Key	"RM_OPEN_Key11"	"Purchasing"	22023
+Key	"RM_OPEN_Key21"	"Purchasing"	22024
+Key	"RM_OPEN_Key31"	"Purchasing"	22025
+Key	"RM_OPEN_Key41"	"Purchasing"	22026
+Key	"RM_OPEN_Key51"	"Purchasing"	22027
+Key	"RM_OPEN_Key61"	"Purchasing"	22028
+Key	"RM_OPEN_Key71"	"Purchasing"	22029
+Key	"nsaWW_RM_TRX_TEMP_Key1"	"Purchasing"	22030
+Key	"nsaWW_RM_TRX_TEMP_Key2"	"Purchasing"	22031
+Key	"RM_Tax_WORK_Key11"	"Purchasing"	22032
+Key	"RM_Tax_WORK_Key21"	"Purchasing"	22033
+Key	"RM_Tax_WORK_Key111"	"Purchasing"	22034
+Key	"RM_Tax_WORK_Key211"	"Purchasing"	22035
+Relationship	"nsaTW_RM_Installation_Report_MSTR:SY_Company_MSTR"	"Purchasing"	22000
+Relationship	"nsaTW_RM_Tax_ADD:TX_Detail_MSTR"	"Purchasing"	22001
+Relationship	"nsaTW_RM_Tax_NULL:TX_Detail_MSTR"	"Purchasing"	22002
+Relationship	"nsaTW_RM_Tax_ORIGINAL:TX_Detail_MSTR"	"Purchasing"	22003
+Relationship	"nsaTW_RM_Tax_POTENTIAL:TX_Detail_MSTR"	"Purchasing"	22004
+Relationship	"nsaWW_RM_OPEN_TEMP:MC_RM_Transactions"	"Purchasing"	22005
+Relationship	"nsaWW_RM_OPEN_TEMP:RM_Applied_OPEN"	"Purchasing"	22006
+Relationship	"nsaWW_RM_OPEN_TEMP:RM_Customer_MSTR"	"Purchasing"	22007
+Relationship	"nsaWW_RM_OPEN_TEMP:RM_Distribution_WORK"	"Purchasing"	22008
+Relationship	"nsaWW_RM_OPEN_TEMP:RM_Document_SETP"	"Purchasing"	22009
+Relationship	"nsaWW_RM_OPEN_TEMP:RM_SCH_HDR"	"Purchasing"	22010
+Relationship	"nsaWW_RM_Tax_ADD_TEMP:TX_Detail_MSTR"	"Purchasing"	22011
+Relationship	"nsaWW_RM_Tax_NULL_TEMP:TX_Detail_MSTR"	"Purchasing"	22012
+Form	"Command_Tax_Management"	22000
+
+{
+	Command	"CL_AdmonVentas"	22000
+	Command	"CL_Setup"	22001
+	Command	"CL_Transaction"	22002
+}
+Form	"nsaTWRMAboutBox"	22001
+
+{
+	Window	"nsaTWRMAboutBox"	22000
+	Field	"Build Date"	22000
+	Field	"String2"	22001
+	Field	"Version"	22002
+	Datatype	"Build Date"	22000
+	Datatype	"String2"	22001
+	Datatype	"Version"	22002
+	EventScript	"nsaTWRMAboutBox OK Button_CHG"	22000
+	EventScript	"nsaTWRMAboutBox_WIN_PRE"	22001
+}
+Form	"nsaTW_RM_Installation_Wizard"	22002
+
+{
+	Window	"nsaTW_RM_Complete"	22000
+	Window	"nsaTW_RM_Complete_Scroll"	22001
+	Window	"nsaTW_RM_Install_Components"	22002
+	Window	"nsaTW_RM_Install_Wizard"	22003
+	Window	"nsaTW_RM_Installation_Lookup"	22004
+	Window	"nsaTW_RM_Installation_Lookup_Scroll"	22005
+	Window	"nsaTW_RM_Please_Wait"	22006
+	Window	"nsaTW_RM_Print_Installation_Report"	22007
+	Window	"nsaTW_RM_Welcome"	22008
+	Window	"nsaTW_RM_Welcome_Info"	22009
+	Field	"All Components Installed"	22000
+	Field	"Cancel"	22001
+	Field	"Complete"	22002
+	Field	"Completion Status"	22003
+	Field	"Component Description"	22004
+	Field	"Component Description Array"	22005
+	Field	"Current Company Installed"	22006
+	Field	"Dictionary Asterisk"	22007
+	Field	"Dictionary Up to Date"	22008
+	Field	"Install Asterisk"	22009
+	Field	"Installation Status"	22010
+	Field	"Installed"	22011
+	Field	"Last Date and Time"	22012
+	Field	"More Info"	22013
+	Field	"Required"	22014
+	Field	"Task CB"	22015
+	Field	"Task Name"	22016
+	Field	"Update Asterisk"	22017
+	Field	"Update Status"	22018
+	Field	"nsaTW_RM Management Release"	22019
+	Field	"nsaTW_RM Release"	22020
+	Field	"nsaTW_RM Version Number"	22021
+	Field	"nsa_ProductID"	22022
+	Datatype	"All Components Installed"	22000
+	Datatype	"Cancel"	22001
+	Datatype	"Complete"	22002
+	Datatype	"Completion Status"	22003
+	Datatype	"Component Description"	22004
+	Datatype	"Component Description Array"	22005
+	Datatype	"Current Company Installed"	22006
+	Datatype	"Dictionary Asterisk"	22007
+	Datatype	"Dictionary Up to Date"	22008
+	Datatype	"Install Asterisk"	22009
+	Datatype	"Installation Status"	22010
+	Datatype	"Installed"	22011
+	Datatype	"Last Date and Time"	22012
+	Datatype	"More Info"	22013
+	Datatype	"Required"	22014
+	Datatype	"Task CB"	22015
+	Datatype	"Task Name"	22016
+	Datatype	"Update Asterisk"	22017
+	Datatype	"Update Status"	22018
+	Datatype	"nsaTW_RM Management Release"	22019
+	Datatype	"nsaTW_RM Release"	22020
+	Datatype	"nsaTW_RM Version Number"	22021
+	Datatype	"nsa_ProductID"	22022
+	Procedure	"Install_Palette_nsaTW_RM_Utilities_Sales_RM"	22000
+	Procedure	"Install_Palette_nsaTW_Setup"	22001
+	Procedure	"Install_Palette_nsaWW_RM_Retencion_Wizard_I"	22002
+	Procedure	"Install_Palettes"	22003
+	Procedure	"Install_Pathname"	22004
+	Procedure	"Install_Pathnames"	22005
+	Procedure	"Install_SQL_Table"	22006
+	Procedure	"Install_SQL_Tables"	22007
+	Procedure	"Installation_of_All_Components"	22008
+	Procedure	"Open_Window"	22009
+	Procedure	"SQL_Create_Installation_Tables"	22010
+	Procedure	"Write_Installation_Report"	22011
+	Procedure	"nsaTW_RM_DropCreate_SP"	22012
+	Procedure	"nsaTW_RM_DropCreate_StoreProcedures"	22013
+	Procedure	"nsaTW_RM_Grant"	22014
+	Function	"Are_All_Components_Installed"	22000
+	Function	"Are_Company_Components_Installed"	22001
+	Function	"Are_Palettes_Installed"	22002
+	Function	"Are_Pathnames_Installed"	22003
+	Function	"Are_Tables_Installed"	22004
+	Function	"Set_Palette_Array"	22005
+	Function	"Set_Table_Array"	22006
+	Function	"nsaTW_RM_Get_DictID"	22007
+	EventScript	"FA_Install_Components l_Task CB[1]_POST"	22000
+	EventScript	"FA_Install_Components l_Task CB[2]_POST"	22001
+	EventScript	"nsaKardex_Install_Components l_Task CB[3]_CHG"	22002
+	EventScript	"nsaKardex_Install_Components l_Task CB[3]_POST"	22003
+	EventScript	"nsaTW_RM_Complete Back Button_CHG"	22004
+	EventScript	"nsaTW_RM_Complete Finish Button_CHG_DUP"	22005
+	EventScript	"nsaTW_RM_Complete WindowHelp_CHG"	22006
+	EventScript	"nsaTW_RM_Complete WindowPrint_CHG"	22007
+	EventScript	"nsaTW_RM_Complete l_Cancel_CHG"	22008
+	EventScript	"nsaTW_RM_Complete_Scroll SCROLL_FILL"	22009
+	EventScript	"nsaTW_RM_Complete_WIN_PRE"	22010
+	EventScript	"nsaTW_RM_Complete_WIN_PRINT"	22011
+	EventScript	"nsaTW_RM_Install_Components Back Button_CHG_DUP"	22012
+	EventScript	"nsaTW_RM_Install_Components Cancel Button_CHG"	22013
+	EventScript	"nsaTW_RM_Install_Components Mark All_CHG"	22014
+	EventScript	"nsaTW_RM_Install_Components Next Button Arrow_CHG"	22015
+	EventScript	"nsaTW_RM_Install_Components Unmark All_CHG"	22016
+	EventScript	"nsaTW_RM_Install_Components WindowHelp_CHG"	22017
+	EventScript	"nsaTW_RM_Install_Components WindowPrint_CHG"	22018
+	EventScript	"nsaTW_RM_Install_Components_WIN_PRE"	22019
+	EventScript	"nsaTW_RM_Install_Components_WIN_PRINT"	22020
+	EventScript	"nsaTW_RM_Installation_Lookup Cancel Button_CHG"	22021
+	EventScript	"nsaTW_RM_Installation_Lookup Help Button_CHG"	22022
+	EventScript	"nsaTW_RM_Installation_Lookup Select Button_CHG"	22023
+	EventScript	"nsaTW_RM_Installation_Lookup_Scroll SCROLL_FILL"	22024
+	EventScript	"nsaTW_RM_Installation_Lookup_WIN_PRE"	22025
+	EventScript	"nsaTW_RM_Installation_Wizard_FORM_POST"	22026
+	EventScript	"nsaTW_RM_Installation_Wizard_FORM_PRE"	22027
+	EventScript	"nsaTW_RM_Please_Wait_WIN_PRE"	22028
+	EventScript	"nsaTW_RM_Print_Installation_Report Cancel Button_CHG"	22029
+	EventScript	"nsaTW_RM_Print_Installation_Report Clear Button_CHG"	22030
+	EventScript	"nsaTW_RM_Print_Installation_Report Lookup Button 1_CHG"	22031
+	EventScript	"nsaTW_RM_Print_Installation_Report Print Button_CHG"	22032
+	EventScript	"nsaTW_RM_Print_Installation_Report_WIN_PRE"	22033
+	EventScript	"nsaTW_RM_Welcome Back Button_CHG"	22034
+	EventScript	"nsaTW_RM_Welcome Cancel Button_CHG"	22035
+	EventScript	"nsaTW_RM_Welcome Next Button Arrow_CHG"	22036
+	EventScript	"nsaTW_RM_Welcome WindowHelp_CHG"	22037
+	EventScript	"nsaTW_RM_Welcome WindowPrint_CHG"	22038
+	EventScript	"nsaTW_RM_Welcome_Info Cancel Button_CHG"	22039
+	EventScript	"nsaTW_RM_Welcome_Info Next Button Arrow_CHG"	22040
+	EventScript	"nsaTW_RM_Welcome_Info WindowHelp_CHG"	22041
+	EventScript	"nsaTW_RM_Welcome_Info WindowPrint_CHG"	22042
+	EventScript	"nsaTW_RM_Welcome_Info_WIN_PRE"	22043
+	EventScript	"nsaTW_RM_Welcome_Info_WIN_PRINT"	22044
+	EventScript	"nsaTW_RM_Welcome_WIN_PRE"	22045
+	EventScript	"nsaTW_RM_Welcome_WIN_PRINT"	22046
+	Constant	"Install_Palette_"	22000
+	Constant	"nsaTW_RMLOGFILE_NAME"	22001
+	Constant	"nsaTW_RM_BACK"	22002
+	Constant	"nsaTW_RM_COMPLETE"	22003
+	Constant	"nsaTW_RM_EXIT"	22004
+	Constant	"nsaTW_RM_FINISH"	22005
+	Constant	"nsaTW_RM_INSTALL"	22006
+	Constant	"nsaTW_RM_MAX_INSTALL_COMPONENTS"	22007
+	Constant	"nsaTW_RM_MAX_PALETTES"	22008
+	Constant	"nsaTW_RM_MAX_TABLES"	22009
+	Constant	"nsaTW_RM_NEXT"	22010
+	Constant	"nsaTW_RM_SCRIPT_Install_Palettes"	22011
+	Constant	"nsaTW_RM_SCRIPT_Install_Pathname"	22012
+	Constant	"nsaTW_RM_SCRIPT_Install_Pathnames"	22013
+	Constant	"nsaTW_RM_SCRIPT_Install_SQL_Table"	22014
+	Constant	"nsaTW_RM_SCRIPT_Install_SQL_Tables"	22015
+	Constant	"nsaTW_RM_WELCOME"	22016
+	Constant	"nsaTW_RM_WELCOME_INFO"	22017
+	Constant	"nsaTW_RM_of_form_RM_Installation_Wizard"	22018
+}
+Form	"nsaTW_RM_Installation_Wizard_Hidden"	22003
+
+{
+	EventScript	"nsaTW_RM_Installation_Wizard_Hidden_FORM_POST"	22000
+	EventScript	"nsaTW_RM_Installation_Wizard_Hidden_FORM_PRE"	22001
+}
+Form	"nsaTW_RM_Setup"	22004
+
+{
+	Window	"nsaTW_RM_Setup"	22000
+	Field	"nsaTW RM New Record"	22000
+	Field	"nsaTW RM Record Saved"	22001
+	Datatype	"nsaTW RM New Record"	22000
+	Datatype	"nsaTW RM Record Saved"	22001
+	EventScript	"nsaTW_RM_Setup Cancel Button_CHG"	22000
+	EventScript	"nsaTW_RM_Setup Dummy Note Show Hide_CHG"	22001
+	EventScript	"nsaTW_RM_Setup Note Absent Button - Toolbar_CHG"	22002
+	EventScript	"nsaTW_RM_Setup Note Present Button - Toolbar_CHG"	22003
+	EventScript	"nsaTW_RM_Setup OK Button_CHG"	22004
+	EventScript	"nsaTW_RM_Setup_FORM_PRE"	22005
+	EventScript	"nsaTW_RM_Setup_WIN_POST"	22006
+	EventScript	"nsaTW_RM_Setup_WIN_PRE"	22007
+	EventScript	"nsaTW_RM_Setup WindowHelp_CHG"	22008
+	Constant	"nsaTW_RM_DEFAULT_NC"	22000
+	Constant	"nsaTW_RM_DEFAULT_ND"	22001
+}
+Form	"nsaTW_RM_TaxAddedNulled_Inquiry"	22005
+
+{
+	Window	"nsaTW_RM_TaxAddedNulled_Inquiry"	22000
+	Window	"nsaTW RM Tax Added Scroll"	22001
+	Window	"nsaTW RM Tax Nulled Scroll"	22002
+	Field	"Tax Percent/Amount"	22000
+	Datatype	"Tax Percent/Amount"	22000
+	Procedure	"OpenWindow"	22000
+	Procedure	"RefreshWindow"	22001
+	EventScript	"nsaTW RM Tax Added Scroll SCROLL_FILL"	22000
+	EventScript	"nsaTW RM Tax Added Scroll SCROLL_PRE"	22001
+	EventScript	"nsaTW RM Tax Nulled Scroll SCROLL_FILL"	22002
+	EventScript	"nsaTW RM Tax Nulled Scroll SCROLL_PRE"	22003
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Dummy Note Show Hide_CHG"	22004
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Absent Button - Toolbar_CHG"	22005
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Array Absent - Window Area[1]_CHG"	22006
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Array Absent - Window Area[2]_CHG"	22007
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Array Absent - Window Area[3]_CHG"	22008
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Array Absent - Window Area[4]_CHG"	22009
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Array Present - Window Area[1]_CHG"	22010
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Array Present - Window Area[2]_CHG"	22011
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Array Present - Window Area[3]_CHG"	22012
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Array Present - Window Area[4]_CHG"	22013
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Note Present Button - Toolbar_CHG"	22014
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry OK Button_CHG"	22015
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Payables File Type_CHG"	22016
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry RecordNoteArray[1]_CHG"	22017
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry RecordNoteArray[2]_CHG"	22018
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry RecordNoteArray[3]_CHG"	22019
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry RecordNoteArray[4]_CHG"	22020
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Scrolling Window Expand Button 2_CHG"	22021
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Scrolling Window Expand Button_CHG"	22022
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Scrolling Window Shrink Button 2_CHG"	22023
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Scrolling Window Shrink Button_CHG"	22024
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry WindowHelp_CHG"	22025
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Zoom Buttons[1]_CHG"	22026
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Zoom Buttons[2]_CHG"	22027
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Zoom Buttons[3]_CHG"	22028
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry Zoom Buttons[4]_CHG"	22029
+	EventScript	"nsaTW_RM_TaxAddedNulled_Inquiry_WIN_PRE"	22030
+}
+Form	"nsaTW_RM_Tax_Potential_Entry"	22006
+
+{
+	Window	"nsaTW_RM_Tax_Potential_Entry"	22000
+	Window	"nsaTW_RM_Tax_Potential_Scroll"	22001
+	Field	"Account Number"	22000
+	Field	"Tax Amount"	22001
+	Field	"Tax Detail Percent"	22002
+	Field	"nsaTW Tax Amount"	22003
+	Field	"nsaTW Withholding Amount"	22004
+	Procedure	"nsaTW_TaxDetails_FillWindow"	22000
+	Procedure	"nsaTW_TaxDetails_UpdateDisplay"	22001
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Dummy Note Show Hide_CHG"	22000
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Note Absent Button - Toolbar_CHG"	22001
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Note Array Absent - Window Area[1]_CHG"	22002
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Note Array Absent - Window Area[2]_CHG"	22003
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Note Array Present - Window Area[1]_CHG"	22004
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Note Array Present - Window Area[2]_CHG"	22005
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Note Present Button - Toolbar_CHG"	22006
+	EventScript	"nsaTW_RM_Tax_Potential_Entry OK Button_CHG"	22007
+	EventScript	"nsaTW_RM_Tax_Potential_Entry RecordNoteArray[1]_CHG"	22008
+	EventScript	"nsaTW_RM_Tax_Potential_Entry RecordNoteArray[2]_CHG"	22009
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Scrolling Window Expand Button_CHG"	22010
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Scrolling Window Shrink Button_CHG"	22011
+	EventScript	"nsaTW_RM_Tax_Potential_Entry WindowHelp_CHG"	22012
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Zoom Buttons[1]_CHG"	22013
+	EventScript	"nsaTW_RM_Tax_Potential_Entry Zoom Buttons[2]_CHG"	22014
+	EventScript	"nsaTW_RM_Tax_Potential_Entry nsaTW Tax View_CHG"	22015
+	EventScript	"nsaTW_RM_Tax_Potential_Entry_WIN_POST"	22016
+	EventScript	"nsaTW_RM_Tax_Potential_Entry_WIN_PRE"	22017
+	EventScript	"nsaTW_RM_Tax_Potential_Scroll SCROLL_FILL"	22018
+	EventScript	"nsaTW_RM_Tax_Potential_Scroll SCROLL_PRE"	22019
+}
+Form	"nsaTW_RM_Tax_Potential_Inquiry"	22007
+
+{
+	Window	"nsaTW_RM_Tax_Potential_Inquiry"	22000
+	Window	"Tax_Scroll"	22001
+	Field	"Payment Amount"	22000
+	Field	"Tax Details WIN PRE"	22001
+	Field	"Tax Percent/Amount"	22002
+	Field	"nsaTW Tax Amount"	22003
+	Field	"nsaTW Withholding Amount"	22004
+	Datatype	"Tax Details WIN PRE"	22000
+	Datatype	"Tax Percent/Amount"	22001
+	Procedure	"TaxDetailZoom_Display"	22000
+	Procedure	"TaxDetailZoom_OpenWindow"	22001
+	Procedure	"TaxDetailZoom_RefreshWindow"	22002
+	EventScript	"Tax_Scroll SCROLL_FILL"	22000
+	EventScript	"Tax_Scroll SCROLL_PRE"	22001
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry Note Absent Button - Toolbar_CHG"	22002
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry Note Array Absent - Window Area[1]_CHG"	22003
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry Note Array Absent - Window Area[2]_CHG"	22004
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry Note Array Present - Window Area[1]_CHG"	22005
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry Note Array Present - Window Area[2]_CHG"	22006
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry Note Present Button - Toolbar_CHG"	22007
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry OK Button_CHG"	22008
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry RecordNoteArray[1]_CHG"	22009
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry RecordNoteArray[2]_CHG"	22010
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry WindowHelp_CHG"	22011
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry WindowNote_CHG"	22012
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry Zoom Button 2_CHG"	22013
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry Zoom Button_CHG"	22014
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry l_Tax Details WIN PRE_CHG"	22015
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry nsaTW Tax View_CHG"	22016
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry_WIN_POST"	22017
+	EventScript	"nsaTW_RM_Tax_Potential_Inquiry_WIN_PRE"	22018
+}
+Form	"nsaTW_SOP_Summary_Potential_Entry_Inquiry"	22008
+
+{
+	Window	"nsaTW_SOP_Summary_Potential_Entry_Inquiry"	22000
+	Window	"Tax_Scroll"	22001
+	Field	"Expand Button"	22000
+	Field	"SOP TAX WORK HIST"	22001
+	Field	"Shrink Button"	22002
+	Field	"Tax Percent/Amount"	22003
+	Field	"ZoomAccount"	22004
+	Field	"ZoomButton"	22005
+	Field	"nsaTW Tax Amount"	22006
+	Field	"nsaTW Withholding Amount"	22007
+	Datatype	"Expand Button"	22000
+	Datatype	"SOP TAX WORK HIST"	22001
+	Datatype	"Shrink Button"	22002
+	Datatype	"Tax Percent/Amount"	22003
+	Datatype	"ZoomAccount"	22004
+	Datatype	"ZoomButton"	22005
+	Procedure	"CloseChildWindows"	22000
+	Procedure	"CloseWindow"	22001
+	Procedure	"OpenWindow"	22002
+	Procedure	"RefreshMCInfo"	22003
+	Procedure	"RefreshWindow"	22004
+	Procedure	"RefreshWindowForViewFlip"	22005
+	Procedure	"UpdateDisplay"	22006
+	Function	"DetermineBackoutSalesAmount"	22000
+	EventScript	"Tax_Scroll SCROLL_FILL"	22000
+	EventScript	"Tax_Scroll SCROLL_PRE"	22001
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry Dummy Note Show Hide_CHG"	22002
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry Note Absent Button - Toolbar _CHG"	22003
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry Note Array Absent - Window Area[1]_CHG"	22004
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry Note Array Absent - Window Area[2]_CHG"	22005
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry Note Array Present - Window Area[1]_CHG"	22006
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry Note Array Present - Window Area[2]_CHG"	22007
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry Note Present Button - Toolbar_CHG"	22008
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry OK Button_CHG"	22009
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry RecordNoteArray[1]_CHG"	22010
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry RecordNoteArray[2]_CHG"	22011
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry WindowHelp_CHG"	22012
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry l_Expand Button_CHG"	22013
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry l_Shrink Button_CHG"	22014
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry nsaTW Tax View_CHG"	22015
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry_FORM_PRE"	22016
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry_Inquiry l_ZoomAccount_CHG"	22017
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry_Inquiry l_ZoomButton_CHG"	22018
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry_Inquiry_FORM_POST"	22019
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry_WIN_POST"	22020
+	EventScript	"nsaTW_SOP_Summary_Potential_Entry_WIN_PRE"	22021
+}
+Form	"nsaWW_RM_Aplied_ND_Lookup"	22009
+
+{
+	Window	"nsaWW_RM_Aplied_ND"	22000
+	Window	"nsaWW_RM_Aplied_ND_Scroll"	22001
+	Field	"Apply To Document Number"	22000
+	Field	"Descripcion"	22001
+	Field	"Find"	22002
+	Field	"PushButton4"	22003
+	Field	"PushButton6"	22004
+	Field	"Sort By"	22005
+	Datatype	"Descripcion"	22000
+	Datatype	"Find"	22001
+	Datatype	"PushButton4"	22002
+	Datatype	"PushButton6"	22003
+	Datatype	"Sort By"	22004
+	EventScript	"nsaWW_RM_Aplied_ND Dummy Note Show Hide_CHG"	22000
+	EventScript	"nsaWW_RM_Aplied_ND Expansion Button_CHG"	22001
+	EventScript	"nsaWW_RM_Aplied_ND Note Absent Button - Toolbar_CHG"	22002
+	EventScript	"nsaWW_RM_Aplied_ND Note Present Button - Toolbar_CHG"	22003
+	EventScript	"nsaWW_RM_Aplied_ND OK Button_CHG"	22004
+	EventScript	"nsaWW_RM_Aplied_ND Redisplay Button_CHG"	22005
+	EventScript	"nsaWW_RM_Aplied_ND Select Button_CHG"	22006
+	EventScript	"nsaWW_RM_Aplied_ND l_PushButton4_CHG"	22007
+	EventScript	"nsaWW_RM_Aplied_ND l_PushButton6_CHG"	22008
+	EventScript	"nsaWW_RM_Aplied_ND l_Sort By_CHG"	22009
+	EventScript	"nsaWW_RM_Aplied_ND_Lookup_FORM_PRE"	22010
+	EventScript	"nsaWW_RM_Aplied_ND_Scroll Apply To Document Number_POST"	22011
+	EventScript	"nsaWW_RM_Aplied_ND_Scroll SCROLL_FILL_DUP"	22012
+	EventScript	"nsaWW_RM_Aplied_ND_WIN_PRE_DUP"	22013
+}
+Form	"nsaWW_RM_Edition_Tax"	22010
+
+{
+	Window	"nsaWW_RM_Edition_Tax"	22000
+	Window	"nsaTW RM Tax Added Scroll"	22001
+	Window	"nsaTW RM Tax Nulled Scroll"	22002
+	Field	"Tax Amount"	22000
+	Field	"Tax Detail Total Sales"	22001
+	Field	"Tax Detail Total Taxable Sales"	22002
+	Field	"Tax Percent/Amount"	22003
+	Field	"TaxDetailID"	22004
+	Field	"Type_Tax"	22005
+	Datatype	"Tax Percent/Amount"	22000
+	Datatype	"Type_Tax"	22001
+	Procedure	"OpenWindow"	22000
+	Procedure	"RefreshWindow"	22001
+	Procedure	"TaxDetails_FillWindow"	22002
+	Procedure	"nsaWW_SetValues"	22003
+	Function	"GetTotSalAmt"	22000
+	Function	"GetTotTaxSalAmt"	22001
+	Function	"nsaWW_SetTaxAmt"	22002
+	Function	"GetOrigTaxAmt"	22003
+	Function	"GetTaxAmt"	22004
+	EventScript	"nsaTW RM Tax Added Scroll Account Number_CHG"	22000
+	EventScript	"nsaTW RM Tax Added Scroll Lookup Button 1_CHG"	22001
+	EventScript	"nsaTW RM Tax Added Scroll SCROLL_CHG"	22002
+	EventScript	"nsaTW RM Tax Added Scroll SCROLL_DEL"	22003
+	EventScript	"nsaTW RM Tax Added Scroll SCROLL_FILL"	22004
+	EventScript	"nsaTW RM Tax Added Scroll SCROLL_PRE"	22005
+	EventScript	"nsaTW RM Tax Added Scroll Tax Amount_CHG"	22006
+	EventScript	"nsaTW RM Tax Added Scroll Tax Detail ID_CHG"	22007
+	EventScript	"nsaTW RM Tax Added Scroll Tax Detail ID_POST"	22008
+	EventScript	"nsaTW RM Tax Added Scroll l_Tax Amount_CHG"	22009
+	EventScript	"nsaTW RM Tax Added Scroll l_Tax Detail Total Sales_CHG"	22010
+	EventScript	"nsaTW RM Tax Nulled Scroll SCROLL_CHG"	22011
+	EventScript	"nsaTW RM Tax Nulled Scroll SCROLL_FILL"	22012
+	EventScript	"nsaTW RM Tax Nulled Scroll SCROLL_PRE"	22013
+	EventScript	"nsaTW RM Tax Nulled Scroll Tax Detail ID_POST"	22014
+	EventScript	"nsaTW RM Tax Nulled Scroll nsaWW_Null_CHG"	22015
+	EventScript	"nsaWW_RM_Edition_Tax Default Button_CHG"	22016
+	EventScript	"nsaWW_RM_Edition_Tax Dummy Note Show Hide_CHG"	22017
+	EventScript	"nsaWW_RM_Edition_Tax Expansion Button 1_CHG"	22018
+	EventScript	"nsaWW_RM_Edition_Tax Lookup Button 1_CHG"	22019
+	EventScript	"nsaWW_RM_Edition_Tax Lookup Button 2_CHG"	22020
+	EventScript	"nsaWW_RM_Edition_Tax Note Absent Button - Toolbar_CHG"	22021
+	EventScript	"nsaWW_RM_Edition_Tax Note Array Absent - Window Area[1]_CHG"	22022
+	EventScript	"nsaWW_RM_Edition_Tax Note Array Absent - Window Area[2]_CHG"	22023
+	EventScript	"nsaWW_RM_Edition_Tax Note Array Absent - Window Area[3]_CHG"	22024
+	EventScript	"nsaWW_RM_Edition_Tax Note Array Absent - Window Area[4]_CHG"	22025
+	EventScript	"nsaWW_RM_Edition_Tax Note Array Present - Window Area[1]_CHG"	22026
+	EventScript	"nsaWW_RM_Edition_Tax Note Array Present - Window Area[2]_CHG"	22027
+	EventScript	"nsaWW_RM_Edition_Tax Note Array Present - Window Area[3]_CHG"	22028
+	EventScript	"nsaWW_RM_Edition_Tax Note Array Present - Window Area[4]_CHG"	22029
+	EventScript	"nsaWW_RM_Edition_Tax Note Present Button - Toolbar_CHG"	22030
+	EventScript	"nsaWW_RM_Edition_Tax OK Button_CHG"	22031
+	EventScript	"nsaWW_RM_Edition_Tax Payables File Type_CHG"	22032
+	EventScript	"nsaWW_RM_Edition_Tax RecordNoteArray[1]_CHG"	22033
+	EventScript	"nsaWW_RM_Edition_Tax RecordNoteArray[2]_CHG"	22034
+	EventScript	"nsaWW_RM_Edition_Tax RecordNoteArray[3]_CHG"	22035
+	EventScript	"nsaWW_RM_Edition_Tax RecordNoteArray[4]_CHG"	22036
+	EventScript	"nsaWW_RM_Edition_Tax Scrolling Window Expand Button 2_CHG"	22037
+	EventScript	"nsaWW_RM_Edition_Tax Scrolling Window Expand Button_CHG"	22038
+	EventScript	"nsaWW_RM_Edition_Tax Scrolling Window Shrink Button 2_CHG"	22039
+	EventScript	"nsaWW_RM_Edition_Tax Scrolling Window Shrink Button_CHG"	22040
+	EventScript	"nsaWW_RM_Edition_Tax WindowHelp_CHG"	22041
+	EventScript	"nsaWW_RM_Edition_Tax Zoom Buttons[1]_CHG"	22042
+	EventScript	"nsaWW_RM_Edition_Tax Zoom Buttons[2]_CHG"	22043
+	EventScript	"nsaWW_RM_Edition_Tax Zoom Buttons[3]_CHG"	22044
+	EventScript	"nsaWW_RM_Edition_Tax Zoom Buttons[4]_CHG"	22045
+	EventScript	"nsaWW_RM_Edition_Tax_WIN_POST"	22046
+	EventScript	"nsaWW_RM_Edition_Tax_WIN_PRE"	22047
+}
+Form	"nsaWW_RM_Retencion_Wizard_I"	22011
+
+{
+	Window	"Retention Wizard"	22000
+	Field	"All"	22000
+	Field	"Apply"	22001
+	Field	"Currency Note Index"	22002
+	Field	"Currency Note Show Hide"	22003
+	Field	"Customer Name"	22004
+	Field	"Delayed Open"	22005
+	Field	"Desde"	22006
+	Field	"Find_By"	22007
+	Field	"From Range 1"	22008
+	Field	"From Range 1Upper"	22009
+	Field	"Negativos"	22010
+	Field	"Originating Apply"	22011
+	Field	"Override Exchange Info"	22012
+	Field	"Positivos"	22013
+	Field	"Prev Currency"	22014
+	Field	"RadioGroup10"	22015
+	Field	"RadioGroup25"	22016
+	Field	"Record Note Show Hide"	22017
+	Field	"Returned Currency"	22018
+	Field	"To Range 1"	22019
+	Field	"To Range 1Upper"	22020
+	Field	"Type_Tax"	22021
+	Field	"Vendor"	22022
+	Field	"WindowNote"	22023
+	Datatype	"Apply"	22000
+	Datatype	"Currency Note Index"	22001
+	Datatype	"Customer Name"	22002
+	Datatype	"Delayed Open"	22003
+	Datatype	"Find_By"	22004
+	Datatype	"From Range 1"	22005
+	Datatype	"Negativos"	22006
+	Datatype	"Originating Apply"	22007
+	Datatype	"Override Exchange Info"	22008
+	Datatype	"Positivos"	22009
+	Datatype	"RadioGroup10"	22010
+	Datatype	"RadioGroup25"	22011
+	Datatype	"Record Note Show Hide"	22012
+	Datatype	"To Range 1"	22013
+	Datatype	"Type_Tax"	22014
+	Procedure	"MC_Currency_Verification"	22000
+	Procedure	"MC_Set"	22001
+	Procedure	"Select_Customer_By_Lookup"	22002
+	EventScript	"Retention Wizard Add Activity Record_CHG"	22000
+	EventScript	"Retention Wizard Batch Number_CHG"	22001
+	EventScript	"Retention Wizard Cancel Button_CHG"	22002
+	EventScript	"Retention Wizard Currency ID_CHG"	22003
+	EventScript	"Retention Wizard Document Date_CHG"	22004
+	EventScript	"Retention Wizard Dummy Note Show Hide_CHG"	22005
+	EventScript	"Retention Wizard End of File Button - Window Area_CHG"	22006
+	EventScript	"Retention Wizard Expansion Button 1_CHG"	22007
+	EventScript	"Retention Wizard Expansion Button 2_CHG"	22008
+	EventScript	"Retention Wizard Lookup Button 2_CHG"	22009
+	EventScript	"Retention Wizard Lookup Button 3_CHG"	22010
+	EventScript	"Retention Wizard Lookup Button 4_CHG"	22011
+	EventScript	"Retention Wizard Lookup Button 5_CHG"	22012
+	EventScript	"Retention Wizard Next Button - Window Area_CHG"	22013
+	EventScript	"Retention Wizard Next Button_CHG"	22014
+	EventScript	"Retention Wizard Next Step Button_CHG"	22015
+	EventScript	"Retention Wizard Note Absent Button - Toolbar_CHG"	22016
+	EventScript	"Retention Wizard Note Array Absent - Window Area[1]_CHG"	22017
+	EventScript	"Retention Wizard Note Array Present - Window Area[1]_CHG"	22018
+	EventScript	"Retention Wizard Note Present Button - Toolbar_CHG"	22019
+	EventScript	"Retention Wizard Previous Button - Window Area_CHG"	22020
+	EventScript	"Retention Wizard Top of File Button - Window Area_CHG"	22021
+	EventScript	"Retention Wizard WindowHelp_CHG"	22022
+	EventScript	"Retention Wizard Zoom Button 2_CHG"	22023
+	EventScript	"Retention Wizard Zoom Button_CHG"	22024
+	EventScript	"Retention Wizard Zoom Buttons[1]_CHG"	22025
+	EventScript	"Retention Wizard l_Find_By_CHG"	22026
+	EventScript	"Retention Wizard l_From Range 1Upper_CHG"	22027
+	EventScript	"Retention Wizard l_From Range 1_CHG"	22028
+	EventScript	"Retention Wizard l_RadioGroup25_CHG"	22029
+	EventScript	"Retention Wizard l_Record Note Show Hide_CHG"	22030
+	EventScript	"Retention Wizard l_Vendor_CHG"	22031
+	EventScript	"Retention Wizard l_WindowNote_CHG"	22032
+	EventScript	"Retention Wizard_WIN_PRE"	22033
+	EventScript	"nsaWW_RM_Retencion_Wizard_I_FORM_PRE"	22034
+	Constant	"FORM_NAME"	22000
+}
+Form	"nsaWW_RM_Retencion_Wizard_II"	22012
+
+{
+	Window	"RM_Edit_Retentions"	22000
+	Window	"Edit_Retentions_Scroll"	22001
+	Field	"Apply"	22000
+	Field	"Close_Button"	22001
+	Field	"Current Txt Amount"	22002
+	Field	"DebitDocCurrencyType"	22003
+	Field	"Descripcion"	22004
+	Field	"Document Amount"	22005
+	Field	"Fill Scrolling Window"	22006
+	Field	"Origin"	22007
+	Field	"Sort From"	22008
+	Field	"Sort Key"	22009
+	Field	"Sort To"	22010
+	Field	"Tipo Doc"	22011
+	Field	"Type_Tax"	22012
+	Field	"VALIDAR DOC PTE APLICAR"	22013
+	Datatype	"Apply"	22000
+	Datatype	"Close_Button"	22001
+	Datatype	"DebitDocCurrencyType"	22002
+	Datatype	"Fill Scrolling Window"	22003
+	Datatype	"Sort From"	22004
+	Datatype	"Sort Key"	22005
+	Datatype	"Sort To"	22006
+	Datatype	"Tipo Doc"	22007
+	Datatype	"Type_Tax"	22008
+	Datatype	"VALIDAR DOC PTE APLICAR"	22009
+	Procedure	"Create_Temp"	22000
+	Procedure	"INITIALIZE"	22001
+	Procedure	"LiveUpdateDoc"	22002
+	Procedure	"nsaTW_PM_Create_Change_Diferent"	22003
+	Procedure	"nsaTW_PM_MC_Calculate_Amt_From_X_Rate"	22004
+	EventScript	"Edit_Retentions_Scroll SCROLL_FILL_DUP"	22000
+	EventScript	"Edit_Retentions_Scroll l_Apply_CHG"	22001
+	EventScript	"RM_Edit_Retentions Apply Button_CHG"	22002
+	EventScript	"RM_Edit_Retentions Auto Apply Button_CHG"	22003
+	EventScript	"RM_Edit_Retentions Back Button_CHG"	22004
+	EventScript	"RM_Edit_Retentions Cancel Button_CHG"	22005
+	EventScript	"RM_Edit_Retentions CustomLinks Zoom Button[1]_CHG"	22006
+	EventScript	"RM_Edit_Retentions Dummy Note Show Hide_CHG"	22007
+	EventScript	"RM_Edit_Retentions Expansion Button 1_CHG"	22008
+	EventScript	"RM_Edit_Retentions Mark All_CHG"	22009
+	EventScript	"RM_Edit_Retentions Mark None_CHG"	22010
+	EventScript	"RM_Edit_Retentions Note Absent Button - Toolbar_CHG"	22011
+	EventScript	"RM_Edit_Retentions Note Present Button - Toolbar_CHG"	22012
+	EventScript	"RM_Edit_Retentions Preview Button_CHG"	22013
+	EventScript	"RM_Edit_Retentions Redisplay Button_CHG"	22014
+	EventScript	"RM_Edit_Retentions Scrolling Window Expand Button_CHG"	22015
+	EventScript	"RM_Edit_Retentions Scrolling Window Shrink Button_CHG"	22016
+	EventScript	"RM_Edit_Retentions WindowHelp_CHG"	22017
+	EventScript	"RM_Edit_Retentions Zoom Button 2_CHG"	22018
+	EventScript	"RM_Edit_Retentions Zoom Button_CHG"	22019
+	EventScript	"RM_Edit_Retentions Zoom Buttons[1]_CHG"	22020
+	EventScript	"RM_Edit_Retentions l_Close_1_CHG"	22021
+	EventScript	"RM_Edit_Retentions l_Fill Scrolling Window_CHG"	22022
+	EventScript	"RM_Edit_Retentions_WIN_POST"	22023
+	EventScript	"RM_Edit_Retentions_WIN_PRE_DUP"	22024
+	EventScript	"nsaWW_RM_Retencion_Wizard_II_FORM_PRE"	22025
+}
+Form	"nsataxChild"	22013
+
+{
+	Procedure	"ClearAccount"	22000
+	Procedure	"ClearTaxDetail"	22001
+	Procedure	"Delete"	22002
+	Procedure	"Destroy"	22003
+	Procedure	"GetSubTaxAmountSplit"	22004
+	Procedure	"SetAccountIndex"	22005
+	Procedure	"SetFreightTaxAmount"	22006
+	Procedure	"SetGrossAmount"	22007
+	Procedure	"SetMcInfo"	22008
+	Procedure	"SetMiscTaxAmount"	22009
+	Procedure	"SetNetAmount"	22010
+	Procedure	"SetOldAccountIndex"	22011
+	Procedure	"SetOldFreightTaxAmount"	22012
+	Procedure	"SetOldGrossAmount"	22013
+	Procedure	"SetOldMiscTaxAmount"	22014
+	Procedure	"SetOldSalePurchaseTaxAmount"	22015
+	Procedure	"SetOldTaxAmount"	22016
+	Procedure	"SetOldTaxDetailID"	22017
+	Procedure	"SetSalePurchaseTaxAmount"	22018
+	Procedure	"SetTaxAmount"	22019
+	Procedure	"SetTaxDetailID"	22020
+	Procedure	"SetViewMode"	22021
+	Procedure	"SplitTax"	22022
+	Procedure	"SplitTaxWithoutObject"	22023
+	Procedure	"Unbox"	22024
+	Function	"Box"	22000
+	Function	"Create"	22001
+	Function	"GetAccountIndex"	22002
+	Function	"GetAccountNoteIndex"	22003
+	Function	"GetAccountNumber"	22004
+	Function	"GetCurrencyIndex"	22005
+	Function	"GetFreightTaxAmount"	22006
+	Function	"GetFreightTaxAmountDiff"	22007
+	Function	"GetGrossAmount"	22008
+	Function	"GetGrossAmountDiff"	22009
+	Function	"GetMcInfo"	22010
+	Function	"GetMiscTaxAmount"	22011
+	Function	"GetMiscTaxAmountDiff"	22012
+	Function	"GetNetAmount"	22013
+	Function	"GetNetAmountDiff"	22014
+	Function	"GetOldAccountIndex"	22015
+	Function	"GetOldFreightTaxAmount"	22016
+	Function	"GetOldGrossAmount"	22017
+	Function	"GetOldMiscTaxAmount"	22018
+	Function	"GetOldNetAmount"	22019
+	Function	"GetOldSalePurchaseTaxAmount"	22020
+	Function	"GetOldTaxAmount"	22021
+	Function	"GetOldTaxDetailBase"	22022
+	Function	"GetOldTaxDetailID"	22023
+	Function	"GetOldTaxDetailPct"	22024
+	Function	"GetSalePurchaseTaxAmount"	22025
+	Function	"GetSalePurchaseTaxAmountDiff"	22026
+	Function	"GetSubTaxAmountSplit"	22027
+	Function	"GetTaxAmount"	22028
+	Function	"GetTaxAmountDiff"	22029
+	Function	"GetTaxDetailAmount"	22030
+	Function	"GetTaxDetailBase"	22031
+	Function	"GetTaxDetailDescription"	22032
+	Function	"GetTaxDetailID"	22033
+	Function	"GetTaxDetailNoteIndex"	22034
+	Function	"GetTaxDetailPercent"	22035
+	Function	"GetTaxDetailType"	22036
+	Function	"GetViewMode"	22037
+	Function	"IgnoreGrossAmt"	22038
+	Function	"IsAcctChanged"	22039
+	Function	"IsIgnoreGrossAmtTransition"	22040
+	Function	"IsNegativeTaxDetail"	22041
+	Function	"IsOldTIPTax"	22042
+	Function	"IsTIPNonTIPTransition"	22043
+	Function	"IsTIPTax"	22044
+	Function	"IsTaxDetailPctChgSign"	22045
+	Function	"SetAccount"	22046
+	Function	"SetTaxDetail"	22047
+	Function	"ValidateAccount"	22048
+}
+Form	"nsataxControl"	22014
+
+{
+	Procedure	"Calculate"	22000
+	Procedure	"CalculateWithoutObject"	22001
+	Procedure	"Child_Delete"	22002
+	Procedure	"Child_Save"	22003
+	Procedure	"Child_Unbox"	22004
+	Procedure	"Destroy"	22005
+	Procedure	"Parent_Delete"	22006
+	Procedure	"Parent_Unbox"	22007
+	Procedure	"SetAllowNegative"	22008
+	Procedure	"SetTaxChildObj"	22009
+	Procedure	"SetTaxParentObj"	22010
+	Function	"Child_AdjustParent"	22000
+	Function	"Child_Box"	22001
+	Function	"Child_DetermineAndVerifyTIPAdjustments"	22002
+	Function	"Child_SetAccountNumber"	22003
+	Function	"Child_SetGrossAmount"	22004
+	Function	"Child_SetTaxAmount"	22005
+	Function	"Child_SetTaxDetailID"	22006
+	Function	"Child_VerifyLine"	22007
+	Function	"Create"	22008
+	Function	"GetTaxChildObj"	22009
+	Function	"GetTaxParentObj"	22010
+	Function	"IsNegativeAllowed"	22011
+	Function	"Parent_Box"	22012
+	Constant	"ACCOUNT_EMPTY"	22000
+	Constant	"ACCOUNT_INACTIVE"	22001
+	Constant	"ACCOUNT_MCACCTMISSING"	22002
+	Constant	"ACCOUNT_MISSING"	22003
+	Constant	"ACCOUNT_NOTPOSTACCT"	22004
+	Constant	"ERROR_INVALIDTIPEDIT"	22005
+	Constant	"ERROR_TAXAMTSIGN"	22006
+	Constant	"ERROR_TIPTOOBIG"	22007
+	Constant	"TAXDETAIL_DUPLICATE"	22008
+	Constant	"TAXDETAIL_EMPTY"	22009
+	Constant	"TAXDETAIL_INVALIDFORMODULE"	22010
+	Constant	"TAXDETAIL_MISSING"	22011
+	Constant	"TAXDETAIL_NEGATIVETAXDETAIL"	22012
+	Constant	"TAXENTRY_DETAIL"	22013
+	Constant	"TAXENTRY_SUMMARY"	22014
+}
+Form	"nsataxParent"	22015
+
+{
+	Procedure	"Delete"	22000
+	Procedure	"Destroy"	22001
+	Procedure	"SetBackoutTaxAmount"	22002
+	Procedure	"SetDiscountAvailableAmount"	22003
+	Procedure	"SetFreightAmount"	22004
+	Procedure	"SetFreightTIPAmount"	22005
+	Procedure	"SetMcInfo"	22006
+	Procedure	"SetMiscAmount"	22007
+	Procedure	"SetMiscTIPAmount"	22008
+	Procedure	"SetOldSalePurchaseTIPAmount"	22009
+	Procedure	"SetOldTradeDiscountTIPAmount"	22010
+	Procedure	"SetSalePurchaseAmount"	22011
+	Procedure	"SetSalePurchaseTIPAmount"	22012
+	Procedure	"SetTaxAmount"	22013
+	Procedure	"SetTaxLinesGrossAmountTotal"	22014
+	Procedure	"SetTaxLinesTaxAmountTotal"	22015
+	Procedure	"SetTradeDiscountAmount"	22016
+	Procedure	"SetTradeDiscountTIPAmount"	22017
+	Procedure	"SetViewMode"	22018
+	Procedure	"SplitSalePurchaseAndTradeDiscountTax"	22019
+	Procedure	"Unbox"	22020
+	Function	"Box"	22000
+	Function	"Create"	22001
+	Function	"GetBackoutTaxAmount"	22002
+	Function	"GetBackoutTaxAmountDiff"	22003
+	Function	"GetCurrencyIndex"	22004
+	Function	"GetCustomerVendorId"	22005
+	Function	"GetDefaultTaxAcctIfEmpty"	22006
+	Function	"GetDiscountAvailableAmount"	22007
+	Function	"GetDocumentAmount"	22008
+	Function	"GetDocumentNumber"	22009
+	Function	"GetDocumentType"	22010
+	Function	"GetFreightAmount"	22011
+	Function	"GetFreightTIPAmount"	22012
+	Function	"GetGrossDifference"	22013
+	Function	"GetItemId"	22014
+	Function	"GetLineItemSeq"	22015
+	Function	"GetMcInfo"	22016
+	Function	"GetMiscAmount"	22017
+	Function	"GetMiscTIPAmount"	22018
+	Function	"GetPreTaxAmount"	22019
+	Function	"GetSalePurchaseAmount"	22020
+	Function	"GetSalePurchaseTIPAmount"	22021
+	Function	"GetSalePurchaseTIPAmountDiff"	22022
+	Function	"GetSeries"	22023
+	Function	"GetSiteId"	22024
+	Function	"GetTaxDifference"	22025
+	Function	"GetTaxEntryType"	22026
+	Function	"GetTaxLinesGrossAmountTotal"	22027
+	Function	"GetTaxLinesTaxAmountTotal"	22028
+	Function	"GetTradeDiscountAmount"	22029
+	Function	"GetTradeDiscountTIPAmount"	22030
+	Function	"GetTradeDiscountTIPAmountDiff"	22031
+	Function	"GetTrxSource"	22032
+	Function	"GetViewMode"	22033
+}
+Datatype	"nsaTW_CB_APPLY_TAX"	"Purchasing"	22000
+Datatype	"nsaTW_CB_APPLY_WITHHOLDING"	"Purchasing"	22001
+Datatype	"nsaTW_RM_PBD_TaxFilters"	"Purchasing"	22002
+Datatype	"nsaTW DeleteRecord"	"Purchasing"	22003
+Datatype	"nsaTW DisplayExistingRecord"	"Purchasing"	22004
+Datatype	"nsaTW ReleaseTable"	"Purchasing"	22005
+Datatype	"nsaTW SaveRecord"	"Purchasing"	22006
+Datatype	"nsaTW Dimmy Win Pre"	"Purchasing"	22007
+Datatype	"nsaTW CalcTaxAmount"	"Purchasing"	22008
+Datatype	"nsaTw DeleteRecord"	"Purchasing"	22009
+Datatype	"nsaTW Has Been Saved"	"Purchasing"	22010
+Datatype	"reteneta1"	"Purchasing"	22011
+Datatype	"reteneta"	"Purchasing"	22012
+Datatype	"nsaWW_Picture"	"Purchasing"	22013
+Datatype	"nsaWW_Null"	"Purchasing"	22014
+Datatype	"nsaWW_PicutureII"	"Purchasing"	22015
+Datatype	"STR80_Install_Component"	"Purchasing"	22016
+Datatype	"STR80_Install_Step"	"Purchasing"	22017
+Datatype	"STR30_Install_Date_and_Time"	"Purchasing"	22018
+Datatype	"LI6_Log_Index"	"Purchasing"	22019
+Datatype	"Script_Name"	"Purchasing"	22020
+Datatype	"Message_Text"	"Purchasing"	22021
+Datatype	"VS_FAM_Install"	"Purchasing"	22022
+Datatype	"STR80_Progress_Status"	"Purchasing"	22023
+Datatype	"Chunk_Progress_Indicator"	"Purchasing"	22024
+Datatype	"DDL_ACRS_Life_Years"	"Purchasing"	22025
+Datatype	"VS_FAM_Install_Small"	"Purchasing"	22026
+Format	"NUM_RB_U0"	"Purchasing"	22000
+String	"Administración de impuestos en ventas"	"Purchasing"	22000
+String	"Configuración de Impuestos de ventas"	"Purchasing"	22001
+String	"Asistente para impuestos"	"Purchasing"	22002
+String	"Todo0"	"Purchasing"	22003
+String	"Impuesto0"	"Purchasing"	22004
+String	"@PROD0@11.0"	"Purchasing"	22005
+String	"Administración de impuestos de ventas "	"Purchasing"	22006
+String	"Compatible con                          "	"Purchasing"	22007
+String	"Financial"	"Purchasing"	22008
+String	"Sales"	"Purchasing"	22009
+String	"Purchasing"	"Purchasing"	22010
+String	"Acerca de Administración de impuestos de ventas"	"Purchasing"	22011
+String	"Reporte de instalación de Administración de impuestos de ventas"	"Purchasing"	22012
+String	"Componente de instalación"	"Purchasing"	22013
+String	"Estado de instalación"	"Purchasing"	22014
+String	"Paso de instalación"	"Purchasing"	22015
+String	"Fecha, hora de instalación"	"Purchasing"	22016
+String	"Intentos de instalación"	"Purchasing"	22017
+String	"Registro de errores de Administración de impuestos de ventas"	"Purchasing"	22018
+String	"Maestro de reportes de instalación de Administración de impuestos de ventas"	"Purchasing"	22019
+String	"Maestro de estado de instalación de Administración de impuestos de ventas"	"Purchasing"	22020
+String	"Instalación completa de Administración de impuestos de ventas"	"Purchasing"	22021
+String	"Versión de Administración de impuestos de ventas:"	"Purchasing"	22022
+String	"Estado de instalación de la compañía:"	"Purchasing"	22023
+String	"Estado de migración de la tabla de la compañía actual:"	"Purchasing"	22024
+String	"Instalar componentes de Administración de impuestos de ventas"	"Purchasing"	22025
+String	"Instalar componentes"	"Purchasing"	22026
+String	"Seleccione los comp que desea instalar. A continuación, haga clic en Siguiente."	"Purchasing"	22027
+String	"Consulta de instalación"	"Purchasing"	22028
+String	"Fecha y hora de instalación"	"Purchasing"	22029
+String	"Espere...0"	"Purchasing"	22030
+String	"Administración de impuestos de ventas está buscando los componentes instalados."	"Purchasing"	22031
+String	"Opciones de reporte de instalación de Administración de impuestos de ventas"	"Purchasing"	22032
+String	"Fecha / hora de instalación"	"Purchasing"	22033
+String	"Asistente para la instalación de Administración de impuestos de ventas"	"Purchasing"	22034
+String	"no se ha instalado completamente para esta compañía."	"Purchasing"	22035
+String	"Seleccione Siguiente para mostrar la ventana Componentes"	"Purchasing"	22036
+String	"que desea instalar y la ubicación donde puede completar la instalación."	"Purchasing"	22037
+String	"Si elige Salir, algunos procesos de Administración de impuestos de ventas no"	"Purchasing"	22038
+String	"funcionarán correctamente o aparecerán mensajes de error. No "	"Purchasing"	22039
+String	"obstante, la próxima vez que se ingrese esta compañía, esta "	"Purchasing"	22040
+String	"ventana se mostrará nuevamente"	"Purchasing"	22041
+String	"de Administración de impuestos de ventas"	"Purchasing"	22042
+String	"Bienvenido al Asistente para instalación"	"Purchasing"	22043
+String	"Estado de migración de tabla:"	"Purchasing"	22044
+String	"Compañía actual"	"Purchasing"	22045
+String	"Estado de la instalación:"	"Purchasing"	22046
+String	"© 2002, Great Plains Software, Inc."	"Purchasing"	22047
+String	"de Administración de impuestos de ventas."	"Purchasing"	22048
+String	"Código de producto:"	"Purchasing"	22049
+String	"Configuración predeterminada de impuestos de ventas"	"Purchasing"	22050
+String	"Siguiente nota de crédito"	"Purchasing"	22051
+String	"Siguiente nota de débito"	"Purchasing"	22052
+String	"Configuración predeterminada:"	"Purchasing"	22053
+String	"Consulta de impuestos agregados/cancelados de cuentas a cobrar"	"Purchasing"	22054
+String	"Porcent./Monto"	"Purchasing"	22055
+String	"Impuesto cancelado"	"Purchasing"	22056
+String	"Impuesto agregado"	"Purchasing"	22057
+String	"Detalle de impuesto agregado de CC de nsa TW"	"Purchasing"	22058
+String	"Detalle de impuesto cancelado de CP de nsa TW"	"Purchasing"	22059
+String	"Detalle de impuesto original de CC de nsa TW"	"Purchasing"	22060
+String	"Detalle de impuesto potencial de CC de nsa TW"	"Purchasing"	22061
+String	"Impuesto de cuentas a cobrar potencial"	"Purchasing"	22062
+String	"Porcent./Monto   "	"Purchasing"	22063
+String	"Monto antes de impuestos0"	"Purchasing"	22064
+String	"Monto total de impuestos "	"Purchasing"	22065
+String	"Consulta de impuestos de cuentas a cobrar potenciales"	"Purchasing"	22066
+String	"Porcent./Monto  "	"Purchasing"	22067
+String	"Monto antes de impuestos "	"Purchasing"	22068
+String	"Monto total de impuestos  "	"Purchasing"	22069
+String	"Encabezado de impuesto de CC de nsa TW"	"Purchasing"	22070
+String	"Cuenta de detalle"	"Purchasing"	22071
+String	"Detalle0"	"Purchasing"	22072
+String	"Consulta de impuesto de Ventas potencial"	"Purchasing"	22073
+String	"Porcent./Monto "	"Purchasing"	22074
+String	"Detalle de impuesto potencial de Ventas de nsa TW"	"Purchasing"	22075
+String	"Encabezado de impuesto de Ventas de nsaTW"	"Purchasing"	22076
+String	"Configuración de impuestos predeterminada de nsaTW"	"Purchasing"	22077
+String	"nsaWW_RMACTIVITY"	"Purchasing"	22078
+String	"nsaWW_RM_Aplied_ND"	"Purchasing"	22079
+String	"Inventory"	"Purchasing"	22080
+String	"Documentos generados"	"Purchasing"	22081
+String	"Opciones de vista0"	"Purchasing"	22082
+String	"Editar impuestos"	"Purchasing"	22083
+String	"Total de impuestos cancelados"	"Purchasing"	22084
+String	"Total de impuestos agregados"	"Purchasing"	22085
+String	"Id. de cliente0"	"Purchasing"	22086
+String	"PLANT. de archivo abierto de CC de nsaWW"	"Purchasing"	22087
+String	"Id. de cliente "	"Purchasing"	22088
+String	"Id. de detalle"	"Purchasing"	22089
+String	"Negativo"	"Purchasing"	22090
+String	"Positivo"	"Purchasing"	22091
+String	"Asistente para Impuestos de ventas - Paso 1"	"Purchasing"	22092
+String	"Modificar impuestos:"	"Purchasing"	22093
+String	"Seleccionar por"	"Purchasing"	22094
+String	"Nombre0"	"Purchasing"	22095
+String	"Hasta0"	"Purchasing"	22096
+String	"Proveedor0"	"Purchasing"	22097
+String	"Asistente para retenciones de ventas - Paso 2"	"Purchasing"	22098
+String	"Tipo de Doc"	"Purchasing"	22099
+String	"SÍ"	"Purchasing"	22100
+String	"nsaWW_RM_TRX_TEMP"	"Purchasing"	22101
+String	"nsaWW_RM_Tax_ADD_TEMP"	"Purchasing"	22102
+String	"nsaWW_RM_Tax_NULL_TEMP"	"Purchasing"	22103
+String	"Administración de impuestos de ventas"	"Purchasing"	22104
+String	"Fecha Hora"	"Purchasing"	22105
+String	"Paso0"	"Purchasing"	22106
+String	"SubCódigo"	"Purchasing"	22107
+String	"Payroll"	"Purchasing"	22108
+String	"Project"	"Purchasing"	22109
+String	"System"	"Purchasing"	22110
+String	"Company"	"Purchasing"	22111
+String	"OnlineDoc0"	"Purchasing"	22112
+String	"3rdParty0"	"Purchasing"	22113
+String	"Macro0"	"Purchasing"	22114
+String	"Palette"	"Purchasing"	22115
+String	"Dexterity0"	"Purchasing"	22116
+String	"DexterSys0"	"Purchasing"	22117
+String	"RW0"	"Purchasing"	22118
+String	"PRTax0"	"Purchasing"	22119
+String	"Pathname"	"Purchasing"	22120
+String	"DesignDoc0"	"Purchasing"	22121
+Field	"nsaTW Tax Amount"	"Purchasing"	22000
+Field	"nsaTW Temp Originating Tax amount"	"Purchasing"	22001
+Field	"nsaTW Temp Tax amount"	"Purchasing"	22002
+Field	"nsaTW Withholding Amount"	"Purchasing"	22003
+Field	"nsaTW Apply Tax"	"Purchasing"	22004
+Field	"nsaTW Apply Withholding"	"Purchasing"	22005
+Field	"nsaTW Originating Withholding Amount"	"Purchasing"	22006
+Field	"nsaTW Tax View"	"Purchasing"	22007
+Field	"nsaTW Temp Tax Amount"	"Purchasing"	22008
+Field	"nsaTW Temp Originating Tax AMount"	"Purchasing"	22009
+Field	"nsaTW Temp Tax AMount"	"Purchasing"	22010
+Field	"nsaTW Is Voiding SOP"	"Purchasing"	22011
+Field	"nsaTW Dimmy Win Pre"	"Purchasing"	22012
+Field	"nsaTW CalcTaxAmount"	"Purchasing"	22013
+Field	"nsaTW DeleteRecord"	"Purchasing"	22014
+Field	"nsaTW DisplayExistingRecord"	"Purchasing"	22015
+Field	"nsaTW Has Been Saved"	"Purchasing"	22016
+Field	"nsaTW ReleaseTable"	"Purchasing"	22017
+Field	"nsaTW SaveRecord"	"Purchasing"	22018
+Field	"temaaaa"	"Purchasing"	22019
+Field	"reteneta"	"Purchasing"	22020
+Field	"nsaTW Tax Amount Added"	"Purchasing"	22021
+Field	"nsaTW Tax Amount Nulled"	"Purchasing"	22022
+Field	"nsaTW Withholding Amount Added"	"Purchasing"	22023
+Field	"nsaTW Originating Withholding Amount Added"	"Purchasing"	22024
+Field	"nsaTW Originating Withholding Amount Nulled"	"Purchasing"	22025
+Field	"nsaTW Withholding Amount Nulled"	"Purchasing"	22026
+Field	"nsaTW Originating Tax Amount Added"	"Purchasing"	22027
+Field	"nsaTW Originating Tax Amount Nulled"	"Purchasing"	22028
+Field	"nsaTW RMTaxWORK ReferenceTable"	"Purchasing"	22029
+Field	"nsaTW RM Default Apply Tax"	"Purchasing"	22030
+Field	"nsaTW RM Default Apply Withh"	"Purchasing"	22031
+Field	"nsaTW_Setup"	"Purchasing"	22032
+Field	"nsaTW RMTaxHIST ReferenceTable"	"Purchasing"	22033
+Field	"nsaTW SOPTaxWORKHIST ReferenceTable"	"Purchasing"	22034
+Field	"nsaTW SOPTransactionHDR ReferenceTable"	"Purchasing"	22035
+Field	"nsaTW Is Deleting All Taxes"	"Purchasing"	22036
+Field	"nsaTWSopAllocateFulFillOptions"	"Purchasing"	22037
+Field	"nsaTWSopXferDocuments"	"Purchasing"	22038
+Field	"nsaTWSopEntry"	"Purchasing"	22039
+Field	"nsaTWSopSummaryTaxEntry"	"Purchasing"	22040
+Field	"nsaTW SOPTaxWORKHIST2 ReferenceTable"	"Purchasing"	22041
+Field	"Next Step Button"	"Purchasing"	22042
+Field	"nsaWW_Picture"	"Purchasing"	22043
+Field	"nsaWW_Apply"	"Purchasing"	22044
+Field	"nsaWW_Null"	"Purchasing"	22045
+Field	"nsaWW_PictureII"	"Purchasing"	22046
+Field	"nsaTW_RM Version Date"	"Purchasing"	22047
+Field	"nsaTW_RM Install Opened From Palette"	"Purchasing"	22048
+Field	"Transaction Date Stamp"	"Purchasing"	22049
+Field	"Transaction Time Stamp"	"Purchasing"	22050
+Field	"Major Version"	"Purchasing"	22051
+Field	"Minor Version"	"Purchasing"	22052
+Field	"Build Number"	"Purchasing"	22053
+Field	"Install Component Name"	"Purchasing"	22054
+Field	"Install Step"	"Purchasing"	22055
+Field	"Install Date and Time"	"Purchasing"	22056
+Field	"Log Index"	"Purchasing"	22057
+Field	"FA Script Name"	"Purchasing"	22058
+Field	"Message Text"	"Purchasing"	22059
+Field	"FAM Install Illustration"	"Purchasing"	22060
+Field	"Chunk Progress Status"	"Purchasing"	22061
+Field	"Chunk Current Item"	"Purchasing"	22062
+Field	"Chunk Progress Indicator"	"Purchasing"	22063
+Field	"Chunk Progress Indicator 2"	"Purchasing"	22064
+Field	"ACRS Life"	"Purchasing"	22065
+Field	"FAM Install Illustration Small"	"Purchasing"	22066
+Field	"nsaTW_RM Date Stamp"	"Purchasing"	22067
+Field	"nsaTW_RM Time Stamp"	"Purchasing"	22068
+Field	"nsaTW_RM Component Installation Successful"	"Purchasing"	22069
+Field	"nsaTW_RM Open Installation Wizard"	"Purchasing"	22070
+Field	"nsaTW Is Voiding RM Trx"	"Purchasing"	22071
+Field	"nsaTW Is AutoReturn"	"Purchasing"	22072
+Field	"IsApplyButton"	"Purchasing"	22073
+Field	"aaInstalled"	"Purchasing"	22074
+Field	"nsaTW_PM_Retencion_I"	"Purchasing"	22075
+Field	"nsaTW_SOP_Order_Fulfillment_SaveRecord"	"Purchasing"	22076
+Procedure	"nsaTW_CreateSetupCheckList"	"Purchasing"	22000
+Procedure	"LATAM_AVTriggers"	"Purchasing"	22001
+Procedure	"LATAM_RM_Apply_To_ProfileTriggers"	"Purchasing"	22002
+Procedure	"LATAM_RM_Sales_EntryTriggers"	"Purchasing"	22003
+Procedure	"LATAM_RM_Sales_Inq_Tax_DtlsTriggers"	"Purchasing"	22004
+Procedure	"LATAM_SOP_EntryTriggers"	"Purchasing"	22005
+Procedure	"LATAM_SOP_Inq_Tax_DtlsTriggers"	"Purchasing"	22006
+Procedure	"LATAM_SOP_Inq_Tax_SmryTriggers"	"Purchasing"	22007
+Procedure	"LATAM_SOP_Line_Item_Tax_EntryTriggers"	"Purchasing"	22008
+Procedure	"LATAM_SOP_Smry_Tax_EntryTriggers"	"Purchasing"	22009
+Procedure	"Startup"	"Purchasing"	22010
+Procedure	"nsaTW_CloseCommandForms"	"Purchasing"	22011
+Procedure	"nsaTW_CreateMenuStructure"	"Purchasing"	22012
+Procedure	"nsaTW_CreateSetupCheckList_Sales"	"Purchasing"	22013
+Procedure	"nsaTW_Menu_Trigger"	"Purchasing"	22014
+Procedure	"nsaTW_OpenCommandForms"	"Purchasing"	22015
+Procedure	"nsaTW_RMOpenAboutWindow"	"Purchasing"	22016
+Procedure	"nsaTW_RM_CopyAppliedPotentialExistingTaxes"	"Purchasing"	22017
+Procedure	"nsaTW_RM_CopyAppliedPotentialNewTaxes"	"Purchasing"	22018
+Procedure	"nsaTW_RM_CreateTables"	"Purchasing"	22019
+Procedure	"nsaTW_RM_RegisterReceivablesTriggers"	"Purchasing"	22020
+Procedure	"nsaTW_RM_RegisterSystemTriggers"	"Purchasing"	22021
+Procedure	"nsaTW_RM_SetDefaultValues"	"Purchasing"	22022
+Procedure	"nsaTW_RM_Set_Installation_Status"	"Purchasing"	22023
+Procedure	"nsaTW_RM_TRIGGER_AFTER_Add_Successful_Login_Record"	"Purchasing"	22024
+Procedure	"nsaTW_RM_TRIGGER_AFTER_Switch_Company"	"Purchasing"	22025
+Procedure	"nsaTW_RM_Trigger_ApplyToProfile_CloseWindow_After"	"Purchasing"	22026
+Procedure	"nsaTW_RM_Trigger_ApplyToProfile_RefreshWindow_After"	"Purchasing"	22027
+Procedure	"nsaTW_RM_Trigger_AssignReference_TableRM_Tax_History_Read"	"Purchasing"	22028
+Procedure	"nsaTW_RM_Trigger_AssignReference_TableRM_Tax_WORK_Read"	"Purchasing"	22029
+Procedure	"nsaTW_RM_Trigger_DeletePotentialTaxes_TableRM_Tax_WORK_DELETE"	"Purchasing"	22030
+Procedure	"nsaTW_RM_Trigger_DeleteRecord_TableRM_HISTORY_Delete"	"Purchasing"	22031
+Procedure	"nsaTW_RM_Trigger_DeleteRecord_TableRM_Sales_WORK_Delete"	"Purchasing"	22032
+Procedure	"nsaTW_RM_Trigger_MiscTransactionReturnToOpen_After"	"Purchasing"	22033
+Procedure	"nsaTW_RM_Trigger_MiscTransactionReturnToOpen_Before"	"Purchasing"	22034
+Procedure	"nsaTW_RM_Trigger_RMPostSalesIntegrationScript_After"	"Purchasing"	22035
+Procedure	"nsaTW_RM_Trigger_SalesEntryTaxDetail_PreBefore"	"Purchasing"	22036
+Procedure	"nsaTW_RM_Trigger_SalesEntryTaxDetails_DeleteButton_ChangeBefore"	"Purchasing"	22037
+Procedure	"nsaTW_RM_Trigger_SalesEntry_CalcTaxAmount_After"	"Purchasing"	22038
+Procedure	"nsaTW_RM_Trigger_SalesEntry_DeleteTransactionTaxRecord_After"	"Purchasing"	22039
+Procedure	"nsaTW_RM_Trigger_SalesEntry_DisplayExistingRecord_ChangeAfter"	"Purchasing"	22040
+Procedure	"nsaTW_RM_Trigger_SalesEntry_PostAfter"	"Purchasing"	22041
+Procedure	"nsaTW_RM_Trigger_SalesEntry_PreAfter"	"Purchasing"	22042
+Procedure	"nsaTW_RM_Trigger_SalesEntry_RealTimePosting_ChangeAfter"	"Purchasing"	22043
+Procedure	"nsaTW_RM_Trigger_SalesEntry_RealTimePosting_ChangeBefore"	"Purchasing"	22044
+Procedure	"nsaTW_RM_Trigger_SalesEntry_SaveRecord_ChangeAfter"	"Purchasing"	22045
+Procedure	"nsaTW_RM_Trigger_SalesEntry_TaxDetailsFillWindow_After"	"Purchasing"	22046
+Procedure	"nsaTW_RM_Trigger_SalesEntry_TaxDetailsUpdateDisplay_After"	"Purchasing"	22047
+Procedure	"nsaTW_RM_Trigger_SalesInquiryTaxDetails_PreAfter"	"Purchasing"	22048
+Procedure	"nsaTW_RM_Trigger_SalesInquiryTaxDistributionScroll_FillBefore"	"Purchasing"	22049
+Procedure	"nsaTW_RM_Trigger_SalesInquiry_CloseChildWindows_After"	"Purchasing"	22050
+Procedure	"nsaTW_RM_Trigger_SalesInquiry_TaxDetailsHideShow_After"	"Purchasing"	22051
+Procedure	"nsaTW_RM_Trigger_SalesInquiry_TaxDetailsRefreshWindow_After"	"Purchasing"	22052
+Procedure	"nsaTW_RM_Trigger_SalesInquiry_TaxDetailsWinPre_ChangeAfter"	"Purchasing"	22053
+Procedure	"nsaTW_RM_Trigger_SalesTaxDistributionScroll_ChangeBefore"	"Purchasing"	22054
+Procedure	"nsaTW_RM_Trigger_SalesTaxDistributionScroll_FillBefore"	"Purchasing"	22055
+Procedure	"nsaTW_RM_Warning_Dialog"	"Purchasing"	22056
+Procedure	"nsaTW_RM_Write_Error_Log"	"Purchasing"	22057
+Procedure	"nsaTW_RegisterReceivablesTransactionEntryTriggers"	"Purchasing"	22058
+Procedure	"nsaTW_RegisterReceivablesTransactionInquiryTriggers"	"Purchasing"	22059
+Procedure	"nsaTW_RegisterSalesItemTransactionEntryTriggers"	"Purchasing"	22060
+Procedure	"nsaTW_RegisterSalesTransactionEntryTriggers"	"Purchasing"	22061
+Procedure	"nsaTW_RegisterSalesTransactionInquiryTriggers"	"Purchasing"	22062
+Procedure	"nsaTW_SOP_ApplyUnApplyTaxes"	"Purchasing"	22063
+Procedure	"nsaTW_SOP_Cleanup_TaxPotentialDetails_For_Deletion"	"Purchasing"	22064
+Procedure	"nsaTW_SOP_CopyAppliedPotentialExistingTaxes"	"Purchasing"	22065
+Procedure	"nsaTW_SOP_CopyAppliedPotentialNewTaxes"	"Purchasing"	22066
+Procedure	"nsaTW_SOP_DeleteAppliedPotentialExistingTaxes"	"Purchasing"	22067
+Procedure	"nsaTW_SOP_Mark_TaxPotentialDetails_For_Deletion"	"Purchasing"	22068
+Procedure	"nsaTW_SOP_RegisterSalesTriggers"	"Purchasing"	22069
+Procedure	"nsaTW_SOP_Tax_Update_Summary_Record"	"Purchasing"	22070
+Procedure	"nsaTW_SOP_Tax_Update_Summary_Record_II"	"Purchasing"	22071
+Procedure	"nsaTW_SOP_Trigger_AllocateFulfillOptions_UpdateAmounts_After"	"Purchasing"	22072
+Procedure	"nsaTW_SOP_Trigger_AllocateFulfillOptions_UpdateAmounts_Before"	"Purchasing"	22073
+Procedure	"nsaTW_SOP_Trigger_AssignReference_TableSOP_Tax_WORK_HIST2_Read"	"Purchasing"	22074
+Procedure	"nsaTW_SOP_Trigger_AssignReference_TableSOP_Tax_WORK_HIST_Read"	"Purchasing"	22075
+Procedure	"nsaTW_SOP_Trigger_Batch_FinishPosting_Before"	"Purchasing"	22076
+Procedure	"nsaTW_SOP_Trigger_Batch_FinishPosting_After"	"Purchasing"	22077
+Procedure	"nsaTW_SOP_Trigger_CloseWindowSopPotentialTax"	"Purchasing"	22078
+Procedure	"nsaTW_SOP_Trigger_DeleteRecord_TableSOP_HDR_HIST_Delete"	"Purchasing"	22079
+Procedure	"nsaTW_SOP_Trigger_DeleteRecord_TableSOP_HDR_WORK_Delete"	"Purchasing"	22080
+Procedure	"nsaTW_SOP_Trigger_InquiryTaxDetails_PreAfter"	"Purchasing"	22081
+Procedure	"nsaTW_SOP_Trigger_InquiryTaxDetails_RefreshWindow_After"	"Purchasing"	22082
+Procedure	"nsaTW_SOP_Trigger_InquiryTaxDetails_TaxScroll_FillBefore"	"Purchasing"	22083
+Procedure	"nsaTW_SOP_Trigger_InquiryTaxSummary_PreAfter"	"Purchasing"	22084
+Procedure	"nsaTW_SOP_Trigger_InquiryTaxSummary_RefreshWindow_After"	"Purchasing"	22085
+Procedure	"nsaTW_SOP_Trigger_InquiryTaxSummary_TaxScroll_FillBefore"	"Purchasing"	22086
+Procedure	"nsaTW_SOP_Trigger_InquiryTaxSummary_UpdateDisplay_After"	"Purchasing"	22087
+Procedure	"nsaTW_SOP_Trigger_LineItemTaxEntry_FillWindow_After"	"Purchasing"	22088
+Procedure	"nsaTW_SOP_Trigger_LineItemTaxEntry_PreAfter"	"Purchasing"	22089
+Procedure	"nsaTW_SOP_Trigger_LineItemTaxEntry_TaxScroll_ChangeBefore"	"Purchasing"	22090
+Procedure	"nsaTW_SOP_Trigger_LineItemTaxEntry_TaxScroll_FillBefore"	"Purchasing"	22091
+Procedure	"nsaTW_SOP_Trigger_LineItemTaxEntry_UpdateDisplay_After"	"Purchasing"	22092
+Procedure	"nsaTW_SOP_Trigger_ReturnItemSelection_PostButton_ChangeAfter"	"Purchasing"	22093
+Procedure	"nsaTW_SOP_Trigger_ReturnItemSelection_PostButton_ChangeBefore"	"Purchasing"	22094
+Procedure	"nsaTW_SOP_Trigger_SOPDeleteDocument_DeleteTransactionTaxRecord_After"	"Purchasing"	22095
+Procedure	"nsaTW_SOP_Trigger_SOPDeleteLine_After"	"Purchasing"	22096
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_BasedOnInvoiceTotal_RecalculateTax_ChangeAfter"	"Purchasing"	22097
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_BasedOnInvoiceTotal_RecalculateTax_ChangeBefore"	"Purchasing"	22098
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_DisplayExistingRecord_ChangeAfter"	"Purchasing"	22099
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_PreAfter"	"Purchasing"	22100
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_SaveRecord_ChangeAfter"	"Purchasing"	22101
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_TaxCalcLine_After"	"Purchasing"	22102
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_TaxEntryReturn_ChangeAfter"	"Purchasing"	22103
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_TempControlNumber_ChangeBefore"	"Purchasing"	22104
+Procedure	"nsaTW_SOP_Trigger_SOPEntry_VoidButton_ChangeAfter"	"Purchasing"	22105
+Procedure	"nsaTW_SOP_Trigger_SOPMCRecalculateFunctionalTaxAmounts_After"	"Purchasing"	22106
+Procedure	"nsaTW_SOP_Trigger_SOPPostCreateRMSalesDoc_After"	"Purchasing"	22107
+Procedure	"nsaTW_SOP_Trigger_SOPPostTaxes_After"	"Purchasing"	22108
+Procedure	"nsaTW_SOP_Trigger_SOPTaxDeleteDocumentTaxes_After"	"Purchasing"	22109
+Procedure	"nsaTW_SOP_Trigger_SOPTaxDeleteLineTaxes_After"	"Purchasing"	22110
+Procedure	"nsaTW_SOP_Trigger_SOPTaxRecalcDocument_After"	"Purchasing"	22111
+Procedure	"nsaTW_SOP_Trigger_SummaryTaxEntry_DefaultButton_ChangeAfter"	"Purchasing"	22112
+Procedure	"nsaTW_SOP_Trigger_SummaryTaxEntry_DefaultButton_ChangeBefore"	"Purchasing"	22113
+Procedure	"nsaTW_SOP_Trigger_SummaryTaxEntry_FillWindow_After"	"Purchasing"	22114
+Procedure	"nsaTW_SOP_Trigger_SummaryTaxEntry_PreAfter"	"Purchasing"	22115
+Procedure	"nsaTW_SOP_Trigger_SummaryTaxEntry_TaxScroll_ChangeBefore"	"Purchasing"	22116
+Procedure	"nsaTW_SOP_Trigger_SummaryTaxEntry_TaxScroll_FillBefore"	"Purchasing"	22117
+Procedure	"nsaTW_SOP_Trigger_SummaryTaxEntry_UpdateDisplay_After"	"Purchasing"	22118
+Procedure	"nsaTW_SOP_Trigger_XferDocuments_XferHeaderTaxes_After"	"Purchasing"	22119
+Procedure	"nsaTW_SOP_Trigger_XferDocuments_XferHeaderTaxes_Before"	"Purchasing"	22120
+Procedure	"nsaTrigger_RunReport_RM_TrialBalance"	"Purchasing"	22121
+Procedure	"nsaWW_Clear_ACTIVITY"	"Purchasing"	22122
+Procedure	"nsaWW_Covert_Ori_To_Func"	"Purchasing"	22123
+Procedure	"nsaWW_Get_Can_AutoApply"	"Purchasing"	22124
+Procedure	"nsaWW_Get_Can_AutoApply_MA"	"Purchasing"	22125
+Procedure	"nsaWW_Get_Can_AutoApply_MP"	"Purchasing"	22126
+Procedure	"nsaWW_RM_Apply"	"Purchasing"	22127
+Procedure	"nsaWW_RM_Create_Batch"	"Purchasing"	22128
+Procedure	"nsaWW_RM_Create_Default"	"Purchasing"	22129
+Procedure	"nsaWW_RM_Create_NC_Tax"	"Purchasing"	22130
+Procedure	"nsaWW_RM_Create_ND_Tax"	"Purchasing"	22131
+Procedure	"nsaWW_RM_Create_Next_Doc"	"Purchasing"	22132
+Procedure	"nsaWW_RM_Create_TRX"	"Purchasing"	22133
+Procedure	"nsaWW_RM_Get_Tax"	"Purchasing"	22134
+Procedure	"nsaWW_Register_Trigger_Apply"	"Purchasing"	22135
+Procedure	"nsaWW_Trigger_Apply_Select"	"Purchasing"	22136
+Procedure	"stmHelpProcessing"	"Purchasing"	22137
+Procedure	"tmsTrProc_RM_Apply_To_Profile_ExpansionButton_ChangeBefore"	"Purchasing"	22138
+Procedure	"tmsTrProc_RM_Apply_To_Profile_LATAMreteneta_ChangeBefore"	"Purchasing"	22139
+Procedure	"tmsTrProc_RM_Apply_To_Profile_WinPre_AFTER"	"Purchasing"	22140
+Procedure	"tmsTrProc_RM_Sales_Entry_LATAMCalcTaxAmount_ChangeBefore"	"Purchasing"	22141
+Procedure	"tmsTrProc_RM_Sales_Entry_LATAMDeleteRecord_ChangeBefore"	"Purchasing"	22142
+Procedure	"tmsTrProc_RM_Sales_Entry_LATAMDisplayExistingRecord_ChangeBefore"	"Purchasing"	22143
+Procedure	"tmsTrProc_RM_Sales_Entry_LATAMHasBeenSaved_ChangeBefore"	"Purchasing"	22144
+Procedure	"tmsTrProc_RM_Sales_Entry_LATAMReleaseTable_ChangeBefore"	"Purchasing"	22145
+Procedure	"tmsTrProc_RM_Sales_Entry_LATAMSaveRecord_ChangeBefore"	"Purchasing"	22146
+Procedure	"tmsTrProc_RM_Sales_Entry_Tax_Details_ExpansionButton_ChangeBefore"	"Purchasing"	22147
+Procedure	"tmsTrProc_RM_Sales_Entry_Tax_Details_LATAMApplyTax_ChangeBefore"	"Purchasing"	22148
+Procedure	"tmsTrProc_RM_Sales_Entry_Tax_Details_LATAMApplyWithholding_ChangeBefore"	"Purchasing"	22149
+Procedure	"tmsTrProc_RM_Sales_Entry_Tax_Details_LATAMTaxView_ChangeBefore"	"Purchasing"	22150
+Procedure	"tmsTrProc_RM_Sales_Entry_Tax_Details_WinPre_AFTER"	"Purchasing"	22151
+Procedure	"tmsTrProc_RM_Sales_Inquiry_Tax_Details_ExpansionButton1_ChangeBefore"	"Purchasing"	22152
+Procedure	"tmsTrProc_RM_Sales_Inquiry_Tax_Details_LATAMDummyWinPre_ChangeBefore"	"Purchasing"	22153
+Procedure	"tmsTrProc_RM_Sales_Inquiry_Tax_Details_LATAMTaxView_ChangeBefore"	"Purchasing"	22154
+Procedure	"tmsTrProc_RM_Sales_Inquiry_Tax_Details_WinPre_AFTER"	"Purchasing"	22155
+Procedure	"tmsTrProc_SOP_Entry_LATAMDeleteRecord_ChangeBefore"	"Purchasing"	22156
+Procedure	"tmsTrProc_SOP_Entry_LATAMDisplayExistingRecord_ChangeBefore"	"Purchasing"	22157
+Procedure	"tmsTrProc_SOP_Entry_LATAMReleaseTable_ChangeBefore"	"Purchasing"	22158
+Procedure	"tmsTrProc_SOP_Entry_LATAMSaveRecord_ChangeBefore"	"Purchasing"	22159
+Procedure	"tmsTrProc_SOP_Entry_WinPre_AFTER"	"Purchasing"	22160
+Procedure	"tmsTrProc_SOP_Inquiry_Tax_Details_ExpansionButton_ChangeBefore"	"Purchasing"	22161
+Procedure	"tmsTrProc_SOP_Inquiry_Tax_Details_LATAMTaxView_ChangeBefore"	"Purchasing"	22162
+Procedure	"tmsTrProc_SOP_Inquiry_Tax_Details_WinPre_AFTER"	"Purchasing"	22163
+Procedure	"tmsTrProc_SOP_Inquiry_Tax_Summary_ExpansionButton_ChangeBefore"	"Purchasing"	22164
+Procedure	"tmsTrProc_SOP_Inquiry_Tax_Summary_LATAMTaxView_ChangeBefore"	"Purchasing"	22165
+Procedure	"tmsTrProc_SOP_Inquiry_Tax_Summary_WinPre_AFTER"	"Purchasing"	22166
+Procedure	"tmsTrProc_SOP_Line_Item_Tax_Entry_ExpansionButton_ChangeBefore"	"Purchasing"	22167
+Procedure	"tmsTrProc_SOP_Line_Item_Tax_Entry_LATAMTaxView_ChangeBefore"	"Purchasing"	22168
+Procedure	"tmsTrProc_SOP_Line_Item_Tax_Entry_WinPre_AFTER"	"Purchasing"	22169
+Procedure	"tmsTrProc_SOP_Summary_Tax_Entry_ExpansionButton_ChangeBefore"	"Purchasing"	22170
+Procedure	"tmsTrProc_SOP_Summary_Tax_Entry_LATAMApplyTax_ChangeBefore"	"Purchasing"	22171
+Procedure	"tmsTrProc_SOP_Summary_Tax_Entry_LATAMApplyWithholding_ChangeBefore"	"Purchasing"	22172
+Procedure	"tmsTrProc_SOP_Summary_Tax_Entry_LATAMTaxView_ChangeBefore"	"Purchasing"	22173
+Procedure	"tmsTrProc_SOP_Summary_Tax_Entry_WinPre_AFTER"	"Purchasing"	22174
+Procedure	"aaRegisterTrigger_RM_ADVEN1"	"Purchasing"	22175
+Procedure	"aaSelectDocnum"	"Purchasing"	22176
+Procedure	"aagAdminVen_CreateAA"	"Purchasing"	22177
+Procedure	"admavoidbackground"	"Purchasing"	22178
+Procedure	"nsaTX_Calculate_Percent_of_Another_Detail"	"Purchasing"	22179
+Procedure	"nsaTX_Calculate_Taxes_Single_Detail"	"Purchasing"	22180
+Procedure	"AALATAMInstalled"	"Purchasing"	22181
+Procedure	"MC_Verify_Exchange_Rate_Batch"	"Purchasing"	22182
+Procedure	"nsaTW_Set_Calling_Windows_X_Information_3_After"	"Purchasing"	22183
+Procedure	"nsaTW_SOP_Order_Fulfillment_SaveRecord_After"	"Purchasing"	22184
+Procedure	"nsaTW_SOP_Order_Fulfillment_SaveRecord_Before"	"Purchasing"	22185
+NativePicture	"nsaWW_Picture1"	"Purchasing"	22000
+NativePicture	"nsaTW_TAX_FILTER_ALL"	"Purchasing"	22001
+NativePicture	"nsaTW_TAX_FILTER_POS"	"Purchasing"	22002
+NativePicture	"nsaTW_TAX_FILTER_NEG"	"Purchasing"	22003
+NativePicture	"nsaWW_PictureII"	"Purchasing"	22004
+NativePicture	"FAM_Dynamics_Install_Wizard"	"Purchasing"	22005
+NativePicture	"FAM_eEnterprise_Install_Wizard"	"Purchasing"	22006
+NativePicture	"FAM_DynamicsSQL_Install_Wizard"	"Purchasing"	22007
+NativePicture	"FAM_Dynamics_Install_Wizard_Small"	"Purchasing"	22008
+NativePicture	"FAM_eEnterprise_Install_Wizard_Small"	"Purchasing"	22009
+NativePicture	"FAM_DynamicsSQL_Install_Wizard_Small"	"Purchasing"	22010
+Report	"nsaTW_RM Installation Report"	22000
+Report	"nsaWW_RM_Preview_ADD"	22001
+Report	"nsaWW_RM_Preview_NULL"	22002
+Message	"22001"	"Purchasing"	22001
+Message	"22002"	"Purchasing"	22002
+Message	"22819"	"Purchasing"	22819
+Message	"22820"	"Purchasing"	22820
+Message	"22832"	"Purchasing"	22832
+Message	"25034"	"Purchasing"	25034
+Message	"29014"	"Purchasing"	29014
+Message	"29015"	"Purchasing"	29015
+Message	"29016"	"Purchasing"	29016
+Message	"30000"	"Purchasing"	30000
+Message	"30001"	"Purchasing"	30001
+Message	"30002"	"Purchasing"	30002
+Message	"30003"	"Purchasing"	30003
+Message	"30004"	"Purchasing"	30004
+Message	"30005"	"Purchasing"	30005
+Message	"31001"	"Purchasing"	31001
+Message	"31002"	"Purchasing"	31002
+Message	"31003"	"Purchasing"	31003
+Message	"31004"	"Purchasing"	31004
+Message	"31008"	"Purchasing"	31008
+Message	"32687"	"Purchasing"	32687
+Message	"32688"	"Purchasing"	32688
+Message	"32689"	"Purchasing"	32689
+Message	"32690"	"Purchasing"	32690
+Message	"32691"	"Purchasing"	32691
+Message	"32692"	"Purchasing"	32692
+Message	"32693"	"Purchasing"	32693
+Message	"32694"	"Purchasing"	32694
+Message	"32695"	"Purchasing"	32695
+Message	"32696"	"Purchasing"	32696
+Message	"32697"	"Purchasing"	32697
+Message	"32698"	"Purchasing"	32698
+Message	"32699"	"Purchasing"	32699
+Message	"32700"	"Purchasing"	32700
+Message	"32701"	"Purchasing"	32701
+Message	"32702"	"Purchasing"	32702
+Message	"32703"	"Purchasing"	32703
+Message	"32704"	"Purchasing"	32704
+Message	"32705"	"Purchasing"	32705
+Message	"32706"	"Purchasing"	32706
+Message	"32707"	"Purchasing"	32707
+Message	"32708"	"Purchasing"	32708
+Message	"32709"	"Purchasing"	32709
+Message	"32710"	"Purchasing"	32710
+Message	"32711"	"Purchasing"	32711
+Message	"32712"	"Purchasing"	32712
+Message	"32713"	"Purchasing"	32713
+Message	"32714"	"Purchasing"	32714
+Message	"32715"	"Purchasing"	32715
+Message	"32716"	"Purchasing"	32716
+Message	"32717"	"Purchasing"	32717
+Message	"32718"	"Purchasing"	32718
+Message	"32719"	"Purchasing"	32719
+Message	"32720"	"Purchasing"	32720
+Message	"32721"	"Purchasing"	32721
+Message	"32722"	"Purchasing"	32722
+Message	"32723"	"Purchasing"	32723
+Message	"32724"	"Purchasing"	32724
+Message	"32725"	"Purchasing"	32725
+Message	"32726"	"Purchasing"	32726
+Message	"32727"	"Purchasing"	32727
+Message	"32728"	"Purchasing"	32728
+Message	"32730"	"Purchasing"	32730
+Message	"32731"	"Purchasing"	32731
+Message	"32732"	"Purchasing"	32732
+Message	"32733"	"Purchasing"	32733
+Message	"32734"	"Purchasing"	32734
+Message	"32735"	"Purchasing"	32735
+Message	"32741"	"Purchasing"	32741
+Message	"32742"	"Purchasing"	32742
+Message	"32743"	"Purchasing"	32743
+Message	"32751"	"Purchasing"	32751
+Message	"32752"	"Purchasing"	32752
+Message	"32753"	"Purchasing"	32753
+Message	"32754"	"Purchasing"	32754
+Message	"32755"	"Purchasing"	32755
+Message	"32756"	"Purchasing"	32756
+Message	"32757"	"Purchasing"	32757
+Message	"32758"	"Purchasing"	32758
+Message	"32759"	"Purchasing"	32759
+Message	"32760"	"Purchasing"	32760
+Message	"32761"	"Purchasing"	32761
+Message	"32762"	"Purchasing"	32762
+Message	"32763"	"Purchasing"	32763
+Message	"32764"	"Purchasing"	32764
+Message	"32765"	"Purchasing"	32765
+Message	"32766"	"Purchasing"	32766
+Message	"32767"	"Purchasing"	32767
+Constant	"nsaTW_RM_3rd_Party_Alert_not_found_MSG"	"Purchasing"	22000
+Constant	"nsaTW_RM_ASTERISK"	"Purchasing"	22001
+Constant	"nsaTW_RM_Complete"	"Purchasing"	22002
+Constant	"nsaTW_RM_Deadlocked"	"Purchasing"	22003
+Constant	"nsaTW_RM_DEX_change"	"Purchasing"	22004
+Constant	"nsaTW_RM_DEX_save"	"Purchasing"	22005
+Constant	"nsaTW_RM_DICT"	"Purchasing"	22006
+Constant	"nsaTW_RM_Directories"	"Purchasing"	22007
+Constant	"nsaTW_RM_Duplicate_record"	"Purchasing"	22008
+Constant	"nsaTW_RM_End_of_File"	"Purchasing"	22009
+Constant	"nsaTW_RM_Exit_Installation_Wizard_MSG"	"Purchasing"	22010
+Constant	"nsaTW_RM_Installation_Complete"	"Purchasing"	22011
+Constant	"nsaTW_RM_Installation_Had_Errors"	"Purchasing"	22012
+Constant	"nsaTW_RM_INSTALL_Directories"	"Purchasing"	22013
+Constant	"nsaTW_RM_INSTALL_Palettes"	"Purchasing"	22014
+Constant	"nsaTW_RM_INSTALL_SQL_Tables"	"Purchasing"	22015
+Constant	"nsaTW_RM_RM_Management_release"	"Purchasing"	22016
+Constant	"nsaTW_RM_MSG_IO_Error"	"Purchasing"	22017
+Constant	"nsaTW_RM_MSG_Login_as_sa_or_DYNSA"	"Purchasing"	22018
+Constant	"nsaTW_RM_MSG_Script_Abort"	"Purchasing"	22019
+Constant	"nsaTW_RM_No"	"Purchasing"	22020
+Constant	"nsaTW_RM_Not_found"	"Purchasing"	22021
+Constant	"nsaTW_RM_OKAY"	"Purchasing"	22022
+Constant	"nsaTW_RM_Palettes"	"Purchasing"	22023
+Constant	"nsaTW_RM_Pre_Installation_Defaults"	"Purchasing"	22024
+Constant	"nsaTW_RM_PRODID"	"Purchasing"	22025
+Constant	"nsaTW_RM_Record_changed_by_another_user"	"Purchasing"	22026
+Constant	"nsaTW_RM_SQL_declare_G_cursor_for_grant"	"Purchasing"	22027
+Constant	"nsaTW_RM_Record_locked"	"Purchasing"	22028
+Constant	"nsaTW_RM_Release"	"Purchasing"	22029
+Constant	"nsaTW_RM_Selected_Installation_Components"	"Purchasing"	22030
+Constant	"nsaTW_RM_SQL_Tables"	"Purchasing"	22031
+Constant	"nsaTW_RM_TBL_Installation_Report_MSTR"	"Purchasing"	22032
+Constant	"nsaTW_RM_TBL_Installation_Status_MSTR"	"Purchasing"	22033
+Constant	"nsaTW_RM_TBL_Update_Status_MSTR"	"Purchasing"	22034
+Constant	"nsaTW_RM_USERID_DYNSA"	"Purchasing"	22035
+Constant	"nsaTW_RM_USERID_sa"	"Purchasing"	22036
+Constant	"nsaTW_RM_WARNING"	"Purchasing"	22037
+Constant	"nsaTW_RM_Yes"	"Purchasing"	22038
+Constant	"nsaTW_RM_VERSION_DATE_NUMBER"	"Purchasing"	22039
+Constant	"nsaTW_RM_SQL_declare_G_cursor_for_grant1"	"Purchasing"	22040
+Constant	"nsaTW_RM_SQL_declare_G_cursor_for_grant_ACRSTBL"	"Purchasing"	22041
+Constant	"nsaTW_RM_SQL_declare_G_cursor_for_grant_ACRSTBL1"	"Purchasing"	22042
+Constant	"nsaTW_RM_SQL_declare_G_cursor_for_grant_execute"	"Purchasing"	22043
+Constant	"nsaTW_RM_SQL_declare_G_cursor_for_grant_execute_ACRSTBL"	"Purchasing"	22044
+Constant	"nsaTW_RM_SQL_declare_G_cursor_for_grant_execute_ACRSTBL1"	"Purchasing"	22045
+Constant	"SLSTAXHELP"	"Purchasing"	22046
+Constant	"AA"	"Purchasing"	22047
+Constant	"AA_PRODID"	"Purchasing"	22048
+Constant	"PA_PRODID"	"Purchasing"	22049
+Function	"RW_GNetChange_by_DocNum_Sal_Dollars"	"Purchasing"	22000
+Function	"RW_GetNetChange_by_DocrNumbr_Sales"	"Purchasing"	22001
+Function	"RW_nsaTW_RM_GetTaxAmount1"	"Purchasing"	22002
+Function	"nsaTW_RM_BackoutTax"	"Purchasing"	22003
+Function	"nsaTW_RM_Errors_Were_Logged"	"Purchasing"	22004
+Function	"nsaTW_RM_GetTaxAmount"	"Purchasing"	22005
+Function	"nsaTW_RM_Get_Installation_Status"	"Purchasing"	22006
+Function	"nsaTW_RM_Get_Return_Code_Description"	"Purchasing"	22007
+Function	"nsaTW_RM_RM_Release_as_String"	"Purchasing"	22008
+Function	"nsaTW_RM_Set_Progress_Indicator"	"Purchasing"	22009
+Function	"nsaTW_SOP_Trigger_SOPEntry_TrxVoidPost_After"	"Purchasing"	22010
+Function	"nsaTW_SOP_Trigger_SOPEntry_TrxVoidPost_Before"	"Purchasing"	22011
+Function	"nsaWW_RM_Get_Apply_To"	"Purchasing"	22012
+Function	"nsaWW_RM_Get_Can_Apply"	"Purchasing"	22013
+Function	"nsaWW_Tax_Exist"	"Purchasing"	22014
+Function	"nsaWW_Trigger_ChangeApplyAmt"	"Purchasing"	22015
+Function	"nsaWW_Verify_Activity"	"Purchasing"	22016
+Function	"AALATAMIsProductLoaded"	"Purchasing"	22017
