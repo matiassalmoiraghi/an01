@@ -9,8 +9,8 @@ if exists (select * from sysobjects where id = object_id('dbo.trptIF10001Ins') a
  drop trigger dbo.trptIF10001Ins
 GO
 
-create trigger dbo.trptIF10001Ins
-on GL20000
+create trigger [dbo].[trptIF10001Ins]
+on [dbo].[GL20000]
 for insert
 as
 
@@ -68,7 +68,7 @@ select  @OrgTxSrc = '',
 	@l_cTrxSrc = ''
 
 select @l_cINTERID = db_name()
-exec  @l_nStatus = dbo.synonymSpSmGetMsgString 15575, @l_cINTERID, @l_cTrxSrc output, @l_nSQL_Error_State output
+exec  @l_nStatus = DYNAMICS.dbo.smGetMsgString 15575, @l_cINTERID, @l_cTrxSrc output, @l_nSQL_Error_State output
 
 DECLARE GL_OrmstrID CURSOR STATIC FOR 
 select  ORGNTSRC,
@@ -132,6 +132,8 @@ BEGIN
 	BEGIN
 		UPDATE IF10001 SET POSTED = 1 WHERE JRNENTRY = @JrnEntry and SQNCLINE = @SEQNUMBR
 	END
+
+	/**15/06/20 JCF Código con errores. Actualiza mal gl2000. ******************************************************************************
 
 	if ltrim(rtrim(substring(ltrim(rtrim(@TRXSRC)), 1, len(ltrim(rtrim(@l_cTrxSrc)))))) = ltrim(rtrim(@l_cTrxSrc))
 	begin	
@@ -208,6 +210,8 @@ BEGIN
 		End	
 
 	end
+	*******************************************************************************************************************/ 
+
 	FETCH NEXT FROM GL_OrmstrID  INTO
 				@OrgTxSrc ,
 				@JrnEntry ,
