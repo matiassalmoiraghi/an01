@@ -1430,6 +1430,7 @@ Function	"nsaTW_POP_Trigger_InvoiceEntry_Delete_After"	"Purchasing"	22015
 Function	"nsaTW_POP_Trigger_PO_RemoveCompleted_Before"	"Purchasing"	22016
 Function	"nsaTW_POP_Trigger_PO_RemoveCompleted_After"	"Purchasing"	22017
 Function	"nsaTW_POP_Trigger_ReceiptHist_Delete_After"	"Purchasing"	22018
+Function	"RW_nsaTW_PM_GetTaxAmount_tii"	"Purchasing"	22019
 Function	"nsaTW_PM_Errors_Were_Logged"	"Purchasing"	22020
 Function	"nsaTW_PM_Get_Return_Code_Description"	"Purchasing"	22021
 Function	"nsaWW_PM_Get_Apply_To"	"Purchasing"	22022
