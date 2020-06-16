@@ -47,11 +47,13 @@ GO
 
 /*End_nsaIF_Validar_Tabla_Nit*/
 /*Begin_trptIF1001AddRecord*/
+
+
 SET QUOTED_IDENTIFIER OFF 
 GO
 SET ANSI_NULLS OFF 
 GO
-
+/**16/6/20 jcf no usar. Actualiza mal gl20000
 if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[trptIF1001AddRecord]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
 drop procedure [dbo].[trptIF1001AddRecord]
 GO
@@ -110,13 +112,13 @@ else
 			end  
 	end  
     
- /*Void POP Trxs */   
+ --Void POP Trxs
    
  if LEN(@VendorID)=0  
 	Begin   
 		select @POPRCTNM = POPRCTNM FROM POP30300 WHERE VNDDOCNM = @OrgDocNum and VENDORID = @OrgMstrID and VCHRNMBR = @OrgTrxNum  
 		select @VendorID = VENDORID from dbo.IF00390 where POPRCTNM = @POPRCTNM and SEQNUMBR = @SEQNUMBR and ACTINDX = @ActIndx  
-	End/*Void POP Trxs */  
+	End --Void POP Trxs
   
 if LEN(@VendorID)>0  
 	select @TempVendorID = @VendorID  
@@ -144,6 +146,7 @@ GO
 
 GRANT EXECUTE ON [dbo].[trptIF1001AddRecord] TO [DYNGRP] 
 GO 
+*/
 
 /*End_trptIF1001AddRecord*/
 /*Begin_ProcessAllHistYears*/
