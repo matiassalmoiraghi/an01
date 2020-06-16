@@ -238,6 +238,8 @@ GO
 
 /*End_trptIF10001Ins*/
 /*Begin_nsaIFAgregar_Datos*/
+/*16/6/20 jcf No utilizar
+--
 if exists (select * from sysobjects where id = object_id('dbo.nsaIFAgregar_Datos') and sysstat & 0xf = 8)
  drop trigger dbo.nsaIFAgregar_Datos
 GO
@@ -263,8 +265,6 @@ declare @Indice  int, @Tercero char (21),@Tercero_Nombre char(31),@Año smallint,
 
 
  IF @TRXSOURCE= 'BBF' or @TRXSOURCE='BBAL' BEGIN return  END 
-/*IF (select count(GL.ORMSTRID) from PM30200 PM, GL20000 GL where PM.VOIDED=1 and PM.VCHRNMBR=GL.ORCTRNUM and PM.DOCTYPE=GL.ORGNATYP ) > 1 
-BEGIN	RETURN END*/
 
 IF ( ((@Indice) is not NULL OR (@Tercero_Nombre) is not NULL OR (@Año) is not NULL OR (@Fecha_TRX) is not NULL OR (@Debito) is not NULL OR (@Credito) is not NULL)) BEGIN 
 IF EXISTS (SELECT name FROM sysobjects WHERE name = 'nsaIF_GL00050')  
@@ -433,4 +433,5 @@ IF EXISTS (SELECT name FROM sysobjects WHERE name = 'nsaIF_GL00050')
 	END   
 END    
 GO
+*/
 /*End_nsaIFAgregar_Datos*/
